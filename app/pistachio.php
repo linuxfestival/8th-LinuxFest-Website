@@ -38,7 +38,7 @@ function pistachio_init()
     $log->pushHandler(new StreamHandler(ROOT . '/app.log', Logger::DEBUG));
 
     parse_input();
-//    minify();
+    minify();
 
 
     if (!insertView(PATH)) {

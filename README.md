@@ -1,10 +1,6 @@
 # Linux Festival website
 
-Amirkabir Linux Festival website
-
-# Linux Festival template
-
-This theme is used for Amirkabir Linux Festival which is held annually
+Amirkabir Linux Festival website [Linuxfest](linuxfest.ir)
 
 ## Contributors
 

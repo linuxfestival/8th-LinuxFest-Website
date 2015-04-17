@@ -1,6 +1,6 @@
 # Linux Festival website
 
-Amirkabir Linux Festival website [Linuxfest](linuxfest.ir)
+Amirkabir Linux Festival website - [Linuxfest.ir](http://linuxfest.ir)
 
 ## Contributors
 

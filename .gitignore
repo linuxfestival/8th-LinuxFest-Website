@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 vendor
 .idea/
 app/config.php
 publish.sh
 update.sh
 app.log
+=======
+.idea
+publish.sh
+update.sh
+>>>>>>> cf16f4cac3421a7b82ded317d2d947e7f96754dd

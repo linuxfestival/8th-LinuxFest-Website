@@ -1,0 +1,28 @@
+<header>
+    <div class="header-background"></div>
+    <div class="header-content">
+        <div class="header-content-inner">
+            <h1 style="width : 100%; ">
+
+                هفتمین جشنواره لینوکس
+                <br>
+                دانشگاه صنعتی امیرکبیر
+
+            </h1>
+            <hr>
+            <h2>
+                24 و 25 اردیبهشت ماه 1394
+            </h2>
+            <br>
+
+            <div class="col-md-12 center-block">
+
+                <a href="<?php echo viewUri('register') ?>" class="btn btn-primary btn-xl page-scroll" style="width: 200px;font-size: 25px;">
+                    ثبت نام
+                </a>
+
+            </div>
+
+        </div>
+    </div>
+</header>

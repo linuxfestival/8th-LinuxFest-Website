@@ -1,0 +1,17 @@
+{
+  "name": "pi0/LinuxFestival",
+  "description": "linuxfest.ir WebSite",
+  "authors": [
+    {
+      "name": "Pooya Parsa",
+      "email": "pooya@pi0.ir"
+    }
+  ],
+  "autoload": {
+    "classmap":[""]
+  },
+  "require": {
+    "lichtner/fluentpdo": "dev-master",
+    "monolog/monolog": "~1.13"
+  }
+}

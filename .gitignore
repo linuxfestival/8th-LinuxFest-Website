@@ -4,3 +4,4 @@ app/config.php
 publish.sh
 update.sh
 app/gapi_token.php
+composer.lock

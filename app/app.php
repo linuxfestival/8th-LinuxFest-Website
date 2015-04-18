@@ -100,11 +100,12 @@ function get_presenters() {
 
 use Google\Spreadsheet\DefaultServiceRequest;
 use Google\Spreadsheet\ServiceRequestFactory;
+use ReCaptcha\ReCaptcha;
 
 
 function submit_reg_form () {
 
-    $recaptcha = new \ReCaptcha\ReCaptcha(RECAPTCHA_SECRET);
+    $recaptcha = new ReCaptcha(RECAPTCHA_SECRET);
     $resp = $recaptcha->verify($_POST['g-recaptcha-response'], $_SERVER['REMOTE_ADDR']);
 
     if (!$resp->isSuccess()) {

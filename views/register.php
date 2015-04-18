@@ -154,8 +154,13 @@
             <?php $i++;
         endforeach ?>
 
-        <div class="g-recaptcha" data-sitekey="6LeVkAUTAAAAAP6hsByUuc4nM3wKmSR7gtRk54qB"></div>
-
+        <br>
+        <div class="row">
+            <div class="col-md-8">
+                <div class="g-recaptcha" data-sitekey="6LeVkAUTAAAAAP6hsByUuc4nM3wKmSR7gtRk54qB"></div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
 
         <div class="row">
             <br>

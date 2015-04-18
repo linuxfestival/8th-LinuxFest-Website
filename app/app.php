@@ -72,8 +72,8 @@ function get_presenters()
         [
             'name' => 'فراز شمشیردار',
             'avatar' => '//www.gravatar.com/avatar/c4baac2a7eb2c03feb46429904f7098e?s=200',
-            'url' => 'https://ir.linkedin.com/in/shamshirdar',
-            'bio' => 'Developer @FruitCraft'
+            'url' => 'http://shamshirdar.net/',
+            'bio' => 'Programmer @Cnext'
         ],
 
 

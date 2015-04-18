@@ -31,20 +31,7 @@
                     </div>
                 </div>
             </div>
-
-            <div class="col-lg-4 col-md-6 text-center">
-                <div class="thumbnail">
-                    <div class="caption">
-                        <h3>
-                            امنیت
-                        </h3>
-
-                        <p>
-                            Security
-                        </p>
-                    </div>
-                </div>
-            </div>
+            
 
             <div class="col-lg-4 col-md-6 text-center">
                 <div class="thumbnail">

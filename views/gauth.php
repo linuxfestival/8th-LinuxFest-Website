@@ -11,7 +11,8 @@ $client->setClientId(GAPI_CLIENT_ID);
 $client->setClientSecret(GAPI_CLIENT_SECRET);
 $client->setRedirectUri(GAPI_AUTH_REDIRECT_URL);
 $client->setAccessType('offline');
-$client->setApprovalPrompt('auto');
+$client->setApprovalPrompt('force');
+
 
 $client->setScopes(array('https://spreadsheets.google.com/feeds'));
 

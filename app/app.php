@@ -44,7 +44,7 @@ function get_presenters()
             'name' => 'امیرحسین پی‌براه',
             'avatar' => 'assets/img/amir.jpg',
             'url' => 'https://www.sics.se/~amir/',
-            'bio' => 'PhD @SICS'
+            'bio' => 'PhD,Senior researcher @SICS'
         ],
 
         [

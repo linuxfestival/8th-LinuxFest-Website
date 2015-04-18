@@ -40,6 +40,12 @@ function get_reg_data()
 function get_presenters()
 {
     return [
+        [
+            'name' => 'امیرحسین پی‌براه',
+            'avatar' => 'assets/img/amir.jpg',
+            'url' => 'https://www.sics.se/~amir/',
+            'bio' => 'PhD @SICS'
+        ],
 
         [
             'name' => 'جادی',
@@ -48,26 +54,28 @@ function get_presenters()
             'bio' => 'Linux geek'
         ],
 
+
         [
             'name' => 'بهادر بخشی',
             'avatar' => 'assets/img/bakhshi.jpg',
             'url' => 'http://ceit.aut.ac.ir/~bakhshis/',
-            'bio' => 'PhD, Assistance Professor'
+            'bio' => 'PhD, Assistance Professor @AUT'
         ],
 
         [
-            'name' => 'امیرحسین پی‌براه',
-            'avatar' => 'assets/img/amir.jpg',
-            'url' => 'https://www.sics.se/~amir/',
-            'bio' => 'Swedish Institute of Computer Science'
+            'name' => 'علی نادعلیزاده',
+            'avatar' => '//www.gravatar.com/avatar/b048c6444f5618ca6ccd5dc33e125c10?s=200',
+            'url' => 'http://ali.nadalizadeh.ir/',
+            'bio' => 'CTO @Turned on Digital'
         ],
 
         [
             'name' => 'فراز شمشیردار',
             'avatar' => '//www.gravatar.com/avatar/c4baac2a7eb2c03feb46429904f7098e?s=200',
             'url' => 'https://ir.linkedin.com/in/shamshirdar',
-            'bio' => 'Developer - FruitCraft'
+            'bio' => 'Developer @FruitCraft'
         ],
+
 
         [
             'name' => 'محمدحسین حیدری',
@@ -82,6 +90,12 @@ function get_presenters()
             'url' => 'http://sinash.ir/',
             'bio' => 'IT Advisor, Software Developer'
         ],
+        [
+            'name' => 'پرهام الوانی',
+            'avatar' => '//www.gravatar.com/avatar/1347add4ae303c0258a3db358ed77c55?s=200',
+            'url' => 'http://1995parham.github.io/about/',
+            'bio' => 'OpenSource Developer'
+        ],
 
         [
             'name' => 'پویا پارسا',
@@ -90,12 +104,6 @@ function get_presenters()
             'bio' => 'Software Developer'
         ],
 
-        [
-            'name' => 'پرهام الوانی',
-            'avatar' => '//www.gravatar.com/avatar/1347add4ae303c0258a3db358ed77c55?s=200',
-            'url' => 'http://1995parham.github.io/about/',
-            'bio' => 'OpenSource Developer'
-        ],
 
     ];
 }

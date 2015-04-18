@@ -104,8 +104,8 @@ use Google\Spreadsheet\ServiceRequestFactory;
 
 function submit_reg_form () {
 
-    $recaptcha = new \ReCaptcha\ReCaptcha($secret);
-    $resp = $recaptcha->verify($gRecaptchaResponse, $remoteIp);
+    $recaptcha = new \ReCaptcha\ReCaptcha(RECAPTCHA_SECRET);
+    $resp = $recaptcha->verify($_POST['g-recaptcha-response'], $_SERVER['REMOTE_ADDR']);
 
     if (!$resp->isSuccess()) {
         throw new Exception('Invalid captcha!');

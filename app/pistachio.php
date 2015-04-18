@@ -33,6 +33,8 @@ function pistachio_init()
 {
     global $log;
 
+    session_start();
+
     //Setup logger
     $log = new Logger('app');
     $log->pushHandler(new StreamHandler(ROOT . '/app.log', Logger::DEBUG));

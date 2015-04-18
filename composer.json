@@ -8,10 +8,12 @@
     }
   ],
   "autoload": {
-    "classmap":[""]
+    "classmap": [""]
   },
   "require": {
     "lichtner/fluentpdo": "dev-master",
-    "monolog/monolog": "~1.13"
+    "monolog/monolog": "~1.13",
+    "asimlqt/php-google-spreadsheet-client": "2.3.*",
+    "google/apiclient" : "dev-master"
   }
 }

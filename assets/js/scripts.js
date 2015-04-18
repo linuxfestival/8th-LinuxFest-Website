@@ -56,7 +56,7 @@ function initmap() {
             center: new google.maps.LatLng(35.703928, 51.408322),
             zoom: 15,
             mapTypeId: google.maps.MapTypeId.ROADMAP,
-            scrollwheel:false
+            scrollwheel: false
         }
         var map = new google.maps.Map(mapCanvas, mapOptions)
 
@@ -73,26 +73,26 @@ var update_presentations = function () {
 
     for (var i = 1; i < 3; i++) {
 
-        var val = $('input[name=day'+i+']:checked').val();
+        var val = $('input[name=day' + i + ']:checked').val();
 
 
-        var p = $('.day'+i+'-presentation');
+        var p = $('.day' + i + '-presentation');
 
         if (val == 'no') {
             //no presentation
-            p.prop('checked',false)
+            p.prop('checked', false)
         }
-        else if (val == 'basic'){
+        else if (val == 'basic') {
             //public only
-            p.prop('checked',false)
-            $('.day'+i+'-presentation.p0').prop('checked',true)
+            p.prop('checked', false)
+            $('.day' + i + '-presentation.p0').prop('checked', true)
         }
         else {
             //all
-            p.prop('checked',true)
+            p.prop('checked', true)
         }
 
-        if(last[i] != val) {
+        if (last[i] != val) {
             if (val == 'basic')
                 $('input[value="basic"]').prop('checked', true)
             if (val == 'kernel')
@@ -100,8 +100,32 @@ var update_presentations = function () {
             if (val == 'python')
                 $('input[value="python"]').prop('checked', true)
         }
-
         last[i] = val
     }
 
+    //Check for compabilities
+
+    var c_courses = ['basic', 'kernel', 'python'];
+    var c_courses_title = ['Basic & Intermediate', 'Kernel', 'Python'];
+
+    var valid = true;
+    var err_c = '';
+
+    for (i = 0; i < c_courses.length; i++) {
+
+        if ($('input[value="' + c_courses[i] + '"]:checked').length % 2 != 0) {
+            valid = false;
+            err_c = c_courses_title[i];
+            break;
+        }
+
+    }
+
+    $('#submit').prop('disabled', !valid);
+
+
+    if (!valid)
+        $('#err_c').html(err_c);
+
+    $('#submit_invalid').css('visibility', valid ? 'hidden' : 'visible');
 }

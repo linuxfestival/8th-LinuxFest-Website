@@ -9,6 +9,34 @@
     </div>
     <hr>
 
+    <?php
+
+    if (isset($_REQUEST['ok'])) {
+
+        $success = true;
+        try {
+            submit_reg_form();
+        } catch (Exception $e) {
+            $success = false;
+        }
+        ?>
+
+        <?php if ($success): ?>
+            <div class="alert alert-success">
+                ثبت نام شما با موفقیت انجام شد
+            </div>
+        <?php else : ?>
+            <div class="alert alert-danger">
+                متاسفانه خطایی در هنگام ثبت نام رخ داد . لطفا این موضوع را گزارش دهید
+            </div>
+        <?php endif ?>
+
+        <?php
+        goto endform;
+    }
+
+    ?>
+
     <form class="col-md-7 col-sm-12" action="" method="POST">
         <fieldset>
             <legend>
@@ -16,20 +44,21 @@
             </legend>
 
             <!-- Fullname -->
-            <label class="control-label col-md-3" for="full_name">*
+            <label class="control-label col-md-3" for="name">*
                 نام و نام خانوادگی
             </label>
-            <input type="text" class="form-control input col-md-9" name="full_name" id="full_name">
+            <input required="required" type="text" class="form-control input col-md-9" name="name" id="name">
 
             <p class="help-block col-md-offset-3">
                 لطفا نام کامل خود را به صورت فارسی بنویسید
             </p>
 
             <!-- Email -->
-            <label class="control-label col-md-3" for="full_name">*
+            <label class="control-label col-md-3" for="email">*
                 Email
             </label>
-            <input type="email" dir="ltr" class="form-control input col-md-9" name="full_name" id="full_name">
+            <input required="required" type="email" dir="ltr" class="form-control input col-md-9" name="email"
+                   id="email">
 
             <p class="help-block col-md-offset-3">
                 از این آدرس فقط و فقط جهت اطلاع رسانی در مورد جشنواره استفاده می شود
@@ -37,10 +66,10 @@
 
 
             <!-- Tel -->
-            <label class="control-label col-md-3" for="full_name">
+            <label class="control-label col-md-3" for="tel">*
                 تلفن تماس
             </label>
-            <input type="tel" dir="ltr" class="form-control input col-md-9" name="full_name" id="full_name">
+            <input required="required" type="tel" dir="ltr" class="form-control input col-md-9" name="tel" id="tel">
 
             <p class="help-block col-md-offset-3">
 
@@ -50,6 +79,37 @@
         </fieldset>
 
         <br>
+
+        <fieldset>
+            <legend>
+                اطلاعات ثبت نام
+            </legend>
+
+            <label class="control-label col-md-3" for="inst">*
+                کجا فعالیت دارید ؟
+            </label>
+            <input type="text" class="form-control input col-md-9" name="inst" id="inst">
+
+            <p class="help-block col-md-offset-3">
+                دانشگاه یا موسسه ای که در آن فعالیت دارید
+            </p>
+
+
+            <div class="checkbox checkbox-info col-md-9">
+                <input type="checkbox" id="aut" name="aut" value="aut">
+                <label class="control-label" for="aut">
+                    دانشجوی امیرکبیر هستم
+                </label>
+            </div>
+
+            <div class="checkbox checkbox-info col-md-9">
+                <input type="checkbox" id="std" name="std" value="std">
+                <label class="control-label" for="std">
+                    دانشجو / دانش آموز هستم
+                </label>
+            </div>
+
+        </fieldset>
 
 
         <br>
@@ -74,13 +134,13 @@
                     <?php $j++; endforeach ?>
 
                 <br>
-شما در این ارائه ها شرکت می کنید :
+                شما در این ارائه ها شرکت می کنید :
                 <?php $j = 0;
                 foreach ($day['presentations'] as $title) : ?>
 
                     <div class="presentation checkbox checkbox-inline checkbox-success">
                         <input type="checkbox" readonly="readonly"
-                               class='<?php echo "day$i-presentation p$j"?>'>
+                               class='<?php echo "day$i-presentation p$j" ?>'>
                         <label><?php echo $title ?></label>
                     </div>
 
@@ -93,16 +153,29 @@
         endforeach ?>
 
 
+
         <div class="row">
-            <br>
             <br>
 
             <div class="col-sm-offset-6">
-                <input type="submit" class="btn btn-success btn-lg" value="ثبت نام">
+                <input id="submit" name="ok" type="submit" class="btn btn-success btn-lg" value="ثبت نام">
+            </div>
+            <br>
+
+            <div id="submit_invalid" class="invalid alert-danger alert alert-dismissable"
+                 style="visibility:hidden;">
+                دوره هایی که در آنها شرکت می کنید با همدیگر همخوانی ندارند
+                <br>
+                باید دوره ی
+                <span id="err_c"></span>
+                را در هر دو روز انتخاب کنید
             </div>
         </div>
     </form>
 
+    <?php
+    endform:
+    ?>
 
 </section>
 

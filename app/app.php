@@ -104,6 +104,14 @@ use Google\Spreadsheet\ServiceRequestFactory;
 
 function submit_reg_form () {
 
+    $recaptcha = new \ReCaptcha\ReCaptcha($secret);
+    $resp = $recaptcha->verify($gRecaptchaResponse, $remoteIp);
+
+    if (!$resp->isSuccess()) {
+        throw new Exception('Invalid captcha!');
+    }
+
+
     $form_data= getInputsWithKey('name|email|tel|inst|aut|std|day1|day2');
 
     if(isset($form_data['aut']))

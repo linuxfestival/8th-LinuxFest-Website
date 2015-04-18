@@ -1,5 +1,7 @@
 <?php insertView('layout/header'); ?>
 
+<script src='https://www.google.com/recaptcha/api.js'></script>
+
 <section id="register" class="container">
 
     <div style="text-align: center;">
@@ -152,6 +154,7 @@
             <?php $i++;
         endforeach ?>
 
+        <div class="g-recaptcha" data-sitekey="6LeVkAUTAAAAAP6hsByUuc4nM3wKmSR7gtRk54qB"></div>
 
 
         <div class="row">

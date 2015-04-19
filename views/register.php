@@ -166,7 +166,7 @@
             <br>
 
             <div class="col-sm-offset-6">
-                <input id="submit" name="ok" type="submit" class="btn btn-success btn-lg" value="ثبت نام">
+<!--                <input id="submit" name="ok" type="submit" class="btn btn-success btn-lg" value="ثبت نام">-->
             </div>
             <br>
 

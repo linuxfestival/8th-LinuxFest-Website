@@ -38,7 +38,7 @@
                 <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand page-scroll" href="<?php echo viewUri('index') ?>#page-top">
-                جشنواره لینوکس امیرکبیر
+                جشنواره لینوکس امیرکبیر - نسخه آزمایشی
             </a>
         </div>
 

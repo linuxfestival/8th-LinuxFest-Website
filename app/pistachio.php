@@ -43,13 +43,16 @@ function pistachio_init()
     minify();
 
 
-    if (!insertView(PATH)) {
-        header("HTTP/1.0 404 Not Found");
-        if (!insertView('404'))
-            echo('404 Not found - Pistachio');
-        exit;
-    }
+    if (!insertView(PATH))
+        err_404();
 
+}
+
+function err_404() {
+    header("HTTP/1.0 404 Not Found");
+    if (!insertView('404'))
+        echo('404 Not found - Pistachio');
+    exit;
 }
 
 function debug($message)

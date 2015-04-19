@@ -108,6 +108,145 @@ function get_presenters()
     ];
 }
 
+
+$presentations = [
+
+    //-------- Presentations
+
+    'copyleft' => [
+        'title' => 'Patents & Copyright',
+        'presenter' => '',
+        'level' => 'مبتدی و متوسط',
+        'time' => 'هر دو روز',
+        'room' => 'سالن آمفی تئاتر',
+        'desc' => '
+            ...
+            '
+    ],
+
+    'sql' => [
+        'title' => 'MySQL & NoSQL',
+        'presenter' => '',
+        'level' => 'مبتدی و متوسط',
+        'time' => 'هر دو روز',
+        'room' => 'سالن آمفی تئاتر',
+        'desc' => '
+            ...
+            '
+    ],
+
+    'ecommerce' => [
+        'title' => 'E-Commerce',
+        'presenter' => '',
+        'level' => 'مبتدی و متوسط',
+        'time' => 'هر دو روز',
+        'room' => 'سالن آمفی تئاتر',
+        'desc' => '
+            ...
+            '
+    ],
+
+
+    'cloud' => [
+        'title' => 'Cloud Computing',
+        'presenter' => '',
+        'level' => 'مبتدی و متوسط',
+        'time' => 'هر دو روز',
+        'room' => 'سالن آمفی تئاتر',
+        'desc' => '
+            ...
+            '
+    ],
+
+
+    'ssh' => [
+        'title' => 'The Dark Arts of SSH',
+        'presenter' => '',
+        'level' => 'پیشرفته',
+        'time' => 'هر دو روز',
+        'room' => 'سالن آمفی تئاتر',
+        'desc' => '
+            ...
+            '
+    ],
+
+
+    'xamin' => [
+        'title' => 'Xamin Project',
+        'presenter' => '',
+        'level' => 'مبتدی و متوسط',
+        'time' => 'هر دو روز',
+        'room' => 'سالن آمفی تئاتر',
+        'desc' => '
+            ...
+            '
+    ],
+
+];
+
+$workshops = [
+    //-------- Workshops
+
+    'intro' => [
+        'title' => 'Linux Intro',
+        'presenter' => '',
+        'level' => 'مبتدی و متوسط',
+        'time' => 'هر دو روز',
+        'room' => 'سایت کامپیوتر',
+        'desc' => '
+             اول شرکت کننده ها به طور مختصر با سیستم عامل لینوکس و قابلیت های اون آشنا می شن
+            '
+    ],
+
+    'network' => [
+        'title' => 'Networking in linux',
+        'presenter' => '',
+        'level' => 'مبتدی و متوسط',
+        'time' => 'هر دو روز',
+        'room' => '',
+        'desc' => '
+            ...
+            '
+    ],
+
+    'python' => [
+        'title' => 'Python',
+        'presenter' => '',
+        'level' => 'مبتدی و متوسط',
+        'time' => 'هر دو روز',
+        'room' => 'کلاس ۱۰۱',
+        'desc' => '
+            کارگاه خیلی خفن پایتون
+            '
+    ],
+
+];
+
+function get_session($name)
+{
+    global $workshops, $presentations;
+    if (isset($workshops[$name]))
+        return $workshops[$name];
+    else if (isset($presentations[$name]))
+        return $presentations[$name];
+    else
+        return null;
+
+}
+
+function get_presentations()
+{
+    global $presentations;
+    return $presentations;
+}
+
+function get_workshops()
+{
+    global $workshops;
+    return $workshops;
+}
+
+
 use Google\Spreadsheet\DefaultServiceRequest;
 use Google\Spreadsheet\ServiceRequestFactory;
 use ReCaptcha\ReCaptcha;

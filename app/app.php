@@ -44,14 +44,14 @@ function get_presenters()
             'name' => 'امیرحسین پی‌براه',
             'avatar' => 'assets/img/amir.jpg',
             'url' => 'https://www.sics.se/~amir/',
-            'bio' => 'PhD,Senior researcher @SICS'
+            'bio' => 'امیرحسین‌ پی‌براه، پژوهشگر در SICS'
         ],
 
         [
             'name' => 'جادی',
             'avatar' => '//www.gravatar.com/avatar/a40fa5f4ed9c29dfbc3b6ec60509f587?s=200',
             'url' => 'https://jadi.net',
-            'bio' => 'Linux geek'
+            'bio' => 'گیک لینوکس'
         ],
 
 
@@ -59,21 +59,21 @@ function get_presenters()
             'name' => 'بهادر بخشی',
             'avatar' => 'assets/img/bakhshi.jpg',
             'url' => 'http://ceit.aut.ac.ir/~bakhshis/',
-            'bio' => 'PhD, Assistance Professor @AUT'
+            'bio' => ' استادیار دانشکده مهندسی کامپیوتر و فناوری اطلاعات دانشگاه صنعتی امیرکبیر'
         ],
 
         [
             'name' => 'علی نادعلیزاده',
             'avatar' => '//www.gravatar.com/avatar/b048c6444f5618ca6ccd5dc33e125c10?s=200',
             'url' => 'http://ali.nadalizadeh.ir/',
-            'bio' => 'CTO @Turned on Digital'
+            'bio' => 'مدیر فنی تاد'
         ],
 
         [
             'name' => 'فراز شمشیردار',
             'avatar' => '//www.gravatar.com/avatar/c4baac2a7eb2c03feb46429904f7098e?s=200',
             'url' => 'http://shamshirdar.net/',
-            'bio' => 'Programmer @Cnext'
+            'bio' => 'برنامه نویس در CNext'
         ],
 
 
@@ -81,7 +81,7 @@ function get_presenters()
             'name' => 'محمدحسین حیدری',
             'avatar' => '//www.gravatar.com/avatar/67a156a371ec4ffa39a37cfc4f824ee6?s=200',
             'url' => 'https://github.com/mdhheydari',
-            'bio' => 'Software Developer'
+            'bio' => 'توسعه‌دهنده نرم‌افزار'
         ],
 
         [
@@ -94,14 +94,14 @@ function get_presenters()
             'name' => 'پرهام الوانی',
             'avatar' => '//www.gravatar.com/avatar/1347add4ae303c0258a3db358ed77c55?s=200',
             'url' => 'http://1995parham.github.io/about/',
-            'bio' => 'OpenSource Developer'
+            'bio' => 'توسعه دهنده‌ی نرم‌افزارهای متن‌باز'
         ],
 
         [
             'name' => 'پویا پارسا',
             'avatar' => '//www.gravatar.com/avatar/1fddd58251edc7bf16e279b8811cd327?s=200',
             'url' => 'http://pi0.ir/',
-            'bio' => 'Software Developer'
+            'bio' => 'توسعه‌دهنده‌ی نرم‌افزار'
         ],
 
 

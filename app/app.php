@@ -44,7 +44,7 @@ function get_presenters()
             'name' => 'امیرحسین پی‌براه',
             'avatar' => 'assets/img/amir.jpg',
             'url' => 'https://www.sics.se/~amir/',
-            'bio' => 'امیرحسین‌ پی‌براه، پژوهشگر در SICS'
+            'bio' => 'پژوهشگر در SICS'
         ],
 
         [
@@ -59,7 +59,7 @@ function get_presenters()
             'name' => 'بهادر بخشی',
             'avatar' => 'assets/img/bakhshi.jpg',
             'url' => 'http://ceit.aut.ac.ir/~bakhshis/',
-            'bio' => 'دانشگاه صنعتی امیرکبیر'
+            'bio' => 'استادیار دانشکده مهندسی کامپیوتر دانشگاه صنعتی امیرکبیر'
         ],
 
         [
@@ -81,14 +81,14 @@ function get_presenters()
             'name' => 'محمدحسین حیدری',
             'avatar' => '//www.gravatar.com/avatar/67a156a371ec4ffa39a37cfc4f824ee6?s=200',
             'url' => 'https://github.com/mdhheydari',
-            'bio' => 'توسعه‌دهنده نرم‌افزار'
+            'bio' => 'توسعه‌دهنده‌ی نرم‌افزار'
         ],
 
         [
             'name' => 'سینا شیخ الاسلامی',
             'avatar' => '//www.gravatar.com/avatar/9c773fbd22eab00f63f30a4b4a1f3a7a?s=200',
             'url' => 'http://sinash.ir/',
-            'bio' => 'دبیر اسبق انجمن علمی دانشکده مهندسی کامپیوتر'
+            'bio' => 'توسعه دهنده‌ی نرم‌افزار'
         ],
         [
             'name' => 'پرهام الوانی',

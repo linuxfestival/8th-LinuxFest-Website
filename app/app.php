@@ -29,6 +29,7 @@ function get_session($name)
         return $presentations[$name];
     else
         return null;
+
 }
 
 function get_presentations()
@@ -46,7 +47,7 @@ function get_workshops()
 }
 
 //--------------------------------------------------
-//Register form controller
+//Data sources
 //--------------------------------------------------
 
 use Google\Spreadsheet\DefaultServiceRequest;

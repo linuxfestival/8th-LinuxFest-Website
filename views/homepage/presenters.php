@@ -15,7 +15,7 @@
 
             <?php foreach (get_presenters() as $presenter) : ?>
 
-                <div class="col-lg-3 col-md-6 col-rtl text-center wow fadeIn">
+                <div class="col-lg-3 col-md-6 col-rtl2 text-center wow fadeIn">
                     <a href="<?php echo $presenter['url'] ?>"
                        class="profile grid-col" target="_blank">
 

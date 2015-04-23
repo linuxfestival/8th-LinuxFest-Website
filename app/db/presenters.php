@@ -4,18 +4,19 @@ global $presenters;
 
 $presenters = [
 
-    'mohajer' => [
-        'name' => 'میلاد مهاجر',
-        'avatar' => '//www.gravatar.com/avatar/331f9ae8a4c8c6a33ba6ff3a1dcc3705?s=200',
-        'url' => '',
-        'bio' => 'رایمند'
-    ],
-
     'peyberah' => [
         'name' => 'امیرحسین پی‌براه',
         'avatar' => 'assets/img/amir.jpg',
         'url' => 'https://www.sics.se/~amir/',
         'bio' => 'امیرحسین‌ پی‌براه، پژوهشگر در SICS'
+    ],
+
+
+    'bakhshis' => [
+        'name' => 'بهادر بخشی',
+        'avatar' => 'assets/img/bakhshi.jpg',
+        'url' => 'http://ceit.aut.ac.ir/~bakhshis/',
+        'bio' => 'دانشگاه صنعتی امیرکبیر'
     ],
 
     'jadi' => [
@@ -26,11 +27,12 @@ $presenters = [
     ],
 
 
-    'bakhshis' => [
-        'name' => 'بهادر بخشی',
-        'avatar' => 'assets/img/bakhshi.jpg',
-        'url' => 'http://ceit.aut.ac.ir/~bakhshis/',
-        'bio' => 'دانشگاه صنعتی امیرکبیر'
+
+    'mohajer' => [
+        'name' => 'میلاد مهاجر',
+        'avatar' => '//www.gravatar.com/avatar/331f9ae8a4c8c6a33ba6ff3a1dcc3705?s=200',
+        'url' => '',
+        'bio' => 'رایمند'
     ],
 
     'nadalizadeh' => [

@@ -122,28 +122,38 @@
                 <legend><?php echo $day['title']; ?></legend>
 
                 <?php $j = 0;
-                foreach ($day['items'] as $val => $title) : ?>
+                foreach ($day['items'] as $id => $title) : ?>
                     <div class="radio radio-inline_x radio-<?php echo $j == 0 ? 'warning' : 'info' ?>">
                         <input type="radio"
-                               name="<?php echo "day$i" ?>" id="<?php echo 'day' . $i . "_$val" ?>"
-                               value="<?php echo $val ?>"
+                               name="<?php echo "day$i" ?>" id="<?php echo 'day' . $i . "_$id" ?>"
+                               value="<?php echo $id ?>"
                             <?php if ($j == 1) echo 'checked=checked' ?>
                             >
-                        <label for="<?php echo 'day' . $i . "_$val" ?>">
+                        <label for="<?php echo 'day' . $i . "_$id" ?>">
                             <?php echo $title ?>
                         </label>
+                        <?php if ($id != 'no') : ?>
+                            <a target="popup" href='<?php echo viewUri("presentation?s=$id") ?>'>
+                                (اطلاعات بیشتر)
+                            </a>
+                        <?php endif ?>
                     </div>
                     <?php $j++; endforeach ?>
 
                 <br>
                 شما در این ارائه ها شرکت می کنید :
                 <?php $j = 0;
-                foreach ($day['presentations'] as $title) : ?>
+                foreach ($day['presentations'] as $id) : ?>
 
-                    <div class="presentation checkbox checkbox-inline checkbox-success">
+                    <div class="presentation checkbox checkbox- checkbox-success">
                         <input type="checkbox" readonly="readonly"
                                class='<?php echo "day$i-presentation p$j" ?>'>
-                        <label><?php echo $title ?></label>
+                        <label>
+                            <?php echo get_presentations()[$id]['title'] ?>
+                            <a target="popup" href='<?php echo viewUri("presentation?s=$id") ?>'>
+                                (اطلاعات بیشتر)
+                            </a>
+                        </label>
                     </div>
 
                     <?php $j++; endforeach ?>
@@ -155,6 +165,7 @@
         endforeach ?>
 
         <br>
+
         <div class="row">
             <div class="col-md-8">
                 <div class="g-recaptcha" data-sitekey="6LeVkAUTAAAAAP6hsByUuc4nM3wKmSR7gtRk54qB"></div>
@@ -166,7 +177,7 @@
             <br>
 
             <div class="col-sm-offset-6">
-<!--                <input id="submit" name="ok" type="submit" class="btn btn-success btn-lg" value="ثبت نام">-->
+                <!--                <input id="submit" name="ok" type="submit" class="btn btn-success btn-lg" value="ثبت نام">-->
             </div>
             <br>
 

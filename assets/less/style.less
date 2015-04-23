@@ -383,6 +383,17 @@ body {
 
 //People
 
+.profile2 {
+  margin: 0;
+  line-height: 1.2;
+  text-overflow: ellipsis;
+  width: 100%;
+  overflow: hidden;
+  color: inherit;
+  white-space: nowrap;
+  font-size: 1em;
+}
+
 .profile {
   margin: 0;
   line-height: 1.2;
@@ -406,6 +417,15 @@ body {
   filter: none;
 }
 
+.profile2 img {
+  border-radius: 10%;
+  border: 1em solid transparent;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
 .profile img {
 
   -webkit-transition: all 200ms ease-in-out;
@@ -427,7 +447,7 @@ body {
   margin: 0 auto;
 }
 
-.profile {
+.profile,.profile2 {
   text-decoration: none !important;
 }
 
@@ -455,5 +475,9 @@ footer {
 
 .presentation , .presentation input,.presentation label {
   cursor: default !important;
-  direction: ltr;
+  //direction: ltr;
+}
+
+.session-container {
+  margin-top: -120px;
 }

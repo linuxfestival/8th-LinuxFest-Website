@@ -60,7 +60,7 @@ $presenters = [
         'name' => 'سینا شیخ الاسلامی',
         'avatar' => '//www.gravatar.com/avatar/9c773fbd22eab00f63f30a4b4a1f3a7a?s=200',
         'url' => 'http://sinash.ir/',
-        'bio' => 'توسعه دهنده‌ی نرم‌افزار'
+        'bio' => 'دبیر اسبق انجمن علمی دانشکده مهندسی کامپیوتر'
     ],
 
     'parham' => [

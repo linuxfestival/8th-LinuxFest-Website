@@ -12,7 +12,7 @@
 
 
     <title>
-        جشنواره لینوکس امیرکبیر
+        جشنواره‌ی لینوکس امیرکبیر
     </title>
 
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
@@ -38,7 +38,7 @@
                 <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand page-scroll" href="<?php echo viewUri('index') ?>#page-top">
-                جشنواره لینوکس امیرکبیر - نسخه آزمایشی
+                جشنواره‌ی لینوکس امیرکبیر - نسخه‌ی آزمایشی
             </a>
         </div>
 
@@ -47,24 +47,24 @@
             <ul class="nav navbar-nav navbar-right">
                 <li>
                     <a class="page-scroll" href="./#about" data-target="#about">
-                        درباره جشنواره
+                        درباره‌ی جشنواره
                     </a>
                 </li>
                 <li>
                     <a class="page-scroll" href="./#presenters" data-target="#presenters">
-                        ارائه دهندگان
+                        ارائه‌دهندگان
                     </a>
                 </li>
 
                 <li>
                     <a class="page-scroll" href="./#workshops" data-target="#workshops">
-                        کارگاه ها
+                        کارگاه‌ها
                     </a>
                 </li>
 
                 <li>
                     <a class="page-scroll" href="./#presentations" data-target="#presentations">
-                        ارائه ها
+                        ارائه‌ها
                     </a>
                 </li>
 

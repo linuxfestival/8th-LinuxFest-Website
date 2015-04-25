@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 text-center">
                 <h2 class="section-heading">
-                    درباره جشنواره
+                    درباره‌ی جشنواره
                 </h2>
                 <hr class="light">
                 <p class="text-faded text-right" style="font-size: 23px;">

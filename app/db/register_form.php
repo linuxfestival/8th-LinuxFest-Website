@@ -2,13 +2,13 @@
 global $register_form;
 $register_form = [
     [
-        'title' => 'روز اول - پنج شنبه ۲۴ اردیبهشت',
+        'title' => 'روز اول - پنج‌شنبه ۲۴ اردیبهشت',
         'presentations' => [
             'copyleft', 'sql', 'opensource'
         ]
         ,
         'items' => [
-            'no' => 'شرکت نمی کنم',
+            'no' => 'شرکت نمی‌کنم',
             'basic' => 'Linux intro',
             'python' => 'Python intro',
             'network' => 'Networking in linux',
@@ -21,7 +21,7 @@ $register_form = [
             'bigdata', 'xamin', 'ssh'
         ],
         'items' => [
-            'no' => 'شرکت نمی کنم',
+            'no' => 'شرکت نمی‌کنم',
             'basic' => 'Linux Intermediate + Presentation : How to survive in linux',
             'programming' => 'Programming',
             'python' => 'Python advanced',

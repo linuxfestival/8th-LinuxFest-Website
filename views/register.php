@@ -162,7 +162,7 @@
                 <?php endif ?>
 
                 <p>
-                    در این کارگاه ها شرکت می‌کنم:
+                    در این کارگاه شرکت می‌کنم:
                 </p>
 
 
@@ -197,7 +197,7 @@
 
                     <div class="presentation checkbox checkbox-success">
                         <input type="checkbox" checked="checked" value="X"
-                               name='<?php echo "p_$id" ?>'>
+                               name='<?php echo $id ?>'>
                         <label class="control-label">
                             <?php echo get_presentations()[$id]['title'] ?>
                             <a target="popup" href='<?php echo viewUri("presentation?s=$id") ?>'>

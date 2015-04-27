@@ -196,7 +196,7 @@
                 foreach ($day['presentations'] as $id) : ?>
 
                     <div class="presentation checkbox checkbox-success">
-                        <input type="checkbox" checked="checked"
+                        <input type="checkbox" checked="checked" value="X"
                                name='<?php echo "p_$id" ?>'>
                         <label class="control-label">
                             <?php echo get_presentations()[$id]['title'] ?>

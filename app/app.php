@@ -75,15 +75,34 @@ function submit_reg_form()
 
     $form_data = getInputsWithKey($valid_inputs);
 
+    //Presentations
     foreach($form_data as $key => &$val)
         if(strpos($key,'_p')===0)
             $val='X';
 
 
-    if (isset($form_data['aut']))
-        $form_data['aut'] = strlen($form_data['aut']) > 0 ? 'X' : '';
+    $discount_rate  = 0;
+
     if (isset($form_data['std']))
-        $form_data['std'] = strlen($form_data['std']) > 0 ? 'X' : '';
+        switch($form_data['std']) {
+            case 'aut':
+                //
+                $discount_rate = 0.6;
+                break;
+            case 'std':
+                //
+                $discount_rate = 0.2;
+                break;
+        }
+
+
+    //
+
+    if($form_data['day1']=='intro') {
+
+    }
+
+
     $form_data['tel'] = intval($form_data['tel']);
 
     $form_data['price'] = 40000;//TODO

@@ -96,18 +96,29 @@
                 دانشگاه یا موسسه‌ای که در آن فعالیت دارید
             </p>
 
+            <div class="alert alert-info">
+                برای برخورداری از تخفیف، کارت دانشجویی یا دانش آموزی خود را در هنگام ثبت نام نهایی به همراه داشته باشید.<br>
+            </div>
 
-            <div class="checkbox checkbox-info col-md-9">
-                <input type="checkbox" id="aut" name="aut" value="aut">
+
+            <div class="radio radio-info col-md-9">
+                <input type="radio" id="aut" name="std" value="aut">
                 <label class="control-label" for="aut">
                     دانشجوی امیرکبیر هستم
                 </label>
             </div>
 
-            <div class="checkbox checkbox-info col-md-9">
-                <input type="checkbox" id="std" name="std" value="std">
+            <div class="radio radio-info col-md-9">
+                <input type="radio" id="std" name="std" value="std">
                 <label class="control-label" for="std">
                     دانشجو/ دانش‌آموز هستم
+                </label>
+            </div>
+
+            <div class="radio radio-warning col-md-9">
+                <input type="radio" id="xstd" name="std" value="" checked="checked">
+                <label class="control-label" for="xstd">
+                    هیچکدام
                 </label>
             </div>
 
@@ -126,22 +137,32 @@
 
                 <?php if ($i == 1): ?>
                     <div class="alert alert-success">
-                        شرکت در ارایه ها رایگان و برای همه آزاد هست
+                        شرکت در ارائه‌ها رایگان است، اما با توجه به ظرفیت محدود آمفی‌تئاتر لطفا برای حضور در ارائه‌ها
+                        ثبت نام کنید. اولویت شرکت در ارائه‌ها با شرکت‌کنندگان کارگاه‌هاست.
                     </div>
 
+
                     <div class="alert alert-warning">
-                        هزینه ی ثبت نام برای دانشجو های امیر کبیر در هر روز کارگاه
-                        ۲۰۰۰۰
-                        تومان می باشد
-                        <br>
-                        هزینه ی شرکت در کارگاه های دوروزه ی آشنایی با لینوکس
-                        ۳۰۰۰۰
-                        تومان می باشد
+                        هزینه‌ی ثبت نام در کارگاه‌ها:
+                        <ul>
+                            <li>
+                                کارگاه یک روزه: ۳۵ هزار تومان
+                            </li>
+                            <li>
+                                کارگاه دو روزه: ۶۰ هزار تومان
+                            </li>
+                            <li>
+                                دو کارگاه یک روزه: ۶۰ هزار تومان
+                            </li>
+                        </ul>
+                        دانشجویان امیرکبیر از ۶۰٪ و دانشجویان دانشگاه‌های دیگر و دانش‌آموزان از ۲۵٪ تخفیف برخوردار
+                        می‌شوند.
+
                     </div>
                 <?php endif ?>
 
                 <p>
-                    در این کارگاه ها شرکت می کنم :
+                    در این کارگاه ها شرکت می‌کنم:
                 </p>
 
 

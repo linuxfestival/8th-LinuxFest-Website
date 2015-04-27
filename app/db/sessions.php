@@ -4,7 +4,7 @@ global $presentations;
 $presentations = [
 
     'sql' => [
-        'title' => 'MySQL & NoSQL',
+        'title' => 'MySQL & NoSQL and afew steps folan',
         'presenter' => 'nadalizadeh',
         'level' => 'مبتدی و متوسط',
         'time' => '',
@@ -17,7 +17,7 @@ $presentations = [
     //--------------------------------------------------------------
 
     'opensource' => [
-        'title' => 'OpenSource Revenue Concepts',
+        'title' => 'OpenSource Revenue concepts',
         'presenter' => 'mohajer',
         'level' => 'مبتدی و متوسط',
         'time' => 'روز اول ساعت ۱۱:۳۰ تا ۱۲',
@@ -43,16 +43,16 @@ $presentations = [
 
     //--------------------------------------------------------------
 
-    'ecommerce' => [
-        'title' => 'E-Commerce',
-        'presenter' => '',
-        'level' => 'مبتدی و متوسط',
-        'time' => '',
-        'room' => 'سالن آمفی تئاتر',
-        'desc' => '
-            ...
-            '
-    ],
+//    'ecommerce' => [
+//        'title' => 'E-Commerce',
+//        'presenter' => '',
+//        'level' => 'مبتدی و متوسط',
+//        'time' => '',
+//        'room' => 'سالن آمفی تئاتر',
+//        'desc' => '
+//            ...
+//            '
+//    ],
 
     //--------------------------------------------------------------
 
@@ -84,16 +84,16 @@ $presentations = [
 
     //--------------------------------------------------------------
 
-    'xamin' => [
-        'title' => 'Xamin Project',
-        'presenter' => 'xamin',
-        'level' => 'مبتدی و متوسط',
-        'time' => '',
-        'room' => 'سالن آمفی تئاتر',
-        'desc' => '
-            ...
-            '
-    ],
+//    'xamin' => [
+//        'title' => 'Xamin Project',
+//        'presenter' => 'xamin',
+//        'level' => 'مبتدی و متوسط',
+//        'time' => '',
+//        'room' => 'سالن آمفی تئاتر',
+//        'desc' => '
+//            ...
+//            '
+//    ],
 
 ];
 

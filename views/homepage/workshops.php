@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h2 class="section-heading">
-                    کارگاه ها
+                    کارگاه‌ها
                 </h2>
                 <hr class="primary">
             </div>
@@ -26,7 +26,7 @@
                             <div style="text-align: center">
                                 <a href="<?php echo viewUri('workshop?s=' . $k) ?>"
                                    class="btn btn-info" target="_blank">
-                                    مشاهده جزئیات
+                                    مشاهده‌ی جزئیات
                                 </a>
                             </div>
                         </div>

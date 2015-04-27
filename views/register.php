@@ -6,7 +6,7 @@
 
     <div style="text-align: center;">
         <h1>
-            ثبت نام در هفتمین جشنواره لینوکس امیرکبیر
+            ثبت نام در هفتمین جشنواره‌ی لینوکس امیرکبیر
         </h1>
     </div>
     <hr>
@@ -29,7 +29,7 @@
             </div>
         <?php else : ?>
             <div class="alert alert-danger">
-                متاسفانه خطایی در هنگام ثبت نام رخ داد . لطفا این موضوع را گزارش دهید
+                متاسفانه خطایی در هنگام ثبت نام رخ داد. لطفا این موضوع را گزارش دهید
             </div>
         <?php endif ?>
 
@@ -52,7 +52,7 @@
             <input required="required" type="text" class="form-control input col-md-9" name="name" id="name">
 
             <p class="help-block col-md-offset-3">
-                لطفا نام کامل خود را به صورت فارسی بنویسید
+                لطفا نام کامل خود را به صورت فارسی بنویسید.
             </p>
 
             <!-- Email -->
@@ -63,7 +63,7 @@
                    id="email">
 
             <p class="help-block col-md-offset-3">
-                از این آدرس فقط و فقط جهت اطلاع رسانی در مورد جشنواره استفاده می شود
+                از این آدرس فقط و فقط جهت اطلاع‌رسانی در مورد جشنواره استفاده می‌شود.
             </p>
 
 
@@ -88,12 +88,12 @@
             </legend>
 
             <label class="control-label col-md-3" for="inst">*
-                کجا فعالیت دارید ؟
+                کجا فعالیت دارید؟
             </label>
             <input type="text" class="form-control input col-md-9" name="inst" id="inst">
 
             <p class="help-block col-md-offset-3">
-                دانشگاه یا موسسه ای که در آن فعالیت دارید
+                دانشگاه یا موسسه‌ای که در آن فعالیت دارید
             </p>
 
 
@@ -107,7 +107,7 @@
             <div class="checkbox checkbox-info col-md-9">
                 <input type="checkbox" id="std" name="std" value="std">
                 <label class="control-label" for="std">
-                    دانشجو / دانش آموز هستم
+                    دانشجو/ دانش‌آموز هستم
                 </label>
             </div>
 
@@ -170,6 +170,7 @@
                     در این ارایه ها شرکت می کنم :
                 </p>
 
+                شما در این ارائه‌ها شرکت می‌کنید:
                 <?php $j = 0;
                 foreach ($day['presentations'] as $id) : ?>
 
@@ -212,9 +213,9 @@
 
             <div id="submit_invalid" class="invalid alert-danger alert alert-dismissable"
                  style="visibility:hidden;">
-                دوره هایی که در آنها شرکت می کنید با همدیگر همخوانی ندارند
+                دوره‌هایی که در آن‌ها شرکت می‌کنید با همدیگر همخوانی ندارند
                 <br>
-                باید دوره ی
+                باید دوره‌ی
                 <span id="err_c"></span>
                 را در هر دو روز انتخاب کنید
             </div>

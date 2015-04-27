@@ -68,7 +68,17 @@ function submit_reg_form()
 
 
     //Get & Process form data
-    $form_data = getInputsWithKey('name|email|tel|inst|aut|std|day1|day2');
+    $valid_inputs = 'name|email|tel|inst|aut|std|day1|day2';
+
+    foreach(get_presentations() as $key=>$data)
+        $valid_inputs .= "|p_$key";
+
+    $form_data = getInputsWithKey($valid_inputs);
+
+    foreach($form_data as $key => &$val)
+        if(strpos($key,'_p')===0)
+            $val='X';
+
 
     if (isset($form_data['aut']))
         $form_data['aut'] = strlen($form_data['aut']) > 0 ? 'X' : '';

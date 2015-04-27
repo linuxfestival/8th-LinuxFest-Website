@@ -114,12 +114,36 @@
         </fieldset>
 
 
-        <br>
+
 
         <?php $i = 1;
         foreach (get_reg_data() as &$day): ?>
+
+
             <fieldset>
                 <legend><?php echo $day['title']; ?></legend>
+
+
+                <?php if ($i == 1): ?>
+                    <div class="alert alert-success">
+                        شرکت در ارایه ها رایگان و برای همه آزاد هست
+                    </div>
+
+                    <div class="alert alert-warning">
+                        هزینه ی ثبت نام برای دانشجو های امیر کبیر در هر روز کارگاه
+                        ۲۰۰۰۰
+                        تومان می باشد
+                        <br>
+                        هزینه ی شرکت در کارگاه های دوروزه ی آشنایی با لینوکس
+                        ۳۰۰۰۰
+                        تومان می باشد
+                    </div>
+                <?php endif ?>
+
+                <p>
+                    در این کارگاه ها شرکت می کنم :
+                </p>
+
 
                 <?php $j = 0;
                 foreach ($day['items'] as $id => $title) : ?>
@@ -141,20 +165,25 @@
                     <?php $j++; endforeach ?>
 
                 <br>
-                شما در این ارائه ها شرکت می کنید :
+
+                <p>
+                    در این ارایه ها شرکت می کنم :
+                </p>
+
                 <?php $j = 0;
                 foreach ($day['presentations'] as $id) : ?>
 
-                    <div class="presentation checkbox checkbox- checkbox-success">
-                        <input type="checkbox" readonly="readonly"
-                               class='<?php echo "day$i-presentation p$j" ?>'>
-                        <label>
+                    <div class="presentation checkbox checkbox-success">
+                        <input type="checkbox" checked="checked"
+                               name='<?php echo "p_$id" ?>'>
+                        <label class="control-label">
                             <?php echo get_presentations()[$id]['title'] ?>
                             <a target="popup" href='<?php echo viewUri("presentation?s=$id") ?>'>
                                 (اطلاعات بیشتر)
                             </a>
                         </label>
                     </div>
+
 
                     <?php $j++; endforeach ?>
 

@@ -18,9 +18,9 @@
                 <div class="col-lg-4 col-md-4 col-sm-4 text-center">
                     <div class="thumbnail">
                         <div class="caption">
-                            <h3>
+                            <h4>
                                 <?php echo $i['title'] ?>
-                            </h3>
+                            </h4>
                             <br>
 
                             <div style="text-align: center">

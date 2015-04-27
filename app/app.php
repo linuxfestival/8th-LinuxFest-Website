@@ -75,11 +75,6 @@ function submit_reg_form()
 
     $form_data = getInputsWithKey($valid_inputs);
 
-    //Presentations
-    foreach ($form_data as $key => &$val)
-        if (strpos($key, '_p') === 0)
-            $val = 'X';
-
     //----Pricing
 
     //Count days
@@ -149,11 +144,38 @@ function submit_reg_form()
 
         <br>
 هزینه ی شرکت در دوره :
-<b>$price</b>
-هزار تومان
+ <b>$price</b>
+ هزار تومان
 <br>
     ";
 
+    //Email
+    if (isset($form_data['email']))
+        sendmail($form_data['email'], $msg);
+
+
+    //SMS
+    if (isset($form_data['tel']))
+        sendsms($form_data['tel'], $msg);
+
+
     return $msg;
+
+}
+
+function sendmail($to, $body)
+{
+
+    try {
+        mail($to, 'هفتمین جشنواره لینوکس امیرکبیر', $body);
+    } catch (Exception $e) {
+
+    }
+}
+
+function sendsms($to, $body)
+{
+
+    //TODO
 
 }

@@ -45,7 +45,7 @@
     // Initialize WOW.js Scrolling Animations
     new WOW().init();
 
-    $('#top-left-container').html('<iframe src="https://ghbtns.com/github-btn.html?user=pi0&repo=LinuxFestival&type=watch&count=true&size=small&v=2" frameborder="0" scrolling="0" width="160px" height="20px"></iframe>');
+    $('#top-left-container').html('<iframe src="https://ghbtns.com/github-btn.html?user=pi0&repo=LinuxFestival&type=star&count=true&size=small&v=2" frameborder="0" scrolling="0" width="160px" height="20px"></iframe>');
 
 })(jQuery); // End of use strict
 

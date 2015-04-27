@@ -77,11 +77,6 @@ $presenters = [
         'bio' => 'توسعه‌دهنده‌ی نرم‌افزار'
     ],
 
-    'xamin' => [
-        'name' => 'زمین زمینی',
-        'avatar' => '//www.gravatar.com/avatar/331f9ae8a4c8c6a33ba6ff3a1dcc3705?s=200',
-        'url' => '',
-        'bio' => 'پروژه‌ی زمین'
-    ],
+
 
 ];

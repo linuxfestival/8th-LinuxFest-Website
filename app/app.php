@@ -47,7 +47,7 @@ function get_workshops()
 }
 
 //--------------------------------------------------
-//Data sources
+//
 //--------------------------------------------------
 
 use Google\Spreadsheet\DefaultServiceRequest;
@@ -71,7 +71,7 @@ function submit_reg_form()
     $valid_inputs = 'name|email|tel|inst|aut|std|day1|day2';
 
     foreach (get_presentations() as $key => $data)
-        $valid_inputs .= "|p_$key";
+        $valid_inputs .= "|$key";
 
     $form_data = getInputsWithKey($valid_inputs);
 
@@ -139,19 +139,19 @@ function submit_reg_form()
     //Message
     $msg = "
 <div dir='rtl'>
-<p>
+
         با تشکر‌ ، ثبت نام آنلاین شما با موفقیت ثبت شد و مورد بررسی قرار خواهد گرفت.
+        <br>
+        هزینه ی ثبت نام شما : <b>$price</b> هزار تومان
         <br>
         لطفا در اسرع وقت با مراجعه حضوری به دفتر انجمن علمی دانشکده هزینه‌ی مربوطه دوره‌هایی که در آنها مایل به شرکت بودید را پرداخت نمایید.
 <br>
 تهران، چهارراه ولی عصر، روبه‌روی خیابان بزرگمهر، دانشگاه صنعتی امیرکبیر ، دانشکده مهندسی کامپیوتر و فناوری اطلاعات ، دفتر انجمن علمی
 
-        <br>
-       هزینه ی ثبت نام شما : <b>$price</b> هزار تومان
 	<br>
      در صورت تمایل به ایجاد هرگونه تغییر در وضعیت ثبت نام خودتون از ثبت نام مجدد <b> جدا خودداری فرمایید</b>. در غیر اینصورت ثبت نام شما تایید   نخواهد شد.<br>
       می توانید این تغییرات را از دو طریق ۱ - ایمیل جشنواره hello@linuxfest.ir و یا ۲ - مراجعه ی حضوری اعلام فرمایید.
-</p>
+
 </div>
     ";
 
@@ -176,8 +176,8 @@ function sendmail($to, $body)
         mail($to, 'هفتمین جشنواره لینوکس امیرکبیر', $body,
             'From: hello@linuxfest.ir' . "\r\n" .
             'Reply-To: hello@linuxfest.ir' . "\r\n" .
-            'X-Mailer: PHP/' . phpversion().
-            'MIME-Version: 1.0' . "\r\n".
+            'X-Mailer: PHP/' . phpversion() .
+            'MIME-Version: 1.0' . "\r\n" .
             'Content-type: text/html; charset=UTF-8' . "\r\n"
         );
     } catch (Exception $e) {

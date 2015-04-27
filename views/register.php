@@ -17,7 +17,7 @@
 
         $success = true;
         try {
-            submit_reg_form();
+            $msg = submit_reg_form();
         } catch (Exception $e) {
             $success = false;
         }
@@ -25,7 +25,7 @@
 
         <?php if ($success): ?>
             <div class="alert alert-success">
-                ثبت نام شما با موفقیت انجام شد
+                <?php echo $msg ?>
             </div>
         <?php else : ?>
             <div class="alert alert-danger">
@@ -191,7 +191,7 @@
                     در این ارایه ها شرکت می کنم :
                 </p>
 
-                شما در این ارائه‌ها شرکت می‌کنید:
+
                 <?php $j = 0;
                 foreach ($day['presentations'] as $id) : ?>
 
@@ -228,7 +228,7 @@
             <br>
 
             <div class="col-sm-offset-6">
-                <!--                <input id="submit" name="ok" type="submit" class="btn btn-success btn-lg" value="ثبت نام">-->
+                                <input id="submit" name="ok" type="submit" class="btn btn-success btn-lg" value="ثبت نام">
             </div>
             <br>
 

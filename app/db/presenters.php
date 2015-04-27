@@ -52,7 +52,7 @@ $presenters = [
     'mdhheydari' => [
         'name' => 'محمدحسین حیدری',
         'avatar' => '//www.gravatar.com/avatar/67a156a371ec4ffa39a37cfc4f824ee6?s=200',
-        'url' => 'https://github.com/mdhheydari',
+        'url' => 'https://ir.linkedin.com/in/mdhheydari',
         'bio' => 'توسعه‌دهنده‌ی نرم‌افزار'
     ],
 

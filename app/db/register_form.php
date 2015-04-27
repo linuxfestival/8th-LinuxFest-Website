@@ -18,7 +18,7 @@ $register_form = [
     [
         'title' => 'روز دوم - جمعه ۲۵ اردیبهشت',
         'presentations' => [
-            'bigdata', 'xamin', 'ssh'
+            'bigdata', 'ssh'
         ],
         'items' => [
             'no' => 'شرکت نمی‌کنم',

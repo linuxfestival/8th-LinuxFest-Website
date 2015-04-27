@@ -70,42 +70,44 @@ function submit_reg_form()
     //Get & Process form data
     $valid_inputs = 'name|email|tel|inst|aut|std|day1|day2';
 
-    foreach(get_presentations() as $key=>$data)
+    foreach (get_presentations() as $key => $data)
         $valid_inputs .= "|p_$key";
 
     $form_data = getInputsWithKey($valid_inputs);
 
     //Presentations
-    foreach($form_data as $key => &$val)
-        if(strpos($key,'_p')===0)
-            $val='X';
+    foreach ($form_data as $key => &$val)
+        if (strpos($key, '_p') === 0)
+            $val = 'X';
 
+    //----Pricing
 
-    $discount_rate  = 0;
+    //Count days
+    $days = 0;
+    for ($i = 1; $i <= 2; $i++)
+        if ($form_data["day$i"] != 'no')
+            $days++;
+    $price = $days * 35000;
+    if ($days > 1)
+        $price -= 10;
 
+    //Discount
+    $discount_rate = 0;
     if (isset($form_data['std']))
-        switch($form_data['std']) {
+        switch ($form_data['std']) {
             case 'aut':
-                //
                 $discount_rate = 0.6;
                 break;
             case 'std':
-                //
-                $discount_rate = 0.2;
+                $discount_rate = 0.25;
                 break;
         }
+    $price *= (1.0 - $discount_rate);
 
-
-    //
-
-    if($form_data['day1']=='intro') {
-
-    }
+    $form_data['price'] = $price;
 
 
     $form_data['tel'] = intval($form_data['tel']);
-
-    $form_data['price'] = 40000;//TODO
 
     //Check Google Client Expired
     $token = json_decode(gapi_token, true);
@@ -136,5 +138,20 @@ function submit_reg_form()
 
     //Insert Submitted data
     $sheet->getListFeed()->insert($form_data);
+
+    //Message
+    $msg = "
+        با تشکر ثبت نام آنلاین شما با موفقیت ثبت شد و مورد بررسی قرار خواهد گرفت.
+        <br>
+        لطفا در اسرع وقت با مراجعه به دفتر انجمن علمی دانشکده هزینه ی مربوط به دوره هایی که در آنها شرکت می کنید تا پرداخت نمایید
+
+        <br>
+هزینه ی شرکت در دوره :
+<b>$price</b>
+هزار تومان
+<br>
+    ";
+
+    return $msg;
 
 }

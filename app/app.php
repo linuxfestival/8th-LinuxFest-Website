@@ -87,7 +87,7 @@ function submit_reg_form()
     for ($i = 1; $i <= 2; $i++)
         if ($form_data["day$i"] != 'no')
             $days++;
-    $price = $days * 35000;
+    $price = $days * 35;
     if ($days > 1)
         $price -= 10;
 
@@ -103,6 +103,8 @@ function submit_reg_form()
                 break;
         }
     $price *= (1.0 - $discount_rate);
+
+    $price = round($price);
 
     $form_data['price'] = $price;
 

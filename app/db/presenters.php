@@ -63,6 +63,14 @@ $presenters = [
         'bio' => 'توسعه‌دهنده‌ی نرم‌افزار'
     ],
 
+    'sinal' => [
+        'name' => 'سینا لباف',
+        'avatar' => '//www.gravatar.com/avatar/c1be53f8f8ff2ca3fbc79b466ee023c5?s=200',
+        'url' => '',
+        'bio' => 'توسعه‌دهنده‌ی نرم‌افزار'
+
+    ],
+
     'parham' => [
         'name' => 'پرهام الوانی',
         'avatar' => '//www.gravatar.com/avatar/1347add4ae303c0258a3db358ed77c55?s=200',
@@ -75,8 +83,6 @@ $presenters = [
         'avatar' => '//www.gravatar.com/avatar/1fddd58251edc7bf16e279b8811cd327?s=200',
         'url' => 'http://pi0.ir/',
         'bio' => 'توسعه‌دهنده‌ی نرم‌افزار'
-    ],
-
-
+     ],
 
 ];

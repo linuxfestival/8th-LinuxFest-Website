@@ -106,6 +106,26 @@ insertView('layout/header');
 
         <br>
 
+        <div class="alert alert-success">
+            شرکت در ارائه‌ها رایگان است، اما با توجه به ظرفیت محدود آمفی‌تئاتر لطفا برای حضور در ارائه‌ها
+            ثبت نام کنید. اولویت شرکت در ارائه‌ها با شرکت‌کنندگان کارگاه‌هاست.
+        </div>
+
+
+        <div class="alert alert-warning">
+            هزینه ی شرکت در هرروز کارگاه ۳۵ هزارتومان هست
+            <br>
+            دانشجویان امیرکبیر از ۶۰٪ و دانشجویان دانشگاه‌های دیگر و دانش‌آموزان از ۲۵٪ تخفیف برخوردار
+            می‌شوند.
+        </div>
+
+        <div class="alert alert-info">
+            برای برخورداری از تخفیف، کارت دانشجویی یا دانش آموزی خود را در هنگام ثبت نام نهایی به همراه داشته باشید.<br>
+        </div>
+
+
+        <br>
+
         <?php $i = 1;
         foreach (get_reg_data() as &$day): ?>
 
@@ -148,7 +168,7 @@ insertView('layout/header');
                 foreach ($day['presentations'] as $id) : ?>
 
                     <div class="presentation checkbox checkbox-success">
-                        <input type="checkbox" checked="checked" value="X"
+                        <input class="pr d<?php echo $i?> p<?php echo $j?>" type="checkbox" checked="checked" value="X"
                                name='<?php echo $id ?>'>
                         <label class="control-label">
                             <?php echo get_presentations()[$id]['title'] ?>
@@ -169,33 +189,6 @@ insertView('layout/header');
 
         <br>
 
-        <div class="alert alert-success">
-            شرکت در ارائه‌ها رایگان است، اما با توجه به ظرفیت محدود آمفی‌تئاتر لطفا برای حضور در ارائه‌ها
-            ثبت نام کنید. اولویت شرکت در ارائه‌ها با شرکت‌کنندگان کارگاه‌هاست.
-        </div>
-
-
-        <div class="alert alert-warning">
-            هزینه ی شرکت در هرروز کارگاه ۳۵ هزارتومان هست
-            <br>
-            دانشجویان امیرکبیر از ۶۰٪ و دانشجویان دانشگاه‌های دیگر و دانش‌آموزان از ۲۵٪ تخفیف برخوردار
-            می‌شوند.
-        </div>
-
-        <div class="alert alert-info">
-            برای برخورداری از تخفیف، کارت دانشجویی یا دانش آموزی خود را در هنگام ثبت نام نهایی به همراه داشته باشید.<br>
-        </div>
-
-        <div id="submit_invalid" class="invalid alert-danger alert alert-dismissable"
-             style="visibility:hidden;">
-            دوره‌هایی که در آن‌ها شرکت می‌کنید با همدیگر همخوانی ندارند
-            <br>
-            باید دوره‌ی
-            <span id="err_c"></span>
-            را در هر دو روز انتخاب کنید
-        </div>
-
-
         <div class="row">
             <div class="col-md-8">
                 <div class="g-recaptcha" data-sitekey="6LeVkAUTAAAAAP6hsByUuc4nM3wKmSR7gtRk54qB"></div>
@@ -211,7 +204,21 @@ insertView('layout/header');
             </div>
 
         </div>
+
+        <br>
+        <div id="submit_invalid" class="invalid alert-danger alert alert-dismissable"
+             style="visibility:hidden;">
+            دوره‌هایی که در آن‌ها شرکت می‌کنید با همدیگر همخوانی ندارند
+            <br>
+            باید دوره‌ی
+            <span id="err_c"></span>
+            را در هر دو روز انتخاب کنید
+        </div>
+
+
     </form>
+
+
 
     <?php
     endform:

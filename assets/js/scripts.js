@@ -72,40 +72,49 @@ var last = [];
 var update_presentations = function () {
 
     for (var i = 1; i < 3; i++) {
-
         var val = $('input[name=day' + i + ']:checked').val();
 
-
-        var p = $('.day' + i + '-presentation');
-
-        if (val == 'no') {
-            //no presentation
-            p.prop('checked', false)
-        }
-        else if (val == 'basic') {
-            //public only
-            p.prop('checked', false)
-            $('.day' + i + '-presentation.p0').prop('checked', true)
-        }
-        else {
-            //all
-            p.prop('checked', true)
-        }
-
+        //Paired workshops
         if (last[i] != val) {
-            if (val == 'basic')
-                $('input[value="basic"]').prop('checked', true)
-            if (val == 'kernel')
+            var changed = true
+            if (val == 'intro')
+                $('input[value="intro"]').prop('checked', true)
+            else if (val == 'kernel')
                 $('input[value="kernel"]').prop('checked', true)
-            if (val == 'python')
+            else if (val == 'python')
                 $('input[value="python"]').prop('checked', true)
+            else changed = false
+            if (changed) {
+                last[i] = val
+                return update_presentations();
+            }
         }
         last[i] = val
+
+
+        //Check for presentation ability
+
+        if (val == 'intro') {
+
+            $('.pr').prop('enabled', true)
+            var e = i == 1 ? 2 : 1;
+            for (var j = 0; j < e; j++) {
+                var pr = $('.pr.p' + j + '.d' + i)
+                pr.prop('checked', false)
+                pr.prop('disabled', true)
+            }
+        }
+        else {
+            var pr = $('.pr');
+            pr.prop('checked', true)
+            pr.prop('disabled', false)
+        }
+
     }
 
     //Check for compabilities
 
-    var c_courses = ['basic', 'kernel', 'python'];
+    var c_courses = ['intro', 'kernel', 'python'];
     var c_courses_title = ['Basic & Intermediate', 'Kernel', 'Python'];
 
     var valid = true;

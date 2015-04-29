@@ -19,11 +19,11 @@ $presenters = [
         'bio' => 'دانشگاه صنعتی امیرکبیر'
     ],
 
-    'jadi' => [
-        'name' => 'جادی',
-        'avatar' => '//www.gravatar.com/avatar/a40fa5f4ed9c29dfbc3b6ec60509f587?s=200',
-        'url' => 'https://jadi.net',
-        'bio' => 'گیک لینوکس'
+    'danial' => [
+        'name' => 'دانیال بهزادی',
+        'avatar' => '//www.gravatar.com/avatar/11db901e4c84a8017c6ed9aaaa2b70b8?s=200',
+        'url' => 'https://danialbehzadi.wordpress.com',
+        'bio' => 'گروه کاربران ایرانی اوبونتو'
     ],
 
 

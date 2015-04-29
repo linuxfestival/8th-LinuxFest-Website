@@ -13,6 +13,7 @@
 
     <title>
         جشنواره‌ی لینوکس امیرکبیر
+        <?php if(defined('title')) echo ' - '.title ?>
     </title>
 
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">

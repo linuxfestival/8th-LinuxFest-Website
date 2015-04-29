@@ -1,4 +1,7 @@
-<?php insertView('layout/header'); ?>
+<?php
+define('title','ثبت نام');
+insertView('layout/header');
+?>
 
 <script src='https://www.google.com/recaptcha/api.js'></script>
 

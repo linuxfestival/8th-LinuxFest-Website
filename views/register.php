@@ -183,6 +183,15 @@
             برای برخورداری از تخفیف، کارت دانشجویی یا دانش آموزی خود را در هنگام ثبت نام نهایی به همراه داشته باشید.<br>
         </div>
 
+        <div id="submit_invalid" class="invalid alert-danger alert alert-dismissable"
+             style="visibility:hidden;">
+            دوره‌هایی که در آن‌ها شرکت می‌کنید با همدیگر همخوانی ندارند
+            <br>
+            باید دوره‌ی
+            <span id="err_c"></span>
+            را در هر دو روز انتخاب کنید
+        </div>
+
 
         <div class="row">
             <div class="col-md-8">
@@ -197,16 +206,7 @@
             <div class="col-sm-offset-6">
                 <input id="submit" name="ok" type="submit" class="btn btn-success btn-lg" value="ثبت نام">
             </div>
-            <br>
-
-            <div id="submit_invalid" class="invalid alert-danger alert alert-dismissable"
-                 style="visibility:hidden;">
-                دوره‌هایی که در آن‌ها شرکت می‌کنید با همدیگر همخوانی ندارند
-                <br>
-                باید دوره‌ی
-                <span id="err_c"></span>
-                را در هر دو روز انتخاب کنید
-            </div>
+            
         </div>
     </form>
 

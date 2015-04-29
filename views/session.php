@@ -6,6 +6,8 @@ global $data;
 if (!$data)
     err_404();
 
+define('title',$data['title']);
+
 $presenter = get_presenters()[$data['presenter']];
 
 insertView('layout/header');

@@ -4,12 +4,12 @@ $register_form = [
     [
         'title' => 'روز اول - پنج‌شنبه ۲۴ اردیبهشت',
         'presentations' => [
-            'copyleft', 'sql', 'opensource'
+            'opensource','sql','copyleft'
         ]
         ,
         'items' => [
             'no' => 'شرکت نمی‌کنم',
-            'basic' => 'Linux intro',
+            'intro' => 'Linux intro',
             'python' => 'Python intro',
             'network' => 'Networking in linux',
             'kernel' => 'Kernel Part I',
@@ -18,11 +18,11 @@ $register_form = [
     [
         'title' => 'روز دوم - جمعه ۲۵ اردیبهشت',
         'presentations' => [
-            'bigdata', 'ssh'
+            'ssh','bigdata'
         ],
         'items' => [
             'no' => 'شرکت نمی‌کنم',
-            'basic' => 'Linux Intermediate + Presentation : How to survive in linux',
+            'intro' => 'Linux Intermediate + Presentation : How to survive in linux',
             'programming' => 'Programming',
             'python' => 'Python advanced',
             'web' => 'WebServer',

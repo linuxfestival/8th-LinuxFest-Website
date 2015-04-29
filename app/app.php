@@ -68,7 +68,7 @@ function submit_reg_form()
 
 
     //Get & Process form data
-    $valid_inputs = 'name|email|tel|inst|aut|std|day1|day2';
+    $valid_inputs = 'name|email|tel|aut|std|day1|day2';
 
     foreach (get_presentations() as $key => $data)
         $valid_inputs .= "|$key";
@@ -83,8 +83,8 @@ function submit_reg_form()
         if ($form_data["day$i"] != 'no')
             $days++;
     $price = $days * 35;
-    if ($days > 1)
-        $price -= 10;
+//    if ($days > 1)
+//        $price -= 10;
 
     //Discount
     $discount_rate = 0;

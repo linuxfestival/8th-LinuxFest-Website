@@ -51,9 +51,9 @@
             </label>
             <input required="required" type="text" class="form-control input col-md-9" name="name" id="name">
 
-            <p class="help-block col-md-offset-3">
+            <span class="help-block col-md-offset-3">
                 لطفا نام کامل خود را به صورت فارسی بنویسید.
-            </p>
+            </span>
 
             <!-- Email -->
             <label class="control-label col-md-3" for="email">*
@@ -62,44 +62,27 @@
             <input required="required" type="email" dir="ltr" class="form-control input col-md-9" name="email"
                    id="email">
 
-            <p class="help-block col-md-offset-3">
-                از این آدرس فقط و فقط جهت اطلاع‌رسانی در مورد جشنواره استفاده می‌شود.
-            </p>
+            <span class="help-block col-md-offset-3">
+از این آدرس جهت اطلاع رسانی جشنواره صرفا استفاده خواهد شد
+            </span>
 
 
             <!-- Tel -->
             <label class="control-label col-md-3" for="tel">*
-                تلفن تماس
+تلفن همراه
             </label>
             <input required="required" type="tel" dir="ltr" class="form-control input col-md-9" name="tel" id="tel">
 
-            <p class="help-block col-md-offset-3">
+            <span class="help-block col-md-offset-3">
+                صرفا جهت اطلاع رسانی و تماس ضروری در صورت هرگونه مشکل
+            </span>
 
-            </p>
-
-
-        </fieldset>
-
-        <br>
-
-        <fieldset>
-            <legend>
-                اطلاعات ثبت نام
-            </legend>
-
-            <label class="control-label col-md-3" for="inst">*
-                کجا فعالیت دارید؟
-            </label>
-            <input type="text" class="form-control input col-md-9" name="inst" id="inst">
-
-            <p class="help-block col-md-offset-3">
-                دانشگاه یا موسسه‌ای که در آن فعالیت دارید
-            </p>
-
-            <div class="alert alert-info">
-                برای برخورداری از تخفیف، کارت دانشجویی یا دانش آموزی خود را در هنگام ثبت نام نهایی به همراه داشته باشید.<br>
+            <div class="radio radio-info col-md-9">
+                <input type="radio" id="std" name="std" value="std" checked="checked">
+                <label class="control-label" for="std">
+                    دانشجو/ دانش‌آموز هستم
+                </label>
             </div>
-
 
             <div class="radio radio-info col-md-9">
                 <input type="radio" id="aut" name="std" value="aut">
@@ -108,15 +91,9 @@
                 </label>
             </div>
 
-            <div class="radio radio-info col-md-9">
-                <input type="radio" id="std" name="std" value="std">
-                <label class="control-label" for="std">
-                    دانشجو/ دانش‌آموز هستم
-                </label>
-            </div>
 
             <div class="radio radio-warning col-md-9">
-                <input type="radio" id="xstd" name="std" value="" checked="checked">
+                <input type="radio" id="xstd" name="std" value="">
                 <label class="control-label" for="xstd">
                     هیچکدام
                 </label>
@@ -124,8 +101,7 @@
 
         </fieldset>
 
-
-
+        <br>
 
         <?php $i = 1;
         foreach (get_reg_data() as &$day): ?>
@@ -133,33 +109,6 @@
 
             <fieldset>
                 <legend><?php echo $day['title']; ?></legend>
-
-
-                <?php if ($i == 1): ?>
-                    <div class="alert alert-success">
-                        شرکت در ارائه‌ها رایگان است، اما با توجه به ظرفیت محدود آمفی‌تئاتر لطفا برای حضور در ارائه‌ها
-                        ثبت نام کنید. اولویت شرکت در ارائه‌ها با شرکت‌کنندگان کارگاه‌هاست.
-                    </div>
-
-
-                    <div class="alert alert-warning">
-                        هزینه‌ی ثبت نام در کارگاه‌ها:
-                        <ul>
-                            <li>
-                                کارگاه یک روزه: ۳۵ هزار تومان
-                            </li>
-                            <li>
-                                کارگاه دو روزه: ۶۰ هزار تومان
-                            </li>
-                            <li>
-                                دو کارگاه یک روزه: ۶۰ هزار تومان
-                            </li>
-                        </ul>
-                        دانشجویان امیرکبیر از ۶۰٪ و دانشجویان دانشگاه‌های دیگر و دانش‌آموزان از ۲۵٪ تخفیف برخوردار
-                        می‌شوند.
-
-                    </div>
-                <?php endif ?>
 
                 <p>
                     در این کارگاه شرکت می‌کنم:
@@ -217,6 +166,24 @@
 
         <br>
 
+        <div class="alert alert-success">
+            شرکت در ارائه‌ها رایگان است، اما با توجه به ظرفیت محدود آمفی‌تئاتر لطفا برای حضور در ارائه‌ها
+            ثبت نام کنید. اولویت شرکت در ارائه‌ها با شرکت‌کنندگان کارگاه‌هاست.
+        </div>
+
+
+        <div class="alert alert-warning">
+            هزینه ی شرکت در هرروز کارگاه ۳۵ هزارتومان هست
+            <br>
+            دانشجویان امیرکبیر از ۶۰٪ و دانشجویان دانشگاه‌های دیگر و دانش‌آموزان از ۲۵٪ تخفیف برخوردار
+            می‌شوند.
+        </div>
+
+        <div class="alert alert-info">
+            برای برخورداری از تخفیف، کارت دانشجویی یا دانش آموزی خود را در هنگام ثبت نام نهایی به همراه داشته باشید.<br>
+        </div>
+
+
         <div class="row">
             <div class="col-md-8">
                 <div class="g-recaptcha" data-sitekey="6LeVkAUTAAAAAP6hsByUuc4nM3wKmSR7gtRk54qB"></div>
@@ -228,7 +195,7 @@
             <br>
 
             <div class="col-sm-offset-6">
-                                <input id="submit" name="ok" type="submit" class="btn btn-success btn-lg" value="ثبت نام">
+                <input id="submit" name="ok" type="submit" class="btn btn-success btn-lg" value="ثبت نام">
             </div>
             <br>
 

@@ -68,7 +68,7 @@ function submit_reg_form()
 
 
     //Get & Process form data
-    $valid_inputs = 'name|email|tel|aut|std|day1|day2';
+    $valid_inputs = 'name|email|tel|inst|std|day1|day2';
 
     foreach (get_presentations() as $key => $data)
         $valid_inputs .= "|$key";

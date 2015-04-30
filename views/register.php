@@ -80,6 +80,16 @@ insertView('layout/header');
                 صرفا جهت اطلاع رسانی و تماس ضروری در صورت هرگونه مشکل
             </span>
 
+            <!-- Inst -->
+            <label class="control-label col-md-3" for="inst">
+موسسه
+            </label>
+            <input type="text" dir="rtl" class="form-control input col-md-9" name="inst" id="inst">
+
+            <span class="help-block col-md-offset-3">
+موسسه یا دانشگاهی که در حال حاضر در آن هستید
+            </span>
+
             <div class="radio radio-info col-md-9">
                 <input type="radio" id="std" name="std" value="std" checked="checked">
                 <label class="control-label" for="std">
@@ -199,8 +209,12 @@ insertView('layout/header');
         <div class="row">
             <br>
 
+            <h3 style="color:indianred">
+                توجه : سایت در وضعیت آزمایشی و درحال به روز رسانی می باشد و ممکن است دوره ها و ارائه هایی که در آنها شرکت می کنید تغییر کنند
+            </h3>
+
             <div class="col-sm-offset-6">
-                <input id="submit" name="ok" type="submit" class="btn btn-success btn-lg" value="ثبت نام">
+                <input id="submit" name="ok" type="submit" class="btn btn-warning btn-lg" value="ثبت نام">
             </div>
 
         </div>

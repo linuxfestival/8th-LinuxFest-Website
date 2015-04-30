@@ -74,10 +74,10 @@ insertView('layout/header');
             <label class="control-label col-md-3" for="tel">*
 تلفن همراه
             </label>
-            <input required="required" type="tel" dir="ltr" class="form-control input col-md-9" name="tel" id="tel">
+            <input pattern="[9۹][0-9۰۱۲۳۴۵۶۷۸۹]{7,}"  required="required" type="tel" dir="ltr" class="form-control input col-md-9" name="tel" id="tel">
 
             <span class="help-block col-md-offset-3">
-                صرفا جهت اطلاع رسانی و تماس ضروری در صورت هرگونه مشکل
+به فرمت *********۹
             </span>
 
             <!-- Inst -->
@@ -117,8 +117,9 @@ insertView('layout/header');
         <br>
 
         <div class="alert alert-success">
-            شرکت در ارائه‌ها رایگان است، اما با توجه به ظرفیت محدود آمفی‌تئاتر لطفا برای حضور در ارائه‌ها
-            ثبت نام کنید. اولویت شرکت در ارائه‌ها با شرکت‌کنندگان کارگاه‌هاست.
+            شرکت در ارائه‌ها رایگان است، اما با توجه به ظرفیت محدود آمفی‌تئاتر ثبت نام برای حضور در ارائه‌ها الزامی است.<br>
+            اولویت شرکت در ارائه‌ها با شرکت‌کنندگان کارگاه‌هاست.
+
         </div>
 
 
@@ -214,6 +215,7 @@ insertView('layout/header');
             </h3>
 
             <div class="col-sm-offset-6">
+ثبت نام به طور موقت غیرفعال است
 <!--
                 <input id="submit" name="ok" type="submit" class="btn btn-warning btn-lg" value="ثبت نام">
 -->

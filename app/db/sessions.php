@@ -4,7 +4,7 @@ global $presentations;
 $presentations = [
 
     'sql' => [
-        'title' => 'MySQL & NoSQL and a few steps further',
+        'title' => 'MySQL, NoSQL and a Few Steps Further',
         'presenter' => 'nadalizadeh',
         'level' => 'مبتدی و متوسط',
         'time' => 'روز اول - ۱۵:۱۵ تا ۱۶:۰۰',

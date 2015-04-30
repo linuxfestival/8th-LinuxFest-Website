@@ -4,7 +4,7 @@ global $presentations;
 $presentations = [
 
     'sql' => [
-        'title' => 'MySQL, NoSQL and a Few Steps Further',
+        'title' => 'MySQL, NoSQL and a few Steps Further',
         'presenter' => 'nadalizadeh',
         'level' => 'مبتدی و متوسط',
         'time' => 'روز اول - ۱۵:۱۵ تا ۱۶:۰۰',
@@ -20,7 +20,7 @@ $presentations = [
     //--------------------------------------------------------------
 
     'opensource' => [
-        'title' => 'OpenSource Revenue concepts',
+        'title' => 'OpenSource Revenue Concepts',
         'presenter' => 'mohajer',
         'level' => 'مبتدی و متوسط',
         'time' => 'روز اول - ۱۴:۱۵ تا ۱۵:۰۰',
@@ -116,7 +116,7 @@ $workshops = [
     //--------------------------------------------------------------
 
     'kernel' => [
-        'title' => 'Linux kernel',
+        'title' => 'Linux Kernel',
         'presenter' => 'bakhshis',
         'level' => 'متوسط و پیشرفته',
         'time' => 'هر دو روز - ۸ تا ۱۴',
@@ -141,7 +141,7 @@ $workshops = [
     //--------------------------------------------------------------
 
     'network' => [
-        'title' => 'Networking in linux',
+        'title' => 'Networking in Linux',
         'presenter' => 'روز اول ۹ تا ۱۴',
         'level' => 'مبتدی و متوسط',
         'time' => 'هر دو روز',

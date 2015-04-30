@@ -9,9 +9,9 @@ $register_form = [
         ,
         'items' => [
             'no' => 'شرکت نمی‌کنم',
-            'intro' => 'Linux intro',
-            'python' => 'Python intro',
-            'network' => 'Networking in linux',
+            'intro' => 'Linux Intro',
+            'python' => 'Python Intro',
+            'network' => 'Networking in Linux',
             'kernel' => 'Kernel Part I',
         ]
     ],
@@ -22,9 +22,9 @@ $register_form = [
         ],
         'items' => [
             'no' => 'شرکت نمی‌کنم',
-            'intro' => 'Linux Intermediate <b>+</b> Presentation : How to survive in linux',
+            'intro' => 'Linux Intermediate + How to Live Happily with Linux',
             'programming' => 'Programming',
-            'python' => 'Python advanced',
+            'python' => 'Python Advanced',
             'web' => 'WebServer',
             'kernel' => 'Kernel Part II',
         ]

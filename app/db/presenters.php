@@ -16,7 +16,7 @@ $presenters = [
         'name' => 'بهادر بخشی',
         'avatar' => 'assets/img/bakhshi.jpg',
         'url' => 'http://ceit.aut.ac.ir/~bakhshis/',
-        'bio' => 'دانشگاه صنعتی امیرکبیر'
+        'bio' => 'استاد دانشگاه صنعتی امیرکبیر'
     ],
 
     'danial' => [
@@ -32,7 +32,7 @@ $presenters = [
         'name' => 'میلاد مهاجر',
         'avatar' => '//www.gravatar.com/avatar/331f9ae8a4c8c6a33ba6ff3a1dcc3705?s=200',
         'url' => '',
-        'bio' => 'رایمند'
+        'bio' => 'مدیر بازرگانی رایمند'
     ],
 
     'nadalizadeh' => [
@@ -57,7 +57,7 @@ $presenters = [
     ],
 
     'sinash' => [
-        'name' => 'سینا شیخ الاسلامی',
+        'name' => 'سینا شیخ‌الاسلامی',
         'avatar' => '//www.gravatar.com/avatar/9c773fbd22eab00f63f30a4b4a1f3a7a?s=200',
         'url' => 'http://sinash.ir/',
         'bio' => 'توسعه‌دهنده‌ی نرم‌افزار'

@@ -13,11 +13,11 @@ function get_reg_data()
             ]
             ,
             'items' => [
-                'no' => 'شرکت نمی کنم',
-                'basic' => 'Linux intro',
-                'python' => 'Python intro',
-                'network' => 'Networking in linux',
-                'kernel' => 'Kernel Part I',
+                'no' => 'شرکت نمی‌کنم',
+                'basic' => 'Linux Intro',
+                'python' => 'Python Intro',
+                'network' => 'Networking in Linux',
+                'kernel' => 'Kernel - Part I',
             ]
         ],
         [
@@ -26,12 +26,12 @@ function get_reg_data()
                 'BigData', 'Presentation '
             ],
             'items' => [
-                'no' => 'شرکت نمی کنم',
-                'basic' => 'Linux Intermediate + Presentation : How to survive in linux',
+                'no' => 'شرکت نمی‌کنم',
+                'basic' => 'Linux Intermediate + How to Live Happily with Linux',
                 'programming' => 'Programming',
-                'python' => 'Python advanced',
+                'python' => 'Python Advanced',
                 'web' => 'WebServer',
-                'kernel' => 'Kernel Part II',
+                'kernel' => 'Kernel - Part II',
             ]
         ],
     ];

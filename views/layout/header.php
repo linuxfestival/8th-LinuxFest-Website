@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="
-    هفتمین جشنواره ی لینوکس دانشگاه صنعتی امیرکبیر
+    هفتمین جشنواره‌ی لینوکس دانشگاه صنعتی امیرکبیر
     ">
 
 

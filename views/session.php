@@ -26,21 +26,21 @@ insertView('layout/header');
             <p>
 
             <span>
-                سطح :
+                سطح:
                 <label class="label label-danger"><?php echo $data['level'] ?></label>
             </span>
 
                 &nbsp;&nbsp;
 
                 <span>
-            زمان برگزاری :
+            زمان برگزاری:
             <label class="label label-success"><?php echo $data['time'] ?></label>
                     </span>
 
                 &nbsp;&nbsp;
 
                 <span>
-            محل :
+            محل:
             <label class="label label-info"><?php echo $data['room'] ?></label>
                     </span>
 

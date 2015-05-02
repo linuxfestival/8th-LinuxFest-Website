@@ -12,7 +12,7 @@ $register_form = [
             'intro' => 'Linux Intro',
             'python' => 'Python Intro',
             'network' => 'Networking in Linux',
-            'kernel' => 'Kernel Part I',
+            'kernel' => 'Kernel - Part I',
         ]
     ],
     [
@@ -26,7 +26,7 @@ $register_form = [
             'programming' => 'Programming',
             'python' => 'Python Advanced',
             'web' => 'WebServer',
-            'kernel' => 'Kernel Part II',
+            'kernel' => 'Kernel - Part II',
         ]
     ],
 ];

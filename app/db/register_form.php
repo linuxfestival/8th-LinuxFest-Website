@@ -22,7 +22,7 @@ $register_form = [
         ],
         'items' => [
             'no' => 'شرکت نمی‌کنم',
-            'intro' => 'Linux Intermediate + How to Live Happily with Linux',
+            'intro' => 'Linux Intermediate + How to Live Happily in Linux',
             'programming' => 'Programming',
             'python' => 'Python Advanced',
             'web' => 'WebServer',

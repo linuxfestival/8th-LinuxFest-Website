@@ -50,6 +50,7 @@ function get_workshops()
 //
 //--------------------------------------------------
 
+use app\SMS_API;
 use Google\Spreadsheet\DefaultServiceRequest;
 use Google\Spreadsheet\ServiceRequestFactory;
 use ReCaptcha\ReCaptcha;
@@ -103,8 +104,14 @@ function submit_reg_form()
 
     $form_data['price'] = $price;
 
+    //Tel
 
     $form_data['tel'] = intval($form_data['tel']);
+
+    //Generate tracking code
+    $hashids = new Hashids\Hashids(HASHID_SALT);
+    $tracking_code = $hashids->encode(time().rand(0,100));
+    $form_data['code']=$tracking_code;
 
     //Check Google Client Expired
     $token = json_decode(gapi_token, true);
@@ -143,16 +150,24 @@ function submit_reg_form()
         با تشکر‌ ، ثبت نام آنلاین شما با موفقیت ثبت شد و مورد بررسی قرار خواهد گرفت.
         <br>
         هزینه ی ثبت نام شما : <b>$price</b> هزار تومان
+                <br>
+        کد رهگیری شما : <b>$tracking_code</b>
+        (این کد را برای مراحل بعدی حتما نگهدارید)<br>
         <br>
         لطفا در اسرع وقت با مراجعه حضوری به دفتر انجمن علمی دانشکده هزینه‌ی مربوطه دوره‌هایی که در آنها مایل به شرکت بودید را پرداخت نمایید.
 <br>
 تهران، چهارراه ولی عصر، روبه‌روی خیابان بزرگمهر، دانشگاه صنعتی امیرکبیر ، دانشکده مهندسی کامپیوتر و فناوری اطلاعات ، دفتر انجمن علمی
-
 	<br>
      در صورت تمایل به ایجاد هرگونه تغییر در وضعیت ثبت نام خودتون از ثبت نام مجدد <b> جدا خودداری فرمایید</b>. در غیر اینصورت ثبت نام شما تایید   نخواهد شد.<br>
       می توانید این تغییرات را از دو طریق ۱ - ایمیل جشنواره hello@linuxfest.ir و یا ۲ - مراجعه ی حضوری اعلام فرمایید.
 
 </div>
+    ";
+
+    $msg_2 = "جشنواره لینوکس امیرکبیر
+    هزینه ی ثبت نام : $price هزار تومان
+    کد رهگیری شما : $tracking_code
+    جهت ثبت نام نهایی در اسرع وقت به دفتر انجمن علمی دانشکده مراجعه فرمایید
     ";
 
     //Email
@@ -161,9 +176,9 @@ function submit_reg_form()
 
 
     //SMS
-    if (isset($form_data['tel']))
-        sendsms($form_data['tel'], $msg);
 
+    if (isset($form_data['tel']))
+        sendsms($form_data['tel'], $msg_2);
 
     return $msg;
 
@@ -187,7 +202,5 @@ function sendmail($to, $body)
 
 function sendsms($to, $body)
 {
-
-    //TODO
-
+    return SMS_API::send($to,$body);
 }

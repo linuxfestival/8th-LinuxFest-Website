@@ -42,19 +42,19 @@ $presenters = [
         'bio' => 'مدیر فنی تاد'
     ],
 
-    'faraz' => [
-        'name' => 'فراز شمشیردار',
-        'avatar' => '//www.gravatar.com/avatar/c4baac2a7eb2c03feb46429904f7098e?s=200',
-        'url' => 'https://ir.linkedin.com/in/shamshirdar',
-        'bio' => 'برنامه‌نویس در CNext'
-    ],
-
 
     'salim' => [
         'name' => 'سلیم ملکوتی',
         'avatar' => '//www.gravatar.com/avatar/56c598844c7133a88576b3c81df3c309?s=200',
         'url' => 'http://salimm.me/',
         'bio' => 'University of Pittsburgh'
+    ],
+
+    'faraz' => [
+        'name' => 'فراز شمشیردار',
+        'avatar' => '//www.gravatar.com/avatar/c4baac2a7eb2c03feb46429904f7098e?s=200',
+        'url' => 'https://ir.linkedin.com/in/shamshirdar',
+        'bio' => 'برنامه‌نویس در CNext'
     ],
 
     'mdhheydari' => [

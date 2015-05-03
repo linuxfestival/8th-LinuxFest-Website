@@ -76,20 +76,20 @@ var update_presentations = function () {
 
         //Paired workshops
         if (last[i] != val) {
-            var changed = true
+            var changed = true;
             if (val == 'intro')
-                $('input[value="intro"]').prop('checked', true)
+                $('input[value="intro"]').prop('checked', true);
             else if (val == 'kernel')
-                $('input[value="kernel"]').prop('checked', true)
+                $('input[value="kernel"]').prop('checked', true);
             else if (val == 'python')
-                $('input[value="python"]').prop('checked', true)
-            else changed = false
+                $('input[value="python"]').prop('checked', true);
+            else changed = false;
             if (changed) {
-                last[i] = val
+                last[i] = val;
                 return update_presentations();
             }
         }
-        last[i] = val
+        last[i] = val;
 
 
         //Check for presentation ability
@@ -97,8 +97,8 @@ var update_presentations = function () {
         if (val == 'intro') {
 
             $('.pr').prop('enabled', true)
-            var e = i == 1 ? 2 : 1;
-            for (var j = 0; j < e; j++) {
+
+            for (var j = 0; j < 2; j++) {
                 var pr = $('.pr.p' + j + '.d' + i)
                 pr.prop('checked', false)
                 pr.prop('disabled', true)
@@ -112,7 +112,7 @@ var update_presentations = function () {
 
     }
 
-    //Check for compabilities
+    //Check for capabilities
 
     var c_courses = ['intro', 'kernel', 'python'];
     var c_courses_title = ['Basic & Intermediate', 'Kernel', 'Python'];

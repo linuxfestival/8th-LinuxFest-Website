@@ -127,7 +127,7 @@ insertView('layout/header');
 
         <div class="alert alert-warning">
             هزینه‌ی شرکت در کارگاه‌ها: <br>
-            کارگاه دو‌ روزه‌ی مقدماتی ۷۰ هزار تومان <br>
+            کارگاه دو‌ روزه‌ی مقدماتی : ۷۰ هزار تومان <br>
             کارگاه تخصصی دو روزه‌ی پایتون: 70 هزار تومان<br>
             کارگاه تخصصی یک‌روزه‌ی شبکه: 35 هزار تومان<br>
             کارگاه تخصصی دو روزه‌ی کرنل: 70 هزار تومان<br>
@@ -163,7 +163,7 @@ insertView('layout/header');
                         <input type="radio"
                                name="<?php echo "day$i" ?>" id="<?php echo 'day' . $i . "_$id" ?>"
                                value="<?php echo $id ?>"
-                            <?php if ($j == 1) echo 'checked=checked' ?>
+                            <?php if ($j == 0) echo 'checked=checked' ?>
                             >
                         <label for="<?php echo 'day' . $i . "_$id" ?>">
                             <?php echo $title ?>

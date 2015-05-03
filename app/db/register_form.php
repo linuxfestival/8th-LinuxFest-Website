@@ -24,7 +24,7 @@ $register_form = [
             'intro' => 'Linux Intermediate + How to Live Happily in Linux',
             'programming' => 'Programming',
             'python' => 'Python Advanced',
-            'web' => 'WebServer',
+            'webserver' => 'Webservers Powered by Linux',
             'kernel' => 'Kernel - Part II',
             'no' => 'شرکت نمی‌کنم',
         ]

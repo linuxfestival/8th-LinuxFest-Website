@@ -3,7 +3,6 @@
 @import (css) "../css/awesome-bootstrap-checkbox.css";
 @import (css) "../fonts/font-awesome/css/font-awesome.min.css";
 @import (css) "../css/animate.min.css";
-
 @import "variables.less";
 @import "mixins.less";
 
@@ -71,6 +70,11 @@ p {
   color: white;
 }
 
+.bg-yellow {
+  background-color: #FF9800;
+  color: white;
+}
+
 .bg-boo {
   background-color: #506699;
   color: white;
@@ -97,9 +101,9 @@ aside {
 .navbar-default {
   background-color: rgba(255, 255, 255, .90);
 
-  -webkit-box-shadow: 0px 2px 7px 0px rgba(0,0,0,0.3);
-  -moz-box-shadow: 0px 2px 7px 0px rgba(0,0,0,0.3);
-  box-shadow: 0px 2px 7px 0px rgba(0,0,0,0.3);
+  -webkit-box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.3);
   max-height: 20px;
 
   //border-color: fade(@theme-dark, 5%);
@@ -196,13 +200,13 @@ header {
     padding: 100px 15px 100px;
     width: 100%;
     .header-content-inner {
-      h1,h2,h3,h4{
+      h1, h2, h3, h4 {
         .entrzar-font;
         display: inline-block;
       }
       h2 {
-        background-color: rgba(0,0,0,.8);
-        color:white;
+        background-color: rgba(0, 0, 0, .8);
+        color: white;
         padding: 10px 20px;
       }
       h1 {
@@ -447,17 +451,17 @@ body {
   margin: 0 auto;
 }
 
-.profile,.profile2 {
+.profile, .profile2 {
   text-decoration: none !important;
 }
 
 .col-rtl {
-  float:left;
+  float: left;
 }
 
 footer {
   background-color: #191919;
-  color:white;
+  color: white;
   height: 50px;
   text-align: center;
   vertical-align: text-bottom;
@@ -473,11 +477,20 @@ footer {
   min-height: 150px;
 }
 
-.presentation , .presentation input,.presentation label {
+.presentation, .presentation input, .presentation label {
   cursor: default !important;
   //direction: ltr;
 }
 
 .session-container {
   margin-top: -120px;
+}
+
+.sponsor {
+
+}
+
+.org {
+  width: 100%;
+  max-width: 165px;
 }

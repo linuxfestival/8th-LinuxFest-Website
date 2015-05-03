@@ -16,10 +16,12 @@
                 <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
 
                 <p>
-                    <a href="mailto:">
+                    <a href="mailto:hello@linuxfest.ir">
                         hello@linuxfest.ir
                     </a>
                 </p>
+
+
             </div>
 
             <div class="col-lg-12">

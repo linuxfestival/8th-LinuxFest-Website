@@ -1,5 +1,5 @@
 <?php
-define('title','ثبت نام');
+define('title', 'ثبت نام');
 insertView('layout/header');
 ?>
 
@@ -72,9 +72,10 @@ insertView('layout/header');
 
             <!-- Tel -->
             <label class="control-label col-md-3" for="tel">*
-تلفن همراه
+                تلفن همراه
             </label>
-            <input pattern="[9۹][0-9۰۱۲۳۴۵۶۷۸۹]{7,}"  required="required" type="tel" dir="ltr" class="form-control input col-md-9" name="tel" id="tel">
+            <input pattern="[9۹][0-9۰۱۲۳۴۵۶۷۸۹]{7,}" required="required" type="tel" dir="ltr"
+                   class="form-control input col-md-9" name="tel" id="tel">
 
             <span class="help-block col-md-offset-3">
 به فرمت *********۹
@@ -82,7 +83,7 @@ insertView('layout/header');
 
             <!-- Inst -->
             <label class="control-label col-md-3" for="inst">
-موسسه
+                موسسه
             </label>
             <input type="text" dir="rtl" class="form-control input col-md-9" name="inst" id="inst">
 
@@ -117,7 +118,8 @@ insertView('layout/header');
         <br>
 
         <div class="alert alert-success">
-            شرکت در ارائه‌ها رایگان است، اما با توجه به ظرفیت محدود آمفی‌تئاتر <b>ثبت نام برای حضور در ارائه‌ها الزامی است</b>.<br>
+            شرکت در ارائه‌ها رایگان است، اما با توجه به ظرفیت محدود آمفی‌تئاتر <b>ثبت نام برای حضور در ارائه‌ها الزامی
+                است</b>.<br>
             اولویت شرکت در ارائه‌ها با شرکت‌کنندگان کارگاه‌هاست.
 
         </div>
@@ -125,17 +127,13 @@ insertView('layout/header');
 
         <div class="alert alert-warning">
             هزینه‌ی شرکت در کارگاه‌ها: <br>
-<<<<<<< HEAD
-کارگاه دو‌ روزه‌ی مقدماتی ۷۰ هزار تومان <br>
-=======
-کارگاه دو روزه‌ی مقدماتی: 70 هزار تومان<br>
->>>>>>> d437cd1face32f59f60fe889fc2c1cf5f8accab5
-کارگاه تخصصی دو روزه‌ی پایتون: 70 هزار تومان<br>
-کارگاه تخصصی یک‌روزه‌ی شبکه: 35 هزار تومان<br>
-کارگاه تخصصی دو روزه‌ی کرنل: 70 هزار تومان<br>
-کارگاه تخصصی یک‌روزه‌ی وب‌سرور: 35 هزار تومان<br>
-کارگاه تخصصی یک‌روزه‌ی برنامه‌نویسی: 35 هزار تومان<br>
-دانشجویان امیرکبیر از <b>۶۰٪</b> و دانشجویان دانشگاه‌های دیگر و دانش‌آموزان از <b>۲۵٪</b> تخفیف برخوردار
+            کارگاه دو‌ روزه‌ی مقدماتی ۷۰ هزار تومان <br>
+            کارگاه تخصصی دو روزه‌ی پایتون: 70 هزار تومان<br>
+            کارگاه تخصصی یک‌روزه‌ی شبکه: 35 هزار تومان<br>
+            کارگاه تخصصی دو روزه‌ی کرنل: 70 هزار تومان<br>
+            کارگاه تخصصی یک‌روزه‌ی وب‌سرور: 35 هزار تومان<br>
+            کارگاه تخصصی یک‌روزه‌ی برنامه‌نویسی: 35 هزار تومان<br>
+            دانشجویان امیرکبیر از <b>۶۰٪</b> و دانشجویان دانشگاه‌های دیگر و دانش‌آموزان از <b>۲۵٪</b> تخفیف برخوردار
             می‌شوند.
 
         </div>
@@ -161,7 +159,7 @@ insertView('layout/header');
 
                 <?php $j = 0;
                 foreach ($day['items'] as $id => $title) : ?>
-                    <div class="radio radio-inline_x radio-<?php echo $j == 0 ? 'warning' : 'info' ?>">
+                    <div class="radio radio-inline_x radio-<?php echo $j == count($day['items'])-1 ? 'warning' : 'info' ?>">
                         <input type="radio"
                                name="<?php echo "day$i" ?>" id="<?php echo 'day' . $i . "_$id" ?>"
                                value="<?php echo $id ?>"
@@ -189,7 +187,8 @@ insertView('layout/header');
                 foreach ($day['presentations'] as $id) : ?>
 
                     <div class="presentation checkbox checkbox-success">
-                        <input class="pr d<?php echo $i?> p<?php echo $j?>" type="checkbox" checked="checked" value="X"
+                        <input class="pr d<?php echo $i ?> p<?php echo $j ?>" type="checkbox" checked="checked"
+                               value="X"
                                name='<?php echo $id ?>'>
                         <label class="control-label">
                             <?php echo get_presentations()[$id]['title'] ?>
@@ -220,20 +219,14 @@ insertView('layout/header');
         <div class="row">
             <br>
 
-            <h3 style="color:indianred">
-                توجه : سایت در وضعیت آزمایشی و درحال به روز رسانی می باشد و ممکن است دوره ها و ارائه هایی که در آنها شرکت می کنید تغییر کنند
-            </h3>
-
             <div class="col-sm-offset-6">
-ثبت نام به طور موقت غیرفعال است
-<!--
-                <input id="submit" name="ok" type="submit" class="btn btn-warning btn-lg" value="ثبت نام">
--->
+                <input id="submit" name="ok" type="submit" class="btn btn-success btn-lg" value="ثبت نام">
             </div>
 
         </div>
 
         <br>
+
         <div id="submit_invalid" class="invalid alert-danger alert alert-dismissable"
              style="visibility:hidden;">
             دوره‌هایی که در آن‌ها شرکت می‌کنید با همدیگر همخوانی ندارند

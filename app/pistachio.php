@@ -222,7 +222,7 @@ function assetURI($name, $type)
 
 function imgURI($name)
 {
-    return assetURI($name, 'images');
+    return assetURI($name, 'img');
 }
 
 function img($name, $tags = '')

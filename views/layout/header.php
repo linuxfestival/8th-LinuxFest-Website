@@ -39,7 +39,7 @@
                 <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand page-scroll" href="<?php echo viewUri('index') ?>#page-top">
-                جشنواره‌ی لینوکس امیرکبیر - نسخه‌ی آزمایشی
+                جشنواره‌ی لینوکس امیرکبیر
             </a>
         </div>
 
@@ -75,8 +75,17 @@
                     </a>
                 </li>
 
+
+                <li>
+                    <a class="page-scroll" href="./#sponsors" data-target="#sponsors">
+حامیان
+                    </a>
+                </li>
+
                 <li>
                     <a class="page-scroll" href="./#contact" data-target="#contact">
+                        ارتباط با ما
+                        +
                         محل برگزاری
                     </a>
                 </li>

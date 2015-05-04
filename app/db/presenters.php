@@ -45,7 +45,7 @@ $presenters = [
         'url' => 'https://ir.linkedin.com/pub/milad-mohajer/a9/a19/444',
         'bio' => 'مدیر بازرگانی رایمند'
     ],
-    
+
     'peyman' => [
         'name' => 'پیمان هوشمندی',
         'avatar' => '//www.gravatar.com/avatar/31a61c55bc35852d5ad7d35ca129ce70?s=200',

@@ -97,7 +97,7 @@ $presenters = [
 
     'peyman' => [
         'name' => 'پیمان هوشمندی',
-        'avatar' => 'http://arjang.ac.ir/www/instructors/2.jpg',
+        'avatar' => '//www.gravatar.com/avatar/31a61c55bc35852d5ad7d35ca129ce70?s=200',
         'url' => 'http://arjang.ac.ir/instructor/2',
         'bio' => 'موسسه ارژنگ'
     ],

@@ -21,6 +21,11 @@
                             <h4>
                                 <?php echo $i['title'] ?>
                             </h4>
+                            <h5>
+                                <?php echo get_presenters()[$i['presenter']]['name'] ?>
+                            </h5>
+
+                            <br>
                             <br>
 
                             <div style="text-align: center">

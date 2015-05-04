@@ -32,6 +32,13 @@ $presenters = [
         'bio' => 'مدیر محصول در کافه‌بازار'
     ],
 
+    'mohajer' => [
+        'name' => 'میلاد مهاجر',
+        'avatar' => '//media.licdn.com/mpr/mpr/shrink_200_200/p/7/005/0a0/153/023ba11.jpg?s=200',
+        'url' => 'https://ir.linkedin.com/pub/milad-mohajer/a9/a19/444',
+        'bio' => 'مدیر بازرگانی رایمند'
+    ],
+
     'danial' => [
         'name' => 'دانیال بهزادی',
         'avatar' => '//www.gravatar.com/avatar/11db901e4c84a8017c6ed9aaaa2b70b8?s=200',
@@ -44,13 +51,6 @@ $presenters = [
         'avatar' => '//www.gravatar.com/avatar/31a61c55bc35852d5ad7d35ca129ce70?s=200',
         'url' => 'http://arjang.ac.ir/instructor/2',
         'bio' => 'موسسه ارژنگ'
-    ],
-
-    'mohajer' => [
-        'name' => 'میلاد مهاجر',
-        'avatar' => '//media.licdn.com/mpr/mpr/shrink_200_200/p/7/005/0a0/153/023ba11.jpg?s=200',
-        'url' => 'https://ir.linkedin.com/pub/milad-mohajer/a9/a19/444',
-        'bio' => 'مدیر بازرگانی رایمند'
     ],
 
     'faraz' => [

@@ -21,7 +21,15 @@
                             <h3>
                                 <?php echo substr($i['title'],0,40) ?>
                             </h3>
+
+                            <h5>
+                                <?php if(isset(get_presenters()[$i['presenter']]))
+                                    echo get_presenters()[$i['presenter']]['name']; else echo "‌"; ?>
+                            </h5>
+
                             <br>
+                            <br>
+
 
                             <div style="text-align: center">
                                 <a href="<?php echo viewUri('workshop?s=' . $k) ?>"

@@ -20,7 +20,7 @@ $presenters = [
 
     'nadalizadeh' => [
         'name' => 'علی نادعلی‌زاده',
-        'avatar' => '//http://media.licdn.com/mpr/mpr/shrink_200_200/p/4/005/05c/2e6/38b0327.jpg?s=200',
+        'avatar' => '//media.licdn.com/mpr/mpr/shrink_200_200/p/4/005/05c/2e6/38b0327.jpg?s=200',
         'url' => 'http://ali.nadalizadeh.ir/',
         'bio' => 'مدیر فنی تاد'
     ],

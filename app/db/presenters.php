@@ -27,7 +27,7 @@ $presenters = [
 
     'reza' => [
         'name' => 'رضا محمدی',
-        'avatar' => '//www.gravatar.com/avatar/',
+        'avatar' => '//www.gravatar.com/avatar/0?s=200',
         'url' => 'https://ir.linkedin.com/in/remohammadi',
         'bio' => 'مدیر فنی کافه‌بازار'
     ],

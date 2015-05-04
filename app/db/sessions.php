@@ -96,7 +96,7 @@ $presentations = [
     //--------------------------------------------------------------
 
     'mining' => [
-        'title' => 'Mining Big Data on Linux',
+        'title' => 'Mining Big Data on Linux [TO BE CHANGED]',
         'presenter' => 'salim',
         'level' => 'مبتدی و متوسط',
         'time' => 'روز دوم - ۳:۱۵  تا ۱۶',
@@ -160,6 +160,7 @@ $workshops = [
         'room' => 'بعدا اعلام می‌شود',
         'desc' => '
 در این کارگاه شرکت‌کنندگان دستورات پایه و رفع عیب شبکه را در لینوکس می‌آموزند.
+<br>
 پیش‌نیاز:<br>
 <ul><li>
 آشنایی با TCP/IP
@@ -176,7 +177,15 @@ $workshops = [
         'time' => 'روز دوم ۸ تا ۱۴',
         'room' => 'بعدا اعلام می‌شود',
         'desc' => '
-
+در این کارگاه شرکت‌کنندگان یاد می‌گیرند چگونه یک وب‌سرور Apache را نصب، تنظیم و نگهداری کنند.
+<br>
+سرفصل های کلی این کارگاه : <br>
+<ul>
+<li>Apache WebServer</li>
+<li>PHP/CGI</li>
+<li>MYSQL Server</li>
+<li>WebServer & Configuration Tips</li>
+</ul>
             '
     ],
 

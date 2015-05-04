@@ -7,17 +7,26 @@
             </h2>
 
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-4">
                     <a href="http://gotoclass.ir" target="_blank">
                         <?php echo img('sponsors/gotoclass.png', 'class="sponsor"') ?>
                     </a>
                 </div>
 
-                <div class="col-md-6">
+                <div class="col-md-4">
+                    <a href="http://zoodfood.com" target="_blank">
+                        <?php echo img('sponsors/zoodfood.png', 'class="sponsor"') ?>
+                    </a>
+                </div>
+
+                <div class="col-md-4">
                     <a href="http://cafebazaar.ir/" target="_blank">
                         <?php echo img('sponsors/bazaar.png', 'class="sponsor"') ?>
                     </a>
                 </div>
+
+
+
             </div>
 
 
@@ -58,6 +67,7 @@
                         <?php echo img('sponsors/aut.png', 'class="org"') ?>
                     </a>
                 </div>
+
 
             </div>
 

@@ -6,7 +6,7 @@ $presenters = [
 
     'bakhshis' => [
         'name' => 'بهادر بخشی',
-        'avatar' => 'assets/img/bakhshi.jpg',
+        'avatar' => '//media.licdn.com/mpr/mpr/shrink_200_200/p/2/000/1ae/26c/349c0fc.jpg?s=200',
         'url' => 'http://ceit.aut.ac.ir/~bakhshis/',
         'bio' => 'استادیار دانشگاه صنعتی امیرکبیر'
     ],

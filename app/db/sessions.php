@@ -97,7 +97,7 @@ $presentations = [
 
     'mining' => [
         'title' => '-',
-        'presenter' => 'salim',
+        'presenter' => 'reza',
         'level' => 'مبتدی و متوسط',
         'time' => 'روز دوم - ۳:۱۵  تا ۱۶',
         'room' => 'وبینار + سالن آمفی‌تئاتر',

@@ -27,7 +27,7 @@ $presenters = [
 
     'reza' => [
         'name' => 'رضا محمدی',
-        'avatar' => '//www.gravatar.com/avatar/0?s=200',
+        'avatar' => '//www.gravatar.com/avatar/ba7f4236013448700d38d3a89a9cbf99?s=200',
         'url' => 'https://ir.linkedin.com/in/remohammadi',
         'bio' => 'مدیر فنی کافه‌بازار'
     ],
@@ -39,6 +39,13 @@ $presenters = [
         'bio' => 'گروه کاربران ایرانی اوبونتو'
     ],
 
+    'mohajer' => [
+        'name' => 'میلاد مهاجر',
+        'avatar' => '//media.licdn.com/mpr/mpr/shrink_200_200/p/7/005/0a0/153/023ba11.jpg?s=200',
+        'url' => 'https://ir.linkedin.com/pub/milad-mohajer/a9/a19/444',
+        'bio' => 'مدیر بازرگانی رایمند'
+    ],
+    
     'peyman' => [
         'name' => 'پیمان هوشمندی',
         'avatar' => '//www.gravatar.com/avatar/31a61c55bc35852d5ad7d35ca129ce70?s=200',
@@ -46,12 +53,6 @@ $presenters = [
         'bio' => 'موسسه ارژنگ'
     ],
 
-    'mohajer' => [
-        'name' => 'میلاد مهاجر',
-        'avatar' => '//media.licdn.com/mpr/mpr/shrink_200_200/p/7/005/0a0/153/023ba11.jpg?s=200',
-        'url' => 'https://ir.linkedin.com/pub/milad-mohajer/a9/a19/444',
-        'bio' => 'مدیر بازرگانی رایمند'
-    ],
 
     'faraz' => [
         'name' => 'فراز شمشیردار',

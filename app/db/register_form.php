@@ -18,7 +18,7 @@ $register_form = [
     [
         'title' => 'روز دوم - جمعه ۲۵ اردیبهشت',
         'presentations' => [
-            'ssh','mining','bigdata'
+            'ssh','bazaar','bigdata'
         ],
         'items' => [
             'intro' => 'Linux Intermediate + How to Live Happily in Linux',

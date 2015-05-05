@@ -58,7 +58,7 @@ $presenters = [
         'name' => 'فراز شمشیردار',
         'avatar' => '//www.gravatar.com/avatar/c4baac2a7eb2c03feb46429904f7098e?s=200',
         'url' => 'https://ir.linkedin.com/in/shamshirdar',
-        'bio' => 'توسعه‌دهنده‌ی نرم‌افزارهای متن‌با
+        'bio' => 'توسعه‌دهنده‌ی نرم‌افزارهای متن‌با'
     ],
 
     'sinash' => [
@@ -74,7 +74,7 @@ $presenters = [
         'url' => 'https://ir.linkedin.com/in/mdhheydari',
         'bio' => 'توسعه‌دهنده‌ی نرم‌افزارهای متن‌باز'
     ],
-
+    
 
     'pooya' => [
         'name' => 'پویا پارسا',

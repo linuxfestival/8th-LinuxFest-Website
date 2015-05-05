@@ -113,7 +113,7 @@ var update_presentations = function () {
     }
 
     //Check for capabilities
-
+/*
     var c_courses = ['intro', 'kernel', 'python'];
     var c_courses_title = ['Basic & Intermediate', 'Kernel', 'Python'];
 
@@ -137,4 +137,5 @@ var update_presentations = function () {
         $('#err_c').html(err_c);
 
     $('#submit_invalid').css('visibility', valid ? 'hidden' : 'visible');
+*/
 }

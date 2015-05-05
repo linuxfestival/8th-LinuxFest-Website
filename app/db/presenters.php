@@ -74,7 +74,7 @@ $presenters = [
         'url' => 'https://ir.linkedin.com/in/mdhheydari',
         'bio' => 'توسعه‌دهنده‌ی نرم‌افزارهای متن‌باز'
     ],
-    
+
 
     'pooya' => [
         'name' => 'پویا پارسا',

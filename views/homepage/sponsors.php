@@ -20,7 +20,7 @@
                 </div>
 
                 <div class="col-md-4">
-                    <a href="http://cafebazaar.ir/" target="_blank">
+                    <a href="http://cafebazaar.ir/jobs" target="_blank">
                         <?php echo img('sponsors/bazaar.png', 'class="sponsor"') ?>
                     </a>
                 </div>

@@ -17,7 +17,7 @@
 <script src="assets/js/wow.min.js"></script>
 
 <!-- Custom Theme JavaScript -->
-<script src="assets/js/scripts.js?v=2"></script>
+<script src="assets/js/scripts.js?v=3"></script>
 
 
 <!-- Google Maps -->

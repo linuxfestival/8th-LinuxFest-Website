@@ -106,7 +106,7 @@ var update_presentations = function () {
         }
         else {
             var pr = $('.pr');
-            pr.prop('checked', true)
+            //pr.prop('checked', true)
             pr.prop('disabled', false)
         }
 

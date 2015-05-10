@@ -4,7 +4,8 @@ $register_form = [
     [
         'title' => 'روز اول - پنج‌شنبه ۲۴ اردیبهشت',
         'presentations' => [
-            'opensource','sql','copyleft'
+//            'opensource','sql','copyleft'
+            'opensource','sql'
         ]
         ,
         'items' => [

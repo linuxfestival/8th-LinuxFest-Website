@@ -206,6 +206,14 @@ insertView('layout/header');
             <?php $i++;
         endforeach ?>
 
+        <div class="alert alert-info">
+            به علت استقبال بیش از حد شرکت کنندگان ظرفیت ارائه های
+            Data Intensive Computing Platforms
+            و
+            Patents & Copyright
+            تکمیل شده است
+        </div>
+
         <br>
 
         <div class="row">

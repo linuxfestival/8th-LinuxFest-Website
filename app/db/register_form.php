@@ -5,7 +5,7 @@ $register_form = [
         'title' => 'روز اول - پنج‌شنبه ۲۴ اردیبهشت',
         'presentations' => [
 //            'opensource','sql','copyleft'
-            'opensource','sql'
+            //'opensource','sql'
         ]
         ,
         'items' => [
@@ -20,7 +20,7 @@ $register_form = [
         'title' => 'روز دوم - جمعه ۲۵ اردیبهشت',
         'presentations' => [
 //            'ssh','bazaar','bigdata'
-            'ssh','bazaar'
+            //'ssh','bazaar'
         ],
         'items' => [
             'intro' => 'Linux Intermediate + How to Live Happily in Linux',

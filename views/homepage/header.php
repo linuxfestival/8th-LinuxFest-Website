@@ -17,9 +17,13 @@
 
             <div class="col-md-12 center-block">
 
-                <a href="<?php echo viewUri('register') ?>" class="btn btn-primary btn-xl page-scroll" style="width: 200px;font-size: 25px;">
-                    ثبت نام
-                </a>
+<!--                <a href="--><?php //echo viewUri('register') ?><!--" class="btn btn-primary btn-xl page-scroll" style="width: 200px;font-size: 25px;">-->
+<!--                    ثبت نام-->
+<!--                </a>-->
+<br>
+<!--                                <a href="--><?php //echo viewUri('register') ?><!--" class="btn btn-success btn-xl page-scroll" style="width: 200px;font-size: 25px;">-->
+<!--                                    دریافت بلیت-->
+<!--                                </a>-->
 
             </div>
 

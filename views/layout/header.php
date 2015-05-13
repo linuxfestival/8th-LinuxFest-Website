@@ -69,11 +69,19 @@
                     </a>
                 </li>
 
-                <li>
-                    <a class="page-scroll" href="./register" data-target="#register">
-                        ثبت نام
-                    </a>
-                </li>
+<!--                <li>-->
+<!--                    <a class="page-scroll" href="./register" data-target="#register">-->
+<!--                        ثبت نام-->
+<!--                    </a>-->
+<!--                </li>-->
+
+<!--                <li>-->
+<!--                    <a class="page-scroll" href="./ticket" data-target="#ticket">-->
+<!--                        دریافت بلیت-->
+<!--                    </a>-->
+<!--                </li>-->
+
+
 
 
                 <li>

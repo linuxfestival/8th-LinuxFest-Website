@@ -3,6 +3,8 @@ define('title', 'ثبت نام');
 insertView('layout/header');
 ?>
 
+
+
 <script src='https://www.google.com/recaptcha/api.js'></script>
 
 <section id="register" class="container">
@@ -13,6 +15,13 @@ insertView('layout/header');
         </h1>
     </div>
     <hr>
+
+    <div class="alert alert-alert">
+        محلت ثبت نام به اتمام رسیده !
+        <br>
+        به دفتر انجمن علمی مراجعه فرمایید
+    </div>
+    <?php goto endform ?>
 
     <?php
 

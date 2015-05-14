@@ -21,9 +21,9 @@
 <!--                    ثبت نام-->
 <!--                </a>-->
 <br>
-<!--                                <a href="--><?php //echo viewUri('register') ?><!--" class="btn btn-success btn-xl page-scroll" style="width: 200px;font-size: 25px;">-->
-<!--                                    دریافت بلیت-->
-<!--                                </a>-->
+                                <a href="resources" class="btn btn-success btn-xl page-scroll" style="width: 200px;font-size: 25px;">
+                                    محتوای قابل دانلود
+                                </a>
 
             </div>
 

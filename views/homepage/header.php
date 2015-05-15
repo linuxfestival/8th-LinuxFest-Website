@@ -25,7 +25,7 @@
                                     محتوای قابل دانلود
                                 </a>
 
-                               <a href="feedback" class="btn btn-info btn-xl page-scroll" style="width: 200px;font-size: 25px;">
+                               <a href="feedback" class="btn btn-danger btn-xl page-scroll" style="width: 200px;font-size: 25px;">
 فرم نظرسنجی
                                 </a>
 

@@ -6,6 +6,6 @@
     {{--    @include('landing/presenters')--}}
     {{--@include('landing/workshops')--}}
     {{--    @include('landing/presentations')--}}
-{{--    @include('landing/sponsors')--}}
-{{--    @include('landing/contact')--}}
+    @include('landing/sponsors')
+    @include('landing/contact')
 @endsection

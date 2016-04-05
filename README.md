@@ -1,8 +1,8 @@
 # Linux Festival website
 
-Amirkabir Linux Festival website - [Linuxfest.ir](http://linuxfest.ir)
+Amirkabir Linux Festival website - [Linuxfest.ir](https://linuxfest.ir)
 
-# Legacy version
+## Legacy version
 
 For Legacy (Plain PHP) version, see [Legacy Branch](https://github.com/pi0/LinuxFestival/tree/legacy)
 
@@ -12,7 +12,7 @@ For Legacy (Plain PHP) version, see [Legacy Branch](https://github.com/pi0/Linux
 
 ## 3rd Party projects
 
- + The Pistachio Microframework by **[Pooya Parsa](https://github.com/pi0/)** 
+ + The Laravel Framework
  + Theme originally created by  **David Miller**,
  Managing Partner at [Iron Summit Media Strategies](http://www.ironsummitmedia.com/)
  + Bootstrap

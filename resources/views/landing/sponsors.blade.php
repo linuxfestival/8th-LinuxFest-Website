@@ -43,7 +43,7 @@
                 </div>
                 <div class="col-md-2">
                     <a href="http://sao.aut.ac.ir/" target="_blank">
-						<img src="{{asset('img/sponsors/aut_fedoral.png')}}" class="org">
+						<img src="{{asset('img/sponsors/aut_federal.png')}}" class="org">
                     </a>
                 </div>
 

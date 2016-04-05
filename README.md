@@ -2,6 +2,10 @@
 
 Amirkabir Linux Festival website - [Linuxfest.ir](http://linuxfest.ir)
 
+# Legacy version
+
+For Legacy (Plain PHP) version, see [Legacy Branch](https://github.com/pi0/LinuxFestival/tree/legacy)
+
 ## Contributors
 
 + Students at Amirkabir university 

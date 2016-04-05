@@ -1,10 +1,6 @@
-vendor
-.idea/
-app/config.php
-publish.sh
-update.sh
-app/gapi_token.php
-composer.lock
-*~
-*.swp
-*.swo
+/vendor
+/node_modules
+/public/storage
+Homestead.yaml
+Homestead.json
+.env

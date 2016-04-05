@@ -6,22 +6,22 @@
 </footer>
 
 <!-- jQuery -->
-<script src="assets/js/jquery.js"></script>
+<script src="{{asset('js/jquery.js')}}"></script>
 
 <!-- Bootstrap Core JavaScript -->
-<script src="assets/js/bootstrap.min.js"></script>
+<script src="{{asset('js/bootstrap.min.js')}}"></script>
 
 <!-- Plugin JavaScript -->
-<script src="assets/js/jquery.easing.min.js"></script>
-<script src="assets/js/jquery.fittext.js"></script>
-<script src="assets/js/wow.min.js"></script>
+<script src="{{asset('js/jquery.easing.min.js')}}"></script>
+<script src="{{asset('js/jquery.fittext.js')}}"></script>
+<script src="{{asset('/js/wow.min.js')}}"></script>
 
 <!-- Custom Theme JavaScript -->
-<script src="assets/js/scripts.js?v=3"></script>
+<script src="{{asset('js/scripts.js?v=3')}}"></script>
 
 
 <!-- Google Maps -->
-<script src="https://maps.googleapis.com/maps/api/js"></script>
+<script src="//maps.googleapis.com/maps/api/js"></script>
 <script>initmap()</script>
 
 </body>

@@ -1,3 +1,4 @@
+<!--
 <aside class="bg-yellow" id="sponsors">
     <div class="container text-center">
         <div class="call-to-action">
@@ -24,6 +25,7 @@
         </div>
     </div>
 </aside>
+-->
 
 <aside>
     <div class="container text-center">

@@ -48,6 +48,7 @@
                         درباره‌ی جشنواره
                     </a>
                 </li>
+                <!--
                 <li>
                     <a class="page-scroll" href="./#presenters" data-target="#presenters">
                         ارائه‌دهندگان

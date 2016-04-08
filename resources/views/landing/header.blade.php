@@ -8,14 +8,14 @@
                 دانشگاه صنعتی امیرکبیر
             </h1>
             <hr>
-            <h2>اردیبهشت ماه 1395</h2>
+            <h2>22 تا 24 اردیبهشت 1395</h2>
             <br>
             <br>
-            <br>
+            <br> <!--
             <p>
                 <a href="" class="btn btn-primary btn-xl page-scroll landing-action">ثبت نام</a>
                 <a href="" class="btn btn-success btn-xl page-scroll landing-action">فرم ارسال ارائه</a>
-            </p>
+            </p> -->
         </div>
     </div>
 </header>

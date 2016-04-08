@@ -3,7 +3,9 @@
     <div class="header-content">
         <div class="header-content-inner">
             <h1 class="header-title">
-                هشتمین جشنواره‌ی لینوکس و نرم افزار های متن باز
+                هشتمین جشنواره‌ی لینوکس 
+                <br>
+                و نرم افزار های متن باز
                 <br>
                 دانشگاه صنعتی امیرکبیر
             </h1>

@@ -182,6 +182,32 @@ aside {
     }
 }
 
+/*
+* Author @nimaebrazi
+* Thu 21 Apr
+* nima.ebrazi@gmail.com
+
+* @nimaebrazi
+* remove border color for beauty toggle button
+*/
+.navbar-default .navbar-toggle {
+    border-color: #ffffff;
+}
+
+/*
+* @nimaebrazi
+* resolve illegible menu toggle content in mobile size ( 767px < )
+* set right alignment navbar menu
+*/
+@media screen and (max-width: 767px) {
+    #bs-example-navbar-collapse-1 {
+        background-color: #fff;
+        text-align: right;
+    }
+}
+
+/*End Editing*/
+
 header {
     position: relative;
     width: 100%;
@@ -546,7 +572,8 @@ footer {
 
 .landing-action {
     margin-top: 200px;
-    width: 200px;font-size: 25px;
+    width: 200px;
+    font-size: 25px;
     display: inline;
 }
 

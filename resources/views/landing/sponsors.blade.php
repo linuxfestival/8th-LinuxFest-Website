@@ -4,7 +4,7 @@
         <div class="call-to-action">
 
             <h2>
-حامیان رسانه‌ای
+حامیان رویداد
             </h2>
 
             <div class="row">

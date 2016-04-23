@@ -9,12 +9,13 @@
 
             <div class="row">
                 <div class="col-md-4">
-                   <a href="http://peidad.com/" target="_blank">
-                        <img src="{{asset('img/sponsors/peidad.png')}}" class="org">
-                   </a>
+
                 </div>
 
                 <div class="col-md-4">
+                 <a href="http://peidad.com/" target="_blank">
+                                        <img src="{{asset('img/sponsors/peidad.png')}}" class="org">
+                                   </a>
                 </div>
 
                 <div class="col-md-4">

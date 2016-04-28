@@ -13,6 +13,7 @@ function get_reg_data()
 
 function get_presenters()
 {
+    echo "HIIIII";
     require_once 'db/presenters.php';
     global $presenters;
     return $presenters;

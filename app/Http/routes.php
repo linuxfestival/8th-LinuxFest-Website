@@ -13,10 +13,12 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::group(
-    ['middleware' => ['web']], function () {
+Route::get('/', ['as' => 'home', 'uses' => 'LandingController@index']);
 
-    // Landing
-    \App\Http\Controllers\LandingController::routes();
-    
-});
+//Route::group(
+//    ['middleware' => ['web']], function () {
+//
+//    // Landing
+//    \App\Http\Controllers\LandingController::routes();
+//
+//});

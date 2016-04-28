@@ -13,7 +13,7 @@
     <div class="container grid-wrap col-set-one-quarter tablet-col-set-one-half phone-col-set-full">
         <div class="row">
 
-            <?php foreach (get_presenters() as $presenter) : ?>
+            <?php foreach ($presenters as $presenter) : ?>
 
                 <div class="col-lg-3 col-md-6 col-rtl2 text-center wow fadeIn">
                     <a href="<?php echo $presenter['url'] ?>"

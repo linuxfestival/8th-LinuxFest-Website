@@ -23,11 +23,11 @@
 در صورت تمایل به همکاری  ( برگزاری  کارگاه ، ارائه علمی و یا حمایت های مادی و معنوی دیگر از این جشنواره ) با ما تماس برقرار نمایید.
 پست الکترونیکی: <a class="btn btn-default btn-xl" href="mailto:info@linuxfest.ir">info@linuxfest.ir</a>
                 </p>
-                <!--
+
                 <a href="#presenters" class="page-scroll btn btn-default btn-xl">
                     کیا هستن؟
                 </a>
-                -->
+
             </div>
         </div>
     </div>

@@ -2,6 +2,13 @@
 
 namespace App;
 
+/**
+ * @property mixed id
+ * @property mixed name
+ * @property mixed avatar
+ * @property mixed url
+ * @property mixed bio
+ */
 class Presenter extends StaticModel
 {
     protected $guarded = [];

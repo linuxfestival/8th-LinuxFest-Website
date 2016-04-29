@@ -28,11 +28,12 @@ class StaticModel extends Model
         if (array_key_exists($key, $this->attributes) && $key == 'id')
             return $this->attributes['id'];
 
-        if (array_key_exists($key, $this->attributes) || $this->hasGetMutator($key)) {
+        if ((array_key_exists($key, $this->attributes) || $this->hasGetMutator($key))
+            && !method_exists($this, $key)/*Bug fix: relation with same attr*/
+        ) {
             return $this->getAttributeValue($key);
         }
 
-        //TODO
         return $this->getRelationValue($key);
     }
 
@@ -76,56 +77,62 @@ class StaticModelBuilder extends Builder
         // Filter where bindings
         foreach ($results as $index => &$result) {
             // Conditions have: type,column,operator,value and boolean
-            foreach ($this->query->wheres as &$condition) {
-                if ($condition['type'] == 'Basic') {
-                    // Check
-                    $status = true; // Default is pass;
-                    $attr = &$result[$condition['column']];
-                    //TODO: add support for other operators:
-                    //'between', 'ilike','&', '|', '^', '<<', '>>','rlike','~*',, '!~*'
-                    switch ($condition['operator']) {
-                        case '=':
-                        case 'like': //TODO
-                        case 'like binary': //TODO
-                        case 'similar to': //TODO
-                        case 'regexp': //TODO
-                        case '~': //TODO
-                            $status = $condition['value'] == $attr;
-                            break;
-                        case '!=':
-                        case '<>':
-                        case 'not like': //TODO
-                        case 'not similar to': //TODO
-                        case 'not regexp': //TODO
-                        case '!~': //TODO
-                            $status = $condition['value'] != $attr;
-                            break;
-                        case '>':
-                            $status = $attr > $condition['value'];
-                            break;
-                        case '>=':
-                            $status = $attr >= $condition['value'];
-                            break;
-                        case '<':
-                            $status = $attr < $condition['value'];
-                            break;
-                        case '<=':
-                            $status = $attr <= $condition['value'];
-                            break;
-                    }
+            if (is_array($this->query->wheres))
+                foreach ($this->query->wheres as &$condition) {
+                    if ($condition['type'] == 'Basic') {
+                        // Check
+                        $status = true; // Default is pass;
+                        //Dot notation workaround
+                        $column = explode('.', $condition['column']);
+                        $column = end($column);
+                        $attr = &$result[$column];
 
-                    // Chain
-                    //TODO: add support for booleans other than 'and'
-                    switch ($condition['boolean']) {
-                        case 'and':
-                            if ($status == false)
-                                unset($results[$index]);
-                            break;
-                    }
+                        //TODO: add support for other operators:
+                        //'between', 'ilike','&', '|', '^', '<<', '>>','rlike','~*',, '!~*'
+                        switch ($condition['operator']) {
+                            case '=':
+                            case 'like': //TODO
+                            case 'like binary': //TODO
+                            case 'similar to': //TODO
+                            case 'regexp': //TODO
+                            case '~': //TODO
+                                $status = $condition['value'] == $attr;
+                                break;
+                            case '!=':
+                            case '<>':
+                            case 'not like': //TODO
+                            case 'not similar to': //TODO
+                            case 'not regexp': //TODO
+                            case '!~': //TODO
+                                $status = $condition['value'] != $attr;
+                                break;
+                            case '>':
+                                $status = $attr > $condition['value'];
+                                break;
+                            case '>=':
+                                $status = $attr >= $condition['value'];
+                                break;
+                            case '<':
+                                $status = $attr < $condition['value'];
+                                break;
+                            case '<=':
+                                $status = $attr <= $condition['value'];
+                                break;
+                        }
 
+                        // Chain
+                        //TODO: add support for booleans other than 'and'
+                        switch ($condition['boolean']) {
+                            case 'and':
+                                if ($status == false)
+                                    unset($results[$index]);
+                                break;
+                        }
+
+                    }
                 }
-            }
         }
+
         $connection = $this->model->getConnectionName();
         return $this->model->hydrate($results, $connection)->all();
     }

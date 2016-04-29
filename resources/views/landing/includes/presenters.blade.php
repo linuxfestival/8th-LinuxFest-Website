@@ -13,25 +13,25 @@
     <div class="container grid-wrap col-set-one-quarter tablet-col-set-one-half phone-col-set-full">
         <div class="row">
 
-            <?php foreach ($presenters as $presenter) : ?>
+            @foreach($presenters as $presenter)
 
                 <div class="col-lg-3 col-md-6 col-rtl2 text-center wow fadeIn">
-                    <a href="<?php echo $presenter['url'] ?>"
-                       class="profile grid-col" target="_blank">
+                    <a href="{{route('app::presenter',[$presenter->id])}}" class="profile grid-col" target="_blank">
 
-                        <img style="max-height: 220px;" src=<?php echo $presenter['avatar']?> >
+                        <img style="max-height: 220px;" src="{{$presenter->avatar}}">
 
-                        <h2><?php echo $presenter['name'] ?></h2>
+                        <h2>{{$presenter->name}}</h2>
 
-                        <h5><?php echo $presenter['bio'] ?></h5>
+                        <h5>{{$presenter->bio}}</h5>
 
+                        <a href="{{$presenter->url}}"><h5>صفحه شخصی</h5></a>
                         <div class="clear"></div>
                         <br>
 
                     </a>
                 </div>
 
-            <?php endforeach; ?>
+            @endforeach
 
         </div>
     </div>

@@ -12,15 +12,27 @@ class SiteController extends Controller
 
     public static function routes()
     {
-        Route::get('/', 'SiteController@index')->name('landing::index');
+        Route::get('/', 'SiteController@landing')->name('app::home');
+        Route::get('/presenter/{presenter}', 'SiteController@presenter')->name('app::presenter');
     }
 
 
-    public function index()
+    public function landing()
     {
         $presenters = Presenter::all();
         $sections = Section::all();
-        return view('landing.index', ['presenters' => $presenters, 'workshops' => $sections]);
+        return view('landing.index', [
+            'presenters' => $presenters,
+            'sections' => $sections
+        ]);
+    }
+
+    public function presenter(Presenter $presenter)
+    {
+        $p=Presenter::where('name','goo')->where('b','c')->get();
+        return view('presenter', [
+            'presenter' => $presenter
+        ]);
     }
 
 }

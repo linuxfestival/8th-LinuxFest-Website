@@ -19,6 +19,9 @@ class SiteController extends Controller
         // Presenters
         Route::get('/presenter/{presenter}', 'SiteController@presenter')->name('app::presenter');
 
+        // Timeline
+        Route::get('/timeline','SiteController@timeline');
+
         // Sections
         // TODO: handle 2016 in a better way:D
         Route::get('/2016/{section}', 'SiteController@section')->name('app::section');
@@ -38,6 +41,11 @@ class SiteController extends Controller
             'sponsors' => $sponsors,
         ]);
 
+    }
+
+    public function timeline () {
+        $sections = Section::all();
+        return view('timeline.timeline', ['sections' => $sections]);
     }
 
     public function presenter(Presenter $presenter)

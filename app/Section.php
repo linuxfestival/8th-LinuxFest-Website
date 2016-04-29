@@ -21,11 +21,28 @@ class Section extends StaticModel
         // Workshops
 
         [
+            'id' => 'setup',
+            'type' => 'workshop',
+            'title' => 'Setup Workshop',
+            'presenter' => null,
+            'level' => 'شروع کار',
+            'date' => 0,
+            'time' => 'روز صفرم - ۱۳:۰۰ تا ۱۸:۰۰',
+            'room' => 'سایت کامپیوتر',
+            'desc' => '
+نصب لینوکس و یک دورهمی با شرکت کنندگان!
+            '
+        ],
+        
+        //--------------------------------------------------------------
+        
+        [
             'id' => 'intro',
             'type' => 'workshop',
             'title' => 'Linux Basic',
             'presenter' => 'gholizade',
             'level' => 'شروع کار',
+            'date' => '1,2',
             'time' => 'هر دو روز - ۹ تا ۱۲:۳۰',
             'room' => 'سایت کامپیوتر',
             'desc' => '
@@ -40,6 +57,7 @@ class Section extends StaticModel
             'title' => 'Network & Security',
             'presenter' => 'rahimkhani',
             'level' => 'پیشرفته',
+            'date' => '1,2',
             'time' => 'هر دو روز - ۹ تا ۱۲:۳۰',
             'room' => 'بعدا اعلام می‌شود',
             'desc' => ''
@@ -53,6 +71,7 @@ class Section extends StaticModel
             'title' => 'Docker',
             'presenter' => 'pooya',
             'level' => 'پیشرفته',
+            'date' => '1',
             'time' => 'روز اول - ۹ تا ۱۲:۳۰',
             'room' => 'بعدا اعلام می‌شود',
             'desc' => ''
@@ -66,6 +85,7 @@ class Section extends StaticModel
             'title' => 'MATLAB & Scientific Tools',
             'presenter' => null,
             'level' => 'متوسط',
+            'date' => '2',
             'time' => 'روز دوم - ۹ تا ۱۲:۳۰',
             'room' => 'بعدا اعلام می‌شود',
             'desc' => ''
@@ -79,6 +99,7 @@ class Section extends StaticModel
             'title' => 'Data Warehouse Workshop',
             'presenter' => 'afshin',
             'level' => 'متوسط',
+            
             'time' => 'روز دوم - ۹ تا ۱۲:۳۰',
             'room' => 'بعدا اعلام می‌شود',
             'desc' => ''

@@ -13,23 +13,23 @@
     <div class="container">
         <div class="row">
 
-            <?php foreach (get_presentations() as $k => $i) : ?>
+            @foreach($presenters as $presenter)
 
                 <div class="col-lg-4 col-md-4 col-sm-4 text-center">
                     <div class="thumbnail">
                         <div class="caption">
                             <h4>
-                                <?php echo $i['title'] ?>
+                                {{$presenter['title']}}
                             </h4>
                             <h5>
-                                <?php echo get_presenters()[$i['presenter']]['name'] ?>
+                                {{$presenter['name']}}
                             </h5>
 
                             <br>
                             <br>
 
                             <div style="text-align: center">
-                                <a href="<?php echo viewUri('presentation?s=' . $k) ?>"
+                                <a href="{{$presenter['id']}}"
                                    class="btn btn-info" target="_blank">
                                     مشاهده‌ی جزئیات
                                 </a>
@@ -38,7 +38,7 @@
                     </div>
                 </div>
 
-            <?php endforeach; ?>
+            @endforeach
 
         </div>
 

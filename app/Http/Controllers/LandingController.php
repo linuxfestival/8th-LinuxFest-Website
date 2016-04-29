@@ -227,8 +227,9 @@ class LandingController extends Controller
     }
 
     public function index() {
-        $presenters = get_the_presenters();
-        $workshops = get_the_workshops();
-        return view('landing.index', ['presenters' => $presenters]);
+        $presenters = $this->get_the_presenters();
+        $workshops = $this->get_the_workshops();
+        return view('landing.index', ['presenters' => $presenters, 'workshops' => $workshops]);
+//        return view('landing.index', ['presenters' => $presenters]);
     }
 }

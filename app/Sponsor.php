@@ -16,21 +16,21 @@ class Sponsor extends StaticModel
         [
             'id' => 'iranargham',
             'title' => 'ایران ارقام',
-            'logo' => '//media.licdn.com/mpr/mpr/shrink_200_200/p/2/000/1ae/26c/349c0fc.jpg?s=200',
+            'logo' => '/img/sponsors/no_image.png',
             'url' => 'http://iranargham.com',
         ],
 
         [
             'id' => 'peivast',
             'title' => 'پیوست',
-            'logo' => '//media.licdn.com/mpr/mpr/shrink_200_200/p/2/000/1ae/26c/349c0fc.jpg?s=200',
+            'logo' => '/img/sponsors/no_image.png',
             'url' => 'http://peivast.com/',
         ],
 
         [
             'id' => 'peidad',
             'title' => 'پیداد',
-            'logo' => '//media.licdn.com/mpr/mpr/shrink_200_200/p/2/000/1ae/26c/349c0fc.jpg?s=200',
+            'logo' => '/img/sponsors/peidad.png',
             'url' => 'http://peidad.com/',
         ],
 

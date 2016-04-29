@@ -11,7 +11,7 @@
                 @foreach($sponsors as $sponsor)
                     <div class="col-md-4">
                         <a href="{{$sponsor->url}}" target="_blank">
-                            <img src="{{asset('img/sponsors/peidad.png')}}" class="sponsor-img">
+                            <img src="{{$sponsor->logo}}" class="sponsor-img">
                         </a>
                         <h5>{{$sponsor->title}}</h5>
                     </div>
@@ -35,21 +35,27 @@
 
             <div class="row">
 
-
-                <div class="col-md-2 col-md-offset-2">
-                    <a href="http://ceit-ssc.ir/" target="_blank">
-                        <img src="{{asset('img/sponsors/aut_ssc.png')}}" class="sponsor-img">
+                <div class="col-md-2 col-md-offset-1">
+                    <a href="https://linuxfest.ir" target="_blank">
+                        <img src="{{asset('img/sponsors/linuxfest.png')}}" class="sponsor-img">
                     </a>
                 </div>
+
+                <div class="col-md-2">
+                    <a href="http://ceit-ssc.ir/" target="_blank">
+                        <img src="{{asset('img/sponsors/anjoman.png')}}" class="sponsor-img">
+                    </a>
+                </div>
+
                 <div class="col-md-2">
                     <a href="http://sao.aut.ac.ir/" target="_blank">
-                        <img src="{{asset('img/sponsors/aut_federal.png')}}" class="sponsor-img">
+                        <img src="{{asset('img/sponsors/anjoman_kol.png')}}" class="sponsor-img">
                     </a>
                 </div>
 
                 <div class="col-md-2">
                     <a href="http://ce.aut.ac.ir/" target="_blank">
-                        <img src="{{asset('img/sponsors/aut_ceit.png')}}" class="sponsor-img">
+                        <img src="{{asset('img/sponsors/autceit.png')}}" class="sponsor-img">
                     </a>
                 </div>
 

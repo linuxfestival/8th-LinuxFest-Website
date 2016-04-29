@@ -50,7 +50,7 @@
                 </div>
                 <div class="col-md-8">
                     <p>
-                        {{$section->desc}}
+                        {!! $section->desc !!}
                     </p>
                 </div>
             </div>

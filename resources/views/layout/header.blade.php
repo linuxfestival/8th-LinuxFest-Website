@@ -48,7 +48,7 @@
                         درباره‌ی جشنواره
                     </a>
                 </li>
-                <!--
+
                 <li>
                     <a class="page-scroll" href="/#presenters" data-target="#presenters">
                         ارائه‌دهندگان
@@ -56,28 +56,10 @@
                 </li>
 
                 <li>
-                    <a class="page-scroll" href="/#workshops" data-target="#workshops">
-                        کارگاه‌ها
+                    <a class="page-scroll" href="/#sections" data-target="#workshops">
+کارگاه ها و ارائه ها
                     </a>
                 </li>
-
-                <li>
-                    <a class="page-scroll" href="/#presentations" data-target="#presentations">
-                        ارائه‌ها
-                    </a>
-                </li>
-
-                <!--                <li>-->
-                <!--                    <a class="page-scroll" href="./register" data-target="#register">-->
-                <!--                        ثبت نام-->
-                <!--                    </a>-->
-                <!--                </li>-->
-
-                <!--                <li>-->
-                <!--                    <a class="page-scroll" href="./ticket" data-target="#ticket">-->
-                <!--                        دریافت بلیت-->
-                <!--                    </a>-->
-                <!--                </li>-->
 
 
                 <li>
@@ -88,9 +70,7 @@
 
                 <li>
                     <a class="page-scroll" href="/#contact" data-target="#contact">
-                        ارتباط با ما
-                        +
-                        محل برگزاری
+                        محل جشنواره
                     </a>
                 </li>
 

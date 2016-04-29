@@ -1,4 +1,4 @@
-<section class="bg-green" id="presentations">
+<section class="bg-green" id="sections">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">

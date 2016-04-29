@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Presenter;
 use App\Section;
+use App\Sponsor;
 use App\Workshop;
 use Illuminate\Support\Facades\Route;
 
@@ -29,10 +30,14 @@ class SiteController extends Controller
     {
         $presenters = Presenter::all();
         $sections = Section::all();
+        $sponsors = Sponsor::all();
+
         return view('landing.landing', [
             'presenters' => $presenters,
-            'sections' => $sections
+            'sections' => $sections,
+            'sponsors' => $sponsors,
         ]);
+
     }
 
     public function presenter(Presenter $presenter)

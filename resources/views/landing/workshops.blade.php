@@ -13,35 +13,36 @@
     <div class="container">
         <div class="row">
 
-            <?php foreach (get_workshops() as $k => $i) : ?>
-
-                <div class="col-lg-4 col-md-4 text-center">
-                    <div class="thumbnail">
-                        <div class="caption">
-                            <h3>
-                                <?php echo substr($i['title'],0,40) ?>
-                            </h3>
-
-                            <h5>
-                                <?php if(isset(get_presenters()[$i['presenter']]))
-                                    echo get_presenters()[$i['presenter']]['name']; else echo "‌"; ?>
-                            </h5>
-
-                            <br>
-                            <br>
+            {{--<?php foreach ($workshops as $k => $i) : echo $k;?>--}}
 
 
-                            <div style="text-align: center">
-                                <a href="<?php echo viewUri('workshop?s=' . $k) ?>"
-                                   class="btn btn-info" target="_blank">
-                                    مشاهده‌ی جزئیات
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                {{--<div class="col-lg-4 col-md-4 text-center">--}}
+                    {{--<div class="thumbnail">--}}
+                        {{--<div class="caption">--}}
+                            {{--<h3>--}}
+                                {{--<?php echo substr($i['title'],0,40) ?>--}}
+                            {{--</h3>--}}
 
-            <?php endforeach; ?>
+                            {{--<h5>--}}
+                                {{--<?php if(isset($workshops[$i['presenter']]))--}}
+                                    {{--echo $workshops[$i['presenter']]['name']; else echo "‌"; ?>--}}
+                            {{--</h5>--}}
+
+                            {{--<br>--}}
+                            {{--<br>--}}
+
+
+                            {{--<div style="text-align: center">--}}
+                                {{--<a href="<?php echo viewUri('workshop?s=' . $k) ?>"--}}
+                                   {{--class="btn btn-info" target="_blank">--}}
+                                    {{--مشاهده‌ی جزئیات--}}
+                                {{--</a>--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                {{--</div>--}}
+
+            {{--<?php endforeach; ?>--}}
 
         </div>
 

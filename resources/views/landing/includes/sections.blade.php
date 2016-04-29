@@ -29,7 +29,7 @@
                             <br>
 
                             <div style="text-align: center">
-                                <a href="{{$section->id}}"
+                                <a href="{{route('app::section',[$section->id])}}"
                                    class="btn btn-info" target="_blank">
                                     <span>مشاهده‌ی جزئیات</span>
                                 </a>

@@ -2,10 +2,20 @@
 
 namespace App;
 
+/**
+ * @property mixed id
+ * @property mixed type
+ * @property mixed title
+ * @property mixed presenter
+ * @property mixed level
+ * @property mixed time
+ * @property mixed room
+ * @property mixed desc
+ */
 class Section extends StaticModel
 {
     protected $guarded = [];
-
+    
     public static $data = [
 
         // Workshops
@@ -14,7 +24,7 @@ class Section extends StaticModel
             'id' => 'intro',
             'type' => 'workshop',
             'title' => 'Linux Intro + Intermediate',
-            'presenter' => '-',
+            'presenter' => null,
             'level' => 'شروع کار',
             'time' => 'هر دو روز - ۸ تا ۱۶',
             'room' => 'سایت کامپیوتر',

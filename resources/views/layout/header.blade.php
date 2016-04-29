@@ -35,7 +35,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand page-scroll" href="#page-top">
+            <a class="navbar-brand page-scroll" href="/#page-top">
                 جشنواره‌ی لینوکس امیرکبیر
             </a>
         </div>
@@ -44,25 +44,25 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a class="page-scroll" href="./#about" data-target="#about">
+                    <a class="page-scroll" href="/#about" data-target="#about">
                         درباره‌ی جشنواره
                     </a>
                 </li>
                 <!--
                 <li>
-                    <a class="page-scroll" href="./#presenters" data-target="#presenters">
+                    <a class="page-scroll" href="/#presenters" data-target="#presenters">
                         ارائه‌دهندگان
                     </a>
                 </li>
 
                 <li>
-                    <a class="page-scroll" href="./#workshops" data-target="#workshops">
+                    <a class="page-scroll" href="/#workshops" data-target="#workshops">
                         کارگاه‌ها
                     </a>
                 </li>
 
                 <li>
-                    <a class="page-scroll" href="./#presentations" data-target="#presentations">
+                    <a class="page-scroll" href="/#presentations" data-target="#presentations">
                         ارائه‌ها
                     </a>
                 </li>
@@ -81,13 +81,13 @@
 
 
                 <li>
-                    <a class="page-scroll" href="./#sponsors" data-target="#sponsors">
+                    <a class="page-scroll" href="/#sponsors" data-target="#sponsors">
                         حامیان
                     </a>
                 </li>
 
                 <li>
-                    <a class="page-scroll" href="./#contact" data-target="#contact">
+                    <a class="page-scroll" href="/#contact" data-target="#contact">
                         ارتباط با ما
                         +
                         محل برگزاری

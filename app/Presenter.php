@@ -36,6 +36,21 @@ class Presenter extends StaticModel
 //            'bio' => 'توسعه دهنده نرم افزارهای متن‌باز'
 //        ],
         [
+            'id' => 'alijavadi',
+            'name' => 'علی جوادی',
+            'avatar' => 'https://avatars2.githubusercontent.com/u/11222382?v=3&s=200',
+            'url' => 'https://github.com/givia',
+            'bio' => 'توسعه دهنده سمت‌سرور در کافه‌بازار'
+        ],
+        [
+            'id' => 'nasiri',
+            'name' => 'محمد نصیری‌فر',
+            'avatar' => 'https://avatars0.githubusercontent.com/u/8123364?v=3&s=200',
+            'url' => 'https://github.com/colonelmo',
+            'bio' => 'توسعه دهنده سمت‌سرور در کافه‌بازار'
+        ],
+/
+        [
             'id' => 'taher',
             'name' => 'محمدطاهر احمدی',
             'avatar' => 'https://avatars1.githubusercontent.com/u/7474613?v=3&s=200',
@@ -84,21 +99,7 @@ class Presenter extends StaticModel
 //            'url' => '',
 //            'bio' => ''
 //        ],
-        [
-            'id' => 'alijavadi',
-            'name' => 'علی جوادی',
-            'avatar' => 'https://avatars2.githubusercontent.com/u/11222382?v=3&s=200',
-            'url' => 'https://github.com/givia',
-            'bio' => 'توسعه دهنده سمت‌سرور در کافه‌بازار'
-        ],
-        [
-            'id' => 'nasiri',
-            'name' => 'محمد نصیری‌فر',
-            'avatar' => 'https://avatars0.githubusercontent.com/u/8123364?v=3&s=200',
-            'url' => 'https://github.com/colonelmo',
-            'bio' => 'توسعه دهنده نرم افزارهای متن‌باز'
-        ],
-//        [
+/        [
 //            'id' => 'afshin',
 //            'name' => 'افشین سلاجقه',
 //            'avatar' => '../img/afshin.jpg',
@@ -159,7 +160,7 @@ class Presenter extends StaticModel
             'name' => 'پویا پارسا',
             'avatar' => '//www.gravatar.com/avatar/1fddd58251edc7bf16e279b8811cd327?s=200',
             'url' => 'http://pi0.ir/',
-            'bio' => 'توسعه‌دهنده‌ی نرم‌افزارهای متن‌باز'
+            'bio' => 'توسعه دهنده در گروه فندق'
         ],
 //        [
 //            'id' => 'sinal',

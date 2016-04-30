@@ -49,7 +49,7 @@ class Presenter extends StaticModel
             'url' => 'https://github.com/colonelmo',
             'bio' => 'توسعه دهنده سمت‌سرور در کافه‌بازار'
         ],
-/
+
         [
             'id' => 'taher',
             'name' => 'محمدطاهر احمدی',

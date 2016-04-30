@@ -15,6 +15,13 @@ class Presenter extends StaticModel
 
     public static $data = [
         [
+            'id' => 'tim',
+            'name' => 'Timothy Wood',
+            'avatar' => 'https://www.seas.gwu.edu/sites/www.seas.gwu.edu/files/image/Timothy_Wood_thumb.jpg',
+            'url' => 'https://www.seas.gwu.edu/timothy-wood',
+            'bio' => 'استادیار دانشگاه جرج واشنتگتن',
+        ],
+        [
             'id' => 'bakhshis',
             'name' => 'بهادر بخشی',
             'avatar' => '//media.licdn.com/mpr/mpr/shrink_200_200/p/2/000/1ae/26c/349c0fc.jpg?s=200',
@@ -28,13 +35,13 @@ class Presenter extends StaticModel
             'url' => 'https://www.sics.se/~amir/',
             'bio' => 'پژوهشگر در SICS'
         ],
-        [
-            'id' => 'gholizade',
-            'name' => 'فرزاد قلی‌زاده',
-            'avatar' => '',
-            'url' => 'https://ir.linkedin.com/in/farzad-gholizadeh-444362a5',
-            'bio' => 'توسعه دهنده نرم افزارهای متن‌باز'
-        ],
+//        [
+//            'id' => 'gholizade',
+//            'name' => 'فرزاد قلی‌زاده',
+//            'avatar' => '',
+//            'url' => 'https://ir.linkedin.com/in/farzad-gholizadeh-444362a5',
+//            'bio' => 'توسعه دهنده نرم افزارهای متن‌باز'
+//        ],
         [
             'id' => 'alijavadi',
             'name' => 'علی جوادی',
@@ -85,13 +92,13 @@ class Presenter extends StaticModel
 //            'url' => '',
 //            'bio' => ''
 //        ],
-        [
-            'id' => 'rahimkhani',
-            'name' => 'رحیم خانی',
-            'avatar' => '',
-            'url' => '',
-            'bio' => ''
-        ],
+//        [
+//            'id' => 'rahimkhani',
+//            'name' => 'رحیم خانی',
+//            'avatar' => '',
+//            'url' => '',
+//            'bio' => ''
+//        ],
 //        [
 //            'id' => 'asemani',
 //            'name' => 'آسمانی',

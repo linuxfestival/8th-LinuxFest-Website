@@ -99,7 +99,7 @@ class Presenter extends StaticModel
 //            'url' => '',
 //            'bio' => ''
 //        ],
-/        [
+//        [
 //            'id' => 'afshin',
 //            'name' => 'افشین سلاجقه',
 //            'avatar' => '../img/afshin.jpg',

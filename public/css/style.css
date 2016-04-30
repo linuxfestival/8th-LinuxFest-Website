@@ -78,6 +78,17 @@ p {
     color: white
 }
 
+
+.bg-gold {
+    background-color: #ffcd00;
+    color: #0f0d10;
+}
+
+.bg-bronze {
+    background-color: #855300;
+    color: white;
+}
+
 .bg-boo {
     background-color: #506699;
     color: white

@@ -28,13 +28,13 @@ class Presenter extends StaticModel
             'url' => 'https://www.sics.se/~amir/',
             'bio' => 'پژوهشگر در SICS'
         ],
-//        [
-//            'id' => 'gholizade',
-//            'name' => 'فرزاد قلی‌زاده',
-//            'avatar' => '',
-//            'url' => 'https://ir.linkedin.com/in/farzad-gholizadeh-444362a5',
-//            'bio' => 'توسعه دهنده نرم افزارهای متن‌باز'
-//        ],
+        [
+            'id' => 'gholizade',
+            'name' => 'فرزاد قلی‌زاده',
+            'avatar' => '',
+            'url' => 'https://ir.linkedin.com/in/farzad-gholizadeh-444362a5',
+            'bio' => 'توسعه دهنده نرم افزارهای متن‌باز'
+        ],
         [
             'id' => 'taher',
             'name' => 'محمدطاهر احمدی',
@@ -70,13 +70,13 @@ class Presenter extends StaticModel
 //            'url' => '',
 //            'bio' => ''
 //        ],
-//        [
-//            'id' => 'rahimkhani',
-//            'name' => 'رحیم خانی',
-//            'avatar' => '',
-//            'url' => '',
-//            'bio' => ''
-//        ],
+        [
+            'id' => 'rahimkhani',
+            'name' => 'رحیم خانی',
+            'avatar' => '',
+            'url' => '',
+            'bio' => ''
+        ],
 //        [
 //            'id' => 'asemani',
 //            'name' => 'آسمانی',

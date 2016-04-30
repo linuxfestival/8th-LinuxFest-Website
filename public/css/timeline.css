@@ -14,6 +14,7 @@
     src: url('../fonts/Roya-Regular.eot') format('eot'), url('../fonts/Roya-Regular.ttf') format('truetype')
 }
 *, *:before, *:after {
+    font-family: "b roya";
     direction: rtl;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -27,7 +28,10 @@ ul.main {
     max-width: 75%;
     margin: 20px auto;
 }
-h3 {padding: 0; margin: 0;}
+h3 {
+    padding: 0;
+    margin: 0;
+}
 
 
 .date {
@@ -61,7 +65,7 @@ h3 {padding: 0; margin: 0;}
     padding: 10px;
     border-bottom: 1px dashed #ccc;
     line-height: 22px;
-    transition: ease .4s;
+    transition: ease .4s , all;
 }
 
 .events-detail li:hover {

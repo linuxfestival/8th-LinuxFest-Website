@@ -16,14 +16,14 @@ class Sponsor extends StaticModel
         [
             'id' => 'iranargham',
             'title' => 'ایران ارقام',
-            'logo' => '/img/sponsors/no_image.png',
+            'logo' => '/img/sponsors/iranargham.png',
             'url' => 'http://iranargham.com',
         ],
 
         [
             'id' => 'peivast',
             'title' => 'پیوست',
-            'logo' => '/img/sponsors/no_image.png',
+            'logo' => '/img/sponsors/peivast.png',
             'url' => 'http://peivast.com/',
         ],
 

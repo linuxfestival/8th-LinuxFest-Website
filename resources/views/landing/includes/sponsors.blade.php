@@ -110,6 +110,34 @@
     </div>
 </aside>
 
+<aside class="bg-boo" id="sponsors">
+    <div class="container text-center">
+        <div class="call-to-action">
+
+            <h2>
+                حامیان معنوی جشنواره
+            </h2>
+
+            <div class="row">
+
+                @foreach($sponsors as $sponsor)
+                    <?php if(strpos($sponsor['type'], 'moral') !== false) : ?>
+                    <div class="col-md-4">
+                        <a href="{{$sponsor->url}}" target="_blank">
+                            <img src="{{$sponsor->logo}}" class="sponsor-img">
+                        </a>
+                        <h5>{{$sponsor->title}}</h5>
+                    </div>
+                    <?php endif; ?>
+                @endforeach
+
+            </div>
+
+
+        </div>
+    </div>
+</aside>
+
 <aside>
     <div class="container text-center">
         <div class="call-to-action">

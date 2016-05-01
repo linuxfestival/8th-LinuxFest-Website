@@ -15,7 +15,7 @@ class Sponsor extends StaticModel
     public static $data = [
         [
             'id' => 'iranargham',
-            'type' => 'gold',
+            'type' => 'money',
             'title' => 'ایران ارقام',
             'logo' => '/img/sponsors/iranargham.png',
             'url' => 'http://iranargham.com',
@@ -38,7 +38,7 @@ class Sponsor extends StaticModel
         ],
         [
             'id' => 'itc',
-            'type' => 'bronze',
+            'type' => 'money',
             'title' => 'سازمان فناوری اطلاعات ایران',
             'logo' => 'http://www.sinaictgroup.com/uploads/Links/ITC.png',
             'url' => 'http://itc.ir/',
@@ -63,6 +63,27 @@ class Sponsor extends StaticModel
             'title' => 'گروه نرم‌افزاری فندق',
             'logo' => '../img/sponsors/Fandogh.png',
             'url' => 'http://fandogh.org',
+        ],
+        [
+            'id' => 'linuxFest',
+            'type' => 'founder',
+            'title' => 'دبیرخانه جشنواره ملی لینوکس و نرم‌افزارهای متن‌باز',
+            'logo' => '../img/sponsors/linuxfest.png',
+            'url' => 'http://LinuxFest.ir',
+        ],
+        [
+            'id' => 'ssc',
+            'type' => 'founder',
+            'title' => 'انجمن علمی دانشجویی دانشکده مهندسی کامپیوتر و فناوری اطلاعات دانشگاه صنعتی امیرکبیر',
+            'logo' => '../img/sponsors/anjoman.png',
+            'url' => 'http://ceit-ssc.ir',
+        ],
+        [
+            'id' => 'ceit',
+            'type' => 'founder',
+            'title' => 'دانشکده مهندسی کامپیوتر و فناوری اطلاعات دانشگاه صنعتی امیرکبیر',
+            'logo' => '../img/sponsors/autceit.png',
+            'url' => 'http://ceit.aut.ac.ir',
         ],
 
     ];

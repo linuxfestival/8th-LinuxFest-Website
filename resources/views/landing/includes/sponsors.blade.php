@@ -110,7 +110,7 @@
     </div>
 </aside>
 
-<aside class="bg-boo" id="sponsors">
+<aside class="bg-gray" id="sponsors">
     <div class="container text-center">
         <div class="call-to-action">
 

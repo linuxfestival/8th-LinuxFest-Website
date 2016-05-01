@@ -47,7 +47,7 @@ class Sponsor extends StaticModel
             'id' => 'anjoman',
             'type' => 'moral',
             'title' => 'اداره کل انجمن‌های علمی دانشگاه صنعتی امیرکبیر',
-            'logo' => '../img/sponsors/anjoman.png',
+            'logo' => '../img/sponsors/anjoman_kol.png',
             'url' => 'http://sao.aut.ac.ir/',
         ],
         [
@@ -56,7 +56,14 @@ class Sponsor extends StaticModel
             'title' => 'دانشگاه صنعتی امیرکبیر',
             'logo' => '../img/sponsors/aut.png',
             'url' => 'http://aut.ac.ir/',
-        ]
+        ],
+        [
+            'id' => 'fandogh',
+            'type' => 'moral',
+            'title' => 'گروه نرم‌افزاری فندق',
+            'logo' => '../img/sponsors/Fandogh.png',
+            'url' => 'http://fandogh.org',
+        ],
 
     ];
 

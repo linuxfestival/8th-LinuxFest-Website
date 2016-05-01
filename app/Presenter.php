@@ -59,7 +59,7 @@ class Presenter extends StaticModel
 
         [
             'id' => 'taher',
-            'name' => 'محمدطاهر احمدی',
+            'name' => 'طاهر احمدی',
             'avatar' => 'https://avatars1.githubusercontent.com/u/7474613?v=3&s=200',
             'url' => 'https://ir.linkedin.com/in/taher-ahmadi-b3798998',
             'bio' => 'توسعه دهنده نرم افزارهای متن‌باز'

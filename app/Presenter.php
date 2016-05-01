@@ -79,7 +79,7 @@ class Presenter extends StaticModel
             'bio' => 'توسعه دهنده نرم افزارهای متن‌باز'
         ],
         [
-            'id' => 'sinabahar',
+            'id' => 'bahar',
             'name' => 'سینا بهارلویی',
             'avatar' => '../img/bahar.png',
             'url' => 'https://ir.linkedin.com/in/sina-baharlouei-00b4ba97',

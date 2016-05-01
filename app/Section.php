@@ -166,7 +166,7 @@ class Section extends StaticModel
             'id' => 'python',
             'type' => 'workshop',
             'title' => 'Python',
-            'presenter' => 'taher',
+            'presenter' => 'bahar',
             'level' => 'متوسط',
             'date' => '1',
             'time' => 'روز اول - ۹ تا ۱۲:۳۰',

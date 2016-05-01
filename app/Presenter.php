@@ -78,13 +78,13 @@ class Presenter extends StaticModel
             'url' => 'https://ir.linkedin.com/in/taher-ahmadi-b3798998',
             'bio' => 'توسعه دهنده نرم افزارهای متن‌باز'
         ],
-//        [
-//            'id' => 'sinabahar',
-//            'name' => 'سینا بهارلویی',
-//            'avatar' => '',
-//            'url' => 'https://ir.linkedin.com/in/sina-baharlouei-00b4ba97',
-//            'bio' => 'توسعه دهنده نرم افزارهای متن‌باز'
-//        ],
+        [
+            'id' => 'sinabahar',
+            'name' => 'سینا بهارلویی',
+            'avatar' => '../img/bahar.jpg',
+            'url' => 'https://ir.linkedin.com/in/sina-baharlouei-00b4ba97',
+            'bio' => 'توسعه دهنده نرم افزارهای متن‌باز'
+        ],
 //        [
 //            'id' => 'mehdisaj',
 //            'name' => 'مهدی سجادی',

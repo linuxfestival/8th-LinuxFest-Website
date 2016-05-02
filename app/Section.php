@@ -350,7 +350,7 @@ class Section extends StaticModel
 
         [
             'id' => 'fixit',
-            'type' => 'special',
+            'type' => 'Special',
             'title' => 'FixIT Programming Contest',
             'presenter' => 'pooya',
             'level' => 'پیشرفته',

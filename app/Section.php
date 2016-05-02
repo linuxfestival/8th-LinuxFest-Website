@@ -50,6 +50,21 @@ class Section extends StaticModel
         ],
 
         //--------------------------------------------------------------
+
+        [
+            'id' => 'openstack',
+            'type' => 'workshop',
+            'title' => 'OpenStack',
+            'presenter' => 'pooyan',
+            'level' => 'پیشرفته',
+            'date' => '2',
+            'time' => 'روز دوم - ۹ تا ۱۲:۳۰',
+            'room' => 'سایت کامپیوتر',
+            'desc' => 'این کارگاه توضیحات معماری یک اُپن‌استک و تنظیمات اولیه از پیاده‌سازی آن به شرکت کنندگان می‌دهد.
+            توضیحات بیشتر به زودی...'
+        ],
+
+        //--------------------------------------------------------------
         [
             'id' => 'network',
             'type' => 'workshop',
@@ -59,40 +74,71 @@ class Section extends StaticModel
             'date' => '1,2',
             'time' => 'روز اول ۹:۰۰ تا ۱۲:۳۰ و روز دوم ۹:۰۰ تا ۱۰:۳۰',
             'room' => 'بعدا اعلام می‌شود',
-            'desc' => 'موضوعات و مباحثی که در این کارگاه مورد بررسی قرار می‌گیرند عبارتند از:
-            1. Introduction
-
-2. Threats and Risk Assessment ● Types of Attacks ● Trade Offs
-
-3. Physical Access ● Physical Security ● Hardware Security ● Understanding the Linux Boot Process
-
-4. Logging ● Logging Overview
-
-● Syslog Services ● The Linux Kernel Audit Daemon ● Linux Firewall Logging ● Log Reports
-
-5. Application Security ● Bugs, Beetles, and More ● Tracking and Documenting Changes ● Resource Access Control ● Mitigation Techniques ● Policy Based Access Control Frameworks ● Real World Example
-
-6. Kernel Vulnerabilities ● Kernel and User Spaces ● Bugs ● Mitigating Kernel Vulnerabilities ● Vulnerabilities Examples
-
-7. Authentication ● Encryption and Authentication ● Passwords ● Hardware Tokens ● Biometric Authentication ● Network and Centralized Authentication
-
-8. Local System Security ● Standard UNIX Permissions ● Administrator Account ● Advanced UNIX Permissions ● Filesystem Integrity ● Filesystem Quotas
-
-9. Network Security ● TCP/IP Protocols Review
-
-● Remote Trust Vectors ● Remote Exploits
-
-10. Network Services Security ● Network Tools ● Databases ● Web Server
-
-● File Servers
-
-11. Remote Access ● Unencrypted Protocols ● Accessing Windows Systems ● SSH
-
-● IPSEC VPNs
-
-12. Firewalling and Packet Filtering ● Firewalling Basics ● Netfilter (IPTables) ● Netfilter Implementation ● Mitigate Brute Force Login Attempts
-
-13. Conclusion'
+            'desc' => '
+            این کارگاه به منظور آشنایی هرچه بیشتر شرکت کنندگان با مباحث امنیت در لینوکس است.
+            <br>
+         موضوعات و مباحثی که در این کارگاه مورد بررسی قرار می‌گیرند عبارتند از:
+         <div style="direction: ltr">
+<br>
+<h3>1. Introduction</h3>
+<h3>2. Threats and Risk Assessment</h3> 
+	<li><strong>Types of Attacks</strong></li>
+	<li><strong>Trade Offs</li>
+<h3>3. Physical Access</h3> 
+	<li><strong>Physical Security</li> 
+	<li><strong>Hardware Security</li> 
+	<li><strong>Understanding the Linux Boot Process</li>
+<h3>4. Logging</h3>
+	<li><strong>Logging Overview</strong></li>
+	<li><strong>Syslog Services</strong></li> 
+	<li><strong>The Linux Kernel Audit Daemon</strong></li> 
+	<li><strong>Linux Firewall Logging</strong></li> 
+	<li><strong>Log Reports</strong></li>
+<h3>5. Application Security</h3> 
+	<li><strong>Bugs, Beetles, and More</strong></li> 
+	<li><strong>Tracking and Documenting Changes</strong></li> 
+	<li><strong>Resource Access Control</strong></li> 
+	<li><strong>Mitigation Techniques</strong></li> 
+	<li><strong>Policy Based Access Control Frameworks</strong></li> 
+	<li><strong>Real World Example</strong></li>
+<h3>6. Kernel Vulnerabilities</h3> 
+	<li><strong>Kernel and User Spaces</strong></li> 
+	<li><strong>Bugs</strong></li> 
+	<li><strong>Mitigating Kernel Vulnerabilities</strong></li> 
+	<li><strong>Vulnerabilities Examples</strong></li>
+<h3>7. Authentication</h3> 
+	<li><strong>Encryption and Authentication</strong></li> 
+	<li><strong>Passwords</strong></li> 
+	<li><strong>Hardware Tokens</strong></li> 
+	<li><strong>Biometric Authentication</strong></li> 
+	<li><strong>Network and Centralized Authentication</strong></li>
+<h3>8. Local System Security</h3> 
+	<li><strong>Standard UNIX Permissions</strong></li> 
+	<li><strong>Administrator Account</strong></li> 
+	<li><strong>Advanced UNIX Permissions</strong></li> 
+	<li><strong>Filesystem Integrity</strong></li> 
+	<li><strong>Filesystem Quotas</strong></li>
+<h3>9. Network Security</h3> 
+	<li><strong>TCP/IP Protocols Review</strong></li>
+	<li><strong>Remote Trust Vectors</strong></li> 
+	<li><strong>Remote Exploits</strong></li>
+<h3>10. Network Services Security</h3> 
+	<li><strong>Network Tools</strong></li> 
+	<li><strong>Databases</strong></li> 
+	<li><strong>Web Server</strong></li>
+	<li><strong>File Servers</strong></li>
+<h3>11. Remote Access</h3> 
+	<li><strong>Unencrypted Protocols</strong></li> 
+	<li><strong>Accessing Windows Systems</strong></li> 
+	<li><strong>SSH</strong></li>
+	<li><strong>IPSEC VPNs</strong></li>
+<h3>12. Firewalling and Packet Filtering</h3> 
+	<li><strong>Firewalling Basics</strong></li> 
+	<li><strong>Netfilter (IPTables)</strong></li> 
+	<li><strong>Netfilter Implementation</strong></li> 
+	<li><strong>Mitigate Brute Force Login Attempts</strong></li>
+<h3>13. Conclusion</h3>
+</div>'
         ],
 
         //--------------------------------------------------------------
@@ -107,20 +153,6 @@ class Section extends StaticModel
             'time' => 'روز اول - ۹ تا ۱۲:۳۰',
             'room' => 'بعدا اعلام می‌شود',
             'desc' => 'به زودی اعلام می‌شود'
-        ],
-
-        //--------------------------------------------------------------
-
-        [
-            'id' => 'scientific',
-            'type' => 'workshop',
-            'title' => 'MATLAB & Scientific Tools',
-            'presenter' => 'pooya',
-            'level' => 'متوسط',
-            'date' => '2',
-            'time' => 'روز دوم - ۹ تا ۱۲:۳۰',
-            'room' => 'بعدا اعلام می‌شود',
-            'desc' => 'توضیحات متعاقباً اعلام می‌شود...'
         ],
 
         //--------------------------------------------------------------
@@ -198,7 +230,7 @@ class Section extends StaticModel
         [
             'id' => 'embeded1',
             'type' => 'workshop',
-            'title' => 'Embeded-Systems: From-Scratch',
+            'title' => 'Embedded Linux Web Server from Scratch',
             'presenter' => 'naser',
             'level' => 'متوسط',
             'date' => '2',
@@ -206,8 +238,18 @@ class Section extends StaticModel
             'room' => 'بعدا اعلام می‌شود',
             'desc' => '
             مباحث این کارگاه ادامه کارگاه System on a Board‌ می‌باشند.
-            توضیحات به زودی اعلام می‌شوند...
-            '
+          استفاده از ​یک​ سخت‌افزار بومی مبتنی بر پردازنده ARM Cortex-A8​ ​به نام ApexV210
+<br>
+مطالب قابل ارائه‌شامل موارد زیر هستند:
+<br>
+<li>آشنایی با سیستم‌های نهفته</li>
+<li>آشنایی با مفهوم cross-compile</li>
+<li>آشنایی با بوت لودر محبوب u-boot و پیکربندی اولیه و کراس کامپایل​ آن​</li>
+<li>آشنایی با کرنل لینوکس، پیکربندی اولیه و کراس کامپایل آن</li>
+<li>آشنایی باbusybox و استفاده از آن به عنوان یک root file system ساده</li>
+<li>​آماده سازی یک web server کوچک بر روی این پلتفرم​</li>
+<li>انتقال برنامه‌ها</li>
+<li>بوت کردن سخت‌افزار​ و مشاهده نتیجه​</li>'
         ],
 
         //--------------------------------------------------------------

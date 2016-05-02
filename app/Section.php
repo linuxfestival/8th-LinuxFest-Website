@@ -281,18 +281,22 @@ class Section extends StaticModel
             'room' => 'بعدا اعلام می‌شود',
             'desc' => '
             این کارگاه ادامه کارگاه‌های System on a Board و Embeded-Systems: From-Scratch می‌باشد.
+            <br>
             سرفصل‌های این کارگاه عبارتند از:
-            1) Introduction to Serial protocol
+            <br>
+<li>1) Introduction to Serial protocol</li>
 
-2) Defining a basic data transmission between R­Pi and Arduino using Serial interface
+<li>2) Defining a basic data transmission between R­Pi and Arduino using Serial interface</li>
 
-3) R­Pi checks the IR signal
+<li>3) R­Pi checks the IR signal</li>
 
-4) R­Pi decides what to do
+<li>4) R­Pi decides what to do</li>
 
-5) R­Pi orders Arduino to light on/off
+<li>5) R­Pi orders Arduino to light on/off</li>
 
-6) Special part: Introduction to RF (wireless) protocols + Testing one of them
+<li>6) Special part: Introduction to RF (wireless) protocols + Testing one of them</li>
+
+<br>
 
 در نهایتُ شرکت‌کنندگان این کارگاه‌ها توانایی طراحی و پیاده‌سازی یک سیستم واقعی که در خانه‌های هوشمند استفاده می‌شوند را خواهند داشت.
             '

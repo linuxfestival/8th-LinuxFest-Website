@@ -24,7 +24,7 @@ class Presenter extends StaticModel
         [
             'id' => 'tim',
             'name' => 'Timothy Wood',
-            'avatar' => 'https://www.seas.gwu.edu/sites/www.seas.gwu.edu/files/image/Timothy_Wood_thumb.jpg',
+            'avatar' => '/img/Timothy.jpg',
             'url' => 'https://www.seas.gwu.edu/timothy-wood',
             'bio' => 'استادیار دانشگاه جرج واشنتگتن',
         ],

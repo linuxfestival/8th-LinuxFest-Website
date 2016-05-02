@@ -64,6 +64,13 @@ class Presenter extends StaticModel
             'bio' => 'توسعه دهنده سمت‌سرور در کافه‌بازار'
         ],
         [
+            'id' => 'naser',
+            'name' => 'ناصر افشین',
+            'avatar' => '../img/naser.jpg',
+            'url' => 'http://www.sstaha.ir/',
+            'bio' => 'مدیر فنی شرکت دانش بنیان سامانه صنعت طاها'
+        ],
+        [
             'id' => 'pooya',
             'name' => 'پویا پارسا',
             'avatar' => '//www.gravatar.com/avatar/1fddd58251edc7bf16e279b8811cd327?s=200',
@@ -125,13 +132,6 @@ class Presenter extends StaticModel
             'avatar' => '../img/amirreza.jpg',
             'url' => '',
             'bio' => 'توسعه دهنده نرم افزارهای متن‌باز'
-        ],
-        [
-            'id' => 'naser',
-            'name' => 'ناصر افشین',
-            'avatar' => '../img/naser.jpg',
-            'url' => 'http://www.sstaha.ir/',
-            'bio' => 'مدیر فنی شرکت دانش بنیان سامانه صنعت طاها'
         ],
         [
             'id' => 'pooyan',

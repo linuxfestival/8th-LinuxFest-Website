@@ -35,13 +35,13 @@ class Presenter extends StaticModel
             'url' => 'https://www.sics.se/~amir/',
             'bio' => 'پژوهشگر در SICS'
         ],
-//        [
-//            'id' => 'gholizade',
-//            'name' => 'فرزاد قلی‌زاده',
-//            'avatar' => '',
-//            'url' => 'https://ir.linkedin.com/in/farzad-gholizadeh-444362a5',
-//            'bio' => 'توسعه دهنده نرم افزارهای متن‌باز'
-//        ],
+        [
+            'id' => 'gholizade',
+            'name' => 'فرزاد قلی‌زاده',
+            'avatar' => '../img/farzad.jpg',
+            'url' => 'https://ir.linkedin.com/in/farzad-gholizadeh-444362a5',
+            'bio' => 'توسعه دهنده نرم افزارهای متن‌باز'
+        ],
         [
             'id' => 'afshin',
             'name' => 'افشین سلاجقه',
@@ -85,13 +85,13 @@ class Presenter extends StaticModel
             'url' => 'https://ir.linkedin.com/in/sina-baharlouei-00b4ba97',
             'bio' => 'توسعه دهنده نرم افزارهای متن‌باز'
         ],
-//        [
-//            'id' => 'mehdisaj',
-//            'name' => 'مهدی سجادی',
-//            'avatar' => '',
-//            'url' => 'https://ir.linkedin.com/in/mahdi-sajjadi-5a0936b5',
-//            'bio' => 'توسعه دهنده نرم افزارهای متن‌باز'
-//        ],
+        [
+            'id' => 'mehdisaj',
+            'name' => 'مهدی سجادی',
+            'avatar' => 'https://media.licdn.com/media/AAEAAQAAAAAAAAPrAAAAJDNhOWExNTZiLWY2ZGEtNDg1ZC05YTc1LWIxODE4ODM4YjgxYQ.jpg',
+            'url' => 'https://ir.linkedin.com/in/mahdi-sajjadi-5a0936b5',
+            'bio' => 'توسعه دهنده نرم افزارهای متن‌باز'
+        ],
         [
             'id' => 'abolfazl',
             'name' => 'ابولفضل دانایی',
@@ -99,20 +99,20 @@ class Presenter extends StaticModel
             'url' => 'https://ir.linkedin.com/in/abolfazl-danayi-77236390',
             'bio' => 'توسعه دهنده نرم افزارهای متن‌باز'
         ],
-//        [
-//            'id' => 'amir',
-//            'name' => 'امیر',
-//            'avatar' => '',
-//            'url' => '',
-//            'bio' => ''
-//        ],
-//        [
-//            'id' => 'rahimkhani',
-//            'name' => 'رحیم خانی',
-//            'avatar' => '',
-//            'url' => '',
-//            'bio' => ''
-//        ],
+        [
+            'id' => 'amir',
+            'name' => 'امیر رضایی',
+            'avatar' => '../img/amirreza.jpg',
+            'url' => '',
+            'bio' => 'توسعه دهنده نرم افزارهای متن‌باز'
+        ],
+        [
+            'id' => 'rahimkhani',
+            'name' => 'سیاوش رحیم خانی',
+            'avatar' => '../img/siavash.jpg',
+            'url' => '',
+            'bio' => ''
+        ],
 //        [
 //            'id' => 'asemani',
 //            'name' => 'آسمانی',

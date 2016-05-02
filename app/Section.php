@@ -39,7 +39,7 @@ class Section extends StaticModel
             'id' => 'intro',
             'type' => 'workshop',
             'title' => 'Linux Basic',
-            'presenter' => 'pooya',
+            'presenter' => 'gholizade',
             'level' => 'شروع کار',
             'date' => '1,2',
             'time' => 'هر دو روز - ۹ تا ۱۲:۳۰',
@@ -54,12 +54,45 @@ class Section extends StaticModel
             'id' => 'network',
             'type' => 'workshop',
             'title' => 'Network & Security',
-            'presenter' => 'pooya',
+            'presenter' => 'rahimkhani',
             'level' => 'پیشرفته',
             'date' => '1,2',
-            'time' => 'هر دو روز - ۹ تا ۱۲:۳۰',
+            'time' => 'روز اول ۹:۰۰ تا ۱۲:۳۰ و روز دوم ۹:۰۰ تا ۱۰:۳۰',
             'room' => 'بعدا اعلام می‌شود',
-            'desc' => 'به زودی اعلام می‌شود'
+            'desc' => 'موضوعات و مباحثی که در این کارگاه مورد بررسی قرار می‌گیرند عبارتند از:
+            1. Introduction
+
+2. Threats and Risk Assessment ● Types of Attacks ● Trade Offs
+
+3. Physical Access ● Physical Security ● Hardware Security ● Understanding the Linux Boot Process
+
+4. Logging ● Logging Overview
+
+● Syslog Services ● The Linux Kernel Audit Daemon ● Linux Firewall Logging ● Log Reports
+
+5. Application Security ● Bugs, Beetles, and More ● Tracking and Documenting Changes ● Resource Access Control ● Mitigation Techniques ● Policy Based Access Control Frameworks ● Real World Example
+
+6. Kernel Vulnerabilities ● Kernel and User Spaces ● Bugs ● Mitigating Kernel Vulnerabilities ● Vulnerabilities Examples
+
+7. Authentication ● Encryption and Authentication ● Passwords ● Hardware Tokens ● Biometric Authentication ● Network and Centralized Authentication
+
+8. Local System Security ● Standard UNIX Permissions ● Administrator Account ● Advanced UNIX Permissions ● Filesystem Integrity ● Filesystem Quotas
+
+9. Network Security ● TCP/IP Protocols Review
+
+● Remote Trust Vectors ● Remote Exploits
+
+10. Network Services Security ● Network Tools ● Databases ● Web Server
+
+● File Servers
+
+11. Remote Access ● Unencrypted Protocols ● Accessing Windows Systems ● SSH
+
+● IPSEC VPNs
+
+12. Firewalling and Packet Filtering ● Firewalling Basics ● Netfilter (IPTables) ● Netfilter Implementation ● Mitigate Brute Force Login Attempts
+
+13. Conclusion'
         ],
 
         //--------------------------------------------------------------
@@ -121,13 +154,13 @@ class Section extends StaticModel
         //--------------------------------------------------------------
 
         [
-            'id' => 'system_on_a_board',
+            'id' => 'system_on_a_board1',
             'type' => 'workshop',
             'title' => 'System On a Board',
-            'presenter' => 'abolfazl',
+            'presenter' => 'mehdisaj',
             'level' => 'متوسط',
             'date' => '1',
-            'time' => 'روز اول - ۹ تا ۱۲:۳۰',
+            'time' => 'روز اول - ۹ تا ۱۰:۳۰',
             'room' => 'بعدا اعلام می‌شود',
             'desc' => 'توضیحات متعاقباً اعلام می‌شود...'
         ],
@@ -135,15 +168,76 @@ class Section extends StaticModel
         //--------------------------------------------------------------
 
         [
-            'id' => 'embeded',
+            'id' => 'system_on_a_board2',
             'type' => 'workshop',
-            'title' => 'Embeded Systems',
+            'title' => 'Hardware/Embedded Devices (phase 1)',
             'presenter' => 'abolfazl',
             'level' => 'متوسط',
-            'date' => '2',
-            'time' => 'روز دوم - ۹ تا ۱۲:۳۰',
+            'date' => '1',
+            'time' => 'روز اول - ۱۰:۴۵ تا ۱۲:۳۰',
             'room' => 'بعدا اعلام می‌شود',
-            'desc' => 'توضیحات متعاقباً اعلام می‌شود...'
+            'desc' => '
+            هدف از این کارگاه آشنایی کاربران با مبانی سیستم‌های درگیر در اینترنت اشیا است که سرفصل‌های ارائه شده در این کارگاه حاصل خروجی پروژه ملی اینترنت اشیای دانشگاه امیرکبیر است.
+            سرفصل‌های این کارگاه عبارتند از:
+                        1) Introduction to Embedded systems, Arduino and Rasp Berry Pi mini computers
+
+2) Arduino: Hello World (LED on/off – Blink)
+
+3) Arduino: IR detection
+
+4) R­Pi: What are GPIO pins?! (+ GPIO on Python)
+
+5) R­Pi: IR detection
+
+در نهایت شرکت‌کنندگان مفاهیم ابتدایی سیستم‌های نهفته را دریافته و دیدی از دنیای الکترونیک سیستم‌های اینترنت اشیا خواهند داشت.
+            '
+        ],
+
+        //--------------------------------------------------------------
+
+        [
+            'id' => 'embeded1',
+            'type' => 'workshop',
+            'title' => 'Embeded-Systems: From-Scratch',
+            'presenter' => 'naser',
+            'level' => 'متوسط',
+            'date' => '2',
+            'time' => 'روز دوم - ۹ تا ۱۰:۳۰',
+            'room' => 'بعدا اعلام می‌شود',
+            'desc' => '
+            مباحث این کارگاه ادامه کارگاه System on a Board‌ می‌باشند.
+            توضیحات به زودی اعلام می‌شوند...
+            '
+        ],
+
+        //--------------------------------------------------------------
+
+        [
+            'id' => 'embeded2',
+            'type' => 'workshop',
+            'title' => 'Embeded-Systems: IoT Basics',
+            'presenter' => 'amir',
+            'level' => 'متوسط',
+            'date' => '2',
+            'time' => 'روز دوم - ۱۰:۴۵ تا ۱۲:۳۰',
+            'room' => 'بعدا اعلام می‌شود',
+            'desc' => '
+            این کارگاه ادامه کارگاه‌های System on a Board و Embeded-Systems: From-Scratch می‌باشد.
+            سرفصل‌های این کارگاه عبارتند از:
+            1) Introduction to Serial protocol
+
+2) Defining a basic data transmission between R­Pi and Arduino using Serial interface
+
+3) R­Pi checks the IR signal
+
+4) R­Pi decides what to do
+
+5) R­Pi orders Arduino to light on/off
+
+6) Special part: Introduction to RF (wireless) protocols + Testing one of them
+
+در نهایتُ شرکت‌کنندگان این کارگاه‌ها توانایی طراحی و پیاده‌سازی یک سیستم واقعی که در خانه‌های هوشمند استفاده می‌شوند را خواهند داشت.
+            '
         ],
 
         //--------------------------------------------------------------
@@ -172,7 +266,22 @@ class Section extends StaticModel
             'time' => 'روز اول - ۹ تا ۱۲:۳۰',
             'room' => 'بعدا اعلام می‌شود',
             'desc' => '
-یکی از زبان‌هایی که در سال‌های اخیر توانسته سهم زیادی از برنامه‌های تولیدشده به صورت متن‌باز را به خود اختصاص دهد زبان پایتون است. این زبان ویژگی‌های بسیاری دارد که از جمله می‌توان به ارتباط بسیار خوب با آن با زبان C یا dynamic type بودن آن اشاره کرد. در این کارگاه قصد داریم با تعدادی از این ویژگی‌ها آشنا شویم. به طور کلی در طی این دو روز مباحثی همچون Socket Programming، Design Patterns و... را معرفی می‌کنیم.            '
+            زبان Python يکی از قدرتمندترين و سريع ترين و در عين حال ساده ترين زبان های برنامه نويسی است که در چندسال اخير٬  
+
+تعداد توسعه دهندگان آن رشد خيره کننده ای داشته است. در حال حاضر زبان پايتون٬ به عنوان مهمترين زبان آکادميک و آموزشی٬ 
+
+در زمينه های گوناگون از کار با الگوريتم های مهم هوش مصنوعی و يادگيری ماشين گرفته٬  تا توسعه دهندگی وب٬  طراحی و 
+
+پياده سازی خزشگرهای وب و پروژه های دانشگاهی به کار ميرود. در اين کارگاه٬  با مهمترين خصوصيات و مزيت های زبان 
+
+٬python دستورات پايه٬ کار با کلاس ها٬  توابع و جنريتورها و برخی از مهمترين کتابخانه ها و چارچوب های مبتنی بر زبان 
+
+پايتون آشنا می شويم و قدرت٬ زيبايی و سادگی اين زبان را تجربه خواهيم کرد.
+
+مهمترين خصوصيات و مزيت های زبان ٬python دستورات پايه٬ کار با کلاس ها٬  توابع و جنريتورها و برخی از مهمترين 
+
+کتابخانه ها و چارچوب های مبتنی بر زبان پايتون آشنا می شويم و قدرت٬ زيبايی و سادگی اين زبان را تجربه خواهيم کرد.
+            '
         ],
 
         //--------------------------------------------------------------

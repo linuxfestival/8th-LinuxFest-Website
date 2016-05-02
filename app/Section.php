@@ -200,20 +200,6 @@ class Section extends StaticModel
         //--------------------------------------------------------------
 
         [
-            'id' => 'matlab',
-            'type' => 'workshop',
-            'title' => 'MATLAB & Scientific Tools',
-            'presenter' => 'pooyan',
-            'level' => 'متوسط',
-            'date' => '2',
-            'time' => 'روز دوم ۹ تا ۱۲:۳۰',
-            'room' => 'بعدا اعلام می‌شود',
-            'desc' => 'توضیحات متعاقباً اعلام می‌شود...'
-        ],
-
-        //--------------------------------------------------------------
-
-        [
             'id' => 'system_on_a_board1',
             'type' => 'workshop',
             'title' => 'System On a Board',

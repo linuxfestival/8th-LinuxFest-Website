@@ -246,7 +246,7 @@ class Section extends StaticModel
         [
             'id' => 'embeded1',
             'type' => 'workshop',
-            'title' => 'Embedded Linux Web Server from Scratch',
+            'title' => 'Embedded WebServer from Scratch',
             'presenter' => 'naser',
             'level' => 'متوسط',
             'date' => '2',

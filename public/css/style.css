@@ -65,7 +65,12 @@ p {
 }
 
 .bg-dark {
-    background-color: #1a0c23;
+    background-color: #1d0a3a;
+    color: #bcbf46
+}
+
+.bg-special {
+    background-color: 1a0c23;
     color: #bcbf46
 }
 

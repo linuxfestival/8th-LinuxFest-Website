@@ -22,18 +22,32 @@ class Presenter extends StaticModel
             'bio' => 'استادیار دانشگاه صنعتی امیرکبیر',
         ],
         [
+            'id' => 'tim',
+            'name' => 'Timothy Wood',
+            'avatar' => '/img/Timothy.jpg',
+            'url' => 'https://www.seas.gwu.edu/timothy-wood',
+            'bio' => 'استادیار دانشگاه جرج واشنتگتن',
+        ],
+        [
             'id' => 'peyberah',
             'name' => 'امیرحسین پی‌براه',
             'avatar' => '//www.gravatar.com/avatar/95062a379d77e40f6b73093d905be817?s=200',
             'url' => 'https://www.sics.se/~amir/',
             'bio' => 'پژوهشگر در SICS'
         ],
+//        [
+//            'id' => 'gholizade',
+//            'name' => 'فرزاد قلی‌زاده',
+//            'avatar' => '',
+//            'url' => 'https://ir.linkedin.com/in/farzad-gholizadeh-444362a5',
+//            'bio' => 'توسعه دهنده نرم افزارهای متن‌باز'
+//        ],
         [
-            'id' => 'gholizade',
-            'name' => 'فرزاد قلی‌زاده',
-            'avatar' => '',
-            'url' => 'https://ir.linkedin.com/in/farzad-gholizadeh-444362a5',
-            'bio' => 'توسعه دهنده نرم افزارهای متن‌باز'
+            'id' => 'afshin',
+            'name' => 'افشین سلاجقه',
+            'avatar' => '../img/afshin.jpg',
+            'url' => 'http://iranargham.com/',
+            'bio' => 'مشاور ارشد آنالیز سیستم و طراحی نرم افزار شرکت ایران ارقام'
         ],
         [
             'id' => 'alijavadi',
@@ -41,6 +55,13 @@ class Presenter extends StaticModel
             'avatar' => 'https://avatars2.githubusercontent.com/u/11222382?v=3&s=200',
             'url' => 'https://github.com/givia',
             'bio' => 'توسعه دهنده سمت‌سرور در کافه‌بازار'
+        ],
+        [
+            'id' => 'danial',
+            'name' => 'دانیال بهزادی',
+            'avatar' => '//media.licdn.com/mpr/mpr/shrink_200_200/p/2/000/19f/245/283e32f.jpg?s=200',
+            'url' => 'https://danialbehzadi.wordpress.com',
+            'bio' => 'گروه کاربران ایرانی اوبونتو'
         ],
         [
             'id' => 'nasiri',
@@ -52,18 +73,18 @@ class Presenter extends StaticModel
 
         [
             'id' => 'taher',
-            'name' => 'محمدطاهر احمدی',
+            'name' => 'طاهر احمدی',
             'avatar' => 'https://avatars1.githubusercontent.com/u/7474613?v=3&s=200',
             'url' => 'https://ir.linkedin.com/in/taher-ahmadi-b3798998',
             'bio' => 'توسعه دهنده نرم افزارهای متن‌باز'
         ],
-//        [
-//            'id' => 'sinabahar',
-//            'name' => 'سینا بهارلویی',
-//            'avatar' => '',
-//            'url' => 'https://ir.linkedin.com/in/sina-baharlouei-00b4ba97',
-//            'bio' => 'توسعه دهنده نرم افزارهای متن‌باز'
-//        ],
+        [
+            'id' => 'bahar',
+            'name' => 'سینا بهارلویی',
+            'avatar' => '../img/bahar.png',
+            'url' => 'https://ir.linkedin.com/in/sina-baharlouei-00b4ba97',
+            'bio' => 'توسعه دهنده نرم افزارهای متن‌باز'
+        ],
 //        [
 //            'id' => 'mehdisaj',
 //            'name' => 'مهدی سجادی',
@@ -71,13 +92,13 @@ class Presenter extends StaticModel
 //            'url' => 'https://ir.linkedin.com/in/mahdi-sajjadi-5a0936b5',
 //            'bio' => 'توسعه دهنده نرم افزارهای متن‌باز'
 //        ],
-//        [
-//            'id' => 'abolfazl',
-//            'name' => 'ابولفضل دانایی',
-//            'avatar' => '',
-//            'url' => 'https://ir.linkedin.com/in/abolfazl-danayi-77236390',
-//            'bio' => 'توسعه دهنده نرم افزارهای متن‌باز'
-//        ],
+        [
+            'id' => 'abolfazl',
+            'name' => 'ابولفضل دانایی',
+            'avatar' => 'https://media.licdn.com/media/AAEAAQAAAAAAAAQOAAAAJDNiMDBkNTg3LWUwZjgtNDFmZC1iYmY0LTJiNmFlODA2M2E2ZQ.jpg',
+            'url' => 'https://ir.linkedin.com/in/abolfazl-danayi-77236390',
+            'bio' => 'توسعه دهنده نرم افزارهای متن‌باز'
+        ],
 //        [
 //            'id' => 'amir',
 //            'name' => 'امیر',
@@ -85,24 +106,17 @@ class Presenter extends StaticModel
 //            'url' => '',
 //            'bio' => ''
 //        ],
-        [
-            'id' => 'rahimkhani',
-            'name' => 'رحیم خانی',
-            'avatar' => '',
-            'url' => '',
-            'bio' => ''
-        ],
 //        [
-//            'id' => 'asemani',
-//            'name' => 'آسمانی',
+//            'id' => 'rahimkhani',
+//            'name' => 'رحیم خانی',
 //            'avatar' => '',
 //            'url' => '',
 //            'bio' => ''
 //        ],
 //        [
-//            'id' => 'afshin',
-//            'name' => 'افشین سلاجقه',
-//            'avatar' => '../img/afshin.jpg',
+//            'id' => 'asemani',
+//            'name' => 'آسمانی',
+//            'avatar' => '',
 //            'url' => '',
 //            'bio' => ''
 //        ],
@@ -113,13 +127,6 @@ class Presenter extends StaticModel
 //            'url' => 'https://ir.linkedin.com/in/remohammadi',
 //            'bio' => 'مدیر فنی کافه‌بازار'
 //        ],
-        [
-            'id' => 'danial',
-            'name' => 'دانیال بهزادی',
-            'avatar' => '//media.licdn.com/mpr/mpr/shrink_200_200/p/2/000/19f/245/283e32f.jpg?s=200',
-            'url' => 'https://danialbehzadi.wordpress.com',
-            'bio' => 'گروه کاربران ایرانی اوبونتو'
-        ],
 //        [
 //            'id' => 'mohajer',
 //            'name' => 'میلاد مهاجر',

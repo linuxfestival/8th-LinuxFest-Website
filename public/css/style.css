@@ -3,6 +3,7 @@
 @import "../css/awesome-bootstrap-checkbox.css";
 @import "../fonts/font-awesome/css/font-awesome.min.css";
 @import "../css/animate.min.css";
+@import url(https://fonts.googleapis.com/css?family=Ubuntu);
 
 @font-face {
     font-family: 'entezar';
@@ -20,7 +21,7 @@ html, body {
 }
 
 body {
-    font-family: 'b roya', Arial, sans-serif
+    font-family: 'b roya', 'Ubuntu', sans-serif
 }
 
 hr {
@@ -45,13 +46,18 @@ a:hover, a:focus {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'b roya', Arial, sans-serif
+    font-family: 'b roya', 'Ubuntu', sans-serif
 }
 
 p {
     font-size: 22px;
     line-height: 1.5;
     margin-bottom: 20px
+}
+
+.bg-white {
+    background-color: #ffffff;
+    color: #2e2e2e
 }
 
 .bg-primary {
@@ -68,6 +74,11 @@ p {
     color: white
 }
 
+.bg-violet {
+    background-color: goldenrod;
+    color: #000;
+}
+
 .bg-green {
     background-color: #4caf50;
     color: white
@@ -81,6 +92,16 @@ p {
 .bg-boo {
     background-color: #506699;
     color: white
+}
+
+.bg-bronze {
+    background-color: #855300;
+    color: white;
+}
+
+.bg-gray {
+    background-color: #d0d9f4;
+    color: #272726;
 }
 
 .text-faded {
@@ -105,7 +126,7 @@ aside {
     -moz-box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.3);
     box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.3);
     max-height: 20px;
-    font-family: 'b roya', Arial, sans-serif;
+    font-family: 'b roya', 'Ubuntu', sans-serif;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s
@@ -113,7 +134,7 @@ aside {
 
 .navbar-default .navbar-header .navbar-brand {
     color: #f05f40;
-    font-family: 'b roya', Arial, sans-serif;
+    font-family: 'b roya', 'Ubuntu', sans-serif;
     font-weight: 700;
     text-transform: uppercase
 }
@@ -229,7 +250,7 @@ header .header-content {
 }
 
 header .header-content .header-content-inner h1, header .header-content .header-content-inner h2, header .header-content .header-content-inner h3, header .header-content .header-content-inner h4 {
-    font-family: 'entezar', 'B Roya', Arial, sans-serif;
+    font-family: 'entezar', 'B Roya', 'Ubuntu', sans-serif;
     display: inline-block
 }
 
@@ -332,7 +353,7 @@ header .header-content .header-content-inner p {
 }
 
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category, .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
-    font-family: 'b roya', Arial, sans-serif;
+    font-family: 'b roya', 'Ubuntu', sans-serif;
     padding: 0 15px
 }
 
@@ -432,7 +453,7 @@ header .header-content .header-content-inner p {
 }
 
 .btn {
-    font-family: 'b roya', Arial, sans-serif;
+    font-family: 'b roya', 'Ubuntu', sans-serif;
     border: 0;
     border-radius: 300px;
     font-weight: 700;
@@ -545,7 +566,7 @@ footer {
     height: 50px;
     text-align: center;
     vertical-align: text-bottom;
-    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif
+    font-family: 'Ubuntu', sans-serif
 }
 
 #map-canvas {

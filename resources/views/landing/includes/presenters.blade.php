@@ -1,4 +1,4 @@
-<section id="presenters">
+<section class="bg-white" id="presenters">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
@@ -20,7 +20,7 @@
 
                         <img style="max-height: 220px;" src="{{$presenter->avatar}}">
 
-                        <h2>{{$presenter->name}}</h2>
+                        <h2><strong>{{$presenter->name}}</strong></h2>
 
                         <h5>{{$presenter->bio}}</h5>
 

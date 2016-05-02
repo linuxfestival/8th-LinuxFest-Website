@@ -50,17 +50,16 @@
                 </li>
 
                 <li>
-                    <a class="page-scroll" href="/#presenters" data-target="#presenters">
-                        ارائه‌دهندگان
+                    <a class="page-scroll" href="/#workshops" data-target="#workshops">
+                        کارگاه ها و ارائه ها
                     </a>
                 </li>
 
                 <li>
-                    <a class="page-scroll" href="/#sections" data-target="#workshops">
-کارگاه ها و ارائه ها
+                    <a class="page-scroll" href="/#presenters" data-target="#presenters">
+                        ارائه‌دهندگان
                     </a>
                 </li>
-
 
                 <li>
                     <a class="page-scroll" href="/#sponsors" data-target="#sponsors">

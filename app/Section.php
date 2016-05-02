@@ -238,16 +238,18 @@ class Section extends StaticModel
             'room' => 'بعدا اعلام می‌شود',
             'desc' => '
             هدف از این کارگاه آشنایی کاربران با مبانی سیستم‌های درگیر در اینترنت اشیا است که سرفصل‌های ارائه شده در این کارگاه حاصل خروجی پروژه ملی اینترنت اشیای دانشگاه امیرکبیر است.
+            <br>
             سرفصل‌های این کارگاه عبارتند از:
-                        1) Introduction to Embedded systems, Arduino and Rasp Berry Pi mini computers
+            <br>
+<li>1) Introduction to Embedded systems, Arduino and Rasp Berry Pi mini computers</li>
 
-2) Arduino: Hello World (LED on/off – Blink)
+<li>2) Arduino: Hello World (LED on/off – Blink)</li>
 
-3) Arduino: IR detection
+<li>3) Arduino: IR detection</li>
 
-4) R­Pi: What are GPIO pins?! (+ GPIO on Python)
+<li>4) R­Pi: What are GPIO pins?! (+ GPIO on Python)</li>
 
-5) R­Pi: IR detection
+<li>5) R­Pi: IR detection</li>
 
 در نهایت شرکت‌کنندگان مفاهیم ابتدایی سیستم‌های نهفته را دریافته و دیدی از دنیای الکترونیک سیستم‌های اینترنت اشیا خواهند داشت.
             '

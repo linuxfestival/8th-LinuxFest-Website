@@ -61,7 +61,7 @@ class Section extends StaticModel
             'time' => 'روز دوم - ۹ تا ۱۲:۳۰',
             'room' => 'سایت کامپیوتر',
             'desc' => 'این کارگاه توضیحات معماری یک اُپن‌استک و تنظیمات اولیه از پیاده‌سازی آن به شرکت کنندگان می‌دهد.
-            توضیحات بیشتر به زودی...'
+            توضیحات ّیشتر به زودی...'
         ],
 
         //--------------------------------------------------------------
@@ -158,6 +158,20 @@ class Section extends StaticModel
         //--------------------------------------------------------------
 
         [
+            'id' => 'scientific',
+            'type' => 'workshop',
+            'title' => 'MATLAB & Scientific Tools',
+            'presenter' => 'pooya',
+            'level' => 'متوسط',
+            'date' => '2',
+            'time' => 'روز دوم - ۹ تا ۱۲:۳۰',
+            'room' => 'بعدا اعلام می‌شود',
+            'desc' => 'توضیحات متعاقباً اعلام می‌شود...'
+        ],
+
+        //--------------------------------------------------------------
+
+        [
             'id' => 'dataware_workshop',
             'type' => 'workshop',
             'title' => 'Data Warehouse Workshop',
@@ -176,6 +190,20 @@ class Section extends StaticModel
             'type' => 'workshop',
             'title' => 'Webservers',
             'presenter' => 'pooya',
+            'level' => 'متوسط',
+            'date' => '2',
+            'time' => 'روز دوم ۹ تا ۱۲:۳۰',
+            'room' => 'بعدا اعلام می‌شود',
+            'desc' => 'توضیحات متعاقباً اعلام می‌شود...'
+        ],
+
+        //--------------------------------------------------------------
+
+        [
+            'id' => 'matlab',
+            'type' => 'workshop',
+            'title' => 'MATLAB & Scientific Tools',
+            'presenter' => 'pooyan',
             'level' => 'متوسط',
             'date' => '2',
             'time' => 'روز دوم ۹ تا ۱۲:۳۰',

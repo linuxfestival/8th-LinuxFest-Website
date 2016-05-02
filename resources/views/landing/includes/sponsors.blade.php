@@ -1,4 +1,4 @@
-<aside class="bg-violet" id="sponsors">
+<aside class="bg-violet" id="sponsors" style="backgroung:#000">
     <div class="container text-center">
         <div class="call-to-action">
 

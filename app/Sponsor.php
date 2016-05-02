@@ -36,7 +36,14 @@ class Sponsor extends StaticModel
             'logo' => '/img/sponsors/peidad.png',
             'url' => 'http://peidad.com/',
         ],
-        [
+		
+		[
+		     'id' => 'itc',
+            'title' => 'سازمان فناوری اطلاعات ایران',
+            'logo' => 'http://www.sinaictgroup.com/uploads/Links/ITC.png',
+            'url' => 'http://itc.ir/',
+		]
+,       [
             'id' => 'itc',
             'type' => 'money',
             'title' => 'سازمان فناوری اطلاعات ایران',
@@ -85,6 +92,7 @@ class Sponsor extends StaticModel
             'logo' => '../img/sponsors/autceit.png',
             'url' => 'http://ceit.aut.ac.ir',
         ],
+
 
     ];
 

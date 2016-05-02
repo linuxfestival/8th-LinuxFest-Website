@@ -36,13 +36,6 @@ class Presenter extends StaticModel
             'bio' => 'پژوهشگر در SICS'
         ],
         [
-            'id' => 'gholizade',
-            'name' => 'فرزاد قلی‌زاده',
-            'avatar' => '../img/farzad.jpg',
-            'url' => 'https://ir.linkedin.com/in/farzad-gholizadeh-444362a5',
-            'bio' => 'توسعه دهنده نرم افزارهای متن‌باز'
-        ],
-        [
             'id' => 'afshin',
             'name' => 'افشین سلاجقه',
             'avatar' => '../img/afshin.jpg',
@@ -70,7 +63,34 @@ class Presenter extends StaticModel
             'url' => 'https://github.com/colonelmo',
             'bio' => 'توسعه دهنده سمت‌سرور در کافه‌بازار'
         ],
-
+        [
+            'id' => 'pooya',
+            'name' => 'پویا پارسا',
+            'avatar' => '//www.gravatar.com/avatar/1fddd58251edc7bf16e279b8811cd327?s=200',
+            'url' => 'http://pi0.ir/',
+            'bio' => 'توسعه دهنده در گروه فندق'
+        ],
+        [
+            'id' => 'parham',
+            'name' => 'پرهام الوانی',
+            'avatar' => '//www.gravatar.com/avatar/1347add4ae303c0258a3db358ed77c55?s=200',
+            'url' => 'http://1995parham.github.io/about/',
+            'bio' => 'توسعه‌دهنده‌ی نرم‌افزارهای متن‌باز'
+        ],
+        [
+            'id' => 'rahimkhani',
+            'name' => 'سیاوش رحیم خانی',
+            'avatar' => '../img/siavash.jpg',
+            'url' => 'http://www.isc.co.ir/',
+            'bio' => 'متخصص شبکه در شرکت خدمات انفورماتیک'
+        ],
+        [
+            'id' => 'gholizade',
+            'name' => 'فرزاد قلی‌زاده',
+            'avatar' => '../img/farzad.jpg',
+            'url' => 'https://ir.linkedin.com/in/farzad-gholizadeh-444362a5',
+            'bio' => 'توسعه دهنده نرم افزارهای متن‌باز'
+        ],
         [
             'id' => 'taher',
             'name' => 'طاهر احمدی',
@@ -107,12 +127,20 @@ class Presenter extends StaticModel
             'bio' => 'توسعه دهنده نرم افزارهای متن‌باز'
         ],
         [
-            'id' => 'rahimkhani',
-            'name' => 'سیاوش رحیم خانی',
-            'avatar' => '../img/siavash.jpg',
-            'url' => '',
-            'bio' => ''
+            'id' => 'naser',
+            'name' => 'ناصر افشین',
+            'avatar' => '../img/naser.jpg',
+            'url' => 'http://www.sstaha.ir/',
+            'bio' => 'مدیر فنی شرکت دانش بنیان سامانه صنعت طاها'
         ],
+        [
+            'id' => 'pooyan',
+            'name' => 'پویان حبیبی',
+            'avatar' => '../img/pooyan.jpg',
+            'url' => 'https://www.linkedin.com/in/pooyanhabibi',
+            'bio' => 'توسعه دهنده نرم افزارهای متن‌باز'
+        ],
+
 //        [
 //            'id' => 'asemani',
 //            'name' => 'آسمانی',
@@ -162,13 +190,6 @@ class Presenter extends StaticModel
 //            'url' => 'https://ir.linkedin.com/in/mdhheydari',
 //            'bio' => 'توسعه‌دهنده‌ی نرم‌افزارهای متن‌باز'
 //        ],
-        [
-            'id' => 'pooya',
-            'name' => 'پویا پارسا',
-            'avatar' => '//www.gravatar.com/avatar/1fddd58251edc7bf16e279b8811cd327?s=200',
-            'url' => 'http://pi0.ir/',
-            'bio' => 'توسعه دهنده در گروه فندق'
-        ],
 //        [
 //            'id' => 'sinal',
 //            'name' => 'سینا لباف',
@@ -176,13 +197,6 @@ class Presenter extends StaticModel
 //            'url' => 'https://ir.linkedin.com/pub/sina-labbaf/71/785/a86',
 //            'bio' => 'توسعه‌دهنده‌ی نرم‌افزارهای متن‌باز'
 //        ],
-        [
-            'id' => 'parham',
-            'name' => 'پرهام الوانی',
-            'avatar' => '//www.gravatar.com/avatar/1347add4ae303c0258a3db358ed77c55?s=200',
-            'url' => 'http://1995parham.github.io/about/',
-            'bio' => 'توسعه‌دهنده‌ی نرم‌افزارهای متن‌باز'
-        ],
 
     ];
 

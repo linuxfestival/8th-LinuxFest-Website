@@ -345,6 +345,20 @@ class Section extends StaticModel
 کتابخانه ها و چارچوب های مبتنی بر زبان پايتون آشنا می شويم و قدرت٬ زيبايی و سادگی اين زبان را تجربه خواهيم کرد.
             '
         ],
+        
+        //--------------------------------------------------------------
+
+        [
+            'id' => 'fixit',
+            'type' => 'special',
+            'title' => 'FixIT Programming Contest',
+            'presenter' => 'pooya',
+            'level' => 'پیشرفته',
+            'date' => '2',
+            'time' => 'روز دوم - ۱۴:۰۰ تا ۱۵:۳۰',
+            'room' => 'بعدا اعلام می‌شود',
+            'desc' => 'توضیحات متعاقباً اعلام می‌شود...'
+        ],
 
         //--------------------------------------------------------------
 
@@ -463,7 +477,7 @@ class Section extends StaticModel
 
         [
             'id' => 'board',
-            'type' => 'Discussion Board On',
+            'type' => 'Special',
             'title' => 'Copy Right and Open Source',
             'presenter' => 'danial',
             'level' => 'پیشرفته',

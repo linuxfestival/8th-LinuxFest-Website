@@ -18,7 +18,7 @@
                 <br>
 
 
-                <a href="boards" class="page-scroll btn btn-default btn-xl">
+                <a href="#boards" class="page-scroll btn btn-default btn-xl">
                     بخش‌های مختلف جشنواره
                 </a>
 

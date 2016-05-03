@@ -84,6 +84,9 @@
                 </div>
                 <?php endif; ?>
             @endforeach
+                <a href="#presenters" class="page-scroll btn btn-default btn-xl">
+                    کیا هستن؟
+                </a>
         </div>
     </div>
 </aside>

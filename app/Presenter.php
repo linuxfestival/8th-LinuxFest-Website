@@ -80,7 +80,7 @@ class Presenter extends StaticModel
         [
             'id' => 'parham',
             'name' => 'پرهام الوانی',
-            'avatar' => '//www.gravatar.com/avatar/1347add4ae303c0258a3db358ed77c55?s=200',
+            'avatar' => 'https://avatars1.githubusercontent.com/u/8181240?v=3&s=400',
             'url' => 'http://1995parham.github.io/about/',
             'bio' => 'توسعه‌دهنده‌ی نرم‌افزارهای متن‌باز'
         ],

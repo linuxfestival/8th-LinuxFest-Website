@@ -1,9 +1,9 @@
-<aside class="bg-dark" id="special">
+<aside class="bg-dark-violet" id="workshops">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h2 class="section-heading">
-                   قسمت ویژه جشنواره
+                    بردهای گفت‌وگو
                 </h2>
                 <hr class="primary">
             </div>
@@ -14,10 +14,10 @@
         <div class="row">
 
             @foreach($sections as $section)
-                <?php if(strpos($section['type'], 'Special') !== false) : ?>
-                <div class="col-lg-6 col-md-6 col-sm-6 text-center">
-                    <div class="thumbnail" style="background-color: #632222; border: 1px solid #150603;">
-                        <div class="caption" style="color: #dadce8;">
+                <?php if(strpos($section['type'], 'board') !== false) : ?>
+                <div class="col-lg-4 col-md-4 col-sm-4 text-center">
+                    <div class="thumbnail" style="background-color: #636363; border: 1px solid #4b4850;">
+                        <div class="caption" style="color: #afb1e8;">
                             <h4>
                                 {{$section->title}}
                             </h4>

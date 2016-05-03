@@ -35,7 +35,7 @@
 
         </div>
         <div class="col-lg-8 col-lg-offset-2 text-center">
-            <a href="#contact" class="page-scroll btn btn-default btn-xl text-center">
+            <a href="#contact" class="page-scroll btn btn-default btn-xl text-center" style="background-color: #93d3f0">
                 کجاست؟
             </a>
         </div>

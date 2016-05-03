@@ -11,8 +11,6 @@ namespace App;
  */
 class Presenter extends StaticModel
 {
-    protected $guarded = [];
-
     public static $data = [
         [
             'id' => 'bakhshis',
@@ -36,18 +34,18 @@ class Presenter extends StaticModel
             'bio' => 'پژوهشگر در SICS'
         ],
         [
-            'id' => 'afshin',
-            'name' => 'افشین سلاجقه',
-            'avatar' => '../img/afshin.jpg',
-            'url' => 'http://iranargham.com/',
-            'bio' => 'مشاور ارشد آنالیز سیستم و طراحی نرم افزار شرکت ایران ارقام'
-        ],
-        [
             'id' => 'alijavadi',
             'name' => 'علی جوادی',
             'avatar' => 'https://avatars2.githubusercontent.com/u/11222382?v=3&s=200',
             'url' => 'https://github.com/givia',
             'bio' => 'توسعه دهنده سمت‌سرور در کافه‌بازار'
+        ],
+        [
+            'id' => 'afshin',
+            'name' => 'افشین سلاجقه',
+            'avatar' => '../img/afshin.jpg',
+            'url' => 'http://iranargham.com/',
+            'bio' => 'مشاور ارشد آنالیز سیستم و طراحی نرم افزار شرکت ایران ارقام'
         ],
         [
             'id' => 'danial',
@@ -212,5 +210,7 @@ class Presenter extends StaticModel
 //        ],
 
     ];
+
+    protected $guarded = [];
 
 }

@@ -20,7 +20,10 @@ class SiteController extends Controller
         Route::get('/presenter/{presenter}', 'SiteController@presenter')->name('app::presenter');
 
         // Timeline
-        Route::get('/timeline','SiteController@timeline');
+        Route::get('/timeline', 'SiteController@timeline');
+
+        // Registeration
+        Route::get('/register', 'SiteController@register');
 
         // Sections
         // TODO: handle 2016 in a better way:D
@@ -43,7 +46,8 @@ class SiteController extends Controller
 
     }
 
-    public function timeline () {
+    public function timeline()
+    {
         $sections = Section::all();
         return view('timeline.timeline', ['sections' => $sections]);
     }
@@ -57,12 +61,19 @@ class SiteController extends Controller
 
     public function section(Section $section)
     {
-        $presenter = Presenter::where('id',$section->presenter)->firstOrFail();
+        $presenters = [];
+        foreach ($section->presenter as $presenter_id)
+            $presenters[] = Presenter::where('id', $presenter_id)->firstOrFail();
 
         return view('section.section', [
             'section' => $section,
-            'presenter' => $presenter,
+            'presenters' => $presenters,
         ]);
+    }
+
+    public function register()
+    {
+        return view('register.register');
     }
 
 }

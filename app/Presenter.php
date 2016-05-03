@@ -152,7 +152,7 @@ class Presenter extends StaticModel
             'name' => 'نوید فومنی',
             'avatar' => '../img/navid.jpg',
             'url' => 'https://ir.linkedin.com/in/navid-foumani-5809a5a3',
-            'bio' => 'تحلیل‌گر امنیت در شرکت داده‌ورزی سداد'
+            'bio' => 'توسعه‌دهنده نرم‌افزارهای متن‌باز'
         ],
 //        [
 //            'id' => 'asemani',

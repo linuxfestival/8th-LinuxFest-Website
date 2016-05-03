@@ -24,7 +24,7 @@
 
                         <h5>{{$presenter->bio}}</h5>
 
-                        <a href="{{$presenter->url}}"><h5>صفحه شخصی</h5></a>
+                        <a href="{{$presenter->url}}" target="_blank"><h5>صفحه شخصی</h5></a>
                         <div class="clear"></div>
                         <br>
 

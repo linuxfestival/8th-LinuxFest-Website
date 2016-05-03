@@ -1,4 +1,4 @@
-<aside class="bg-dark-violet" id="workshops">
+<aside class="bg-dark-violet" id="boards">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
@@ -39,6 +39,9 @@
                 </div>
                 <?php endif; ?>
             @endforeach
+                <a href="#presenters" class="page-scroll btn btn-default btn-xl">
+                    کیا هستن؟
+                </a>
         </div>
     </div>
 </aside>

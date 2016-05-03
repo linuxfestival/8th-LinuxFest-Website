@@ -15,20 +15,20 @@
                 </p>
                 <br>
 
-                <p class="text-faded text-right" style="font-size: 23px;">
-                    در هشتمین دوره این جشنواره، برای اولین بار شاهد برگزاری یک مسابقه با محوریت نرم‌افزارهای متن‌باز خواهیم بود.
-                    <br>
-                    <a href="#special" class="page-scroll btn btn-default btn-xl">
-                        اطلاعات بیشتر از مسابقه fixIT
-                    </a>
-                    <br>
-                    <br>
-                    همچنین در این دوره از جشنواره شاهد برگزاری یک Discussion Board‌ با موضوع CopyRight‌ خواهیم بود.
-                    <br>
-                    <a href="#special" class="page-scroll btn btn-default btn-xl">
-                        اطلاعات بیشتر
-                    </a>
-                </p>
+                {{--<p class="text-faded text-right" style="font-size: 23px;">--}}
+                    {{--در هشتمین دوره این جشنواره، برای اولین بار شاهد برگزاری یک مسابقه با محوریت نرم‌افزارهای متن‌باز خواهیم بود.--}}
+                    {{--<br>--}}
+                    {{--<a href="#special" class="page-scroll btn btn-default btn-xl">--}}
+                        {{--اطلاعات بیشتر از مسابقه fixIT--}}
+                    {{--</a>--}}
+                    {{--<br>--}}
+                    {{--<br>--}}
+                    {{--همچنین در این دوره از جشنواره شاهد برگزاری یک Discussion Board‌ با موضوع CopyRight‌ خواهیم بود.--}}
+                    {{--<br>--}}
+                    {{--<a href="#special" class="page-scroll btn btn-default btn-xl">--}}
+                        {{--اطلاعات بیشتر--}}
+                    {{--</a>--}}
+                {{--</p>--}}
 
                 {{--<h2 class="section-heading">--}}
                     {{--درخواست همکاری--}}

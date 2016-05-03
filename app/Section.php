@@ -78,67 +78,17 @@ class Section extends StaticModel
             این کارگاه به منظور آشنایی هرچه بیشتر شرکت کنندگان با مباحث امنیت در لینوکس است.
             <br>
          موضوعات و مباحثی که در این کارگاه مورد بررسی قرار می‌گیرند عبارتند از:
-         <div style="direction: ltr">
-<br>
-<h3>1. Introduction</h3>
-<h3>2. Threats and Risk Assessment</h3> 
-	<li><strong>Types of Attacks</strong></li>
-	<li><strong>Trade Offs</li>
-<h3>3. Physical Access</h3> 
-	<li><strong>Physical Security</li> 
-	<li><strong>Hardware Security</li> 
-	<li><strong>Understanding the Linux Boot Process</li>
-<h3>4. Logging</h3>
-	<li><strong>Logging Overview</strong></li>
-	<li><strong>Syslog Services</strong></li> 
-	<li><strong>The Linux Kernel Audit Daemon</strong></li> 
-	<li><strong>Linux Firewall Logging</strong></li> 
-	<li><strong>Log Reports</strong></li>
-<h3>5. Application Security</h3> 
-	<li><strong>Bugs, Beetles, and More</strong></li> 
-	<li><strong>Tracking and Documenting Changes</strong></li> 
-	<li><strong>Resource Access Control</strong></li> 
-	<li><strong>Mitigation Techniques</strong></li> 
-	<li><strong>Policy Based Access Control Frameworks</strong></li> 
-	<li><strong>Real World Example</strong></li>
-<h3>6. Kernel Vulnerabilities</h3> 
-	<li><strong>Kernel and User Spaces</strong></li> 
-	<li><strong>Bugs</strong></li> 
-	<li><strong>Mitigating Kernel Vulnerabilities</strong></li> 
-	<li><strong>Vulnerabilities Examples</strong></li>
-<h3>7. Authentication</h3> 
-	<li><strong>Encryption and Authentication</strong></li> 
-	<li><strong>Passwords</strong></li> 
-	<li><strong>Hardware Tokens</strong></li> 
-	<li><strong>Biometric Authentication</strong></li> 
-	<li><strong>Network and Centralized Authentication</strong></li>
-<h3>8. Local System Security</h3> 
-	<li><strong>Standard UNIX Permissions</strong></li> 
-	<li><strong>Administrator Account</strong></li> 
-	<li><strong>Advanced UNIX Permissions</strong></li> 
-	<li><strong>Filesystem Integrity</strong></li> 
-	<li><strong>Filesystem Quotas</strong></li>
-<h3>9. Network Security</h3> 
-	<li><strong>TCP/IP Protocols Review</strong></li>
-	<li><strong>Remote Trust Vectors</strong></li> 
-	<li><strong>Remote Exploits</strong></li>
-<h3>10. Network Services Security</h3> 
-	<li><strong>Network Tools</strong></li> 
-	<li><strong>Databases</strong></li> 
-	<li><strong>Web Server</strong></li>
-	<li><strong>File Servers</strong></li>
-<h3>11. Remote Access</h3> 
-	<li><strong>Unencrypted Protocols</strong></li> 
-	<li><strong>Accessing Windows Systems</strong></li> 
-	<li><strong>SSH</strong></li>
-	<li><strong>IPSEC VPNs</strong></li>
-<h3>12. Firewalling and Packet Filtering</h3> 
-	<li><strong>Firewalling Basics</strong></li> 
-	<li><strong>Netfilter (IPTables)</strong></li> 
-	<li><strong>Netfilter Implementation</strong></li> 
-	<li><strong>Mitigate Brute Force Login Attempts</strong></li>
-<h3>13. Conclusion</h3>
-</div>'
+            <br>
+         <li>IP معرفی­ 1</li>
+<li>2 ­پيکربندی کارت شبکه</li>
+<li>3 ­معرفی ابزارهای نظير Ping و Traceroute</li>
+<li>TCP معرفی­ 4</li>
+<li>Netcat معرفی­ 5</li>
+<li>6 ­کار با Netstat</li>
+<li>7 ­برنامه نويسی Socket در پايتون</li>
+<li>SCAPY معرفی­8</li>
+<li>9 ­معرفی و بکار گيری IPTABLES</li>
+         '
         ],
 
         //--------------------------------------------------------------

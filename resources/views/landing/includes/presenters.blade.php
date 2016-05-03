@@ -34,6 +34,11 @@
             @endforeach
 
         </div>
+        <div class="col-lg-8 col-lg-offset-2 text-center">
+            <a href="#presenters" class="page-scroll btn btn-default btn-xl text-center">
+                کیا هستن؟
+            </a>
+        </div>
     </div>
 
 </section>

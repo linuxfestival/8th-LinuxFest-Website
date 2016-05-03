@@ -166,7 +166,7 @@ class Section extends StaticModel
         [
             'id' => 'system_on_a_board2',
             'type' => 'workshop',
-            'title' => 'Hardware/Embedded Devices (phase 1)',
+            'title' => 'Embeded Systems: IoT Basics 2',
             'presenter' => 'abolfazl',
             'level' => 'متوسط',
             'date' => '1',
@@ -223,7 +223,7 @@ class Section extends StaticModel
         [
             'id' => 'embeded2',
             'type' => 'workshop',
-            'title' => 'Embeded-Systems: IoT Basics',
+            'title' => 'Embeded-Systems: IoT Basics 1',
             'presenter' => 'amir',
             'level' => 'متوسط',
             'date' => '2',
@@ -250,6 +250,20 @@ class Section extends StaticModel
 
 در نهایت شرکت‌کنندگان این کارگاه‌ها توانایی طراحی و پیاده‌سازی یک سیستم واقعی که در خانه‌های هوشمند استفاده می‌شوند را خواهند داشت.
             '
+        ],
+
+        //--------------------------------------------------------------
+
+        [
+            'id' => 'wireless',
+            'type' => 'workshop',
+            'title' => 'Wireshark & TCP/IP Concepts',
+            'presenter' => 'khademi',
+            'level' => 'متوسط',
+            'date' => '1',
+            'time' => 'روز دوم - ۱۰:۴۵ تا ۱۲:۳۰',
+            'room' => 'بعدا اعلام می‌شود',
+            'desc' => 'توضیحات متعاقباً اعلام می‌شود...'
         ],
 
         //--------------------------------------------------------------
@@ -469,7 +483,7 @@ class Section extends StaticModel
 
         [
             'id' => 'dataware',
-            'type' => 'presentation',
+            'type' => 'workshop',
             'title' => 'Data Warehouse',
             'presenter' => 'afshin',
             'level' => 'متوسط',

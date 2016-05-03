@@ -32,15 +32,15 @@
                         اطلاعات بیشتر
                     </a>
                 </p>
-                
-                <h2 class="section-heading">
-                    درخواست همکاری
-                </h2>
-                
-                <p class="text-faded text-right" style="font-size: 23px;">
-در صورت تمایل به همکاری  ( برگزاری  کارگاه ، ارائه علمی و یا حمایت های مادی و معنوی دیگر از این جشنواره ) با ما تماس برقرار نمایید.
-پست الکترونیکی: <a class="btn btn-default btn-xl" href="mailto:info@linuxfest.ir">info@linuxfest.ir</a>
-                </p>
+
+                {{--<h2 class="section-heading">--}}
+                    {{--درخواست همکاری--}}
+                {{--</h2>--}}
+                {{----}}
+                {{--<p class="text-faded text-right" style="font-size: 23px;">--}}
+{{--در صورت تمایل به همکاری  ( برگزاری  کارگاه ، ارائه علمی و یا حمایت های مادی و معنوی دیگر از این جشنواره ) با ما تماس برقرار نمایید.--}}
+{{--پست الکترونیکی: <a class="btn btn-default btn-xl" href="mailto:info@linuxfest.ir">info@linuxfest.ir</a>--}}
+                {{--</p>--}}
 
                 <a href="#presenters" class="page-scroll btn btn-default btn-xl">
                     کیا هستن؟

@@ -140,7 +140,20 @@ class Presenter extends StaticModel
             'url' => 'https://www.linkedin.com/in/pooyanhabibi',
             'bio' => 'توسعه دهنده نرم افزارهای متن‌باز'
         ],
-
+        [
+            'id' => 'khademi',
+            'name' => 'مصطفی خادمی',
+            'avatar' => '../img/khademi.jpg',
+            'url' => 'http://sadad.co.ir/',
+            'bio' => 'تحلیل‌گر امنیت در شرکت داده‌ورزی سداد'
+        ],
+        [
+            'id' => 'navid',
+            'name' => 'نوید فومنی',
+            'avatar' => '../img/navid.jpg',
+            'url' => 'https://ir.linkedin.com/in/navid-foumani-5809a5a3',
+            'bio' => 'تحلیل‌گر امنیت در شرکت داده‌ورزی سداد'
+        ],
 //        [
 //            'id' => 'asemani',
 //            'name' => 'آسمانی',

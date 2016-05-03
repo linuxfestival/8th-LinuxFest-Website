@@ -121,7 +121,7 @@ class Presenter extends StaticModel
         ],
         [
             'id' => 'abolfazl',
-            'name' => 'ابولفضل دانایی',
+            'name' => 'ابوالفضل دانایی',
             'avatar' => 'https://media.licdn.com/media/AAEAAQAAAAAAAAQOAAAAJDNiMDBkNTg3LWUwZjgtNDFmZC1iYmY0LTJiNmFlODA2M2E2ZQ.jpg',
             'url' => 'https://ir.linkedin.com/in/abolfazl-danayi-77236390',
             'bio' => 'توسعه دهنده نرم افزارهای متن‌باز'

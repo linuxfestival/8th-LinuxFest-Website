@@ -49,11 +49,11 @@
                     </a>
                 </li>
 
-                <li>
-                    <a class="page-scroll" href="/#special" data-target="#special">
-                       قسمت ویژه
-                    </a>
-                </li>
+                {{--<li>--}}
+                    {{--<a class="page-scroll" href="/#special" data-target="#special">--}}
+                       {{--قسمت ویژه--}}
+                    {{--</a>--}}
+                {{--</li>--}}
 
                 <li>
                     <a class="page-scroll" href="/#workshops" data-target="#workshops">

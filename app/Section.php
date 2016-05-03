@@ -24,7 +24,7 @@ class Section extends StaticModel
             'id' => 'setup',
             'type' => 'workshop',
             'title' => 'Setup Workshop',
-            'presenter' => 'pooya',
+            'presenter' => ['pooya', 'parham'],
             'level' => 'شروع کار',
             'date' => '0',
             'time' => 'روز صفرم - ۱۳:۰۰ تا ۱۸:۰۰',
@@ -39,7 +39,7 @@ class Section extends StaticModel
             'id' => 'intro',
             'type' => 'workshop',
             'title' => 'Linux Basic',
-            'presenter' => 'gholizade',
+            'presenter' => ['gholizade'],
             'level' => 'شروع کار',
             'date' => '1,2',
             'time' => 'هر دو روز - ۹ تا ۱۲:۳۰',
@@ -55,7 +55,7 @@ class Section extends StaticModel
             'id' => 'openstack',
             'type' => 'workshop',
             'title' => 'OpenStack',
-            'presenter' => 'pooyan',
+            'presenter' => ['pooyan'],
             'level' => 'پیشرفته',
             'date' => '2',
             'time' => 'روز دوم - ۹ تا ۱۲:۳۰',
@@ -69,7 +69,7 @@ class Section extends StaticModel
             'id' => 'network',
             'type' => 'workshop',
             'title' => 'Network & Security',
-            'presenter' => 'rahimkhani',
+            'presenter' => ['rahimkhani'],
             'level' => 'پیشرفته',
             'date' => '1,2',
             'time' => 'روز اول ۹:۰۰ تا ۱۲:۳۰ و روز دوم ۹:۰۰ تا ۱۰:۳۰',
@@ -97,7 +97,7 @@ class Section extends StaticModel
             'id' => 'docker',
             'type' => 'workshop',
             'title' => 'Docker',
-            'presenter' => 'pooya',
+            'presenter' => ['pooya'],
             'level' => 'پیشرفته',
             'date' => '1',
             'time' => 'روز اول - ۹ تا ۱۲:۳۰',
@@ -111,7 +111,7 @@ class Section extends StaticModel
             'id' => 'scientific',
             'type' => 'workshop',
             'title' => 'MATLAB & Scientific Tools',
-            'presenter' => 'navid',
+            'presenter' => ['navid'],
             'level' => 'متوسط',
             'date' => '2',
             'time' => 'روز دوم - ۹ تا ۱۲:۳۰',
@@ -125,6 +125,7 @@ class Section extends StaticModel
 <li>معرفی نرم افزار و آموزش نصب آن در لينوکس</li>
 <li>بيان جزئيات محيط نرم افزار</li>
 <li>حل معادلات و ترسيم داده ها</li>
+<br>
 <strong>بخش دوم:</strong>
 <li>نحوه ی ايجاد واسط گرافيکی</li> 
 <li>معرفی تولباکس های معروف در زمينه هوش مصنوعی</li>
@@ -270,7 +271,7 @@ class Section extends StaticModel
         //--------------------------------------------------------------
 
         [
-            'id' => 'wireless',
+            'id' => 'wireshark',
             'type' => 'workshop',
             'title' => 'Wireshark & TCP/IP Concepts',
             'presenter' => 'khademi',
@@ -280,6 +281,37 @@ class Section extends StaticModel
             'room' => 'بعدا اعلام می‌شود',
             'desc' => '
             در این کارگاه مفاهيم ساختار لايه‌ای شبکه با تمرکز روی مفاهيم ip/tcp و کار با ابزارهايی مانند nmap,wireshark و... بررسی می‌شوند.
+            <br>
+            سرفصل‌هایی که در این کارگاه ارائه می‌شوند:
+            <br>
+<h3>1)TCP/IP</h3>
+<li>TCP/IP layers</li>
+<li>Ports</li>
+<li>icmp Protocol</li>
+<li>ARP Protocol</li>
+<li>Data transfer process</li>
+<li>TCP Header</li>
+<li>TCP Flags</li>
+<li>IP Header</li>
+<li>ICMP Header</li>
+<li>IP Sec</li>
+<h3>2)Network Scanning</h3>
+<li>Information Gathering</li>
+<li>3 way hand shake</li>
+<li>Scan types</li>
+<li>Scanning with Nmap</li>
+<h3>3)wireshark</h3>
+<li>What is wireshark?</li>
+<li>Network design</li>
+<li>Protocol filter</li>
+<li>Port filter</li>
+<li>Tcp flags filter</li>
+<li>Arp spoofing</li>
+<li>Statistics</li>
+<li>Hears the sound</li>
+<li>Time filter</li>
+<li>Show location on map</li>
+<li>Country and city filter</li>
             '
         ],
 
@@ -297,7 +329,8 @@ class Section extends StaticModel
             'desc' => '
             سرفصل‌های ارائه شده در این کارگاه عبارتند از:
 <br>
-            <h2>Introduction to GoLang</h2>
+<div style="direction: ltr">
+<h2>Introduction to GoLang</h2>
 <h3>The Go Programming Language</h3>
 <h3>Program Elements</h3>
 <li>Constants</li>
@@ -318,6 +351,7 @@ class Section extends StaticModel
 <h3>Miscellaneous</h3>
 <li>Go Tools</li>
 <li>Beehive</li>
+</div>
             '
         ],
 

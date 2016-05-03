@@ -39,7 +39,15 @@
             <hr>
 
             <div class="row">
-                <div class="col-md-3">
+                <?php
+                $count = count($presenters);
+                $i = $count/12;
+                if ($i < 3)
+                    $i = 3;
+                if ($i == 1)
+                    ?>
+            </div>
+                <div class="col-md-{{$i}}">
                     <div style="text-align: center;">
                         <a href="{{route('app::presenter',[$presenter->id])}}" class="profile2" target="_blank">
                             <img style="max-height: 220px;" src="{{$presenter->avatar}}">
@@ -47,11 +55,6 @@
                             <h5>{{$presenter->bio}}</h5>
                         </a>
                     </div>
-                </div>
-                <div class="col-md-8">
-                    <p>
-                        {!! $section->desc !!}
-                    </p>
                 </div>
             </div>
 

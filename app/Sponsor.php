@@ -14,55 +14,11 @@ class Sponsor extends StaticModel
 
     public static $data = [
         [
-            'id' => 'iranargham',
-            'type' => 'money',
-            'title' => 'ایران ارقام',
-            'logo' => '/img/sponsors/iranargham.png',
-            'url' => 'http://iranargham.com',
-        ],
-
-        [
-            'id' => 'peivast',
-            'type' => 'press',
-            'title' => 'پیوست',
-            'logo' => '/img/sponsors/peivast.png',
-            'url' => 'http://peivast.com/',
-        ],
-
-        [
-            'id' => 'peidad',
-            'type' => 'press',
-            'title' => 'پیداد',
-            'logo' => '/img/sponsors/peidad.png',
-            'url' => 'http://peidad.com/',
-        ],
-		
-		[
-		     'id' => 'itc',
-            'title' => 'سازمان فناوری اطلاعات ایران',
-            'logo' => 'http://www.sinaictgroup.com/uploads/Links/ITC.png',
-            'url' => 'http://itc.ir/',
-		]
-,       [
             'id' => 'itc',
             'type' => 'money',
             'title' => 'سازمان فناوری اطلاعات ایران',
-            'logo' => 'http://www.sinaictgroup.com/uploads/Links/ITC.png',
+            'logo' => '../img/sponsors/itc.png',
             'url' => 'http://itc.ir/',
-        ],
-        [
-            'id' => 'anjoman',
-            'type' => 'moral',
-            'title' => 'اداره کل انجمن‌های علمی دانشگاه صنعتی امیرکبیر',
-            'logo' => '../img/sponsors/anjoman_kol.png',
-            'url' => 'http://sao.aut.ac.ir/',
-        ],
-        [
-            'id' => 'aut',
-            'type' => 'moral',
-            'title' => 'دانشگاه صنعتی امیرکبیر',
-            'logo' => '../img/sponsors/aut.png',
-            'url' => 'http://aut.ac.ir/',
         ],
         [
             'id' => 'fandogh',
@@ -71,6 +27,41 @@ class Sponsor extends StaticModel
             'logo' => '../img/sponsors/Fandogh.png',
             'url' => 'http://fandogh.org',
         ],
+        [
+            'id' => 'iranargham',
+            'type' => 'money',
+            'title' => 'ایران ارقام',
+            'logo' => '/img/sponsors/iranargham.png',
+            'url' => 'http://iranargham.com',
+        ],
+        [
+            'id' => 'peivast',
+            'type' => 'press',
+            'title' => 'پیوست',
+            'logo' => '/img/sponsors/peivast.png',
+            'url' => 'http://peivast.com/',
+        ],
+        [
+            'id' => 'peidad',
+            'type' => 'press',
+            'title' => 'پیداد',
+            'logo' => '/img/sponsors/peidad.png',
+            'url' => 'http://peidad.com/',
+        ],
+        [
+            'id' => 'anjoman',
+            'type' => 'moral',
+            'title' => 'اداره کل انجمن‌های علمی دانشگاه صنعتی امیرکبیر',
+            'logo' => '../img/sponsors/anjoman_kol.png',
+            'url' => 'http://sao.aut.ac.ir/',
+        ],
+//        [
+//            'id' => 'aut',
+//            'type' => 'founder',
+//            'title' => 'دانشگاه صنعتی امیرکبیر',
+//            'logo' => '../img/sponsors/aut.png',
+//            'url' => 'http://aut.ac.ir/',
+//        ],
         [
             'id' => 'linuxFest',
             'type' => 'founder',

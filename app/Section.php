@@ -15,7 +15,7 @@ namespace App;
 class Section extends StaticModel
 {
     protected $guarded = [];
-    
+
     public static $data = [
 
         // Workshops
@@ -29,12 +29,14 @@ class Section extends StaticModel
             'date' => '0',
             'time' => 'روز صفرم - ۱۳:۰۰ تا ۱۸:۰۰',
             'room' => 'سایت کامپیوتر',
-            'desc' => '
-نصب لینوکس و یک دورهمی با شرکت کنندگان!      '
+            'desc' => 'روز چهارشنبه از ساعت 13 تا 18 کارگاهی برای نصب و راه اندازی سیستم عامل لینوکس خواهیم داشت.ر این کارگاه با روش نصب ubuntu، ساخت فایل سیستم های مورد نیاز و تنظیمات اولیه سیستم عامل  آشنا می شویم.
+ حضور در این کارگاه رایگان است و همه می توانند در آن شرکت کنند. همچنین شرکت در این کارگاه به همه شرکت کنندگان کارگاه لینوکس مقدماتی توصیه می شود. جهت شرکت در این کارگاه از قسمت ثبت نام وارد شوید.
+جهت کسب اطلاعات بیشتر به آدرس register@linuxfest.ir پیام بفرستید.
+'
         ],
-        
+
         //--------------------------------------------------------------
-        
+
         [
             'id' => 'intro',
             'type' => 'workshop',
@@ -44,9 +46,10 @@ class Section extends StaticModel
             'date' => '1,2',
             'time' => 'هر دو روز - ۹ تا ۱۲:۳۰',
             'room' => 'سایت کامپیوتر',
-            'desc' => '
-     شرکت‌کنندگان در روز اول این کارگاه با محیط سیستم عامل لینوکس، محیط‌های گرافیکی و دیگر قابلیت‌های آن آشنا می‌شوند. در روز دوم شرکت‌کنندگان با محیط ترمینال، فایل سیستم لینوکس، پردازش فایل‌های متنی، نصب برنامه‌های مختلف، مدیریت processها، کار با vim و... آشنا می‌شوند. در پایان دو روز ارائه‌ای با عنوان How to Live Happily in Linux خواهیم داشت که به شرکت‌کنندگان می‌آموزد چگونه تمام کارهای روزمره‌ی خود را در لینوکس انجام دهند، بدون این که به سیستم عامل دیگری نیاز داشته باشند.
-            '
+            'desc' => 'یک شروع عالی برای کار با سیستم عامل لینوکس. نیاز به کار با سیستم عامل لینوکس و نرم افزار های متن باز هر روز بیشتر از روز دیگر حس می شود، پس اگر شما هم می خواهید با کار با این سیستم عامل آشنا شوید، در این کارگاه ثبت نام کنید. 
+شرکت‌کنندگان در روز اول این کارگاه با محیط سیستم عامل لینوکس، محیط‌های گرافیکی و دیگر قابلیت‌های آن آشنا می‌شوند. در روز دوم شرکت‌کنندگان با محیط ترمینال، فایل سیستم لینوکس، پردازش فایل‌های متنی، نصب برنامه‌های مختلف، مدیریت processها، کار با vim و... آشنا می‌شوند. در پایان دو روز ارائه‌ای با عنوان How to Live Happily in Linux خواهیم داشت که به شرکت‌کنندگان می‌آموزد چگونه تمام کارهای روزمره‌ی خود را در لینوکس انجام دهند، بدون این که به سیستم عامل دیگری نیاز داشته باشند.
+جهت شرکت در این کارگاه از قسمت ثبت نام وارد شوید.
+'
         ],
 
         //--------------------------------------------------------------
@@ -75,19 +78,27 @@ class Section extends StaticModel
             'time' => 'روز اول ۹:۰۰ تا ۱۲:۳۰ و روز دوم ۹:۰۰ تا ۱۰:۳۰',
             'room' => 'بعدا اعلام می‌شود',
             'desc' => '
-            این کارگاه به منظور آشنایی هرچه بیشتر شرکت کنندگان با مباحث امنیت در لینوکس است.
+     آشنایی با مباحث شبکه و امنیت در سیستم عامل لینوکس هدف اصلی این کارگاه است. در پایان این کارگاه با مفاهیم مدیریت شبکه و اصول پایه‌ای امنیت آشنا خواهید شد.
             <br>
          موضوعات و مباحثی که در این کارگاه مورد بررسی قرار می‌گیرند عبارتند از:
             <br>
-         <li>IP معرفی­ 1</li>
-<li>2 ­پيکربندی کارت شبکه</li>
-<li>3 ­معرفی ابزارهای نظير Ping و Traceroute</li>
-<li>TCP معرفی­ 4</li>
-<li>Netcat معرفی­ 5</li>
-<li>6 ­کار با Netstat</li>
-<li>7 ­برنامه نويسی Socket در پايتون</li>
-<li>SCAPY معرفی­8</li>
-<li>9 ­معرفی و بکار گيری IPTABLES</li>
+<li>Introduction to IP Protocol</li>
+<li>IP configuration</li>
+<li>Basic IP Troubleshooting tools</li>
+<li>Routing</li> 
+<li>Introduction to TCP Protocols</li>
+<li>Basic TCP Troubleshooting tools: netstat, lsof, …</li>
+<li>Netcat</li>
+<li>NMAP</li>
+<li>Basic socket Programming with Python</li>
+<li>SCAPY: Scapy is a powerful interactive packet manipulation program</li>
+<li>IPTABLES: Packet Filtering</li>
+<li>TCPDUMP, WIRESHARK & TSHARK: Packet Capturing tools</li>
+<li>SSH: Secure Shell</li>	
+<li>wireshark</li>
+<li>Network Scanning</li>
+<li>Security Bassics</li>
+</br>جهت شرکت در این کارگاه از قسمت ثبت نام وارد شوید.برای کسب اطلاعات بیشتر به آدرس register@linuxfest.ir پیام بفرستید.
          '
         ],
 
@@ -125,29 +136,18 @@ class Section extends StaticModel
 <li>معرفی نرم افزار و آموزش نصب آن در لينوکس</li>
 <li>بيان جزئيات محيط نرم افزار</li>
 <li>حل معادلات و ترسيم داده ها</li>
-<br>
 <strong>بخش دوم:</strong>
 <li>نحوه ی ايجاد واسط گرافيکی</li> 
 <li>معرفی تولباکس های معروف در زمينه هوش مصنوعی</li>
 <li>حل چند مسئله يادگيری ماشين</li>
 <br>
 لازم به ذکر است که مقدمه ی بيان شده بصورت عمومی خواهد بود و مثال های تخصصی در زمينه هوش مصنوعی بيان و حل خواهند شد.
+</br>جهت شرکت در این کارگاه از قسمت ثبت نام وارد شوید.برای کسب اطلاعات بیشتر به آدرس register@linuxfest.ir پیام بفرستید.
 '
         ],
 
         //--------------------------------------------------------------
 
-        [
-            'id' => 'dataware_workshop',
-            'type' => 'workshop',
-            'title' => 'Data Warehouse Workshop',
-            'presenter' => 'afshin',
-            'level' => 'متوسط',
-            'date' => '2',
-            'time' => 'روز دوم - ۹ تا ۱۲:۳۰',
-            'room' => 'بعدا اعلام می‌شود',
-            'desc' => 'توضیحات متعاقباً اعلام می‌شود...'
-        ],
 
         //--------------------------------------------------------------
 
@@ -165,155 +165,75 @@ class Section extends StaticModel
 
         //--------------------------------------------------------------
 
-        [
-            'id' => 'system_on_a_board1',
-            'type' => 'workshop',
-            'title' => 'System On a Board',
-            'presenter' => 'mehdisaj',
-            'level' => 'متوسط',
-            'date' => '1',
-            'time' => 'روز اول - ۹ تا ۱۰:۳۰',
-            'room' => 'بعدا اعلام می‌شود',
-            'desc' => 'توضیحات متعاقباً اعلام می‌شود...'
-        ],
-
         //--------------------------------------------------------------
 
         [
-            'id' => 'system_on_a_board2',
+            'id' => 'system_on_a_board',
             'type' => 'workshop',
-            'title' => 'Embeded Systems: IoT Basics 2',
+            'title' => 'Embedded Systems & system on board',
             'presenter' => 'abolfazl',
             'level' => 'متوسط',
             'date' => '1',
             'time' => 'روز اول - ۱۰:۴۵ تا ۱۲:۳۰',
             'room' => 'بعدا اعلام می‌شود',
-            'desc' => '
-            هدف از این کارگاه آشنایی کاربران با مبانی سیستم‌های درگیر در اینترنت اشیا است که سرفصل‌های ارائه شده در این کارگاه حاصل خروجی پروژه ملی اینترنت اشیای دانشگاه امیرکبیر است.
-            <br>
-            سرفصل‌های این کارگاه عبارتند از:
-            <br>
+            'desc' => 'بخش اول: Into to System on a board
+کلاس اول این کارگاه به معرفی و آموزش راه اندازی و نصب سیستم یک برد آموزشی ( رسپبری پای) و نکات مهم برای کار در محیط سیستم عامل مخصوص آن میپردازد؛ تا کارآموزان بتوانند برد خود را برای آموزش های ادامه کارگاه آماده کنند.
+</br>
+مهدی سجادی - مبتدی
+</br>
+بخش دوم: Embedded Systems: IoT Basics 1
+</br>
+در ادامه کارگاه Embedded Systems کارآموزان درباره کاربرد های سخت افزاری برد رسپری به عنوان یک سیستم رو برد در تعامل با یک میکرو کنترلر آشنا میشوند.
+هدف از این کارگاه آشنایی کاربران با مبانی سیستم‌های درگیر در اینترنت اشیا است که سرفصل‌های ارائه شده در این کارگاه حاصل خروجی پروژه ملی اینترنت اشیای دانشگاه امیرکبیر است. 
+</br>
+سرفصل‌های این کارگاه عبارتند از: 
 <li>1) Introduction to Embedded systems, Arduino and Rasp Berry Pi mini computers</li>
-
 <li>2) Arduino: Hello World (LED on/off – Blink)</li>
-
 <li>3) Arduino: IR detection</li>
-
 <li>4) R­Pi: What are GPIO pins?! (+ GPIO on Python)</li>
-
 <li>5) R­Pi: IR detection</li>
-
 در نهایت شرکت‌کنندگان مفاهیم ابتدایی سیستم‌های نهفته را دریافته و دیدی از دنیای الکترونیک سیستم‌های اینترنت اشیا خواهند داشت.
-            '
-        ],
+</br>
+ابولفضل دانایی - متوسط
+</br>
+بخش سوم: Embeded WebServer from Scratch
+</br>
+مباحث این کارگاه ادامه کارگاه System on a Board‌ می‌باشند. استفاده از ​یک​ سخت‌افزار بومی مبتنی بر پردازنده ARM Cortex-A8​ ​به نام ApexV210 برای راه اندازی یک وب سرور از ابتدا.
+</li>مطالب قابل ارائه‌شامل موارد زیر هستند: <li>
+</li>آشنایی با سیستم‌های نهفته<li>
+</li>آشنایی با مفهوم cross-compile<li>
+</li>آشنایی با بوت لودر محبوب u-boot و پیکربندی اولیه و کراس کامپایل​ آن​<li>
+</li>آشنایی با کرنل لینوکس، پیکربندی اولیه و کراس کامپایل آن<li>
+</li>آشنایی باbusybox و استفاده از آن به عنوان یک root file system ساده<li>
+</li>​آماده سازی یک web server کوچک بر روی این پلتفرم​<li>
+</li>انتقال برنامه‌ها<li>
+</li>بوت کردن سخت‌افزار​ و مشاهده نتیجه​<li>
+</br>
+مهندس افشین - پیشرفته
+</br>
 
-        //--------------------------------------------------------------
-
-        [
-            'id' => 'embeded1',
-            'type' => 'workshop',
-            'title' => 'Embedded WebServer from Scratch',
-            'presenter' => 'naser',
-            'level' => 'متوسط',
-            'date' => '2',
-            'time' => 'روز دوم - ۹ تا ۱۰:۳۰',
-            'room' => 'بعدا اعلام می‌شود',
-            'desc' => '
-            مباحث این کارگاه ادامه کارگاه System on a Board‌ می‌باشند.
-          استفاده از ​یک​ سخت‌افزار بومی مبتنی بر پردازنده ARM Cortex-A8​ ​به نام ApexV210
-<br>
-مطالب قابل ارائه‌شامل موارد زیر هستند:
-<br>
-<li>آشنایی با سیستم‌های نهفته</li>
-<li>آشنایی با مفهوم cross-compile</li>
-<li>آشنایی با بوت لودر محبوب u-boot و پیکربندی اولیه و کراس کامپایل​ آن​</li>
-<li>آشنایی با کرنل لینوکس، پیکربندی اولیه و کراس کامپایل آن</li>
-<li>آشنایی باbusybox و استفاده از آن به عنوان یک root file system ساده</li>
-<li>​آماده سازی یک web server کوچک بر روی این پلتفرم​</li>
-<li>انتقال برنامه‌ها</li>
-<li>بوت کردن سخت‌افزار​ و مشاهده نتیجه​</li>'
-        ],
-
-        //--------------------------------------------------------------
-
-        [
-            'id' => 'embeded2',
-            'type' => 'workshop',
-            'title' => 'Embeded-Systems: IoT Basics 1',
-            'presenter' => 'amir',
-            'level' => 'متوسط',
-            'date' => '2',
-            'time' => 'روز دوم - ۱۰:۴۵ تا ۱۲:۳۰',
-            'room' => 'بعدا اعلام می‌شود',
-            'desc' => '
-            این کارگاه ادامه کارگاه‌های System on a Board و Embeded-Systems: From-Scratch می‌باشد.
-            <br>
-            سرفصل‌های این کارگاه عبارتند از:
-            <br>
+بخش چهارم: Embedded-Systems: IoT Basics 2
+</br>
+این کلاس ادامه کارگاه‌های System on a Board می‌باشد در این کارگاه کارآموزان با برد خود به همراه یک میکرو کنترلر یک کاربرد ساده از ایده های قابل پیاده سازی در مورد خانه های هوشمند توسط این برد ها را آموزش میبینند. 
+</br>
+سرفصل‌های این کارگاه عبارتند از: 
 <li>1) Introduction to Serial protocol</li>
-
 <li>2) Defining a basic data transmission between R­Pi and Arduino using Serial interface</li>
-
 <li>3) R­Pi checks the IR signal</li>
-
 <li>4) R­Pi decides what to do</li>
-
 <li>5) R­Pi orders Arduino to light on/off</li>
-
 <li>6) Special part: Introduction to RF (wireless) protocols + Testing one of them</li>
-
-<br>
-
+</br>
 در نهایت شرکت‌کنندگان این کارگاه‌ها توانایی طراحی و پیاده‌سازی یک سیستم واقعی که در خانه‌های هوشمند استفاده می‌شوند را خواهند داشت.
-            '
+
+امیر رضایی - متوسط
+
+
+
+
+'
         ],
 
-        //--------------------------------------------------------------
-
-        [
-            'id' => 'wireshark',
-            'type' => 'workshop',
-            'title' => 'Wireshark & TCP/IP Concepts',
-            'presenter' => 'khademi',
-            'level' => 'متوسط',
-            'date' => '1',
-            'time' => 'روز دوم - ۱۰:۴۵ تا ۱۲:۳۰',
-            'room' => 'بعدا اعلام می‌شود',
-            'desc' => '
-            در این کارگاه مفاهيم ساختار لايه‌ای شبکه با تمرکز روی مفاهيم ip/tcp و کار با ابزارهايی مانند nmap,wireshark و... بررسی می‌شوند.
-            <br>
-            سرفصل‌هایی که در این کارگاه ارائه می‌شوند:
-            <br>
-<h3>1)TCP/IP</h3>
-<li>TCP/IP layers</li>
-<li>Ports</li>
-<li>icmp Protocol</li>
-<li>ARP Protocol</li>
-<li>Data transfer process</li>
-<li>TCP Header</li>
-<li>TCP Flags</li>
-<li>IP Header</li>
-<li>ICMP Header</li>
-<li>IP Sec</li>
-<h3>2)Network Scanning</h3>
-<li>Information Gathering</li>
-<li>3 way hand shake</li>
-<li>Scan types</li>
-<li>Scanning with Nmap</li>
-<h3>3)wireshark</h3>
-<li>What is wireshark?</li>
-<li>Network design</li>
-<li>Protocol filter</li>
-<li>Port filter</li>
-<li>Tcp flags filter</li>
-<li>Arp spoofing</li>
-<li>Statistics</li>
-<li>Hears the sound</li>
-<li>Time filter</li>
-<li>Show location on map</li>
-<li>Country and city filter</li>
-            '
-        ],
 
         //--------------------------------------------------------------
 
@@ -329,8 +249,7 @@ class Section extends StaticModel
             'desc' => '
             سرفصل‌های ارائه شده در این کارگاه عبارتند از:
 <br>
-<div style="direction: ltr">
-<h2>Introduction to GoLang</h2>
+            <h2>Introduction to GoLang</h2>
 <h3>The Go Programming Language</h3>
 <h3>Program Elements</h3>
 <li>Constants</li>
@@ -351,7 +270,6 @@ class Section extends StaticModel
 <h3>Miscellaneous</h3>
 <li>Go Tools</li>
 <li>Beehive</li>
-</div>
             '
         ],
 
@@ -384,22 +302,9 @@ class Section extends StaticModel
 کتابخانه ها و چارچوب های مبتنی بر زبان پايتون آشنا می شويم و قدرت٬ زيبايی و سادگی اين زبان را تجربه خواهيم کرد.
             '
         ],
-        
-        //--------------------------------------------------------------
-
-        [
-            'id' => 'fixit',
-            'type' => 'Special',
-            'title' => 'FixIT Programming Contest',
-            'presenter' => 'pooya',
-            'level' => 'پیشرفته',
-            'date' => '2',
-            'time' => 'روز دوم - ۱۴:۰۰ تا ۱۵:۳۰',
-            'room' => 'بعدا اعلام می‌شود',
-            'desc' => 'توضیحات متعاقباً اعلام می‌شود...'
-        ],
 
         //--------------------------------------------------------------
+
 
         [
             'id' => 'pro',
@@ -559,17 +464,7 @@ class Section extends StaticModel
 
         //--------------------------------------------------------------
 
-        [
-            'id' => 'dataware',
-            'type' => 'workshop',
-            'title' => 'Data Warehouse',
-            'presenter' => 'afshin',
-            'level' => 'متوسط',
-            'date' => '2',
-            'time' => 'روز دوم - ۱۶:۳۰ تا ۱۷:۰۰',
-            'room' => 'سالن آمفی‌تئاتر',
-            'desc' => 'توضیحات متعاقباً اعلام می‌شود...'
-        ],
+
 
     ];
 

@@ -95,7 +95,7 @@ class Sponsor extends StaticModel
             'type' => 'gold',
             'title' => 'پرشین گیگ',
             'logo' => '../img/sponsors/pg.png',
-            'url' => 'https://persiangig.com',
+            'url' => 'https://www.persiangig.com',
         ],
 
 

@@ -1,51 +1,164 @@
-<aside class="bg-mellow-yellow" id="sponsors" style="backgroung:#000">
+<aside class="bg-white" id="sponsors" style="backgroung:#000">
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 text-center">
+            <div class="col-lg-12 text-center">
                 <h2 class="section-heading">
-                حامیان جشنواره
+                    حامیان طلایی
                 </h2>
                 <hr class="primary">
             </div>
         </div>
     </div>
-    <div class="container grid-wrap col-set-one-quarter tablet-col-set-one-half phone-col-set-full">
-        <div class="row">
-            @foreach($sponsors as $sponsor)
-                <?php if( ! strstr($sponsor['type'], 'founder')) : ?>
-                <div class="col-md-2">
-                    <a href="{{$sponsor->url}}" target="_blank">
-                        <img src="{{$sponsor->logo}}" class="sponsor-img">
-                    </a>
-                </div>
-                <?php endif; ?>
-            @endforeach
+    <div class="container text-center">
+        <div class="call-to-action">
+
+            <div class="row">
+
+                @foreach($sponsors as $sponsor)
+                    <?php if( strstr($sponsor['type'], 'gold')) : ?>
+                    <div class="col-md-6">
+                        <a href="{{$sponsor->url}}" target="_blank">
+                            <img src="{{$sponsor->logo}}" class="sponsor-img">
+                        </a>
+                    </div>
+                    <?php endif; ?>
+                @endforeach
+
+            </div>
+
+
         </div>
     </div>
 </aside>
 
-<aside class="bg-white" id="sponsors3">
+<aside class="bg-white" id="sponsors1" style="backgroung:#000">
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 text-center">
+            <div class="col-lg-12 text-center">
                 <h2 class="section-heading">
-                    برگزار کنندگان
+                    حامیان نقره‌ای
                 </h2>
                 <hr class="primary">
             </div>
         </div>
     </div>
-    <div class="container grid-wrap col-set-one-quarter tablet-col-set-one-half phone-col-set-full">
+    <div class="container text-center">
+        <div class="call-to-action">
+
+            <div class="row">
+
+                @foreach($sponsors as $sponsor)
+                    <?php if( strstr($sponsor['type'], 'silver')) : ?>
+                    <div class="col-md-12">
+                        <a href="{{$sponsor->url}}" target="_blank">
+                            <img src="{{$sponsor->logo}}" class="sponsor-img">
+                        </a>
+                    </div>
+                    <?php endif; ?>
+                @endforeach
+
+            </div>
+
+
+        </div>
+    </div>
+</aside>
+
+<aside class="bg-white" id="sponsors2" style="backgroung:#000">
+    <div class="container">
         <div class="row">
-            @foreach($sponsors as $sponsor)
-                <?php if( strstr($sponsor['type'], 'founder') ) : ?>
-                <div class="col-md-4">
-                    <a href="{{$sponsor->url}}" target="_blank">
-                        <img src="{{$sponsor->logo}}" class="sponsor-img">
-                    </a>
-                </div>
-                <?php endif; ?>
-            @endforeach
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">
+                    حامیان برنزی
+                </h2>
+                <hr class="primary">
+            </div>
+        </div>
+    </div>
+    <div class="container text-center">
+        <div class="call-to-action">
+
+            <div class="row">
+
+                @foreach($sponsors as $sponsor)
+                    <?php if( strstr($sponsor['type'], 'bronze')) : ?>
+                    <div class="col-md-6">
+                        <a href="{{$sponsor->url}}" target="_blank">
+                            <img src="{{$sponsor->logo}}" class="sponsor-img">
+                        </a>
+                    </div>
+                    <?php endif; ?>
+                @endforeach
+
+            </div>
+
+
+        </div>
+    </div>
+</aside>
+
+<aside class="bg-white" id="sponsors2" style="backgroung:#000">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">
+                    حامیان رسانه‌ای
+                </h2>
+                <hr class="primary">
+            </div>
+        </div>
+    </div>
+    <div class="container text-center">
+        <div class="call-to-action">
+
+            <div class="row">
+
+                @foreach($sponsors as $sponsor)
+                    <?php if( strstr($sponsor['type'], 'press')) : ?>
+                    <div class="col-md-6">
+                        <a href="{{$sponsor->url}}" target="_blank">
+                            <img src="{{$sponsor->logo}}" class="sponsor-img">
+                        </a>
+                    </div>
+                    <?php endif; ?>
+                @endforeach
+
+            </div>
+
+
+        </div>
+    </div>
+</aside>
+
+<aside class="bg-white" id="sponsors2" style="backgroung:#000">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">
+                    برگزارکنندگان
+                </h2>
+                <hr class="primary">
+            </div>
+        </div>
+    </div>
+    <div class="container text-center">
+        <div class="call-to-action">
+
+            <div class="row">
+
+                @foreach($sponsors as $sponsor)
+                    <?php if( strstr($sponsor['type'], 'founder')) : ?>
+                    <div class="col-md-6">
+                        <a href="{{$sponsor->url}}" target="_blank">
+                            <img src="{{$sponsor->logo}}" class="sponsor-img">
+                        </a>
+                    </div>
+                    <?php endif; ?>
+                @endforeach
+
+            </div>
+
+
         </div>
     </div>
 </aside>

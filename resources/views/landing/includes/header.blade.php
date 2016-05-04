@@ -13,11 +13,11 @@
             <h2>دانشگاه صنعتی امیرکبیر</h2>
             <br>
             <br>
-            <br> <!--
+            <br>
             <p>
-                <a href="" class="btn btn-primary btn-xl page-scroll landing-action">ثبت نام</a>
-                <a href="" class="btn btn-success btn-xl page-scroll landing-action">فرم ارسال ارائه</a>
-            </p> -->
+                <a href="https://eventbin.ir/linuxfest" class="btn btn-primary btn-xl page-scroll landing-action">ثبت نام</a>
+                {{--<a href="" class="btn btn-success btn-xl page-scroll landing-action">فرم ارسال ارائه</a>--}}
+            </p>
         </div>
     </div>
 </header>

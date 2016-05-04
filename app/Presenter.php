@@ -152,6 +152,35 @@ class Presenter extends StaticModel
             'url' => 'https://ir.linkedin.com/in/navid-foumani-5809a5a3',
             'bio' => 'توسعه‌دهنده نرم‌افزارهای متن‌باز'
         ],
+        [
+            'id' => 'sajjad',
+            'name' => 'سجاد اعظمی',
+            'avatar' => '../img/sajjad.jpg',
+            'url' => 'https://ir.linkedin.com/pub/sajad-azami/89/13/6b3',
+            'bio' => 'توسعه‌دهنده نرم‌افزارهای متن‌باز'
+        ],
+        [
+            'id' => 'bonabi',
+            'name' => 'مسعود بنابی',
+            'avatar' => '../img/bonabi.jpg',
+            'url' => 'https://www.linkedin.com/in/masoud-bonabi-62b74477',
+            'bio' => 'توسعه‌دهنده در کافه‌بازار'
+        ],
+        [
+            'id' => 'tabrizian',
+            'name' => 'ایمان تبریزیان',
+            'avatar' => '../img/iman.jpg',
+            'url' => 'https://github.com/Tabrizian',
+            'bio' => 'توسعه‌دهنده نرم‌افزارهای متن‌باز'
+        ],
+        [
+            'id' => 'kavousi',
+            'name' => 'سیاوش کاووسی',
+            'avatar' => '../img/kavousi.jpg',
+            'url' => 'http://github.com/siavashkavousi',
+            'bio' => 'توسعه‌دهنده نرم‌افزارهای متن‌باز'
+        ],
+
 //        [
 //            'id' => 'asemani',
 //            'name' => 'آسمانی',

@@ -1,25 +1,44 @@
-<section class="bg-dark" id="about">
+<aside class="bg-special" id="register">
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 text-center">
+            <div class="col-lg-12 text-center">
                 <h2 class="section-heading">
-ثبت‌نام در هشتمین دوره جشنواره لینوکس و نرم‌افزارهای متن‌باز
+ثبت‌نام
                 </h2>
-                <hr class="light">
-                <p>
-                    <a href="https://eventbin.ir/linuxfest" class="btn btn-primary btn-xl page-scroll landing-action">ثبت نام</a>
-                    {{--<a href="" class="btn btn-success btn-xl page-scroll landing-action">فرم ارسال ارائه</a>--}}
-                </p>
-                <p class="text-faded text-right" style="font-size: 23px;">
-           شرکت‌کنندگان در کارگاه‌ها 
-                <br>
-
-
-                <a href="#boards" class="page-scroll btn btn-default btn-xl">
-                    بخش‌های مختلف جشنواره
-                </a>
-
+                <hr class="primary">
             </div>
         </div>
     </div>
-</section>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+                <h1 href="https://eventbin.ir/linuxfest" class="page-scroll btn btn-default btn-xl text-center">
+           شروع ثبت‌نام هشتمین دوره جشنواره لینوکس
+                </h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center" style="margin-top: 20px">
+                <p>
+                    برای کسب اطلاعات بیشتر می‌توانید با شماره ۰۹۲۱۰۳۴۷۶۲۵ و یا ایمیل زیر تماس حاصل نمایید.
+                </p>
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h5 href="mailto:register@linuxfest.ir" class="page-scroll btn btn-default btn-xl text-center">
+                        register@linuxfest.ir
+                    </h5>
+                </div>
+            </div>
+        </div>
+        {{--<div class="row">--}}
+            {{--<p class="text-faded text-center" style="font-size: 20px;x">--}}
+                {{--*برای شرکت‌گنندگان در کارگاه‌ها وعده نهار و کد تخفیف پرشین‌گیگ در نظر گرفته شده است.--}}
+            {{--</p>--}}
+        {{--</div>--}}
+        {{--<div class="col-lg-8 col-lg-offset-2 text-center">--}}
+            {{--<a href="#presenters" class="page-scroll btn btn-default btn-xl text-center">--}}
+                {{--کیا هستن تو جشنواره؟--}}
+            {{--</a>--}}
+        {{--</div>--}}
+    </div>
+</aside>

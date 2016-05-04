@@ -148,7 +148,7 @@
 
                 @foreach($sponsors as $sponsor)
                     <?php if( strstr($sponsor['type'], 'founder')) : ?>
-                    <div class="col-md-6">
+                    <div class="col-md-4">
                         <a href="{{$sponsor->url}}" target="_blank">
                             <img src="{{$sponsor->logo}}" class="sponsor-img">
                         </a>

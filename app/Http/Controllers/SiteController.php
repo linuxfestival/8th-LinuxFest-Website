@@ -37,7 +37,7 @@ class SiteController extends Controller
         $presenters = Presenter::all();
         $sections = Section::all();
         $sponsors = Sponsor::all();
-
+        
         return view('landing.landing', [
             'presenters' => $presenters,
             'sections' => $sections,

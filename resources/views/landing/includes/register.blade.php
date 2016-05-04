@@ -13,7 +13,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 text-center">
-                <a href="https://eventbin.ir/linuxfest" class="page-scroll btn btn-default btn-xl text-center">
+                <a href="https://eventbin.ir/linuxfest" target="_blank" class="page-scroll btn btn-default btn-xl text-center">
            شروع ثبت‌نام هشتمین دوره جشنواره لینوکس
                 </a>
             </div>

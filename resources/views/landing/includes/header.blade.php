@@ -2,15 +2,15 @@
     <div class="header-background"></div>
     <div class="header-content">
         <div class="header-content-inner">
-            <h1 class="header-title" style="color:yellow; font-size: 50px;">
+            <h1 class="header-title" style="color:#d2e449; font-size: 50px;">
                 هشتمین جشنواره‌ی لینوکس 
                 <br>
                 و نرم افزار های متن باز امیرکبیر
             </h1>
             <hr>
-            <h2>۲۲ تا ۲۴ اردیبهشت ۱۳۹۵</h2>
+            <h2 class="text-faded">۲۲ تا ۲۴ اردیبهشت ۱۳۹۵</h2>
             <br>
-            <h2>دانشگاه صنعتی امیرکبیر</h2>
+            <h2 class="text-faded">دانشگاه صنعتی امیرکبیر</h2>
             <br>
             <br>
             <br>

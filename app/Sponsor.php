@@ -15,21 +15,21 @@ class Sponsor extends StaticModel
     public static $data = [
         [
             'id' => 'itc',
-            'type' => 'money',
+            'type' => 'bronze',
             'title' => 'سازمان فناوری اطلاعات ایران',
             'logo' => '../img/sponsors/itc.png',
             'url' => 'http://itc.ir/',
         ],
         [
             'id' => 'fandogh',
-            'type' => 'moral',
+            'type' => 'bronze',
             'title' => 'گروه نرم‌افزاری فندق',
             'logo' => '../img/sponsors/Fandogh.png',
             'url' => 'http://fandogh.org',
         ],
         [
             'id' => 'iranargham',
-            'type' => 'money',
+            'type' => 'gold',
             'title' => 'ایران ارقام',
             'logo' => '/img/sponsors/iranargham.png',
             'url' => 'http://iranargham.com',
@@ -85,10 +85,17 @@ class Sponsor extends StaticModel
         ],
         [
             'id' => 'reyhoon',
-            'type' => 'money',
+            'type' => 'silver',
             'title' => 'ریحون',
             'logo' => '../img/sponsors/reyhoon.png',
             'url' => 'https://www.reyhoon.com/',
+        ],
+        [
+            'id' => 'pg',
+            'type' => 'gold',
+            'title' => 'پرشین گیگ',
+            'logo' => '../img/sponsors/pg.png',
+            'url' => 'https://persiangig.com',
         ],
 
 

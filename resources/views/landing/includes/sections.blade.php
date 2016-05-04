@@ -57,6 +57,9 @@
 
     <div class="container">
         <div class="row">
+            <p class="text-faded text-center" style="font-size: 20px;x">
+                شرکت‌کنندگان تمامی کارگاه‌ها پذیرایی نهار دارند.
+            </p>
 
             @foreach($sections as $section)
                 <?php if(strpos($section['type'], 'workshop') !== false) : ?>

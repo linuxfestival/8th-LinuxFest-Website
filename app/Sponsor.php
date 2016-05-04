@@ -48,13 +48,13 @@ class Sponsor extends StaticModel
             'logo' => '/img/sponsors/peidad.png',
             'url' => 'http://peidad.com/',
         ],
-        [
-            'id' => 'anjoman',
-            'type' => 'moral',
-            'title' => 'اداره کل انجمن‌های علمی دانشگاه صنعتی امیرکبیر',
-            'logo' => '../img/sponsors/anjoman_kol.png',
-            'url' => 'http://sao.aut.ac.ir/',
-        ],
+//        [
+//            'id' => 'anjoman',
+//            'type' => 'moral',
+//            'title' => 'اداره کل انجمن‌های علمی دانشگاه صنعتی امیرکبیر',
+//            'logo' => '../img/sponsors/anjoman_kol.png',
+//            'url' => 'http://sao.aut.ac.ir/',
+//        ],
 //        [
 //            'id' => 'aut',
 //            'type' => 'founder',
@@ -82,6 +82,13 @@ class Sponsor extends StaticModel
             'title' => 'دانشکده مهندسی کامپیوتر و فناوری اطلاعات دانشگاه صنعتی امیرکبیر',
             'logo' => '../img/sponsors/autceit.png',
             'url' => 'http://ceit.aut.ac.ir',
+        ],
+        [
+            'id' => 'reyhoon',
+            'type' => 'money',
+            'title' => 'ریحون',
+            'logo' => '../img/sponsors/reyhoon.png',
+            'url' => 'https://www.reyhoon.com/',
         ],
 
 

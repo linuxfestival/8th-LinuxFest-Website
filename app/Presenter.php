@@ -22,7 +22,7 @@ class Presenter extends StaticModel
         [
             'id' => 'tim',
             'name' => 'Timothy Wood',
-            'avatar' => '/img/Timothy.jpg',
+            'avatar' => '//linuxfest.ir/img/avatar/img/Timothy.jpg',
             'url' => 'https://www.seas.gwu.edu/timothy-wood',
             'bio' => 'استادیار دانشگاه جرج واشنتگتن',
         ],
@@ -41,18 +41,18 @@ class Presenter extends StaticModel
             'bio' => 'توسعه دهنده سمت‌سرور در کافه‌بازار'
         ],
         [
-            'id' => 'afshin',
-            'name' => 'افشین سلاجقه',
-            'avatar' => '../img/afshin.jpg',
-            'url' => 'http://iranargham.com/',
-            'bio' => 'مشاور ارشد آنالیز سیستم و طراحی نرم افزار شرکت ایران ارقام'
-        ],
-        [
             'id' => 'danial',
             'name' => 'دانیال بهزادی',
             'avatar' => '//media.licdn.com/mpr/mpr/shrink_200_200/p/2/000/19f/245/283e32f.jpg?s=200',
             'url' => 'https://danialbehzadi.wordpress.com',
             'bio' => 'گروه کاربران ایرانی اوبونتو'
+        ],
+        [
+            'id' => 'afshin',
+            'name' => 'افشین سلاجقه',
+            'avatar' => '//linuxfest.ir/img/avatar/afshin.jpg',
+            'url' => 'http://iranargham.com/',
+            'bio' => 'مشاور ارشد آنالیز سیستم و طراحی نرم افزار شرکت ایران ارقام'
         ],
         [
             'id' => 'nasiri',
@@ -64,7 +64,7 @@ class Presenter extends StaticModel
         [
             'id' => 'naser',
             'name' => 'ناصر افشین',
-            'avatar' => '../img/naser.jpg',
+            'avatar' => '//linuxfest.ir/img/avatar/naser.jpg',
             'url' => 'http://www.sstaha.ir/',
             'bio' => 'مدیر فنی شرکت دانش بنیان سامانه صنعت طاها'
         ],
@@ -83,16 +83,23 @@ class Presenter extends StaticModel
             'bio' => 'توسعه‌دهنده‌ی نرم‌افزارهای متن‌باز'
         ],
         [
+            'id' => 'razmnoosh',
+            'name' => 'رویا رزم نوش',
+            'avatar' => '//linuxfest.ir/img/avatar/razmnoosh.jpg',
+            'url' => '#',
+            'bio' => 'مدرس در دانشگاه صنعتی امیرکبیر',
+        ],
+        [
             'id' => 'rahimkhani',
             'name' => 'سیاوش رحیم خانی',
-            'avatar' => '../img/siavash.jpg',
+            'avatar' => '//linuxfest.ir/img/avatar/siavash.jpg',
             'url' => 'http://www.isc.co.ir/',
             'bio' => 'متخصص شبکه در شرکت خدمات انفورماتیک'
         ],
         [
             'id' => 'gholizade',
             'name' => 'فرزاد قلی‌زاده',
-            'avatar' => '../img/farzad.jpg',
+            'avatar' => '//linuxfest.ir/img/avatar/farzad.jpg',
             'url' => 'https://ir.linkedin.com/in/farzad-gholizadeh-444362a5',
             'bio' => 'توسعه دهنده نرم افزارهای متن‌باز'
         ],
@@ -106,7 +113,7 @@ class Presenter extends StaticModel
         [
             'id' => 'bahar',
             'name' => 'سینا بهارلویی',
-            'avatar' => '../img/bahar.png',
+            'avatar' => '//linuxfest.ir/img/avatar/bahar.png',
             'url' => 'https://ir.linkedin.com/in/sina-baharlouei-00b4ba97',
             'bio' => 'توسعه دهنده نرم افزارهای متن‌باز'
         ],
@@ -127,60 +134,66 @@ class Presenter extends StaticModel
         [
             'id' => 'amir',
             'name' => 'امیر رضایی',
-            'avatar' => '../img/amirreza.jpg',
+            'avatar' => '//linuxfest.ir/img/avatar/amirreza.jpg',
             'url' => '',
             'bio' => 'توسعه دهنده نرم افزارهای متن‌باز'
         ],
         [
             'id' => 'pooyan',
             'name' => 'پویان حبیبی',
-            'avatar' => '../img/pooyan.jpg',
+            'avatar' => '//linuxfest.ir/img/avatar/pooyan.jpg',
             'url' => 'https://www.linkedin.com/in/pooyanhabibi',
             'bio' => 'توسعه دهنده نرم افزارهای متن‌باز'
         ],
         [
             'id' => 'khademi',
             'name' => 'مصطفی خادمی',
-            'avatar' => '../img/khademi.jpg',
+            'avatar' => '//linuxfest.ir/img/khademi.jpg',
             'url' => 'http://sadad.co.ir/',
             'bio' => 'تحلیل‌گر امنیت در شرکت داده‌ورزی سداد'
         ],
         [
             'id' => 'navid',
             'name' => 'نوید فومنی',
-            'avatar' => '../img/navid.jpg',
+            'avatar' => '//linuxfest.ir/img/avatar/navid.jpg',
             'url' => 'https://ir.linkedin.com/in/navid-foumani-5809a5a3',
             'bio' => 'توسعه‌دهنده نرم‌افزارهای متن‌باز'
         ],
         [
             'id' => 'sajjad',
             'name' => 'سجاد اعظمی',
-            'avatar' => '../img/sajjad.jpg',
+            'avatar' => '//linuxfest.ir/img/avatar/sajjad.jpg',
             'url' => 'https://ir.linkedin.com/pub/sajad-azami/89/13/6b3',
             'bio' => 'توسعه‌دهنده نرم‌افزارهای متن‌باز'
         ],
         [
             'id' => 'bonabi',
             'name' => 'مسعود بنابی',
-            'avatar' => '../img/bonabi.jpg',
+            'avatar' => '//linuxfest.ir/img/avatar/bonabi.jpg',
             'url' => 'https://www.linkedin.com/in/masoud-bonabi-62b74477',
             'bio' => 'توسعه‌دهنده در کافه‌بازار'
         ],
         [
             'id' => 'tabrizian',
             'name' => 'ایمان تبریزیان',
-            'avatar' => '../img/iman.jpg',
+            'avatar' => '//linuxfest.ir/img/avatar/iman.jpg',
             'url' => 'https://github.com/Tabrizian',
             'bio' => 'توسعه‌دهنده نرم‌افزارهای متن‌باز'
         ],
         [
             'id' => 'kavousi',
             'name' => 'سیاوش کاووسی',
-            'avatar' => '../img/kavousi.jpg',
+            'avatar' => '//linuxfest.ir/img/avatar/kavousi.jpg',
             'url' => 'http://github.com/siavashkavousi',
             'bio' => 'توسعه‌دهنده نرم‌افزارهای متن‌باز'
         ],
-
+        [
+            'id' => 'bakhshis',
+            'name' => 'بهادر بخشی',
+            'avatar' => '//media.licdn.com/mpr/mpr/shrink_200_200/p/2/000/1ae/26c/349c0fc.jpg?s=200',
+            'url' => 'http://ceit.aut.ac.ir/~bakhshis/',
+            'bio' => 'استادیار دانشگاه صنعتی امیرکبیر',
+        ],
 //        [
 //            'id' => 'asemani',
 //            'name' => 'آسمانی',

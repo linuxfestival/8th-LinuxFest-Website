@@ -1,97 +1,65 @@
 <aside class="bg-dark-violet" id="workshops">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2 class="section-heading">
-                    ارائه‌ها
-                </h2>
-                <hr class="primary">
+    @foreach($sections as $title=>$items)
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">{{$title}}</h2>
+                    <hr class="primary">
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="container">
-        <div class="row">
+        <div class="container">
+            <div class="row">
 
-            @foreach($sections as $section)
-                <?php if(strpos($section['type'], 'presentation') !== false) : ?>
+                @foreach($items as $section)
                     <div class="col-lg-4 col-md-4 col-sm-4 text-center">
-                        <div class="thumbnail" style="background-color: #636363; border: 1px solid #4b4850;">
-                            <div class="caption" style="color: #afb1e8;">
-                                <h4>
-                                    {{$section->title}}
-                                </h4>
-                                <h5>
-                                    {{$section->name}}
-                                </h5>
-
-                                <br>
-                                <br>
-
-                                <div style="text-align: center">
-                                    <a href="{{route('app::section',[$section->id])}}"
-                                       class="btn btn-info" target="_blank" style="background-color: #9591cc; border-color: #948fd8;">
-                                        <span>مشاهده‌ی جزئیات</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                <?php endif; ?>
-            @endforeach
-        </div>
-    </div>
-</aside>
-
-<aside class="bg-dark-violet" id="sections2">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2 class="section-heading">
-                    کارگاه‌ها
-                </h2>
-                <hr class="primary">
-            </div>
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="row">
-            <p class="text-faded text-center" style="font-size: 20px;x">
-                شرکت‌کنندگان تمامی کارگاه‌ها پذیرایی نهار دارند.
-            </p>
-
-            @foreach($sections as $section)
-                <?php if(strpos($section['type'], 'workshop') !== false) : ?>
-                <div class="col-lg-4 col-md-4 col-sm-4 text-center">
-                    <div class="thumbnail" style="background-color: #636363; border: 1px solid #4b4850;">
-                        <div class="caption" style="color: #afb1e8;">
-                            <h4>
+                        <div class="thumbnail"
+                             style="background-color: #636363; border: 1px solid #4b4850;padding: 10px">
+                            <h2>
+                                {{--<a href="{{route('app::section',[$section->id])}}" target="_blank">--}}
                                 {{$section->title}}
-                            </h4>
-                            <h5>
-                                {{$section->name}}
-                            </h5>
+                                {{--</a>--}}
+                            </h2>
 
-                            <br>
-                            <br>
+                            <div class="row" style="margin-top:20px;">
+                                @if($section->presenter)
+                                    <?php $p = App\Presenter::find($section->presenter); ?>
+                                    <img style="max-height: 40px;" class="img-circle"
+                                         src="{{$p->avatar}}">
+                                    <span>{{$p->name}}</span>
+                                @endif
+                            </div>
 
-                            <div style="text-align: center">
+                            <div class="row" style="margin-top:20px;">
+                                <span class="badge">{{$section->level}}</span>
+                                <span class="badge">{{$section->time}}</span>
+                            </div>
+
+                            <div style="text-align: center;margin-top:20px;">
                                 <a href="{{route('app::section',[$section->id])}}"
-                                   class="btn btn-info" target="_blank" style="background-color: #9591cc; border-color: #948fd8;">
+                                   class="btn btn-info" target="_blank"
+                                   style="background-color: #9591cc; border-color: #948fd8;">
                                     <span>مشاهده‌ی جزئیات</span>
                                 </a>
                             </div>
                         </div>
                     </div>
-                </div>
-                <?php endif; ?>
-            @endforeach
+                @endforeach
+            </div>
         </div>
-        <div class="col-lg-8 col-lg-offset-2 text-center">
-            <a href="#presenters" class="page-scroll btn btn-default btn-xl text-center">
-                کیا هستن؟
-            </a>
-        </div>
+
+
+    @endforeach
+
+    <div class="col-lg-8 col-lg-offset-2 text-center">
+        <a href="#presenters" class="page-scroll btn btn-default btn-xl text-center">
+            کیا هستن؟
+        </a>
     </div>
+
+    <br>
+    <br>
+
 </aside>
+

@@ -50,7 +50,121 @@ class Section extends StaticModel
             'date' => '2',
             'time' => 'روز دوم - ۹ تا ۱۲:۳۰',
             'room' => null,
-            'desc' => 'کارگاه لینوکس پیشرفته'
+            'desc' => '
+<h2>1.	THE LINUX FILESYSTEM</h2>
+<li>a.	Filesystem Support</li>
+<li>b.	Unix/Linux Filesystem Features</li>
+<li>c.	Filesystem Hierarchy Standard</li>
+<li>d.	Determining Disk Usage With df and du</li>
+<li>e.	File Ownership</li>
+<li>f.	Default Group Ownership</li>
+<li>g.	File and Directory Permissions</li>
+<li>h.	File Creation Permissions with umask</li>
+<li>i.	SUID and SGID on files</li>
+<li>j.	SGID and Sticky Bit on Directories</li>
+<li>k.	User Private Group Scheme</li>
+<h2>2.	MANIPULATING FILES</h2>
+<li>a.	Physical Unix File Structure</li>
+<li>b.	Filesystem Links</li>
+<li>c.	File Extensions and Content</li>
+<li>d.	Displaying Files</li>
+<li>e.	Previewing Files</li>
+<li>f.	Producing File Statistics</li>
+<li>g.	Displaying Binary Files</li>
+<li>h.	Searching the Filesystem</li>
+<li>i.	Alternate Search Method</li>
+<h2>3.	SHELL</h2>
+<li>a.	Role of Command Shell</li>
+<li>b.	Communication Channels</li>
+<li>c.	File Redirection</li>
+<li>d.	Piping Commands Together</li>
+<li>e.	Filename Matching</li>
+<li>f.	File Globbing and Wildcard Patterns</li>
+<li>g.	Brace Expansion</li>
+<li>h.	Shell and Environment Variables</li>
+<li>i.	Key Environment Variables</li>
+<li>j.	Which and Type</li>
+<li>k.	General Quoting Rules</li>
+<li>l.	Nesting Commands</li>
+<h2>4.	ARCHIVING AND COMPRESSION</h2>
+<li>a.	Archives with tar</li>
+<li>b.	The gzip Compression Utility</li>
+<li>c.	The bzip2 Compression Utility</li>
+<li>d.	The XZ Compression Utility</li>
+<h2>5.	TEXT EDITING</h2>
+<li>a.	vi and Vim</li>
+<li>b.	Learning Vim Basics</li>
+<h2>6.	COMMAND SHELLS</h2>
+<li>a.	Shells</li>
+<li>b.	Identifying the Shell</li>
+<li>c.	Changing the Shell</li>
+<li>d.	Configuration Files</li>
+<li>e.	Script Execution</li>
+<li>f.	Shell Prompts</li>
+<li>g.	Zsh: Zero Shell</li>
+<li>h.	Zsh: Configuration Files</li>
+<li>i.	Zsh: Command Line History</li>
+<li>j.	Zsh: Command Editing</li>
+<li>k.	Zsh: Command Completion</li>
+<li>l.	Zsh: "shortcuts"</li>
+<li>m.	Zsh: prompt</li>
+<li>n.	Setting Resource Limits via ulimit</li>
+<h2>7.	INTRODUCTION TO SHELL SCRIPTING</h2>
+<li>a.	Shell Script Strengths and Weaknesses</li>
+<li>b.	Example Shell Script</li>
+<li>c.	Positional Parameters</li>
+<li>d.	Input & Output</li>
+<li>e.	Doing Math</li>
+<li>f.	Comparisons with test</li>
+<li>g.	Exit Status</li>
+<li>h.	Conditional Statements</li>
+<li>i.	Flow Control: case</li>
+<li>j.	The for Loop</li>
+<li>k.	The while and until Loops</li>
+<h2>8.	PROCESS MANAGEMENT AND JOB CONTROL</h2>
+<li>a.	What is a Process?</li>
+<li>b.	Process Lifecycle</li>
+<li>c.	Process States</li>
+<li>d.	Viewing Processes</li>
+<li>e.	Signals</li>
+<li>f.	Tools to Send Signals</li>
+<li>g.	nohup and disown</li>
+<li>h.	Managing Processes</li>
+<li>i.	Tuning Process Scheduling</li>
+<li>j.	Job Control Overview</li>
+<li>k.	Job Control Commands</li>
+<li>l.	Persistent Shell Sessions with Screen</li>
+<li>m.	Using screen</li>
+<li>n.	Advanced Screen</li>
+<h2>9.	AT AND CRON</h2>
+<li>a.	Automating Tasks</li>
+<li>b.	at/batch</li>
+<li>c.	cron</li>
+<li>d.	The crontab Command</li>
+<li>e.	crontab Format</li>
+<li>f.	/etc/cron.*/ Directories</li>
+<li>g.	Anacron</li>
+<h2>10.	MANAGING SOFTWARE</h2>
+<li>a.	Aptitude</li>
+<li>b.	Configuring APT</li>
+<li>c.	New packaging System in Ubuntu 16.04</li>
+<h2>11.	THE SECURE SHELL (SSH)</h2>
+<li>a.	Secure Shell</li>
+<li>b.	ssh and sshd Configuration</li>
+<li>c.	Accessing Remote Shells</li>
+<li>d.	Transferring Files</li>
+<li>e.	Alternative sftp Clients</li>
+<li>f.	SSH Key Management</li>
+<li>g.	ssh-agent</li>
+<h2>12.	MOUNTING FILESYSTEMS & MANAGING REMOVABLE MEDIA</h2>
+<li>a.	Filesystems Concept Review</li>
+<li>b.	Mounting Filesystems</li>
+<li>c.	Filesystem Table (/etc/fstab)</li>
+<li>d.	AutoFS</li>
+<li>e.	Removable Media</li>
+
+
+            '
         ],
 
 

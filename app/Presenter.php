@@ -93,7 +93,7 @@ class Presenter extends StaticModel
             'id' => 'razmnoosh',
             'name' => 'رویا رزم نوش',
             'avatar' => '//linuxfest.ir/img/avatar/razmnoosh.jpg',
-            'url' => '#',
+            'url' => 'http://ceit.aut.ac.ir/~roya.razmnoush',
             'bio' => 'مدرس در دانشگاه صنعتی امیرکبیر',
         ],
         [

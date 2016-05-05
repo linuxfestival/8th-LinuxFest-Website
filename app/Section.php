@@ -51,6 +51,7 @@ class Section extends StaticModel
             'time' => 'روز دوم - ۹ تا ۱۲:۳۰',
             'room' => null,
             'desc' => '
+<p dir="ltr">
 <h2>1.	THE LINUX FILESYSTEM</h2>
 <li>a.	Filesystem Support</li>
 <li>b.	Unix/Linux Filesystem Features</li>
@@ -162,7 +163,7 @@ class Section extends StaticModel
 <li>c.	Filesystem Table (/etc/fstab)</li>
 <li>d.	AutoFS</li>
 <li>e.	Removable Media</li>
-
+</p>
 
             '
         ],

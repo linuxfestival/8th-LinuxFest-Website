@@ -22,7 +22,7 @@ class Presenter extends StaticModel
         [
             'id' => 'tim',
             'name' => 'Timothy Wood',
-            'avatar' => '//linuxfest.ir/img/avatar/img/Timothy.jpg',
+            'avatar' => '//linuxfest.ir/img/avatar/Timothy.jpg',
             'url' => 'https://www.seas.gwu.edu/timothy-wood',
             'bio' => 'استادیار دانشگاه جرج واشنتگتن',
         ],
@@ -46,6 +46,13 @@ class Presenter extends StaticModel
             'avatar' => '//media.licdn.com/mpr/mpr/shrink_200_200/p/2/000/19f/245/283e32f.jpg?s=200',
             'url' => 'https://danialbehzadi.wordpress.com',
             'bio' => 'گروه کاربران ایرانی اوبونتو'
+        ],
+        [
+            'id' => 'bakhshis',
+            'name' => 'بهادر بخشی',
+            'avatar' => '//media.licdn.com/mpr/mpr/shrink_200_200/p/2/000/1ae/26c/349c0fc.jpg?s=200',
+            'url' => 'http://ceit.aut.ac.ir/~bakhshis/',
+            'bio' => 'استادیار دانشگاه صنعتی امیرکبیر',
         ],
         [
             'id' => 'afshin',
@@ -148,7 +155,7 @@ class Presenter extends StaticModel
         [
             'id' => 'khademi',
             'name' => 'مصطفی خادمی',
-            'avatar' => '//linuxfest.ir/img/khademi.jpg',
+            'avatar' => '//linuxfest.ir/img/avatar/khademi.jpg',
             'url' => 'http://sadad.co.ir/',
             'bio' => 'تحلیل‌گر امنیت در شرکت داده‌ورزی سداد'
         ],
@@ -186,13 +193,6 @@ class Presenter extends StaticModel
             'avatar' => '//linuxfest.ir/img/avatar/kavousi.jpg',
             'url' => 'http://github.com/siavashkavousi',
             'bio' => 'توسعه‌دهنده نرم‌افزارهای متن‌باز'
-        ],
-        [
-            'id' => 'bakhshis',
-            'name' => 'بهادر بخشی',
-            'avatar' => '//media.licdn.com/mpr/mpr/shrink_200_200/p/2/000/1ae/26c/349c0fc.jpg?s=200',
-            'url' => 'http://ceit.aut.ac.ir/~bakhshis/',
-            'bio' => 'استادیار دانشگاه صنعتی امیرکبیر',
         ],
 //        [
 //            'id' => 'asemani',

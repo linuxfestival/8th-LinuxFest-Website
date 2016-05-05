@@ -40,7 +40,7 @@ class Section extends StaticModel
         [
             'id' => 'intro',
             'type' => 'workshop',
-            'title' => 'لینوکس مقدماتی',
+            'title' => 'کارگاه لینوکس مقدماتی و شروع کار با لینوکس',
             'presenter' => null,
             'level' => 'شروع کار',
             'date' => '1,2',
@@ -73,7 +73,7 @@ class Section extends StaticModel
         [
             'id' => 'openstack',
             'type' => 'workshop',
-            'title' => 'OpenStack کارگاه',
+            'title' => 'کارگاه Openstack',
             'presenter' => 'pooyan',
             'level' => 'پیشرفته',
             'date' => '2',

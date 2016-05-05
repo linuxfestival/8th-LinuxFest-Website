@@ -44,7 +44,7 @@ class Section extends StaticModel
         [
             'id' => 'linux_pro',
             'type' => 'workshop',
-            'title' => 'کارگاه لینوکس پیشفرفته',
+            'title' => 'کارگاه لینوکس پیشرفته',
             'presenter' => 'razmnoosh',
             'level' => 'پیشرفته',
             'date' => '2',

@@ -194,6 +194,14 @@ class Presenter extends StaticModel
             'url' => 'http://github.com/siavashkavousi',
             'bio' => 'توسعه‌دهنده نرم‌افزارهای متن‌باز'
         ],
+
+        'naderi' => [
+            'name' => 'حسام نادری',
+            'avatar' => '//linuxfest.ir/img/avatar/naderi.jpg',
+            'url' => '#',
+            'bio' => 'مدرس دانشگاه صعنتی امیرکبیر'
+        ],
+
 //        [
 //            'id' => 'asemani',
 //            'name' => 'آسمانی',

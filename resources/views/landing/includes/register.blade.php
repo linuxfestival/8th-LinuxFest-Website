@@ -14,7 +14,7 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 text-center">
                 <a href="https://eventbin.ir/linuxfest" target="_blank" class="page-scroll btn btn-default btn-xl text-center">
-           شروع ثبت‌نام هشتمین دوره جشنواره لینوکس
+ثبت نام در جشنواره
                 </a>
             </div>
         </div>
@@ -24,7 +24,7 @@
                     برای کسب اطلاعات بیشتر می‌توانید با شماره ۰۹۲۱۰۳۴۷۶۲۵ و یا ایمیل زیر تماس حاصل نمایید.
                 </p>
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h5 href="mailto:register@linuxfest.ir" class="page-scroll btn btn-default btn-xl text-center">
+                    <h5 href="mailto:register@linuxfest.ir" class="text-center">
                         register@linuxfest.ir
                     </h5>
                 </div>

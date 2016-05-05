@@ -98,7 +98,7 @@ class Section extends StaticModel
             'room' => null,
             'desc' => '
                         <h2>کارگاه داکر و وب سرور</h2>
-            <div class="col-md-8">
+            <div class="col-md-12">
 <p>
 در سال های اخیر، نیاز به توسعه و به روز رسانی سریع آپدیت های نرم افزاری برای توسعه دهندگان امری ضروری شده.
 داکر با معرفی مفهوم "Container" ها پیچیده ترین کانفیگ های سرور و شبکه را به سادگی یک خط دستور کرده است !
@@ -109,7 +109,7 @@ class Section extends StaticModel
 <p>
 در این ارائه علاوه بر معرفی این تکنولوژی، به این موضوع می پردازیم که 
 </p>
-<p>
+<p dir="ltr">
 سرفصل ها:
 
 	<ul style="margin-top:0pt;margin-bottom:0pt;">

@@ -110,7 +110,144 @@ class Section extends StaticModel
 در این ارائه علاوه بر معرفی این تکنولوژی، به این موضوع می پردازیم که 
 </p>
 <p>
+سرفصل ها:
 
+	<ul style="margin-top:0pt;margin-bottom:0pt;">
+			<li dir="ltr" style="list-style-type: disc; font-size: 14.6667px; font-family: Arial; vertical-align: baseline;">
+				<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">
+					<span id="docs-internal-guid-373a8f99-81a6-90e4-b0c0-0068d5626ad0"><span style="font-size: 14.6667px; vertical-align: baseline; white-space: pre-wrap;">An overview of virtualization platforms</span></span></p>
+			</li>
+			<li dir="ltr" style="list-style-type: disc; font-size: 14.6667px; font-family: Arial; vertical-align: baseline;">
+				<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">
+					<span id="docs-internal-guid-373a8f99-81a6-90e4-b0c0-0068d5626ad0"><span style="font-size: 14.6667px; vertical-align: baseline; white-space: pre-wrap;">What is Cloud ?</span></span></p>
+			</li>
+			<li dir="ltr" style="list-style-type: disc; font-size: 14.6667px; font-family: Arial; vertical-align: baseline;">
+				<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">
+					<span id="docs-internal-guid-373a8f99-81a6-90e4-b0c0-0068d5626ad0"><span style="font-size: 14.6667px; vertical-align: baseline; white-space: pre-wrap;">Introduction to containers</span></span></p>
+			</li>
+			<li dir="ltr" style="list-style-type: disc; font-size: 14.6667px; font-family: Arial; vertical-align: baseline;">
+				<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">
+					<span id="docs-internal-guid-373a8f99-81a6-90e4-b0c0-0068d5626ad0"><span style="font-size: 14.6667px; vertical-align: baseline; white-space: pre-wrap;">LXC</span></span></p>
+				<ul style="margin-top:0pt;margin-bottom:0pt;">
+					<li dir="ltr" style="list-style-type: disc; font-size: 14.6667px; vertical-align: baseline;">
+						<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">
+							<span id="docs-internal-guid-373a8f99-81a6-90e4-b0c0-0068d5626ad0"><span style="font-size: 14.6667px; vertical-align: baseline; white-space: pre-wrap;">The technology: CGroups And Kernel</span></span><span style="font-size: 14.6667px; white-space: pre-wrap; line-height: 1.38;">]</span></p>
+					</li>
+				</ul>
+			</li>
+			<li dir="ltr" style="list-style-type: disc; font-size: 14.6667px; font-family: Arial; vertical-align: baseline;">
+				<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">
+					<span id="docs-internal-guid-373a8f99-81a6-90e4-b0c0-0068d5626ad0"><span style="font-size: 14.6667px; vertical-align: baseline; white-space: pre-wrap;">Docker</span></span></p>
+				<ul style="margin-top:0pt;margin-bottom:0pt;">
+					<li dir="ltr" style="list-style-type: disc; font-size: 14.6667px; color: rgb(67, 67, 67); vertical-align: baseline;">
+						<h3 dir="ltr" style="line-height:1.38;margin-top:16pt;margin-bottom:4pt;">
+							<span id="docs-internal-guid-373a8f99-81a6-90e4-b0c0-0068d5626ad0"><span style="font-size: 14.6667px; font-weight: 400; vertical-align: baseline; white-space: pre-wrap;">Enterprise DevOps Strategy</span></span></h3>
+					</li>
+					<li dir="ltr" style="list-style-type: disc; font-size: 14.6667px; vertical-align: baseline;">
+						<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">
+							<span id="docs-internal-guid-373a8f99-81a6-90e4-b0c0-0068d5626ad0"><span style="font-size: 14.6667px; vertical-align: baseline; white-space: pre-wrap;">The Technology: Docker Engine</span></span></p>
+					</li>
+					<li dir="ltr" style="list-style-type: disc; font-size: 14.6667px; vertical-align: baseline;">
+						<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">
+							<span id="docs-internal-guid-373a8f99-81a6-90e4-b0c0-0068d5626ad0"><span style="font-size: 14.6667px; vertical-align: baseline; white-space: pre-wrap;">Install docker</span></span></p>
+					</li>
+					<li dir="ltr" style="list-style-type: disc; font-size: 14.6667px; vertical-align: baseline;">
+						<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">
+							<span id="docs-internal-guid-373a8f99-81a6-90e4-b0c0-0068d5626ad0"><span style="font-size: 14.6667px; vertical-align: baseline; white-space: pre-wrap;">Basic operation with docker containers</span></span></p>
+					</li>
+					<li dir="ltr" style="list-style-type: disc; font-size: 14.6667px; vertical-align: baseline;">
+						<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">
+							<span id="docs-internal-guid-373a8f99-81a6-90e4-b0c0-0068d5626ad0"><span style="font-size: 14.6667px; vertical-align: baseline; white-space: pre-wrap;">Writing DockerFiles</span></span></p>
+					</li>
+					<li dir="ltr" style="list-style-type: disc; font-size: 14.6667px; vertical-align: baseline;">
+						<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">
+							<span id="docs-internal-guid-373a8f99-81a6-90e4-b0c0-0068d5626ad0"><span style="font-size: 14.6667px; vertical-align: baseline; white-space: pre-wrap;">Docker images</span></span></p>
+						<ul style="margin-top:0pt;margin-bottom:0pt;">
+							<li dir="ltr" style="list-style-type: disc; font-size: 14.6667px; vertical-align: baseline;">
+								<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">
+									<span id="docs-internal-guid-373a8f99-81a6-90e4-b0c0-0068d5626ad0"><span style="font-size: 14.6667px; vertical-align: baseline; white-space: pre-wrap;">Introduction to layouts</span></span></p>
+							</li>
+							<li dir="ltr" style="list-style-type: disc; font-size: 14.6667px; vertical-align: baseline;">
+								<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">
+									<span id="docs-internal-guid-373a8f99-81a6-90e4-b0c0-0068d5626ad0"><span style="font-size: 14.6667px; vertical-align: baseline; white-space: pre-wrap;">Managing images</span></span></p>
+							</li>
+							<li dir="ltr" style="list-style-type: disc; font-size: 14.6667px; vertical-align: baseline;">
+								<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">
+									<span id="docs-internal-guid-373a8f99-81a6-90e4-b0c0-0068d5626ad0"><span style="font-size: 14.6667px; vertical-align: baseline; white-space: pre-wrap;">Docker Registry + Docker Hub</span></span></p>
+							</li>
+						</ul>
+					</li>
+					<li dir="ltr" style="list-style-type: disc; font-size: 14.6667px; vertical-align: baseline;">
+						<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">
+							<span id="docs-internal-guid-373a8f99-81a6-90e4-b0c0-0068d5626ad0"><span style="font-size: 14.6667px; vertical-align: baseline; white-space: pre-wrap;">Container monitoring and metrics</span></span></p>
+					</li>
+					<li dir="ltr" style="list-style-type: disc; font-size: 14.6667px; vertical-align: baseline;">
+						<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">
+							<span id="docs-internal-guid-373a8f99-81a6-90e4-b0c0-0068d5626ad0"><span style="font-size: 14.6667px; vertical-align: baseline; white-space: pre-wrap;">Container migration</span></span></p>
+					</li>
+					<li dir="ltr" style="list-style-type: disc; font-size: 14.6667px; vertical-align: baseline;">
+						<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">
+							<span id="docs-internal-guid-373a8f99-81a6-90e4-b0c0-0068d5626ad0"><span style="font-size: 14.6667px; vertical-align: baseline; white-space: pre-wrap;">Docker Networking</span><span style="font-size: 14.6667px; vertical-align: baseline; white-space: pre-wrap;"><span class="Apple-tab-span" style="white-space:pre;"> </span></span><span style="font-size: 14.6667px; vertical-align: baseline; white-space: pre-wrap;"><span class="Apple-tab-span" style="white-space:pre;"> </span></span><span style="font-size: 14.6667px; vertical-align: baseline; white-space: pre-wrap;"><span class="Apple-tab-span" style="white-space:pre;"> </span></span><span style="font-size: 14.6667px; vertical-align: baseline; white-space: pre-wrap;"><span class="Apple-tab-span" style="white-space:pre;"> </span></span><span style="font-size: 14.6667px; vertical-align: baseline; white-space: pre-wrap;"><span class="Apple-tab-span" style="white-space:pre;"> </span></span><span style="font-size: 14.6667px; vertical-align: baseline; white-space: pre-wrap;"><span class="Apple-tab-span" style="white-space:pre;"> </span></span><span style="font-size: 14.6667px; vertical-align: baseline; white-space: pre-wrap;"><span class="Apple-tab-span" style="white-space:pre;"> </span></span></span></p>
+					</li>
+				</ul>
+			</li>
+		</ul>
+		<ul style="margin-top:0pt;margin-bottom:0pt;">
+			<li style="list-style-type: disc; font-size: 14.6667px; font-family: Arial; vertical-align: baseline; margin-left: 48px;">
+				<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">
+					<span id="docs-internal-guid-373a8f99-81a6-90e4-b0c0-0068d5626ad0"><span style="font-size: 14.6667px; vertical-align: baseline; white-space: pre-wrap;">Containers Storage&nbsp;</span></span></p>
+			</li>
+			<li style="list-style-type: disc; font-size: 14.6667px; font-family: Arial; vertical-align: baseline;">
+				<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">
+					<span id="docs-internal-guid-373a8f99-81a6-90e4-b0c0-0068d5626ad0"><span style="font-size: 14.6667px; vertical-align: baseline; white-space: pre-wrap;">Building Cloud using <strong>Docker SWARM</strong></span></span></p>
+			</li>
+			<li style="list-style-type: disc; font-size: 14.6667px; font-family: Arial; vertical-align: baseline;">
+				<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">
+					<span id="docs-internal-guid-373a8f99-81a6-90e4-b0c0-0068d5626ad0"><span style="font-size: 14.6667px; vertical-align: baseline; white-space: pre-wrap;">Docker Compose</span></span></p>
+				<ul style="margin-top:0pt;margin-bottom:0pt;">
+					<li style="list-style-type: disc; font-size: 14.6667px; vertical-align: baseline;">
+						<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">
+							<span id="docs-internal-guid-373a8f99-81a6-90e4-b0c0-0068d5626ad0"><span style="font-size: 14.6667px; vertical-align: baseline; white-space: pre-wrap;">History</span></span></p>
+					</li>
+					<li style="list-style-type: disc; font-size: 14.6667px; vertical-align: baseline;">
+						<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">
+							<span id="docs-internal-guid-373a8f99-81a6-90e4-b0c0-0068d5626ad0"><span style="font-size: 14.6667px; vertical-align: baseline; white-space: pre-wrap;">Building infrastructure upen docker-compose files</span></span></p>
+					</li>
+					<li style="list-style-type: disc; font-size: 14.6667px; vertical-align: baseline;">
+						<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">
+							<span id="docs-internal-guid-373a8f99-81a6-90e4-b0c0-0068d5626ad0"><span style="font-size: 14.6667px; vertical-align: baseline; white-space: pre-wrap;">Writing simple docker-compose files</span></span></p>
+					</li>
+				</ul>
+			</li>
+			<li style="list-style-type: disc; font-size: 14.6667px; font-family: Arial; vertical-align: baseline;">
+				<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">
+					<span id="docs-internal-guid-373a8f99-81a6-90e4-b0c0-0068d5626ad0"><span style="font-size: 14.6667px; vertical-align: baseline; white-space: pre-wrap;">Core OS</span></span></p>
+				<ul style="margin-top:0pt;margin-bottom:0pt;">
+					<li style="list-style-type: disc; font-size: 14.6667px; vertical-align: baseline;">
+						<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">
+							<span id="docs-internal-guid-373a8f99-81a6-90e4-b0c0-0068d5626ad0"><span style="font-size: 14.6667px; vertical-align: baseline; white-space: pre-wrap;">Introduction &amp; Setup</span></span></p>
+					</li>
+				</ul>
+			</li>
+			<li style="list-style-type: disc; font-size: 14.6667px; font-family: Arial; vertical-align: baseline;">
+				<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">
+					<span id="docs-internal-guid-373a8f99-81a6-90e4-b0c0-0068d5626ad0"><span style="font-size: 14.6667px; vertical-align: baseline; white-space: pre-wrap;">Google Kubernetes</span></span></p>
+				<ul style="margin-top:0pt;margin-bottom:0pt;">
+					<li style="list-style-type: disc; font-size: 14.6667px; vertical-align: baseline;">
+						<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">
+							<span style="font-size: 14.6667px; white-space: pre-wrap; line-height: 1.38;"><span style="font-size: 14.6667px; line-height: 20.24px;">Introduction</span></span></p>
+					</li>
+				</ul>
+			</li>
+		</ul>
+		<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">
+			&nbsp;</p>
+		<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">
+			&nbsp;</p>
+		<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">
+			<span style="font-size: 14.6667px; line-height: 20.24px; white-space: pre-wrap;">Webservers</span></p>
+		<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">
+			<span style="font-size: 14.6667px; line-height: 20.24px; white-space: pre-wrap;">- Build you nginx stack using docker</span></p>
 </p>
  </div>
             '

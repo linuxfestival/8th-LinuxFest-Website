@@ -47,13 +47,13 @@ class Presenter extends StaticModel
             'url' => 'https://danialbehzadi.wordpress.com',
             'bio' => 'گروه کاربران ایرانی اوبونتو'
         ],
-        [
-            'id' => 'bakhshis',
-            'name' => 'بهادر بخشی',
-            'avatar' => '//media.licdn.com/mpr/mpr/shrink_200_200/p/2/000/1ae/26c/349c0fc.jpg?s=200',
-            'url' => 'http://ceit.aut.ac.ir/~bakhshis/',
-            'bio' => 'استادیار دانشگاه صنعتی امیرکبیر',
-        ],
+//        [
+//            'id' => 'bakhshis',
+//            'name' => 'بهادر بخشی',
+//            'avatar' => '//media.licdn.com/mpr/mpr/shrink_200_200/p/2/000/1ae/26c/349c0fc.jpg?s=200',
+//            'url' => 'http://ceit.aut.ac.ir/~bakhshis/',
+//            'bio' => 'استادیار دانشگاه صنعتی امیرکبیر',
+//        ],
         [
             'id' => 'afshin',
             'name' => 'افشین سلاجقه',

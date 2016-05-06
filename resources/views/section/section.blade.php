@@ -44,7 +44,7 @@
                 <div class="col-md-3">
                     <div class="panel panel-default">
                         <div class="panel-body">
-                            @if($section->presenter)
+                            @foreach($presenters as $presenter)
                                 <div style="text-align: center;">
                                     <a href="{{route('app::presenter',[$presenter->id])}}" class="profile2"
                                        target="_blank">
@@ -54,7 +54,7 @@
                                     </a>
                                 </div>
                                 <hr>
-                            @endif
+                            @endforeach
                             <div class="text-center">
                                 <a class="btn btn-success" href="https://eventbin.ir/linuxfest" target="_blank">
                                     <span>هم اکنون ثبت نام کنید</span>

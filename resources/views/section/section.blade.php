@@ -25,10 +25,12 @@
 
                     &nbsp;&nbsp;
 
-                <span>
+                    @if($section->room)
+                        <span>
             محل:
             <label class="label label-info">{{$section->room}}</label>
                     </span>
+                    @endif
 
                 </p>
 
@@ -40,21 +42,40 @@
 
             <div class="row">
                 <div class="col-md-3">
-                    <div style="text-align: center;">
-                        <a href="{{route('app::presenter',[$presenter->id])}}" class="profile2" target="_blank">
-                            <img style="max-height: 220px;" src="{{$presenter->avatar}}">
-                            <h2>{{$presenter->name}}</h2>
-                            <h5>{{$presenter->bio}}</h5>
-                        </a>
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            @if($section->presenter)
+                                <div style="text-align: center;">
+                                    <a href="{{route('app::presenter',[$presenter->id])}}" class="profile2"
+                                       target="_blank">
+                                        <img style="max-height: 220px;" src="{{$presenter->avatar}}">
+                                        <h2>{{$presenter->name}}</h2>
+                                        <h5>{{$presenter->bio}}</h5>
+                                    </a>
+                                </div>
+                                <hr>
+                            @endif
+                            <div class="text-center">
+                                <a class="btn btn-success" href="https://eventbin.ir/linuxfest" target="_blank">
+                                    <span>هم اکنون ثبت نام کنید</span>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-9">
-                    <p>
-                        {!! $section->desc !!}
-                    </p>
-                </div>
-            </div>
 
+                <div class="col-md-9">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">توضیحات</div>
+                        <div class="panel-body">
+                            <p>
+                                {!! $section->desc !!}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
 
         </section>
 

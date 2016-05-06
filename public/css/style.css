@@ -39,7 +39,8 @@ a {
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
-    color: #7d8ef0
+    color: #7d8ef0;
+    text-decoration: none !important;
 }
 
 a:hover, a:focus {

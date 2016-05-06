@@ -196,6 +196,7 @@ class Presenter extends StaticModel
 //        ],
 
         'naderi' => [
+            'id'=>'naderi',
             'name' => 'حسام نادری',
             'avatar' => '//linuxfest.ir/img/avatar/naderi.jpg',
             'url' => '#',

@@ -64,11 +64,18 @@ class SiteController extends Controller
 
     public function section(Section $section)
     {
-        $presenter = $section->presenter?Presenter::where('id',$section->presenter)->firstOrFail():null;
+        $presenters = [];
+
+        if($section->presenter)
+            $presenters[]=Presenter::where('id',$section->presenter)->firstOrFail();
+
+        if($section->presenters)
+            foreach ($section->presenters as $presenter)
+            $presenters[]=Presenter::where('id',$presenter)->firstOrFail();
 
         return view('section.section', [
             'section' => $section,
-            'presenter' => $presenter,
+            'presenters' => $presenters,
         ]);
     }
 

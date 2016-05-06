@@ -52,7 +52,7 @@ class Section extends StaticModel
             'time' => 'روز دوم - ۹ تا ۱۲:۳۰',
             'room' => null,
             'desc' => '
-<p dir="ltr">
+<p style="direction: ltr">
 <h2>1.	THE LINUX FILESYSTEM</h2>
 <li>a.	Filesystem Support</li>
 <li>b.	Unix/Linux Filesystem Features</li>
@@ -214,7 +214,7 @@ class Section extends StaticModel
 </strong> 
 </p>
 <h2>سرفصل ها:</h2>
-<p dir="ltr">
+<p style="direction: ltr;">
 
 <ul>
 <li>An overview of virtualization platforms</li>
@@ -265,6 +265,7 @@ class Section extends StaticModel
             'desc' => '
             سرفصل‌های ارائه شده در این کارگاه عبارتند از:
 <br>
+<p style="direction: ltr;">
             <h2>Introduction to GoLang</h2>
 <h3>The Go Programming Language</h3>
 <h3>Program Elements</h3>
@@ -286,6 +287,7 @@ class Section extends StaticModel
 <h3>Miscellaneous</h3>
 <li>Go Tools</li>
 <li>Beehive</li>
+</p>
             '
         ],
 
@@ -336,6 +338,7 @@ class Section extends StaticModel
             <br>
          موضوعات و مباحثی که در این کارگاه مورد بررسی قرار می‌گیرند عبارتند از:
             <br>
+<p style="direction: ltr;">
 <li>Introduction to IP Protocol</li>
 <li>IP configuration</li>
 <li>Basic IP Troubleshooting tools</li>
@@ -353,6 +356,7 @@ class Section extends StaticModel
 <li>Network Scanning</li>
 <li>Security Bassics</li>
 </br>جهت شرکت در این کارگاه از قسمت ثبت نام وارد شوید.برای کسب اطلاعات بیشتر به آدرس register@linuxfest.ir پیام بفرستید.
+</p>
          '
         ],
 
@@ -409,11 +413,13 @@ class Section extends StaticModel
 هدف از این کارگاه آشنایی کاربران با مبانی سیستم‌های درگیر در اینترنت اشیا است که سرفصل‌های ارائه شده در این کارگاه حاصل خروجی پروژه ملی اینترنت اشیای دانشگاه امیرکبیر است. 
 </br>
 سرفصل‌های این کارگاه عبارتند از: 
+<p style="direction: ltr;" >
 <li>1) Introduction to Embedded systems, Arduino and Rasp Berry Pi mini computers</li>
 <li>2) Arduino: Hello World (LED on/off – Blink)</li>
 <li>3) Arduino: IR detection</li>
 <li>4) R­Pi: What are GPIO pins?! (+ GPIO on Python)</li>
 <li>5) R­Pi: IR detection</li>
+</p>
 در نهایت شرکت‌کنندگان مفاهیم ابتدایی سیستم‌های نهفته را دریافته و دیدی از دنیای الکترونیک سیستم‌های اینترنت اشیا خواهند داشت.
 </br>
 ابولفضل دانایی - متوسط
@@ -581,6 +587,22 @@ class Section extends StaticModel
             'room' => 'سالن آمفی‌تئاتر',
             'desc' => '
             در این ارائه، قصد داریم کاربردی عملی از داکر در دنیای واقعی را همراه با ابزار های متن باز فوق العاده دیگر به شما معرفی کنیم.
+            '
+        ],
+
+        //--------------------------------------------------------------
+
+        [
+            'id' => 'dataware',
+            'type' => 'presentation',
+            'title' => 'Data Wherehouse and Dimensional Modeling',
+            'presenter' => 'afshin',
+            'level' => 'متوسط',
+            'date' => '2',
+            'time' => 'روز دوم - ۱۶:۰۰ تا ۱۷:۰۰',
+            'room' => 'سالن آمفی‌تئاتر',
+            'desc' => '
+            توضیحات متعاقباً اعلام خواهد شد.
             '
         ],
 

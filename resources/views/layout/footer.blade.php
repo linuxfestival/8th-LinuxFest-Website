@@ -2,6 +2,7 @@
     <br>
     Computer and Information Technology Department, Amirkabir University - Published under GPL2 License -
     <a href="https://github.com/LinuxFest/LinuxFestival" target="_blank">Available on Github</a>
+    | <a href="https://github.com/pi0" target="_blank">pi0</a>
 
 </footer>
 

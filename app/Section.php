@@ -259,7 +259,7 @@ class Section extends StaticModel
             'presenter' => 'parham',
             'level' => 'متوسط',
             'date' => '1',
-            'time' => 'روز اول - ۹ تا ۱۲:۳۰',
+            'time' => 'روز دوم - ۹ تا ۱۲:۳۰',
             'room' => null,
             'desc' => '
             سرفصل‌های ارائه شده در این کارگاه عبارتند از:

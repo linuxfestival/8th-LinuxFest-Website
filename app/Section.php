@@ -182,7 +182,23 @@ class Section extends StaticModel
             'time' => 'روز دوم - ۹ تا ۱۲:۳۰',
             'room' => 'سایت کامپیوتر',
             'desc' => 'این کارگاه توضیحات معماری یک اُپن‌استک و تنظیمات اولیه از پیاده‌سازی آن به شرکت کنندگان می‌دهد.
-توضیحات بیشتر به زودی...
+سرفصل‌های ارائه شده در این کارگاه عبارتند از:
+<h3>Introduction to Openstack</h3>
+<li>Introduction and Welcome</li>
+<li>Next Gen OpenStack Data Centers</li>
+<h3>Architecture Components of OpenStack</h3>
+<li>What OpenStack is Not. (The History)</li>
+<li>Architecture </li>
+<li>Nova Compute</li>
+<li>Swift - Storage</li>
+<li>Glance - Image Sevice</li>
+<li>Neutron - Networking</li>
+<li>Horizon - Dashboard</li>
+<li>Keystone - Identity Service</li>
+<h3>OpenStack Demonstrations</h3>
+<li>OpenStack Hypervisors</li>
+<li>Choosing your Distribution platform</li>
+<li>Creating your Own Openstack using DecStack</li>
 '
         ],
 
@@ -650,7 +666,7 @@ class Section extends StaticModel
             'date' => '2',
             'time' => 'روز دوم - ۱۵:۳۰ تا ۱۶:۰۰',
             'room' => 'سالن آمفی‌تئاتر',
-            'desc' => ''
+            'desc' => 'امروزه شبکه‌های نرم افزار بنیان که در آن‌ها سعی بر کنترل شبکه بر اساس نرم افزار می‌باشد به سرعت در حال گسترش است، در کنار شبکه‌های نرم افزار بنیان ایده‌ی پیاده‌سازی عملیات‌های شبکه مثل سوئیچینگ نیز به صورت نرم افزاری رو به گسترش نهاده است، در همه این ایده‌ها مشکل اصلی تعداد بسته‌هایی است که می‌توان به صورت نرم افزاری پردازش نمود، پلتفرم NetVM قصد حل این مشکل را دارد.'
         ],
 
         //--------------------------------------------------------------

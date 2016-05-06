@@ -339,7 +339,7 @@ class Section extends StaticModel
          موضوعات و مباحثی که در این کارگاه مورد بررسی قرار می‌گیرند عبارتند از:
             <br>
 <p style="direction: ltr;">
-<li>Introduction to IP Protocol</li>
+<li style="direction: ltr;">Introduction to IP Protocol</li>
 <li>IP configuration</li>
 <li>Basic IP Troubleshooting tools</li>
 <li>Routing</li> 
@@ -355,8 +355,8 @@ class Section extends StaticModel
 <li>wireshark</li>
 <li>Network Scanning</li>
 <li>Security Bassics</li>
-</br>جهت شرکت در این کارگاه از قسمت ثبت نام وارد شوید.برای کسب اطلاعات بیشتر به آدرس register@linuxfest.ir پیام بفرستید.
 </p>
+</br>جهت شرکت در این کارگاه از قسمت ثبت نام وارد شوید.برای کسب اطلاعات بیشتر به آدرس register@linuxfest.ir پیام بفرستید.
          '
         ],
 

@@ -4,7 +4,7 @@ Amirkabir Linux Festival website - [Linuxfest.ir](https://linuxfest.ir)
 
 ## Legacy version
 
-For Legacy (Plain PHP) version, see [Legacy Branch](https://github.com/pi0/LinuxFestival/tree/legacy)
+For Legacy (Plain PHP) version, see [Legacy Branch](https://github.com/LinuxFest/LinuxFestival/tree/legacy)
 
 ## Contributors
 

@@ -17,6 +17,6 @@ Route::group(
     ['middleware' => ['web']], function () {
 
     // Landing
-    \App\Http\Controllers\LandingController::routes();
-    
+    \App\Http\Controllers\SiteController::routes();
+
 });

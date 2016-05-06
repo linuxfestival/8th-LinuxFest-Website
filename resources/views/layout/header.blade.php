@@ -20,6 +20,8 @@
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+    @include('includes.analytics')
+
 </head>
 
 <body id="page-top" dir="rtl">
@@ -35,7 +37,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand page-scroll" href="#page-top">
+            <a class="navbar-brand page-scroll" href="/#page-top">
                 جشنواره‌ی لینوکس امیرکبیر
             </a>
         </div>
@@ -44,55 +46,46 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a class="page-scroll" href="./#about" data-target="#about">
+                    <a class="page-scroll" href="/#about" data-target="#about">
                         درباره‌ی جشنواره
                     </a>
                 </li>
-                <!--
+
                 <li>
-                    <a class="page-scroll" href="./#presenters" data-target="#presenters">
+                    <a class="page-scroll" href="/#register" data-target="#special">
+                       ثبت‌نام
+                    </a>
+                </li>
+
+                <li>
+                    <a class="page-scroll" href="/#workshops" data-target="#workshops">
+                        کارگاه ها و ارائه ها
+                    </a>
+                </li>
+
+                <li>
+                    <a class="page-scroll" href="/#presenters" data-target="#presenters">
                         ارائه‌دهندگان
                     </a>
                 </li>
 
                 <li>
-                    <a class="page-scroll" href="./#workshops" data-target="#workshops">
-                        کارگاه‌ها
-                    </a>
-                </li>
-
-                <li>
-                    <a class="page-scroll" href="./#presentations" data-target="#presentations">
-                        ارائه‌ها
-                    </a>
-                </li>
-
-                <!--                <li>-->
-                <!--                    <a class="page-scroll" href="./register" data-target="#register">-->
-                <!--                        ثبت نام-->
-                <!--                    </a>-->
-                <!--                </li>-->
-
-                <!--                <li>-->
-                <!--                    <a class="page-scroll" href="./ticket" data-target="#ticket">-->
-                <!--                        دریافت بلیت-->
-                <!--                    </a>-->
-                <!--                </li>-->
-
-
-                <li>
-                    <a class="page-scroll" href="./#sponsors" data-target="#sponsors">
+                    <a class="page-scroll" href="/#sponsors" data-target="#sponsors">
                         حامیان
                     </a>
                 </li>
 
                 <li>
-                    <a class="page-scroll" href="./#contact" data-target="#contact">
-                        ارتباط با ما
-                        +
-                        محل برگزاری
+                    <a class="page-scroll" href="/#contact" data-target="#contact">
+                        محل جشنواره
                     </a>
                 </li>
+
+                {{--<li>--}}
+                    {{--<a class="page-scroll" href="/timeline">--}}
+{{--جدول زمانی جشنواره--}}
+                    {{--</a>--}}
+                {{--</li>--}}
 
 
             </ul>

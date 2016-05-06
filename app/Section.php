@@ -35,6 +35,31 @@ class Section extends StaticModel
             'desc' => 'یک شروع عالی برای کار با سیستم عامل لینوکس. نیاز به کار با سیستم عامل لینوکس و نرم افزار های متن باز هر روز بیشتر از روز دیگر حس می شود، پس اگر شما هم می خواهید با کار با این سیستم عامل آشنا شوید، در این کارگاه ثبت نام کنید. 
 شرکت‌کنندگان در روز اول این کارگاه با محیط سیستم عامل لینوکس، محیط‌های گرافیکی و دیگر قابلیت‌های آن آشنا می‌شوند. در روز دوم شرکت‌کنندگان با محیط ترمینال، فایل سیستم لینوکس، پردازش فایل‌های متنی، نصب برنامه‌های مختلف، مدیریت processها، کار با vim و... آشنا می‌شوند. در پایان دو روز ارائه‌ای با عنوان How to Live Happily in Linux خواهیم داشت که به شرکت‌کنندگان می‌آموزد چگونه تمام کارهای روزمره‌ی خود را در لینوکس انجام دهند، بدون این که به سیستم عامل دیگری نیاز داشته باشند.
 جهت شرکت در این کارگاه از قسمت ثبت نام وارد شوید.
+سرفصل موضوعاتی که در این کارگاه ارائه می‌شوند عبارتند از:
+<h3>روز اول</h3>
+<br>
+<li>An Introduction To Linux and GNU</li>
+<li>Post Installation Tasks</li>
+<li>Package Management and Installing a new software</li>
+<li>Difference between distro and desktop and Other graphical environments</li>
+<li>Network Configuration</li>
+<li>Users and Groups</li>
+<li>File Hierarchy</li>
+<li>Simple Bash</li>
+<br>
+<h3>روز دوم</h3>
+<li>An introduction to terminal</li>
+<li>Basic file management</li>
+<li>Find system files and place files in the correct location</li>
+<li>Create and change hard and symbolic links</li>
+<li>Processing text files</li>
+<li>Use streams, pipes and redirects</li>
+<li>Programming in Linux</li>
+<li>Make and install programs from source</li>
+<li>Create, monitor and kill processes</li>
+<li>SSH</li>
+<li>Measure and Troubleshoot Resource Usage</li>
+<li>Basic network configuration and troubleshooting</li>
 '
         ],
 

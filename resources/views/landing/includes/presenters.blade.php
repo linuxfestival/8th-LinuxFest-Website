@@ -15,21 +15,23 @@
 
             @foreach($presenters as $presenter)
 
-                <div class="col-lg-3 col-md-6 col-rtl2 text-center wow fadeIn">
-                    <a href="{{route('app::presenter',[$presenter->id])}}" class="profile grid-col" target="_blank">
+                <?php if ($presenter['display_on_first_page'] == true) : ?>
+                    <div class="col-lg-3 col-md-6 col-rtl2 text-center wow fadeIn">
+                        <a href="{{route('app::presenter',[$presenter->id])}}" class="profile grid-col" target="_blank">
 
-                        <img style="max-height: 220px;" src="{{$presenter->avatar}}">
+                            <img style="max-height: 220px;" src="{{$presenter->avatar}}">
 
-                        <h2><strong>{{$presenter->name}}</strong></h2>
+                            <h2><strong>{{$presenter->name}}</strong></h2>
 
-                        <h5>{{$presenter->bio}}</h5>
+                            <h5>{{$presenter->bio}}</h5>
 
-                        <a href="{{$presenter->url}}" target="_blank"><h5>صفحه شخصی</h5></a>
-                        <div class="clear"></div>
-                        <br>
+                            <a href="{{$presenter->url}}" target="_blank"><h5>صفحه شخصی</h5></a>
+                            <div class="clear"></div>
+                            <br>
 
-                    </a>
-                </div>
+                        </a>
+                    </div>
+                <?php endif; ?>
 
             @endforeach
 

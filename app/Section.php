@@ -36,7 +36,8 @@ class Section extends StaticModel
 شرکت‌کنندگان در روز اول این کارگاه با محیط سیستم عامل لینوکس، محیط‌های گرافیکی و دیگر قابلیت‌های آن آشنا می‌شوند. در روز دوم شرکت‌کنندگان با محیط ترمینال، فایل سیستم لینوکس، پردازش فایل‌های متنی، نصب برنامه‌های مختلف، مدیریت processها، کار با vim و... آشنا می‌شوند. در پایان دو روز ارائه‌ای با عنوان How to Live Happily in Linux خواهیم داشت که به شرکت‌کنندگان می‌آموزد چگونه تمام کارهای روزمره‌ی خود را در لینوکس انجام دهند، بدون این که به سیستم عامل دیگری نیاز داشته باشند.
 جهت شرکت در این کارگاه از قسمت ثبت نام وارد شوید.
 سرفصل موضوعاتی که در این کارگاه ارائه می‌شوند عبارتند از:
-<h3>روز اول</h3>
+<h3>روز اول:</h3>
+<div style="direction: ltr;">
 <br>
 <li>An Introduction To Linux and GNU</li>
 <li>Post Installation Tasks</li>
@@ -47,7 +48,9 @@ class Section extends StaticModel
 <li>File Hierarchy</li>
 <li>Simple Bash</li>
 <br>
-<h3>روز دوم</h3>
+</div>
+<h3>روز دوم:</h3>
+<div style="direction: ltr;">
 <li>An introduction to terminal</li>
 <li>Basic file management</li>
 <li>Find system files and place files in the correct location</li>
@@ -60,6 +63,7 @@ class Section extends StaticModel
 <li>SSH</li>
 <li>Measure and Troubleshoot Resource Usage</li>
 <li>Basic network configuration and troubleshooting</li>
+</div>
 '
         ],
 
@@ -77,7 +81,7 @@ class Section extends StaticModel
             'time' => 'روز دوم - ۹ تا ۱۲:۳۰',
             'room' => null,
             'desc' => '
-<p style="direction: ltr">
+<div style="direction: ltr">
 <h2>1.	THE LINUX FILESYSTEM</h2>
 <li>a.	Filesystem Support</li>
 <li>b.	Unix/Linux Filesystem Features</li>
@@ -189,7 +193,7 @@ class Section extends StaticModel
 <li>c.	Filesystem Table (/etc/fstab)</li>
 <li>d.	AutoFS</li>
 <li>e.	Removable Media</li>#11
-</p>
+</div>
 
             '
         ],
@@ -208,6 +212,7 @@ class Section extends StaticModel
             'room' => 'سایت کامپیوتر',
             'desc' => 'این کارگاه توضیحات معماری یک اُپن‌استک و تنظیمات اولیه از پیاده‌سازی آن به شرکت کنندگان می‌دهد.
 سرفصل‌های ارائه شده در این کارگاه عبارتند از:
+<div style="direction: ltr;">
 <h3>Introduction to Openstack</h3>
 <li>Introduction and Welcome</li>
 <li>Next Gen OpenStack Data Centers</li>
@@ -224,6 +229,7 @@ class Section extends StaticModel
 <li>OpenStack Hypervisors</li>
 <li>Choosing your Distribution platform</li>
 <li>Creating your Own Openstack using DecStack</li>
+</div>
 '
         ],
 
@@ -255,7 +261,7 @@ class Section extends StaticModel
 </strong> 
 </p>
 <h2>سرفصل ها:</h2>
-<p style="direction: ltr;">
+<div style="direction: ltr;">
 
 <ul>
 <li>An overview of virtualization platforms</li>
@@ -306,7 +312,7 @@ class Section extends StaticModel
             'desc' => '
             سرفصل‌های ارائه شده در این کارگاه عبارتند از:
 <br>
-<p style="direction: ltr;">
+<div style="direction: ltr;">
             <h2>Introduction to GoLang</h2>
 <h3>The Go Programming Language</h3>
 <h3>Program Elements</h3>
@@ -328,7 +334,7 @@ class Section extends StaticModel
 <h3>Miscellaneous</h3>
 <li>Go Tools</li>
 <li>Beehive</li>
-</p>
+</div>
             '
         ],
 
@@ -368,8 +374,8 @@ class Section extends StaticModel
             'id' => 'network',
             'type' => 'workshop',
             'title' => 'Network & Security',
-            'presenter' => 'khademi',
-            'presenters' => ['rahimkhani'],
+            'presenter' => 'rahimkhani',
+            'presenters' => ['khademi'],
             'level' => 'پیشرفته',
             'date' => '1,2',
             'time' => 'روز اول ۹:۰۰ تا ۱۲:۳۰ و روز دوم ۹:۰۰ تا ۱۰:۳۰',
@@ -379,6 +385,7 @@ class Section extends StaticModel
             <br>
          موضوعات و مباحثی که در این کارگاه مورد بررسی قرار می‌گیرند عبارتند از:
             <br>
+<div style="direction: ltr;"> 
 <li>Introduction to IP Protocol</li>
 <li>IP configuration</li>
 <li>Basic IP Troubleshooting tools</li>
@@ -395,6 +402,7 @@ class Section extends StaticModel
 <li>wireshark</li>
 <li>Network Scanning</li>
 <li>Security Bassics</li>
+</div>
 </br>جهت شرکت در این کارگاه از قسمت ثبت نام وارد شوید.برای کسب اطلاعات بیشتر به آدرس register@linuxfest.ir پیام بفرستید.
          '
         ],
@@ -412,16 +420,18 @@ class Section extends StaticModel
             'time' => 'روز دوم - ۹ تا ۱۲:۳۰',
             'room' => null,
             'desc' => '
-            متلب (MATLAB (يک محيط نرم افزاری برای انجام محاسبات عددی و يک زبان برنامه نويسی نسل چهارم می باشد. نسل چهارم بدين معنی است که٬ اين زبان های برنامه نويسی يا محيط های برنامه نويسی برای اهداف خاص طراحی شده اند و از طرفی اين زبان ها هزينه برنامه نويسی٬ زمان توسعه و هزينه توسعه نرم افزار را کاهش می دهند.
+<p style="direction : rtl;">
+            متلب (MATLAB) يک محيط نرم افزاری برای انجام محاسبات عددی و يک زبان برنامه نويسی نسل چهارم می باشد. نسل چهارم بدين معنی است که٬ اين زبان های برنامه نويسی يا محيط های برنامه نويسی برای اهداف خاص طراحی شده اند و از طرفی اين زبان ها هزينه برنامه نويسی٬ زمان توسعه و هزينه توسعه نرم افزار را کاهش می دهند.
             <br>
 هدف از کارگاه پيش رو بيان مطالب زير می باشد:
+</p>
 <br>
-<strong>بخش اول:</strong>
+<h3>بخش اول:</h3>
 <li>معرفی نرم افزار و آموزش نصب آن در لينوکس</li>
 <li>بيان جزئيات محيط نرم افزار</li>
 <li>حل معادلات و ترسيم داده ها</li>
 <br>
-<strong>بخش دوم:</strong>
+<h3>بخش دوم:</h3>
 <li>نحوه ی ايجاد واسط گرافيکی</li> 
 <li>معرفی تولباکس های معروف در زمينه هوش مصنوعی</li>
 <li>حل چند مسئله يادگيری ماشين</li>
@@ -437,7 +447,8 @@ class Section extends StaticModel
             'id' => 'system_on_a_board',
             'type' => 'workshop',
             'title' => 'Embedded Systems',
-            'presenter' => 'abolfazl',
+            'presenter' => 'naser',
+            'presenters' => ['abolfazl', 'mehdisaj', 'amir'],
             'level' => 'متوسط',
             'date' => '1',
             'time' => 'روز اول - ۱۰:۴۵ تا ۱۲:۳۰',
@@ -453,13 +464,13 @@ class Section extends StaticModel
 هدف از این کارگاه آشنایی کاربران با مبانی سیستم‌های درگیر در اینترنت اشیا است که سرفصل‌های ارائه شده در این کارگاه حاصل خروجی پروژه ملی اینترنت اشیای دانشگاه امیرکبیر است. 
 </br>
 سرفصل‌های این کارگاه عبارتند از: 
-<p style="direction: ltr;" >
+<div style="direction: ltr;" >
 <li>1) Introduction to Embedded systems, Arduino and Rasp Berry Pi mini computers</li>
 <li>2) Arduino: Hello World (LED on/off – Blink)</li>
 <li>3) Arduino: IR detection</li>
 <li>4) R­Pi: What are GPIO pins?! (+ GPIO on Python)</li>
 <li>5) R­Pi: IR detection</li>
-</p>
+</div>
 در نهایت شرکت‌کنندگان مفاهیم ابتدایی سیستم‌های نهفته را دریافته و دیدی از دنیای الکترونیک سیستم‌های اینترنت اشیا خواهند داشت.
 </br>
 ابولفضل دانایی - متوسط
@@ -484,13 +495,15 @@ class Section extends StaticModel
 </br>
 این کلاس ادامه کارگاه‌های System on a Board می‌باشد در این کارگاه کارآموزان با برد خود به همراه یک میکرو کنترلر یک کاربرد ساده از ایده های قابل پیاده سازی در مورد خانه های هوشمند توسط این برد ها را آموزش میبینند. 
 </br>
-سرفصل‌های این کارگاه عبارتند از: 
+سرفصل‌های این کارگاه عبارتند از:
+<div style="direction: ltr;">
 <li>1) Introduction to Serial protocol</li>
 <li>2) Defining a basic data transmission between R­Pi and Arduino using Serial interface</li>
 <li>3) R­Pi checks the IR signal</li>
 <li>4) R­Pi decides what to do</li>
 <li>5) R­Pi orders Arduino to light on/off</li>
 <li>6) Special part: Introduction to RF (wireless) protocols + Testing one of them</li>
+</div>
 </br>
 در نهایت شرکت‌کنندگان این کارگاه‌ها توانایی طراحی و پیاده‌سازی یک سیستم واقعی که در خانه‌های هوشمند استفاده می‌شوند را خواهند داشت.
 

@@ -35,12 +35,16 @@ class SiteController extends Controller
     public function landing()
     {
         $presenters = Presenter::all();
-        $sections = Section::all();
+        $workshops = Section::whereType('workshop')->get();
+        $presentations = Section::whereType('presentation')->get();
         $sponsors = Sponsor::all();
         
         return view('landing.landing', [
             'presenters' => $presenters,
-            'sections' => $sections,
+            'sections' => [
+                'کارگاه ها'=>$workshops,
+                'ارائه ها'=>$presentations,
+            ],
             'sponsors' => $sponsors,
         ]);
 
@@ -60,7 +64,7 @@ class SiteController extends Controller
 
     public function section(Section $section)
     {
-        $presenter = Presenter::where('id',$section->presenter)->firstOrFail();
+        $presenter = $section->presenter?Presenter::where('id',$section->presenter)->firstOrFail():null;
 
         return view('section.section', [
             'section' => $section,

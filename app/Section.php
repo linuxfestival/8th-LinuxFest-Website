@@ -162,7 +162,7 @@ class Section extends StaticModel
 <li>b.	Mounting Filesystems</li>
 <li>c.	Filesystem Table (/etc/fstab)</li>
 <li>d.	AutoFS</li>
-<li>e.	Removable Media</li>
+<li>e.	Removable Media</li>#11
 </p>
 
             '
@@ -237,11 +237,11 @@ class Section extends StaticModel
 <li>Containers Storage </li>
 <li>Cluster Nodes using Docker swarm</li>
 <li>Docker Compose</li>
-<li>Building infrastructure upen docker-compose files</li>
+<li>Building infrastructure using docker-compose files</li>
 <li>Writing simple docker-compose files</li>
 <li>Core OS : Introduction & Setup</li>
 <li>Google Kubernetes : Introduction</li>
-<li>Webservers : Build you nginx stack using docker</li>
+<li>Webservers : Build a nginx/php stack using docker</li>
 </ul>
 
 </p>

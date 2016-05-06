@@ -343,7 +343,7 @@ class Section extends StaticModel
         [
             'id' => 'python',
             'type' => 'workshop',
-            'title' => 'کارگاه پایتون',
+            'title' => 'کارگاه Python',
             'presenter' => 'bahar',
             'level' => 'متوسط',
             'date' => '1',

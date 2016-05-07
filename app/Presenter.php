@@ -29,7 +29,7 @@ class Presenter extends StaticModel
             'display_on_first_page' => true,
         ],
         [
-            'id' => 'peyberah',
+            'id' => 'payberah',
             'name' => 'امیرحسین پی‌براه',
             'avatar' => '//www.gravatar.com/avatar/95062a379d77e40f6b73093d905be817?s=200',
             'url' => 'https://www.sics.se/~amir/',

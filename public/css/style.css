@@ -626,6 +626,7 @@ footer {
 .column-timeline{
     /*width: 40%;*/
     margin: 0;
+    margin-bottom: 50px;
     display: inline-block;
     float: right;
     word-wrap: break-word;
@@ -688,8 +689,5 @@ footer {
     padding-top: 20px;
     padding-bottom: 20px;
 }
-.workshop {
-    color: #ffffff;
-    background-color: #2a5c36;
-}
+
 /*TimeLine styles end*/

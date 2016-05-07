@@ -13,7 +13,7 @@
             <div class="row" id="timeline-div">
                 <div class="col-md-4 column-timeline">
                     <ul>
-                        <h1>چهارشنبه ۲۲ اردیبهشت (روز صفرم)</h1>
+                        <h1 style="margin-bottom: 20px;">چهارشنبه ۲۲ اردیبهشت (روز صفرم)</h1>
                         <li style="color: #ffffff;
     background-color: #f44d22;">
                             <time class="c1">۱۳:۰۰</time>
@@ -31,7 +31,7 @@
                 </div>
                 <div class="col-md-4 column-timeline">
                     <ul>
-                        <h1>پنج‌شنبه ۲۳ اردیبهشت (روز اول)</h1>
+                        <h1 style="margin-bottom: 20px;">پنج‌شنبه ۲۳ اردیبهشت (روز اول)</h1>
                         <li style="color: #383838;
     background-color: #77c9f4;">
                             <time class="c1">۹:۰۰</time>
@@ -110,7 +110,7 @@
                 </div>
                 <div class="col-md-4 column-timeline">
                     <ul>
-                        <h1>جمعه ۲۴ اردیبهشت (روز دوم)</h1>
+                        <h1 style="margin-bottom: 20px;">جمعه ۲۴ اردیبهشت (روز دوم)</h1>
                         <li style="color: #383838;
     background-color: #77c9f4;">
                             <time class="c2">۹:۰۰</time>

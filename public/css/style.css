@@ -63,7 +63,7 @@ p {
 }
 
 .bg-primary {
-    background-color: #f05f40
+    background-color: #5b86f0
 }
 
 .bg-dark {
@@ -613,3 +613,83 @@ footer {
 .header-title {
     font-size: 55px;
 }
+
+/*TimeLine styles start*/
+ #timeline-div{
+     width: 100%;
+     margin: auto;
+     /*background-color: aqua;*/
+     overflow: hidden;
+     direction: rtl;
+     /*font-family: Mitra,"B Mitra","Source Sans Pro",Helvetica,sans-serif;*/
+ }
+.column-timeline{
+    /*width: 40%;*/
+    margin: 0;
+    display: inline-block;
+    float: right;
+    word-wrap: break-word;
+}
+.column-timeline h1{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    display: inline-block;
+    color: #172534;
+    font-size: 30px;
+}
+.column-timeline > ul{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: inline-block;
+    word-wrap: break-word;
+    overflow: hidden;
+}
+.column-timeline > ul > li{
+    /*margin: 0;*/
+    padding: 5px 2%;
+    margin: 0 3% 2px 0;
+    width: 90%;
+    /*padding: 3px 10px 5px 10px;*/
+    /*display: inline-block;*/
+    word-wrap: break-word;
+    overflow: hidden;
+    color: #ffffff;
+    background-color: #0b085f;
+    border-radius: 4px;
+    text-align: justify;
+    font-size: 15px;
+}
+.column-timeline > ul > li > time{
+    height: 100%;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+    float: right;
+}
+.column-timeline > ul > li > section{
+    width: 80%;
+    height: 100%;
+    padding-right: 2%;
+    text-align: right;
+    vertical-align: middle;
+    display: inline-block;
+    float: left;
+    border-right: 2px solid #ffffff;
+}
+.c1{
+    margin-top: 20px;
+}
+.c2{
+    margin-top: 20px;
+}
+.mysection{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.workshop {
+    color: #ffffff;
+    background-color: #2a5c36;
+}
+/*TimeLine styles end*/

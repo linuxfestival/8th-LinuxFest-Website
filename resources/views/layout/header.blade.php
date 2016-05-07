@@ -81,11 +81,11 @@
                     </a>
                 </li>
 
-                {{--<li>--}}
-                    {{--<a class="page-scroll" href="/timeline">--}}
-{{--جدول زمانی جشنواره--}}
-                    {{--</a>--}}
-                {{--</li>--}}
+                <li>
+                    <a class="page-scroll" href="/timeline">
+جدول زمانی جشنواره
+                    </a>
+                </li>
 
 
             </ul>

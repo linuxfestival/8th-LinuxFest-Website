@@ -242,8 +242,8 @@ class Section extends StaticModel
             'title' => 'کارگاه داکر و وب سرور',
             'presenter' => 'pooya',
             'level' => 'متوسط',
-            'date' => '1',
-            'time' => 'روز اول - ۹ تا ۱۲:۳۰',
+            'date' => '1,2',
+            'time' => 'روز اول و دوم - ۹ تا ۱۲:۳۰',
             'room' => null,
             'desc' => '
                         <h2>کارگاه داکر و وب سرور</h2>

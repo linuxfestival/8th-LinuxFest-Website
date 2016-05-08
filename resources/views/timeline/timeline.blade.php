@@ -100,7 +100,7 @@
                         <li style="color: #1b000b;
     background-color: rgb(237, 211, 82);">
                             <time>۱۸:۰۰</time>
-                            <section class="mysection">برد بحث و گفت و گو پیرامون موضوع Privacy in Modern Age</section>
+                            <section class="mysection">برد بحث و گفت و گو پیرامون موضوع کسب‌وکارهای نرم‌افزارهای متن‌باز</section>
                         </li>
                         <li>
                             <time>۱۹:۰۳۰</time>

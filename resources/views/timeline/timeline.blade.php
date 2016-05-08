@@ -197,7 +197,7 @@
                         <li style="color: #e0dbfa;
     background-color: #415bc0;">
                             <time>۱۶:۳۰</time>
-                            <section class="mysection">ارائه دکتر پی‌براه</section>
+                            <section class="mysection">ارائه Big Data Computing Platforms</section>
                         </li>
                         <li style="color: #ffffff;
     background-color: #f44d22;">

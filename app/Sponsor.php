@@ -48,6 +48,13 @@ class Sponsor extends StaticModel
             'logo' => '/img/sponsors/peidad.png',
             'url' => 'http://peidad.com/',
         ],
+        [
+            'id' => 'aparat',
+            'type' => 'press',
+            'title' => 'آپارات',
+            'logo' => '/img/sponsors/aparat.png',
+            'url' => 'http://aparat.com/',
+        ],
 //        [
 //            'id' => 'anjoman',
 //            'type' => 'moral',

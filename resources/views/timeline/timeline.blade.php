@@ -32,6 +32,13 @@
                 <div class="col-md-4 column-timeline">
                     <ul>
                         <h1 style="margin-bottom: 20px;">پنج‌شنبه ۲۳ اردیبهشت (روز اول)</h1>
+                        <li style="color: #ffffff;
+    background-color: #f48543;">
+                            <time class="c1">۸:۳۰</time>
+                            <section class="mysection">
+                                مراسم افتتاحیه هشتمین دوره جشنواره لینوکس و نرم‌افزارهای متن‌باز امیرکبر
+                            </section>
+                        </li>
                         <li style="color: #383838;
     background-color: #77c9f4;">
                             <time class="c1">۹:۰۰</time>

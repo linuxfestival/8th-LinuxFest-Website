@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\LiveMessage;
 use App\Presenter;
 use App\Section;
 use App\Sponsor;
@@ -24,6 +25,15 @@ class SiteController extends Controller
 
         // Registeration
         Route::get('/register','SiteController@register');
+
+        // Live Blog
+        Route::get('/live', ['as' => 'adminIndex' , 'uses' => 'SiteController@live']);
+
+        // Live Blog Admin Panel
+        Route::get('/live/adminfolanebisar','AdminController@index');
+
+        //POST on live
+        Route::post('message', ['as' => 'message.store', 'uses' => 'AdminController@store']);
 
         // Sections
         // TODO: handle 2016 in a better way:D
@@ -81,6 +91,13 @@ class SiteController extends Controller
 
     public function register() {
         return view('register.register');
+    }
+
+    public function live() {
+        $msgs = LiveMessage::orderBy('published_at', 'desc')->get();
+        return view('live.feed', [
+            'messages' => $msgs,
+        ]);
     }
 
 }

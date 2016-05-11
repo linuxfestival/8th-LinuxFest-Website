@@ -45,6 +45,14 @@ class Presenter extends StaticModel
             'display_on_first_page' => true,
         ],
         [
+            'id' => 'eslamifar',
+            'name' => 'بهراد اسلامی‌فر',
+            'avatar' => '//linuxfest.ir/img/avatar/eslamifar.jpg',
+            'url' => 'https://www.linkedin.com/in/behradeslamifar',
+            'bio' => 'مدیر CVAK',
+            'display_on_first_page' => true,
+        ],
+        [
             'id' => 'danial',
             'name' => 'دانیال بهزادی',
             'avatar' => '//media.licdn.com/mpr/mpr/shrink_200_200/p/2/000/19f/245/283e32f.jpg?s=200',

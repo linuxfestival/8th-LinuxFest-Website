@@ -52,7 +52,7 @@ return [
     |
     */
 
-    'timezone' => 'UTC',
+    'timezone' => 'asia/tehran',
 
     /*
     |--------------------------------------------------------------------------
@@ -156,6 +156,16 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        /*
+         * HTML FORM
+         */
+        Collective\Html\HtmlServiceProvider::class,
+
+        /*
+         * Intervention
+         */
+//        Intervention\Image\ImageServiceProvider::class,
+
     ],
 
     /*
@@ -201,6 +211,13 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
+
+        /*
+         * Added By : Amir, Added for : HTML FORM
+         */
+        'Form' => Collective\Html\FormFacade::class,
+        'Html' => Collective\Html\HtmlFacade::class,
+        'Input' => Illuminate\Support\Facades\Input::class,
 
     ],
 

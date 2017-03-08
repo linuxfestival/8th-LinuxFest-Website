@@ -9,6 +9,7 @@ use App\Section;
 use App\Sponsor;
 use App\Submission;
 use App\Workshop;
+use Illuminate\Http\UploadedFile;
 use Illuminate\Support\Facades\Route;
 
 class SiteController extends Controller
@@ -17,7 +18,7 @@ class SiteController extends Controller
     public static function routes()
     {
         // Landing page
-        Route::get('/', 'SiteController@landing')->name('app::home');
+        Route::get('/', 'SiteController@landing')->name('app::index');
 
         // Presenters
         Route::get('/presenter/{presenter}', 'SiteController@presenter')->name('app::presenter');
@@ -111,6 +112,11 @@ class SiteController extends Controller
     public function storeSubmission(Request $request){
         $s = new Submission($request->all());
         $s->save();
+        foreach (['resume', 'abstract-file'] as $type){
+            if ($request->hasFile($type))
+                if ($request->file($type)->isValid())
+                    $request->file($type)->move('storage/' . $s->_id . '/', $type . '.pdf');
+        }
         return redirect()->route('app::submission.index');
     }
 

@@ -20,6 +20,7 @@
     "maatwebsite/excel": "^2.1.0",
     "laravelcollective/html": "5.2.*",
     "ext-fileinfo": "*",
+    "moloquent/moloquent":  "0.4" ,
     "guzzlehttp/psr7": "~1.1"
   },
   "require-dev": {

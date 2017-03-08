@@ -2,6 +2,7 @@
 
 namespace App\Http\Middleware;
 
+use App\User;
 use Closure;
 use Illuminate\Support\Facades\Auth;
 
@@ -21,6 +22,14 @@ class Authenticate
             if ($request->ajax() || $request->wantsJson()) {
                 return response('Unauthorized.', 401);
             } else {
+                return redirect()->guest('login');
+            }
+        }
+        if (Auth::getUser() != null){
+            /** @var User $user */
+            $user = Auth::user();
+            if ($user->type != User::$ADMIN){
+                Auth::logout();
                 return redirect()->guest('login');
             }
         }

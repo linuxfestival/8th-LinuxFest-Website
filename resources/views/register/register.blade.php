@@ -1,6 +1,6 @@
 <?php
 define('title', 'ثبت نام');
-insertView('layout/header');
+insertView('layouts/header');
 ?>
 
 
@@ -259,7 +259,7 @@ insertView('layout/header');
 
 </section>
 
-<?php insertView('layout/footer'); ?>
+<?php insertView('layouts/footer'); ?>
 
 <script>
     $('input[name="day1"]').change(update_presentations);

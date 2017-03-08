@@ -4,16 +4,55 @@ namespace App\Http\Controllers;
 
 use App\LiveMessage;
 
+use App\User;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Input;
 
 class AdminController extends Controller
 {
-    public function index(){
+
+    public static function routes() {
+        Route::group(['middleware' => 'auth', 'before' => 'auth', 'prefix' => 'admin'], function () {
+            //Admin page index
+            Route::get('/', 'AdminController@showIndexPage')->name('admin::index');
+
+            //Users section
+            Route::get('/users', 'AdminController@listUsers')->name('admin::users');
+
+            // Live Blog Admin Panel
+            Route::get('/live','AdminController@liveIndex')->name('admin::live.index');
+
+            //POST on live
+            Route::post('message', ['as' => 'message.store', 'uses' => 'AdminController@store']);
+        });
+    }
+
+    /**
+     * Administration dashboard
+     *
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public function showIndexPage(){
+        //TODO ADMIN DASHBOARD
+        return view('home');
+    }
+
+    /**
+     * Live-blog feed administration
+     *
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public function liveIndex(){
         // Only show the messages from this day
 //        $messages = LiveMessage::orderBy('published_at', 'desc')->get(1);
 
-        return view('live.admin.index');
+        return view('admin.live.index');
+    }
+
+
+    public function listUsers(){
+        $users = User::all();
+        return view('admin.users.list', ['users' => $users]);
     }
 
 //    public function create()

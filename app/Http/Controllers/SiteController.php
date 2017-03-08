@@ -27,13 +27,7 @@ class SiteController extends Controller
         Route::get('/register','SiteController@register');
 
         // Live Blog
-        Route::get('/live', ['as' => 'adminIndex' , 'uses' => 'SiteController@live']);
-
-        // Live Blog Admin Panel
-        Route::get('/live/adminfolanebisar','AdminController@index');
-
-        //POST on live
-        Route::post('message', ['as' => 'message.store', 'uses' => 'AdminController@store']);
+        Route::get('/live', 'SiteController@live')->name('app::live.index');
 
         // Sections
         // TODO: handle 2016 in a better way:D

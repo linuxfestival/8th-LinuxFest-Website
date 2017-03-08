@@ -23,10 +23,10 @@ class SiteController extends Controller
         Route::get('/presenter/{presenter}', 'SiteController@presenter')->name('app::presenter');
 
         // Timeline
-        Route::get('/timeline','SiteController@timeline');
+//        Route::get('/timeline','SiteController@timeline');
 
         // Registeration
-        Route::get('/register','SiteController@register');
+//        Route::get('/register','SiteController@register');
 
         // Live Blog
         Route::get('/live', 'SiteController@live')->name('app::live.index');
@@ -36,7 +36,7 @@ class SiteController extends Controller
         Route::get('/2016/{section}', 'SiteController@section')->name('app::section');
 
         //Submissions
-        Route::get('/submissions', 'SiteController@showSubmissionForm')->name('app::submissions.index');
+        Route::get('/submissions', 'SiteController@showSubmissionForm')->name('app::submission.index');
         Route::post('/submissions', 'SiteController@storeSubmission')->name('app::submission.submit');
 
     }
@@ -111,7 +111,7 @@ class SiteController extends Controller
     public function storeSubmission(Request $request){
         $s = new Submission($request->all());
         $s->save();
-        return redirect()->route('app::submissions.index');
+        return redirect()->route('app::submission.index');
     }
 
 }

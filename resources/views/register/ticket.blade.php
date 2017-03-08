@@ -1,5 +1,5 @@
 <?php
-insertView('layout/header');
+insertView('layouts/header');
 
 ?>
 
@@ -39,5 +39,5 @@ insertView('layout/header');
 
 </section>
 
-<?php insertView('layout/footer'); ?>
+<?php insertView('layouts/footer'); ?>
 

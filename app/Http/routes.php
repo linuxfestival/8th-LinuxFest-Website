@@ -19,4 +19,10 @@ Route::group(
     // Landing
     \App\Http\Controllers\SiteController::routes();
 
+    //Admin
+    \App\Http\Controllers\AdminController::routes();
+
 });
+Route::auth();
+
+Route::get('/home', 'HomeController@index');

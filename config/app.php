@@ -157,6 +157,11 @@ return [
         App\Providers\RouteServiceProvider::class,
 
         /*
+         * Laravel IDE helper
+         */
+        Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
+
+        /*
          * HTML FORM
          */
         Collective\Html\HtmlServiceProvider::class,

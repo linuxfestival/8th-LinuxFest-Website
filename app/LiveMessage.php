@@ -9,8 +9,9 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Moloquent\Eloquent\Model as Moloquent;
 
-Class LiveMessage extends Model {
+Class LiveMessage extends Moloquent {
     protected $table = 'live_messages';
     protected $guarded = [];
 }

@@ -26,7 +26,7 @@ return [
     |
     */
 
-    'default' => env('DB_CONNECTION', 'mysql'),
+    'default' => env('DB_CONNECTION', 'mongodb'),
 
     /*
     |--------------------------------------------------------------------------
@@ -76,6 +76,23 @@ return [
             'charset' => 'utf8',
             'prefix' => '',
             'schema' => 'public',
+        ],
+
+        /*
+         * Mongodb Connection
+         */
+        'mongodb' => [
+            'driver'   => 'mongodb',
+            'host'     => env('DB_HOST', 'localhost'),
+            'port'     => env('DB_PORT', 27017),
+            'database' => env('DB_DATABASE'),
+            'username' => env('DB_USERNAME'),
+            'password' => env('DB_PASSWORD'),
+            'use_mongo_id' => false,
+            'options' => [
+                'db' => 'admin', // Sets the authentication database required by mongo 3
+                //['replicaSet' => 'replicaSetName'], // Connect to multiple servers or replica sets
+            ]
         ],
 
     ],

@@ -51,23 +51,23 @@
                     </a>
                 </li>
 
-                <li>
-                    <a class="page-scroll" href="/#register" data-target="#special">
-                       ثبت‌نام
-                    </a>
-                </li>
+                {{--<li>--}}
+                    {{--<a class="page-scroll" href="/#register" data-target="#special">--}}
+                       {{--ثبت‌نام--}}
+                    {{--</a>--}}
+                {{--</li>--}}
 
-                <li>
-                    <a class="page-scroll" href="/#workshops" data-target="#workshops">
-                        کارگاه ها و ارائه ها
-                    </a>
-                </li>
+                {{--<li>--}}
+                    {{--<a class="page-scroll" href="/#workshops" data-target="#workshops">--}}
+                        {{--کارگاه ها و ارائه ها--}}
+                    {{--</a>--}}
+                {{--</li>--}}
 
-                <li>
-                    <a class="page-scroll" href="/#presenters" data-target="#presenters">
-                        ارائه‌دهندگان
-                    </a>
-                </li>
+                {{--<li>--}}
+                    {{--<a class="page-scroll" href="/#presenters" data-target="#presenters">--}}
+                        {{--ارائه‌دهندگان--}}
+                    {{--</a>--}}
+                {{--</li>--}}
 
                 <li>
                     <a class="page-scroll" href="/#sponsors" data-target="#sponsors">
@@ -81,11 +81,21 @@
                     </a>
                 </li>
 
-                <li>
-                    <a class="page-scroll" href="/timeline">
-جدول زمانی جشنواره
-                    </a>
-                </li>
+                @if(Auth::check())
+                    <li>
+                        <a class="page-scroll" href="{{url('/logout')}}">
+                            {{Auth::user()->name}}
+                            عزیز روز بخیر.
+                            خروج از حساب کاربری
+                        </a>
+                    </li>
+                @endif
+
+                {{--<li>--}}
+                    {{--<a class="page-scroll" href="/timeline">--}}
+{{--جدول زمانی جشنواره--}}
+                    {{--</a>--}}
+                {{--</li>--}}
 
 
             </ul>

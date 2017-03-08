@@ -25,7 +25,7 @@
                                 <textarea cols="10" rows="10" class="form-control col-sm-12" name="abstract">
                                 </textarea><br>
                                 رزومه
-                                {{--<input type="file" class="form-control col-sm-12" name="resume"> <br>--}}
+                                <input type="file" class="form-control col-sm-12" name="resume"> <br>
                                 توضیحات
                                 <textarea class="form-control col-sm-12" name="description" placeholder="لطفا نوع ارائه خود را مشخص کنید.">
                                 </textarea><br>

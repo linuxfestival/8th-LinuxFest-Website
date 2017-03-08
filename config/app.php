@@ -159,7 +159,7 @@ return [
         /*
          * HTML FORM
          */
-//        Collective\Html\HtmlServiceProvider::class,
+        Collective\Html\HtmlServiceProvider::class,
 
         /*
          * Intervention

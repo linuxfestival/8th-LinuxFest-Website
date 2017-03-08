@@ -14,11 +14,9 @@
             <br>
             <br>
             <br>
-            <p>
                 {{--<a href="https://eventbin.ir/linuxfest" class="btn btn-primary btn-xl page-scroll landing-action">ثبت نام</a>--}}
-                <a href="{{route('app::submission.index')}}" class="btn btn-primary btn-xl page-scroll landing-action">پاسخ به فراخوان همکاری</a>
-                <a href="#" class="btn btn-primary btn-xl page-scroll landing-action">حمایت از جشنواره</a>
-            </p>
+            <a href="{{route('app::submission.index')}}" class="btn btn-primary btn-xl page-scroll landing-action">پاسخ به فراخوان همکاری</a>
+            <a href="#" class="btn btn-default btn-xl page-scroll landing-action">حمایت از جشنواره</a>
         </div>
     </div>
 </header>

@@ -3,7 +3,7 @@
 @import "../css/awesome-bootstrap-checkbox.css";
 @import "../fonts/font-awesome/css/font-awesome.min.css";
 @import "../css/animate.min.css";
-@import "../css/timeline.css"
+@import "../css/timeline.css";
 @import url(https://fonts.googleapis.com/css?family=Ubuntu);
 
 @font-face {
@@ -244,7 +244,7 @@ aside {
 header {
     position: relative;
     width: 100%;
-    min-height: auto;
+    /*min-height: auto;*/
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -688,6 +688,10 @@ footer {
 .mysection{
     padding-top: 20px;
     padding-bottom: 20px;
+}
+
+.spaced{
+    margin-bottom: 35px;
 }
 
 /*TimeLine styles end*/

@@ -2,10 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Http\Request;
 use App\LiveMessage;
 use App\Presenter;
 use App\Section;
 use App\Sponsor;
+use App\Submission;
 use App\Workshop;
 use Illuminate\Support\Facades\Route;
 
@@ -32,6 +34,10 @@ class SiteController extends Controller
         // Sections
         // TODO: handle 2016 in a better way:D
         Route::get('/2016/{section}', 'SiteController@section')->name('app::section');
+
+        //Submissions
+        Route::get('/submissions', 'SiteController@showSubmissionForm')->name('app::submissions.index');
+        Route::post('/submissions', 'SiteController@storeSubmission')->name('app::submission.submit');
 
     }
 
@@ -92,6 +98,20 @@ class SiteController extends Controller
         return view('live.feed', [
             'messages' => $msgs,
         ]);
+    }
+
+    /**
+     * Returns the proposal submission form
+     *
+     */
+    public function showSubmissionForm(){
+        return view('submissions.submission');
+    }
+
+    public function storeSubmission(Request $request){
+        $s = new Submission($request->all());
+        $s->save();
+        return redirect()->route('app::submissions.index');
     }
 
 }

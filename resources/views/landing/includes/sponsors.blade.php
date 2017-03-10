@@ -21,7 +21,7 @@
         <div class="row">
             <div class="col-md-12 text-center" style="margin-top: 20px">
                 <p>
-                    برای کسب اطلاعات بیشتر می‌توانید با شماره ۰۹۲۱۰۳۴۷۶۲۵ و یا ایمیل زیر تماس حاصل نمایید.
+                    برای کسب اطلاعات بیشتر می‌توانید یا ایمیل زیر تماس حاصل نمایید.
                 </p>
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <h5 href="mailto:register@linuxfest.ir" class="text-center">

@@ -24,7 +24,7 @@
                     برای کسب اطلاعات بیشتر می‌توانید یا ایمیل زیر تماس حاصل نمایید.
                 </p>
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h5 href="mailto:register@linuxfest.ir" class="text-center">
+                    <h5 href="mailto:info@linuxfest.ir" class="text-center">
                         register@linuxfest.ir
                     </h5>
                 </div>

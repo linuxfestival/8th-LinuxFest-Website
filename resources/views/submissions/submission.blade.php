@@ -10,12 +10,26 @@
                 </h1>
             </div>
             <hr>
+        @if (count($errors) > 0)
+            <!-- Form Error List -->
+                <div class="alert alert-danger">
+                    <strong>Whoops! Something went wrong!</strong>
+
+                    <br><br>
+
+                    <ul>
+                        @foreach ($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+            @endif
             <div class="row">
                 <div class="col-md-12">
                     <div class="panel panel-default">
                         <div class="panel-heading">پاسخ به فراخوان</div>
                         <div class="panel-body">
-                            <form action="{{route('app::submission.submit')}}" enctype="multipart/form-data" method="POST">
+                            <form action="{{route('app::submission.submit')}}" id="submission-form" enctype="multipart/form-data" method="POST">
                                 {{csrf_field()}}
                                 <div class="row spaced">
                                     <div class="col-sm-4">
@@ -38,7 +52,7 @@
                                     </div>
                                     <div class="col-sm-4">
                                         <label>فایل رزومه (فرمت قابل قبول: pdf)</label>
-                                        <input type="file" accept=".pdf" class="form-control col-sm-12" name="resume">
+                                        <input type="file" accept="application/pdf" class="form-control col-sm-12" name="resume">
                                     </div>
                                 </div>
                                 <div class="row spaced">
@@ -48,7 +62,7 @@
                                     </div>
                                     <div class="col-sm-4">
                                         <label>فایل چکیده (فرمت قابل قبول: pdf)</label>
-                                        <input type="file" accept=".pdf" class="form-control col-sm-12" name="abstract-file">
+                                        <input type="file" accept="application/pdf" class="form-control col-sm-12" name="abstract-file">
                                     </div>
                                 </div>
                                 <div class="row spaced">
@@ -59,7 +73,8 @@
                                 <div class="row text-center">
                                     <button type="submit" class="btn btn-primary btn-lg g-recaptcha"
                                             data-sitekey="6Lf_PxgUAAAAAL_QLZkIHAmFZl80ebXK8b57Un6l"
-                                            data-callback="submitting">
+                                            data-callback="submitting"
+                                            data-hl="fa">
                                         <i class="fa fa-check"></i>
                                         ذخیره
                                     </button>
@@ -87,11 +102,11 @@
 
 @endsection
 @section('scripts')
-    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <script src='https://www.google.com/recaptcha/api.js?hl=fa'></script>
     <script type="text/javascript">
         function submitting() {
             debugger;
-            return true;
+            document.getElementById("submission-form").submit();
         }
     </script>
 @endsection

@@ -8,12 +8,10 @@ use App\Presenter;
 use App\Section;
 use App\Sponsor;
 use App\Submission;
-use App\Workshop;
-use Illuminate\Http\UploadedFile;
 use Illuminate\Support\Facades\Route;
+use ReCaptcha\ReCaptcha;
 
-class SiteController extends Controller
-{
+class SiteController extends Controller{
 
     public static function routes()
     {
@@ -38,7 +36,12 @@ class SiteController extends Controller
 
         //Submissions
         Route::get('/submissions', 'SiteController@showSubmissionForm')->name('app::submission.index');
+        Route::get('/submissions/success', 'SiteController@showSuccessPage')->name('app::submission.success');
         Route::post('/submissions', 'SiteController@storeSubmission')->name('app::submission.submit');
+        
+        //Sponsors
+        Route::get('/sponsoring', 'SiteController@showSponsoringForm')->name('app::sponsors.index');
+        Route::post('/sponsoring', 'SiteController@storeSponsoringRequest')->name('app::sponsors.submit');
 
     }
 
@@ -109,7 +112,22 @@ class SiteController extends Controller
         return view('submissions.submission');
     }
 
+    /**
+     * Storing submission
+     *
+     * @param \App\Http\Requests\Submission|Request $request
+     * @return \Illuminate\Http\RedirectResponse
+     */
     public function storeSubmission(Request $request){
+        //Validating Request
+        $g_response = $this->validateRECAPTCHA($request);
+        if (!$g_response["status"])
+            return redirect()->back()->withErrors($g_response["res"]);
+        $validator = \Validator::make($request->all(), \App\Http\Requests\Submission::getRules());
+        if ($validator->fails())
+            return redirect()->back()->withErrors($validator->errors());
+
+        // Storing the data
         $s = new Submission($request->all());
         $s->save();
         foreach (['resume', 'abstract-file'] as $type){
@@ -117,7 +135,32 @@ class SiteController extends Controller
                 if ($request->file($type)->isValid())
                     $request->file($type)->move('storage/' . $s->_id . '/', $type . '.pdf');
         }
-        return redirect()->route('app::submission.index');
+        return view('submissions.success', ['data' => $request->all()]);
+    }
+
+    /**
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public function showSponsoringForm(){
+        return view('submissions.sponsor');
+    }
+
+    public function storeSponsoringRequest(Request $request){
+
+    }
+
+    private function validateRECAPTCHA(Request $request) {
+        if (!$request->has('g-recaptcha-response'))
+            return ["status" => false, "res" => "Empty response"];
+        $response = $request->get('g-recaptcha-response');
+        $g_recaptcha = new ReCaptcha('6Lf_PxgUAAAAAANlAnqDiPGvvmotEk0DtgtJICIZ');
+        $resp = $g_recaptcha->verify($response);
+        if ($resp->isSuccess()) {
+            return ["status" => true, "res" => "OK"];
+        } else {
+            $errors = $resp->getErrorCodes();
+            return ["status" => false, "res" => $errors];
+        }
     }
 
 }

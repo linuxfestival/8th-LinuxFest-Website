@@ -4,7 +4,10 @@ namespace App\Http\Controllers;
 
 use App\LiveMessage;
 
+use App\Sponsor;
+use App\Submission;
 use App\User;
+use Carbon\Carbon;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Input;
 
@@ -15,6 +18,10 @@ class AdminController extends Controller
         Route::group(['middleware' => 'auth', 'before' => 'auth', 'prefix' => 'admin'], function () {
             //Admin page index
             Route::get('/', 'AdminController@showIndexPage')->name('admin::index');
+
+            //Submissions
+            Route::get('/submissions', 'AdminController@viewSubmissions')->name('admin::submissions');
+            Route::get('/submissions/sponsors', 'AdminController@viewSponsors')->name('admin::submissions.sponsors');
 
             //Users section
             Route::get('/users', 'AdminController@listUsers')->name('admin::users');
@@ -49,7 +56,26 @@ class AdminController extends Controller
         return view('admin.live.index');
     }
 
+    /**
+     * View all the submissions
+     *
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public function viewSubmissions(){
+        $subs = Submission::all();
+        return view('admin.submissions.list', ['subs' => $subs]);
+    }
 
+    public function viewSponsors(){
+        $sponsors = Sponsor::all();
+        return view('admin.submissions.sponsors.list', ['sponsors' => $sponsors]);
+    }
+
+    /**
+     * Listing all the registered users
+     *
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
     public function listUsers(){
         $users = User::all();
         return view('admin.users.list', ['users' => $users]);
@@ -62,11 +88,11 @@ class AdminController extends Controller
 //
     public function store(){
         $message = new LiveMessage;
-        $message->published_at = '00:00:00';
+        $message->published_at = Carbon::now()->timestamp;
         $message->desc = Input::get('desc');
         $this->savePicture($message);
         $message->save();
-        return view('live.admin.index', ['msg' => $message]);
+        return view('admin.live.index', ['msg' => $message]);
     }
 //
 //    public function submitPhoto() {

@@ -16,23 +16,27 @@
                         <div class="panel-heading">پس از مدت کوتاهی با شما تماس خواهیم گرفت.</div>
                         <div class="panel-body">
                             <div class="row spaced">
-                                <div class="col-sm-4">
+                                <div class="col-sm-3">
                                     <label>نام سازمان یا شرکت</label>
-                                    <input disabled type="text" class="form-control col-sm-12" name="sponsor[name]" value="{{$data['sponsor']['name']}}">
+                                    <input disabled type="text" class="form-control col-sm-12" value="{{$data['sponsor_name']}}">
                                 </div>
-                                <div class="col-sm-4">
+                                <div class="col-sm-3">
                                     <label>نام و نام خانوادگی مدیرعامل یا رابط</label>
-                                    <input disabled type="text" class="form-control col-sm-12" name="sponsor[person]" value="{{$data['sponsor']['person']}}">
+                                    <input disabled type="text" class="form-control col-sm-12" value="{{$data['sponsor_person']}}">
                                 </div>
-                                <div class="col-sm-4">
+                                <div class="col-sm-3">
                                     <label>ایمیل</label>
-                                    <input disabled type="text" class="form-control col-sm-12" name="sponsor[email]" value="{{$data['sponsor']['email']}}">
+                                    <input disabled type="text" class="form-control col-sm-12" value="{{$data['sponsor_email']}}">
+                                </div>
+                                <div class="col-sm-3">
+                                    <label>شماره تلفن</label>
+                                    <input disabled type="text" class="form-control col-sm-12" value="{{$data['sponsor_phone']}}">
                                 </div>
                             </div>
                             <div class="row spaced" >
                                 <div class="col-sm-3">
                                     <label>نوع حمایت</label>
-                                    <select class="form-control col-sm-12" name="sponsoring_method">
+                                    <select disabled class="form-control col-sm-12" name="sponsoring_method">
                                         <option value="financial" {{$data['sponsoring_method'] == 'financial' ? 'selected' : ''}}>حمایت مالی از جشنواره</option>
                                         <option value="supplier" {{$data['sponsoring_method'] == 'supplier' ? 'selected' : ''}}>تامین ملزومات جشنواره</option>
                                         <option value="other" {{$data['sponsoring_method'] == 'other' ? 'selected' : ''}}>سایر (نیاز به ذکر توضیح)</option>
@@ -40,7 +44,7 @@
                                 </div>
                                 <div class="col-sm-9">
                                     <label>توضیحات</label>
-                                    <textarea class="form-control col-sm-12" name="description">{{$data['description']}}</textarea><br>
+                                    <textarea disabled class="form-control col-sm-12" name="description">{{$data['description']}}</textarea><br>
                                 </div>
                             </div>
 

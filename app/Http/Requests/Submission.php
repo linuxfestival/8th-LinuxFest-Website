@@ -38,7 +38,7 @@ class Submission extends Request
      */
     public static function getRules() {
         return [
-            'attendance' => 'array|required',
+            'attendance' => 'required|array',
             'subject' => 'required',
             'resume' => 'mimetypes:application/pdf',
             'abstract-file' => 'mimetypes:application/pdf',

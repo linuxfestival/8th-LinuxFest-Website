@@ -10,7 +10,7 @@
                 </h1>
             </div>
             <hr>
-        @if (count($errors) > 0)
+            @if (count($errors->all()) > 0)
             <!-- Form Error List -->
                 <div class="alert alert-danger">
                     <strong>Whoops! Something went wrong!</strong>
@@ -105,7 +105,6 @@
     <script src='https://www.google.com/recaptcha/api.js?hl=fa'></script>
     <script type="text/javascript">
         function submitting() {
-            debugger;
             document.getElementById("submission-form").submit();
         }
     </script>

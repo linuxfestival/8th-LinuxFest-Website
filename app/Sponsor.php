@@ -7,7 +7,8 @@ namespace App;
  *
  * @property string _id
  * @property array sponsor
- * @property string subject
+ * @property string sponsoring_method
+ * @property string description
  *
  * @package App
  */

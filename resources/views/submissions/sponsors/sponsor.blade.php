@@ -15,7 +15,7 @@
                     <div class="panel panel-default">
                         <div class="panel-heading">فرم حمایت از نهمین دوره جشنواره ملی لینوکس و نرم‌افزارهای متن‌باز امیرکبیر</div>
                         <div class="panel-body">
-                            <form action="{{route('app::sponsors.submit')}}" enctype="multipart/form-data" method="POST">
+                            <form action="{{route('app::sponsors.submit')}}" id="sponsoring-form" enctype="multipart/form-data" method="POST">
                                 {{csrf_field()}}
                                 <div class="row spaced">
                                     <div class="col-sm-4">
@@ -23,7 +23,7 @@
                                         <input type="text" class="form-control col-sm-12" name="sponsor[name]">
                                     </div>
                                     <div class="col-sm-4">
-                                        <label>نام و نام خانوادگی رابط شرکت</label>
+                                        <label>نام و نام خانوادگی مدیرعامل یا رابط</label>
                                         <input type="text" class="form-control col-sm-12" name="sponsor[person]">
                                     </div>
                                     <div class="col-sm-4">
@@ -36,7 +36,7 @@
                                         <label>نوع حمایت</label>
                                         <select class="form-control col-sm-12" name="sponsoring_method">
                                             <option value="financial">حمایت مالی از جشنواره</option>
-                                            <option value="supply">تامین ملزومات جشنواره</option>
+                                            <option value="supplier">تامین ملزومات جشنواره</option>
                                             <option value="other">سایر (نیاز به ذکر توضیح)</option>
                                         </select>
                                     </div>
@@ -84,7 +84,7 @@
     <script src='https://www.google.com/recaptcha/api.js?hl=fa'></script>
     <script type="text/javascript">
         function submitting() {
-            return true;
+            document.getElementById("sponsoring-form").submit();
         }
     </script>
 @endsection

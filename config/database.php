@@ -90,7 +90,7 @@ return [
             'password' => env('DB_PASSWORD'),
             'use_mongo_id' => false,
             'options' => [
-                'authenticationDatabase' => 'admin', // Sets the authentication database required by mongo 3
+                'database' => 'admin', // Sets the authentication database required by mongo 3
                 //['replicaSet' => 'replicaSetName'], // Connect to multiple servers or replica sets
             ]
         ],

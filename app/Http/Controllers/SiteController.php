@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\Sposnsoring;
 use Illuminate\Http\Request;
 use App\LiveMessage;
 use App\Presenter;
@@ -133,7 +134,7 @@ class SiteController extends Controller{
         foreach (['resume', 'abstract-file'] as $type){
             if ($request->hasFile($type))
                 if ($request->file($type)->isValid())
-                    $request->file($type)->move('storage/' . $s->_id . '/', $type . '.pdf');
+                    $request->file($type)->move('storage/submissions/' . $s->_id . '/', $type . '.pdf');
         }
         return view('submissions.success', ['data' => $request->all()]);
     }
@@ -142,11 +143,26 @@ class SiteController extends Controller{
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     public function showSponsoringForm(){
-        return view('submissions.sponsor');
+        return view('submissions.sponsors.sponsor');
     }
 
     public function storeSponsoringRequest(Request $request){
+        $g_response = $this->validateRECAPTCHA($request);
+        if (!$g_response["status"])
+            return redirect()->back()->withErrors($g_response["res"]);
+        $validator = \Validator::make($request->all(), Sposnsoring::getRules());
+        if ($validator->fails()){
+            dd($validator->errors()->all());
+            return redirect()->back()->withErrors($validator->errors());
+        }
 
+        // Storing the data
+        $s = new Sponsor($request->all());
+        $s->save();
+        if ($request->hasFile('logo'))
+            if ($request->file('logo')->isValid())
+                $request->file('logo')->move('storage/sponsors/' . $s->_id . '/', 'logo' . $request->file()->getClientOriginalExtension());
+        return view('submissions.sponsors.success', ['data' => $request->all()]);
     }
 
     private function validateRECAPTCHA(Request $request) {

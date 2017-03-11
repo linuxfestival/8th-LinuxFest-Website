@@ -49,18 +49,18 @@ class SiteController extends Controller{
 
     public function landing()
     {
-        $presenters = Presenter::all();
-        $workshops = Section::whereType('workshop')->get();
-        $presentations = Section::whereType('presentation')->get();
-        $sponsors = Sponsor::all();
+//        $presenters = Presenter::all();
+//        $workshops = Section::whereType('workshop')->get();
+//        $presentations = Section::whereType('presentation')->get();
+//        $sponsors = Sponsor::all();
         
         return view('landing.landing', [
-            'presenters' => $presenters,
-            'sections' => [
-                'کارگاه ها'=>$workshops,
-                'ارائه ها'=>$presentations,
-            ],
-            'sponsors' => $sponsors,
+//            'presenters' => $presenters,
+//            'sections' => [
+//                'کارگاه ها'=>$workshops,
+//                'ارائه ها'=>$presentations,
+//            ],
+//            'sponsors' => $sponsors,
         ]);
 
     }

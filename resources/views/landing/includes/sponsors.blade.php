@@ -13,7 +13,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 text-center">
-                <a href="#" target="_blank" class="page-scroll btn btn-default btn-xl text-center">
+                <a href="{{route('app::sponsors.index')}}" target="_blank" class="page-scroll btn btn-default btn-xl text-center">
                     حمایت از جشنواره
                 </a>
             </div>
@@ -25,7 +25,7 @@
                 </p>
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <h5 href="mailto:info@linuxfest.ir" class="text-center">
-                        register@linuxfest.ir
+                        info@linuxfest.ir
                     </h5>
                 </div>
             </div>

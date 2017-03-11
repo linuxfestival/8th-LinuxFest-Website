@@ -34,8 +34,15 @@
                                     </a>
                                 </div>
                                 <div class="col-sm-offset-11">
-                                    <a href="">ارسال ایمیل</a><br>
-                                    <a href="">ویرایش</a>
+                                    <form action="{{route('admin::mail.compose')}}" method="POST">
+                                        {{csrf_field()}}
+                                        <input type="hidden" name="to" value="{{$s->sponsor_email}}">
+                                        <button type="submit">
+                                            ارسال ایمیل
+                                        </button>
+                                        <br>
+                                    </form>
+                                    <a href="{{route('admin::submissions.sponsor.edit', ['sponsor' => $s])}}">ویرایش</a>
                                 </div>
                             </div>
                         </div>

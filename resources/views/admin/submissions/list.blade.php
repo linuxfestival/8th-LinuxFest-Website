@@ -30,12 +30,19 @@
                                     <b>توضیحات:</b> {{$sub->description}} <br>
                                 </div>
                                 <div class="col-sm-offset-11">
-                                    <a href="">ارسال ایمیل</a><br>
-                                    <a href="">مشاهده رزومه</a><br>
+                                    <form action="{{route('admin::mail.compose')}}" method="POST">
+                                        {{csrf_field()}}
+                                        <input type="hidden" name="to" value="{{$sub->attendance_email}}">
+                                        <button type="submit">
+                                            ارسال ایمیل
+                                        </button>
+                                        <br>
+                                    </form>
+                                    <a href="{{URL::asset($sub->resume)}}" target="_blank">مشاهده رزومه</a><br>
                                     @if($sub->abstract_file != null)
-                                    <a href="">مشاهده فایل چکیده</a><br>
+                                    <a href="{{URL::asset($sub->abstract_file)}}" target="_blank">مشاهده فایل چکیده</a><br>
                                     @endif
-                                    <a href="">ویرایش</a>
+                                    <a href="{{route('admin::submissions.edit', ['submission' => $sub])}}">ویرایش</a>
                                 </div>
                             </div>
                         </div>

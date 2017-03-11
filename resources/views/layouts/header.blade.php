@@ -15,10 +15,21 @@
 
     <link rel="stylesheet" href="{{asset('css/style.css')}}" type="text/css">
 
+    <!-- Include Editor style. -->
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.5.0/css/froala_editor.min.css' rel='stylesheet' type='text/css' />
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.5.0/css/froala_style.min.css' rel='stylesheet' type='text/css' />
+    @yield('styles')
+
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+    <!-- JQUERY -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+    <!-- Include JS file. -->
+    <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.5.0/js/froala_editor.min.js'></script>
     @include('includes.analytics')
 
     @yield('scripts')

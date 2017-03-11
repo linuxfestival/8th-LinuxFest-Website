@@ -2,12 +2,14 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Http\Request;
 use App\LiveMessage;
 
 use App\Sponsor;
 use App\Submission;
 use App\User;
 use Carbon\Carbon;
+use Illuminate\Mail\Message;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Input;
 
@@ -22,6 +24,10 @@ class AdminController extends Controller
             //Submissions
             Route::get('/submissions', 'AdminController@viewSubmissions')->name('admin::submissions');
             Route::get('/submissions/sponsors', 'AdminController@viewSponsors')->name('admin::submissions.sponsors');
+            Route::get('/submissions/sponsors/{sponsor}', 'AdminController@editSponsorRequest')->name('admin::submissions.sponsor.edit');
+            Route::post('/submissions/sponsors/{sponsor}', 'AdminController@updateSponsorRequest')->name('admin::submissions.sponsor.save');
+            Route::get('/submissions/{submission}', 'AdminController@editSubmission')->name('admin::submissions.edit');
+            Route::post('/submissions/{submission}', 'AdminController@updateSubmission')->name('admin::submission.save');
 
             //Users section
             Route::get('/users', 'AdminController@listUsers')->name('admin::users');
@@ -31,6 +37,10 @@ class AdminController extends Controller
 
             //POST on live
             Route::post('message', ['as' => 'message.store', 'uses' => 'AdminController@store']);
+
+            //Sending mail
+            Route::post('/email', 'AdminController@viewMailForm')->name('admin::mail.compose');
+            Route::post('/email/submit', 'AdminController@sendMail')->name('admin::mail.send');
         });
     }
 
@@ -41,7 +51,7 @@ class AdminController extends Controller
      */
     public function showIndexPage(){
         //TODO ADMIN DASHBOARD
-        return view('home');
+        return view('admin.home');
     }
 
     /**
@@ -79,6 +89,58 @@ class AdminController extends Controller
     public function listUsers(){
         $users = User::all();
         return view('admin.users.list', ['users' => $users]);
+    }
+
+    /**
+     * @param Request $request
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public function viewMailForm(Request $request){
+        $_to = $request->get('to');
+//        if (!is_array($_to))
+//            $_to = [$_to];
+        return view('admin.outgoing.compose', ['to' => $_to]);
+    }
+
+    public function sendMail(Request $request){
+        $to = $request->get('to');
+        $subject = $request->get('subject');
+        \Mail::send('emails.default', ['body' => $request->get('body')], function($message) use ($to, $subject){
+            /** @var Message $message */
+            $message->from(env('MAIL_SENDER', 'info@linuxfest.ir'), 'Amirkabir LinuxFest');
+            $message->to($to);
+            $message->subject($subject);
+        });
+        return redirect()->route('admin::index');
+    }
+
+    /**
+     * @param Submission $submission
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public function editSubmission(Submission $submission){
+        return view('admin.submissions.edit', ['data' => $submission]);
+    }
+
+    /**
+     * @param Submission $submission
+     * @param Request $request
+     * @return \Illuminate\Http\RedirectResponse
+     */
+    public function updateSubmission(Submission $submission, Request $request){
+        $submission->update($request->all());
+        $submission->save();
+        return redirect()->route('admin::submissions');
+    }
+
+    public function editSponsorRequest(Sponsor $sponsor){
+        return view('admin.submissions.sponsors.edit', ['data' => $sponsor]);
+    }
+
+    public function updateSponsorRequest(Sponsor $sponsor, Request $request){
+        $sponsor->update($request->all());
+        $sponsor->save();
+        return redirect()->route('admin::submissions.sponsors');
     }
 
 //    public function create()

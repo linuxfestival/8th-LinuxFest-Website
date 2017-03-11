@@ -20,6 +20,16 @@
                         بخش مدیریت پوشش زنده
                     </button>
                 </a>
+                <a href="{{route('admin::submissions')}}" >
+                    <button>
+                        بخش مدیریت درخواست حمایت‌های علمی
+                    </button>
+                </a>
+                <a href="{{route('admin::submissions.sponsors')}}" >
+                    <button>
+                        بخش مدیریت درخواست‌های حمایت مالی
+                    </button>
+                </a>
             </div>
 
         </section>

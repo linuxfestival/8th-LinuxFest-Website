@@ -3,12 +3,15 @@
 namespace App;
 
 /**
- * @property mixed id
- * @property mixed title
- * @property mixed logo
- * @property mixed url
+ * Class Sponsor
+ *
+ * @property string _id
+ * @property array sponsor
+ * @property string subject
+ *
+ * @package App
  */
-class Sponsor extends StaticModel
+class Sponsor extends \Moloquent
 {
     protected $guarded = [];
 

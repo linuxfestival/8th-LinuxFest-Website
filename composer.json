@@ -30,7 +30,8 @@
     "ext-fileinfo": "*",
     "moloquent/moloquent":  "0.4" ,
     "guzzlehttp/psr7": "~1.1",
-    "barryvdh/laravel-ide-helper": "v2.3.2"
+    "barryvdh/laravel-ide-helper": "v2.3.2",
+    "google/recaptcha": "~1.1"
   },
   "require-dev": {
     "fzaninotto/faker": "~1.4",

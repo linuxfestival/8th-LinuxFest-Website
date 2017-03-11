@@ -37,10 +37,10 @@
                 </p>
                 <br>
                 <a href="{{route('app::submission.index')}}" class="page-scroll btn btn-default btn-xl">
-                    عضویت در کمیته علمی جشنواره
+                    حمایت علمی از جشنواره
                 </a>
                 <a href="{{route('app::sponsors.index')}}" class="btn btn-default btn-xl page-scroll">
-                    حمایت مالی از جشنواره
+                    حمایت مالی و معنوی از جشنواره
                 </a>
 
             </div>

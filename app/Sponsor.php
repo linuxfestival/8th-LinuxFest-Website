@@ -6,15 +6,26 @@ namespace App;
  * Class Sponsor
  *
  * @property string _id
- * @property array sponsor
+ * @property string sponsor_name
+ * @property string sponsor_person
+ * @property string sponsor_phone
+ * @property string sponsor_email
  * @property string sponsoring_method
  * @property string description
+ * @property string logo
  *
  * @package App
  */
 class Sponsor extends \Moloquent
 {
-    protected $guarded = [];
+    protected $fillable = [
+        'sponsor_name',
+        'sponsor_person',
+        'sponsor_phone',
+        'sponsor_email',
+        'sponsoring_method',
+        'description'
+    ];
 
     public static $data = [
         [

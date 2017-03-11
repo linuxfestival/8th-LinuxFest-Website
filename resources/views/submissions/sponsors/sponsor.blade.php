@@ -18,17 +18,21 @@
                             <form action="{{route('app::sponsors.submit')}}" id="sponsoring-form" enctype="multipart/form-data" method="POST">
                                 {{csrf_field()}}
                                 <div class="row spaced">
-                                    <div class="col-sm-4">
+                                    <div class="col-sm-3">
                                         <label>نام سازمان یا شرکت</label>
-                                        <input type="text" class="form-control col-sm-12" name="sponsor[name]">
+                                        <input type="text" class="form-control col-sm-12" name="sponsor_name">
                                     </div>
-                                    <div class="col-sm-4">
+                                    <div class="col-sm-3">
                                         <label>نام و نام خانوادگی مدیرعامل یا رابط</label>
-                                        <input type="text" class="form-control col-sm-12" name="sponsor[person]">
+                                        <input type="text" class="form-control col-sm-12" name="sponsor_person">
                                     </div>
-                                    <div class="col-sm-4">
+                                    <div class="col-sm-3">
                                         <label>ایمیل</label>
-                                        <input type="text" class="form-control col-sm-12" name="sponsor[email]">
+                                        <input type="text" class="form-control col-sm-12" name="sponsor_email">
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <label>شماره تلفن</label>
+                                        <input type="text" class="form-control col-sm-12" name="sponsor_phone">
                                     </div>
                                 </div>
                                 <div class="row spaced" >

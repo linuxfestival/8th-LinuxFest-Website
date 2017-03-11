@@ -10,7 +10,7 @@
                 </h1>
             </div>
             <hr>
-            @if (count($errors->all()) > 0)
+            @if(count($errors->all()) > 0)
             <!-- Form Error List -->
                 <div class="alert alert-danger">
                     <strong>Whoops! Something went wrong!</strong>
@@ -34,15 +34,15 @@
                                 <div class="row spaced">
                                     <div class="col-sm-4">
                                         <label>نام و نام خانوادگی</label>
-                                        <input type="text" class="form-control col-sm-12" name="attendance[name]">
+                                        <input type="text" class="form-control col-sm-12" name="attendance_name">
                                     </div>
                                     <div class="col-sm-4">
                                         <label>شماره تماس</label>
-                                        <input type="text" class="form-control col-sm-12" name="attendance[phone]">
+                                        <input type="text" class="form-control col-sm-12" name="attendance_phone">
                                     </div>
                                     <div class="col-sm-4">
                                         <label>ایمیل</label>
-                                        <input type="text" class="form-control col-sm-12" name="attendance[email]">
+                                        <input type="text" class="form-control col-sm-12" name="attendance_email">
                                     </div>
                                 </div>
                                 <div class="row spaced" >

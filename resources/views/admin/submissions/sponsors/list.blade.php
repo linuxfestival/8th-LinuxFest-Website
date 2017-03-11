@@ -1,0 +1,47 @@
+@extends('layouts.app')
+
+@section('content')
+    <section class="container">
+        <section class="session-container">
+            <div style="text-align: center">
+                <h1>
+                    لیست حامیان ثبت‌شده
+                </h1>
+            </div>
+            <hr>
+            <div class="row">
+                @foreach($sponsors->sortBy('sponsoring_method') as $s)
+                    <div class="col-md-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <div class="col-sm-10">
+                                    {!! $s->sponsor_name !!}
+                                </div>
+                                <div class="col-sm-offset-10">
+                                    {{$s->created_at}}
+                                </div>
+                            </div>
+                            <div class="panel-body" style="">
+                                <div class="col-sm-5">
+                                    <b>نام و نام خانوادگی:</b> {{$s->sponsor_person}} <br>
+                                    <b>ایمیل:</b> {{$s->sponsor_email}} <br>
+                                    <b>شماره تماس:</b> {{$s->sponsor_phone}} <br>
+                                    <b>توضیحات:</b> {{$s->description}} <br>
+                                </div>
+                                <div class="col-sm-5">
+                                    <a href="{{URL::asset($s->logo)}}" target="_blank">
+                                        <img width="200" src="{{URL::asset($s->logo)}}">
+                                    </a>
+                                </div>
+                                <div class="col-sm-offset-11">
+                                    <a href="">ارسال ایمیل</a><br>
+                                    <a href="">ویرایش</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                @endforeach
+            </div>
+        </section>
+    </section>
+@endsection

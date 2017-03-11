@@ -133,8 +133,16 @@ class SiteController extends Controller{
         $s->save();
         foreach (['resume', 'abstract-file'] as $type){
             if ($request->hasFile($type))
-                if ($request->file($type)->isValid())
-                    $request->file($type)->move('storage/submissions/' . $s->_id . '/', $type . '.pdf');
+                if ($request->file($type)->isValid()){
+                    $directory = 'storage/submissions/' . $s->_id . '/';
+                    $file_name = $type . '.pdf';
+                    if ($type == 'resume')
+                        $s->resume = $directory . $file_name;
+                    else
+                        $s->abstract_file = $directory . $file_name;
+                    $s->save();
+                    $request->file($type)->move($directory, $file_name);
+                }
         }
         return view('submissions.success', ['data' => $request->all()]);
     }
@@ -160,8 +168,13 @@ class SiteController extends Controller{
         $s = new Sponsor($request->all());
         $s->save();
         if ($request->hasFile('logo'))
-            if ($request->file('logo')->isValid())
-                $request->file('logo')->move('storage/sponsors/' . $s->_id . '/', 'logo' . $request->file()->getClientOriginalExtension());
+            if ($request->file('logo')->isValid()){
+                $directory = 'storage/sponsors/' . $s->_id . '/';
+                $file_name = 'logo' . $request->file('logo')->getClientOriginalExtension();
+                $s->logo = $directory . $file_name;
+                $s->save();
+                $request->file('logo')->move($directory, $file_name);
+            }
         return view('submissions.sponsors.success', ['data' => $request->all()]);
     }
 

@@ -36,15 +36,15 @@
                             <div class="row spaced">
                                 <div class="col-sm-4">
                                     <label>نام و نام خانوادگی</label>
-                                    <input disabled type="text" class="form-control col-sm-12" name="attendance[name]" value="{{$data['attendance']['name']}}">
+                                    <input disabled type="text" class="form-control col-sm-12" value="{{$data['attendance_name']}}">
                                 </div>
                                 <div class="col-sm-4">
                                     <label>شماره تماس</label>
-                                    <input disabled type="text" class="form-control col-sm-12" name="attendance[phone]" value="{{$data['attendance']['phone']}}">
+                                    <input disabled type="text" class="form-control col-sm-12" value="{{$data['attendance_phone']}}">
                                 </div>
                                 <div class="col-sm-4">
                                     <label>ایمیل</label>
-                                    <input disabled type="text" class="form-control col-sm-12" name="attendance[email]" value="{{$data['attendance']['email']}}">
+                                    <input disabled type="text" class="form-control col-sm-12" value="{{$data['attendance_email']}}">
                                 </div>
                             </div>
                             <div class="row spaced" >

@@ -28,10 +28,9 @@
     "maatwebsite/excel": "^2.1.0",
     "laravelcollective/html": "5.2.*",
     "ext-fileinfo": "*",
-    "moloquent/moloquent":  "0.4" ,
+    "moloquent/moloquent":  "^0.4.0" ,
     "guzzlehttp/psr7": "~1.1",
-    "barryvdh/laravel-ide-helper": "v2.3.2",
-    "google/recaptcha": "~1.1"
+    "barryvdh/laravel-ide-helper": "v2.3.2"
   },
   "require-dev": {
     "fzaninotto/faker": "~1.4",

@@ -36,7 +36,7 @@
                                     </div>
                                 </div>
                                 <div class="row spaced" >
-                                    <div class="col-sm-8">
+                                    <div class="col-sm-12">
                                         <label>نوع حمایت</label>
                                         <select class="form-control col-sm-12" name="sponsoring_method">
                                             <option value="financial">حمایت مالی از جشنواره</option>
@@ -44,10 +44,10 @@
                                             <option value="other">سایر (نیاز به ذکر توضیح)</option>
                                         </select>
                                     </div>
-                                    <div class="col-sm-4">
-                                        <label>فایل لوگو</label>
-                                        <input type="file" accept="image/gif,image/png,image/jpeg" class="form-control col-sm-12" name="logo">
-                                    </div>
+                                    {{--<div class="col-sm-4">--}}
+                                        {{--<label>فایل لوگو</label>--}}
+                                        {{--<input type="file" accept="image/gif,image/png,image/jpeg" class="form-control col-sm-12" name="logo">--}}
+                                    {{--</div>--}}
                                 </div>
                                 <div class="row spaced">
                                     <label>توضیحات</label>

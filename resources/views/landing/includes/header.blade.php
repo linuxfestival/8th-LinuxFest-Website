@@ -1,5 +1,5 @@
 <header>
-    <div class="header-background"></div>
+    <div class="header-background" style="background: url('../img/header2.jpg') no-repeat fixed;"></div>
     <div class="header-content">
         <div class="header-content-inner">
             <h1 class="header-title" style="color:#0025be; font-size: 50px;">

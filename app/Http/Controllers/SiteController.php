@@ -160,7 +160,6 @@ class SiteController extends Controller{
             return redirect()->back()->withErrors($g_response["res"]);
         $validator = \Validator::make($request->all(), Sposnsoring::getRules());
         if ($validator->fails()){
-            dd($validator->errors()->all());
             return redirect()->back()->withErrors($validator->errors());
         }
 

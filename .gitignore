@@ -9,4 +9,5 @@ vendor/**
 _ide_helper.php
 composer.phar
 .env
+.env.example
 .idea

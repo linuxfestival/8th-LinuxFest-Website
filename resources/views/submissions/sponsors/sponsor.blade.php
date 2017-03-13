@@ -6,7 +6,7 @@
         <section class="session-container">
             <div style="text-align: center">
                 <h1>
-                    حمایت از جشنواره
+                    حمایت مالی و معنوی جشنواره
                 </h1>
             </div>
             <hr>

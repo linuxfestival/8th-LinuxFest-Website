@@ -51,6 +51,7 @@
                                 </div>
                                 <div class="row spaced">
                                     <label>توضیحات</label>
+                                    {{--<textarea class="form-control col-sm-12" name="description" placeholder="لطفا جزییات حمایت و خلاصه‌ای از فعالیت‌های سازمان یا شرکت خود را شرح دهید."></textarea><br>--}}
                                     <textarea class="form-control col-sm-12" name="description" placeholder="لطفا جزییات حمایت و خلاصه‌ای از فعالیت‌های سازمان یا شرکت خود را شرح دهید."></textarea><br>
                                 </div>
 

@@ -33,25 +33,25 @@
                                 {{csrf_field()}}
                                 <div class="row spaced">
                                     <div class="col-sm-4">
-                                        <label>نام و نام خانوادگی</label>
+                                        <label>نام و نام خانوادگی (*)</label>
                                         <input type="text" class="form-control col-sm-12" name="attendance_name">
                                     </div>
                                     <div class="col-sm-4">
-                                        <label>شماره تماس</label>
+                                        <label>شماره تماس (*)</label>
                                         <input type="text" class="form-control col-sm-12" name="attendance_phone">
                                     </div>
                                     <div class="col-sm-4">
-                                        <label>ایمیل</label>
+                                        <label>ایمیل (*)</label>
                                         <input type="text" class="form-control col-sm-12" name="attendance_email">
                                     </div>
                                 </div>
                                 <div class="row spaced" >
                                     <div class="col-sm-8">
-                                        <label>عنوان موضوع مورد نظر</label>
+                                        <label>عنوان موضوع مورد نظر (*)</label>
                                         <input type="text" class="form-control col-sm-12" name="subject">
                                     </div>
                                     <div class="col-sm-4">
-                                        <label>فایل رزومه (فرمت قابل قبول: pdf)</label>
+                                        <label>فایل رزومه (فرمت قابل قبول: pdf) (*)</label>
                                         <input type="file" accept="application/pdf" class="form-control col-sm-12" name="resume">
                                     </div>
                                 </div>
@@ -68,6 +68,9 @@
                                 <div class="row spaced">
                                     <label>توضیحات</label>
                                     <textarea class="form-control col-sm-12" name="description" placeholder="لطفا نوع ارائه خود را مشخص کنید."></textarea><br>
+                                </div>
+                                <div class="row spaced">
+                                    <label>*: الزاما باید وارد شود.</label>
                                 </div>
 
                                 <div class="row text-center">

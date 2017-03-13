@@ -19,15 +19,15 @@
                                 {{csrf_field()}}
                                 <div class="row spaced">
                                     <div class="col-sm-3">
-                                        <label>نام سازمان یا شرکت</label>
+                                        <label>نام سازمان یا شرکت‌(*)</label>
                                         <input type="text" class="form-control col-sm-12" name="sponsor_name">
                                     </div>
                                     <div class="col-sm-3">
-                                        <label>نام و نام خانوادگی مدیرعامل یا رابط</label>
+                                        <label>نام و نام خانوادگی مدیرعامل یا رابط (*)</label>
                                         <input type="text" class="form-control col-sm-12" name="sponsor_person">
                                     </div>
                                     <div class="col-sm-3">
-                                        <label>ایمیل</label>
+                                        <label>ایمیل (*)</label>
                                         <input type="text" class="form-control col-sm-12" name="sponsor_email">
                                     </div>
                                     <div class="col-sm-3">
@@ -53,6 +53,9 @@
                                     <label>توضیحات</label>
                                     {{--<textarea class="form-control col-sm-12" name="description" placeholder="لطفا جزییات حمایت و خلاصه‌ای از فعالیت‌های سازمان یا شرکت خود را شرح دهید."></textarea><br>--}}
                                     <textarea class="form-control col-sm-12" name="description" placeholder="لطفا جزییات حمایت و خلاصه‌ای از فعالیت‌های سازمان یا شرکت خود را شرح دهید."></textarea><br>
+                                </div>
+                                <div class="row spaced">
+                                    <label>*: الزاما باید وارد شود.</label>
                                 </div>
 
                                 <div class="row text-center">

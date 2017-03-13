@@ -2,7 +2,7 @@
     <div class="header-background"></div>
     <div class="header-content">
         <div class="header-content-inner">
-            <h1 class="header-title" style="color:#d2e449; font-size: 50px;">
+            <h1 class="header-title" style="color:#0025be; font-size: 50px;">
                 نهمین جشنواره‌ی لینوکس
                 <br>
                 و نرم افزار های متن باز امیرکبیر

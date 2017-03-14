@@ -2,7 +2,9 @@
     <div class="header-background" style="background: url('../img/header2.jpg') no-repeat fixed; !important;"></div>
     <div class="header-content">
         <div class="header-content-inner">
-            <h1 class="header-title" style="color:#0025be; font-size: 50px;">
+            <h1 class="header-title" style="background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px 20px;">
                 نهمین جشنواره‌ی لینوکس
                 <br>
                 و نرم افزار های متن باز امیرکبیر

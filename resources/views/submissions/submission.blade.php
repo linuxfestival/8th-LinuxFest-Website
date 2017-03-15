@@ -58,7 +58,7 @@
                                 <div class="row spaced">
                                     <div class="col-sm-8">
                                         <label>چکیده (می‌توانید به صورت فایل با پسوند pdf و یا به صورت متن ارسال نمایید)</label>
-                                        <textarea class="form-control col-sm-12" name="abstract" placeholder="چکیده خود را تایپ کنید"></textarea>
+                                        <textarea class="form-control col-sm-12 ckeditor" name="abstract" placeholder="چکیده خود را تایپ کنید"></textarea>
                                     </div>
                                     <div class="col-sm-4">
                                         <label>فایل چکیده (فرمت قابل قبول: pdf)</label>
@@ -67,7 +67,7 @@
                                 </div>
                                 <div class="row spaced">
                                     <label>توضیحات</label>
-                                    <textarea class="form-control col-sm-12" name="description" placeholder="لطفا نوع ارائه خود را مشخص کنید."></textarea><br>
+                                    <textarea class="form-control col-sm-12 ckeditor" name="description" placeholder="لطفا نوع ارائه خود را مشخص کنید."></textarea><br>
                                 </div>
                                 <div class="row spaced">
                                     <label>*: الزاما باید وارد شود.</label>
@@ -111,4 +111,12 @@
             document.getElementById("submission-form").submit();
         }
     </script>
+    <script type="text/javascript">
+        CKEDITOR.replace( 'messageArea',
+            {
+                customConfig : 'config.js',
+                toolbar : 'simple'
+            })
+    </script>
+    <script src="js/ckeditor/ckeditor.js"></script>
 @endsection

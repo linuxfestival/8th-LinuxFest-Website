@@ -9,6 +9,7 @@
                     حمایت مالی و معنوی جشنواره
                 </h1>
             </div>
+            <a href={{ asset('a.pdf') }}>طرح پیشنهادی جشنواره</a>
             <hr>
             <div class="row">
                 <div class="col-md-12">
@@ -31,7 +32,7 @@
                                         <input type="text" class="form-control col-sm-12" name="sponsor_email">
                                     </div>
                                     <div class="col-sm-3">
-                                        <label>شماره تلفن</label>
+                                        <label>شماره تلفن(*)</label>
                                         <input type="text" class="form-control col-sm-12" name="sponsor_phone">
                                     </div>
                                 </div>

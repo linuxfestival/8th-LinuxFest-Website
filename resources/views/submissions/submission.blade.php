@@ -27,7 +27,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="panel panel-default">
-                        <div class="panel-heading">پاسخ به فراخوان</div>
+                        <div class="panel-heading">حمایت علمی از جشنواره</div>
                         <div class="panel-body">
                             <form action="{{route('app::submission.submit')}}" id="submission-form" enctype="multipart/form-data" method="POST">
                                 {{csrf_field()}}

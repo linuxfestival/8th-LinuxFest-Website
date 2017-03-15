@@ -37,7 +37,7 @@ class Sposnsoring extends Request
         return [
             'sponsor_name' => 'required',
 //            'sponsor_person' => 'required',
-//            'sponsor_phone' => 'required',
+            'sponsor_phone' => 'required',
             'sponsor_email' => 'required',
             'sponsoring_method' => 'required',
             'logo' => 'mimetypes:image/gif,image/png,image/jpeg',

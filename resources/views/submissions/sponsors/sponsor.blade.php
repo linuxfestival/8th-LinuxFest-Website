@@ -53,7 +53,7 @@
                                 <div class="row spaced">
                                     <label>توضیحات</label>
                                     {{--<textarea class="form-control col-sm-12" name="description" placeholder="لطفا جزییات حمایت و خلاصه‌ای از فعالیت‌های سازمان یا شرکت خود را شرح دهید."></textarea><br>--}}
-                                    <textarea class="form-control col-sm-12" name="description" placeholder="لطفا جزییات حمایت و خلاصه‌ای از فعالیت‌های سازمان یا شرکت خود را شرح دهید."></textarea><br>
+                                    <textarea class="form-control col-sm-12 ckeditor" name="description" placeholder="لطفا جزییات حمایت و خلاصه‌ای از فعالیت‌های سازمان یا شرکت خود را شرح دهید."></textarea><br>
                                 </div>
                                 <div class="row spaced">
                                     <label>*: الزاما باید وارد شود.</label>
@@ -96,4 +96,12 @@
             document.getElementById("sponsoring-form").submit();
         }
     </script>
+    <script type="text/javascript">
+        CKEDITOR.replace( 'messageArea',
+            {
+                customConfig : 'config.js',
+                toolbar : 'simple'
+            })
+    </script>
+    <script src="js/ckeditor/ckeditor.js"></script>
 @endsection

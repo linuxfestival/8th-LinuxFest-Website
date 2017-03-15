@@ -11,3 +11,4 @@ composer.phar
 .env
 .env.example
 .idea
+/public/proposal.pdf

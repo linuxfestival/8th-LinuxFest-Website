@@ -9,7 +9,7 @@
                     حمایت مالی و معنوی جشنواره
                 </h1>
             </div>
-            <a href={{ asset('a.pdf') }}>طرح پیشنهادی جشنواره</a>
+            <a href={{ URL::asset('proposal.pdf') }}>طرح پیشنهادی جشنواره</a>
             <hr>
             <div class="row">
                 <div class="col-md-12">

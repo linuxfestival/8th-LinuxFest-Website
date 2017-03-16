@@ -9,7 +9,7 @@
                     حمایت مالی و معنوی جشنواره
                 </h1>
             </div>
-            <a class="FontBig"  href={{ asset('LinuxFest9_Proposal.pddf') }}><strong><big>طرح پیشنهادی جشنواره</big> </strong></a> <br>
+            <a class="FontBig"  href={{ asset('LinuxFest9_Proposal.pdf') }}><strong><big>طرح پیشنهادی جشنواره</big> </strong></a> <br>
             <br>
 
             <hr>

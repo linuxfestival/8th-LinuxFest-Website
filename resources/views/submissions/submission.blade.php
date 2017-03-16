@@ -114,6 +114,7 @@
     <script type="text/javascript">
         CKEDITOR.replace( 'messageArea',
             {
+                
                 customConfig : 'config.js',
                 toolbar : 'simple'
             })

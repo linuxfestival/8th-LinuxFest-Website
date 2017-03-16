@@ -9,7 +9,9 @@
                     حمایت مالی و معنوی جشنواره
                 </h1>
             </div>
-            <a href={{ URL::asset('proposal.pdf') }}>طرح پیشنهادی جشنواره</a>
+            <a class="FontBig"  href={{ asset('LinuxFest9_Proposal.pddf') }}><strong><big>طرح پیشنهادی جشنواره</big> </strong></a> <br>
+            <br>
+
             <hr>
             <div class="row">
                 <div class="col-md-12">

@@ -156,6 +156,7 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+
         /*
          * Laravel IDE helper
          */
@@ -176,6 +177,7 @@ return [
          */
         Moloquent\MongodbServiceProvider::class,
         Moloquent\Auth\PasswordResetServiceProvider::class,
+        Moloquent\Passport\PassportServiceProvider::class,
         // TODO: resolve the following
 //        Moloquent\MongodbQueueServiceProvider::class,
 

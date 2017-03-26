@@ -17,19 +17,24 @@
             </a>
             <hr>
             <div class="row">
+
                 @foreach($presenters as $s)
+
                     <div class="col-md-12">
                         <div class="panel panel-default">
                             <div class="panel-heading">
 
                                 <div class="col-sm-offset-10">
                                     {{$s->created_at}}
+
                                 </div>
 
-                                    <b>نام و نام خانوادگی:</b> {{$s->presenter_name}} <br>
+                                    <b>نام و نام خانوادگی:</b> {{$s->presenter_name}}
+                                <img class="col-sm-offset-10" width=150 height=150 src={{asset('storage/presenter/' . $s->_id . '/'."presenter_avatar")}}><br>
                                     <b>ایمیل:</b> {{$s->presenter_email}} <br>
                                     <b>شماره تماس:</b> {{$s->presenter_phone}} <br>
                                     <b>توضیحات:</b> {{$s->presenter_bio}} <br>
+
 
 
 

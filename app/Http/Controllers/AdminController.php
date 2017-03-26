@@ -74,9 +74,22 @@ public function editPresenter(Presenter $presenter){
     return view('admin.Presenters.edit', ['data' => $presenter]);
 }
     public function updatePresenter(Presenter $presenter, Request $request){
-   // dd($request->all());
+   // dd($request->all());if ($request->hasFile('presenter_avatar'))
         $presenter->update($request->all());
         $presenter->save();
+if($request->hasFile('presenter_avatar'))
+        if ($request->file('presenter_avatar')->isValid()){
+            $directory = 'storage/presenter/' . $presenter->_id . '/';
+            $file_name = 'presenter_avatar' ;
+            $presenter->presenter_avatar = $file_name;
+
+            $presenter->save();
+            $request->file('presenter_avatar')->move($directory, $file_name);
+
+
+        }
+
+
         return redirect()->route('admin::presenters');
     }
     /**
@@ -87,9 +100,9 @@ public function editPresenter(Presenter $presenter){
     }
     public function storeAddingPresenterRequest(Request $request){
 
-     // $g_response = $this->validateRECAPTCHA($request);
-      //if (!$g_response["status"])
-       // return redirect()->back()->withErrors($g_response["res"]);
+//     $g_response = $this->validateRECAPTCHA($request);
+  //    if (!$g_response["status"])
+    //   return redirect()->back()->withErrors($g_response["res"]);
         $validator = \Validator::make($request->all(), \App\Http\Requests\Presentering::getRules());
         if ($validator->fails()){
             dd($validator->errors()->all());
@@ -103,12 +116,15 @@ public function editPresenter(Presenter $presenter){
         if ($request->hasFile('presenter_avatar'))
             if ($request->file('presenter_avatar')->isValid()){
                 $directory = 'storage/presenter/' . $s->_id . '/';
-                $file_name = 'presenter_avatar' . $request->file('presenter_avatar')->getClientOriginalExtension();
-                $s->logo = $directory . $file_name;
+                $file_name = 'presenter_avatar' ;
+                $s->presenter_avatar = $file_name;
+
                 $s->save();
                 $request->file('presenter_avatar')->move($directory, $file_name);
+
+
             }
-        return view('admin.Presenters.success', ['data' => $request->all()]);
+        return view('admin.Presenters.success', ['data' => $s]);
     }
 
     /**

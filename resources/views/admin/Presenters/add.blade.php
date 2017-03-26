@@ -19,7 +19,7 @@
                                 {{csrf_field()}}
                                 <div class="row spaced">
                                     <div class="col-sm-3">
-                                        <label>نام و نام خانوادگی ارائه دهنده</label>
+                                        <label>نام و نام خانوادگی ارائه دهنده (*)</label>
                                         <input type="text" class="form-control col-sm-12" name="presenter_name" >
                                     </div>
                                     <div class="col-sm-3">
@@ -27,11 +27,11 @@
                                         <input type="text" class="form-control col-sm-12" name="presenter_url" >
                                     </div>
                                     <div class="col-sm-3">
-                                        <label>ایمیل</label>
+                                        <label> ایمیل (*)</label>
                                         <input type="text" class="form-control col-sm-12" name="presenter_email">
                                     </div>
                                     <div class="col-sm-3">
-                                        <label>شماره تلفن</label>
+                                        <label> شماره تلفن (*)</label>
                                         <input type="text" class="form-control col-sm-12" name="presenter_phone">
                                         <br>
                                     </div>
@@ -45,10 +45,12 @@
                                     </div>
                                 </div>
                                 <div class="row spaced">
-                                    <label>مشخصات</label>
+                                    <label>  مشخصات (*)</label>
                                     <textarea class="form-control col-sm-12" name="presenter_bio" ></textarea><br>
                                 </div>
-
+                                <div class="row spaced">
+                                    <label>*: الزاما باید وارد شود.</label>
+                                </div>
                                 <div class="row text-center">
                                     <button type="submit" class="btn btn-primary btn-lg g-recaptcha"
                                             data-sitekey="6Lf_PxgUAAAAAL_QLZkIHAmFZl80ebXK8b57Un6l"

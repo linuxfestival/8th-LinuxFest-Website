@@ -29,7 +29,6 @@ class Presentering extends Request
     {
         return [
             'presenter_name' => 'required',
-            'presenter_url' => 'required',
             'presenter_email' => 'required',
             'presenter_phone' => 'required',
             'presenter_avatar' => 'mimetypes:image/gif,image/png,image/jpeg,image/jpg',
@@ -39,7 +38,7 @@ class Presentering extends Request
     public static function getRules(){
         return [
             'presenter_name' => 'required',
-            'presenter_url' => 'required',
+
             'presenter_email' => 'required',
             'presenter_phone' => 'required',
             'presenter_avatar' => 'mimetypes:image/gif,image/png,image/jpeg,image/jpg',

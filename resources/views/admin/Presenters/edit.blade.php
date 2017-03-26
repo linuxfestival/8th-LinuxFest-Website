@@ -33,7 +33,7 @@
                                 {{csrf_field()}}
                                 <div class="row spaced">
                                     <div class="col-sm-3">
-                                        <label>نام و نام خانوادگی ارائه دهنده</label>
+                                        <label>نام و نام خانوادگی ارائه دهنده (*)</label>
                                         <input type="text" class="form-control col-sm-12" name="presenter_name" value="{{$data->presenter_name}}" >
                                     </div>
                                     <div class="col-sm-3">
@@ -41,28 +41,31 @@
                                         <input type="text" class="form-control col-sm-12" name="presenter_url" value="{{$data->presenter_url}}" >
                                     </div>
                                     <div class="col-sm-3">
-                                        <label>ایمیل</label>
+                                        <label>ایمیل (*)</label>
                                         <input type="text" class="form-control col-sm-12" name="presenter_email" value="{{$data->presenter_email}}">
                                     </div>
                                     <div class="col-sm-3">
-                                        <label>شماره تلفن</label>
+                                        <label>شماره تلفن (*)</label>
                                         <input type="text" class="form-control col-sm-12" name="presenter_phone" value="{{$data->presenter_phone}}">
                                         <br>
                                     </div>
                                 </div>
                                 <div class="row spaced" >
-
+                                    <img class="col-sm-offs et-10" width=150 height=150 src={{asset('storage/presenter/' . $data->_id . '/'."presenter_avatar")}}>
                                     <div class="col-sm-4">
-                                        <label>افزودن عکس پروفایل</label>
+                                        <label>تغییر عکس پروفایل</label>
                                         <input type="file" accept="image/gif,image/png,image/jpeg" class="form-control col-sm-12" name="presenter_avatar">
+
 
                                     </div>
                                 </div>
                                 <div class="row spaced">
-                                    <label>مشخصات</label>
+                                    <label>مشخصات (*)</label>
                                     <textarea class="form-control col-sm-12" name="presenter_bio"  >{{$data->presenter_bio}}</textarea><br>
                                 </div>
-
+                                <div class="row spaced">
+                                    <label>*: الزاما باید وارد شود.</label>
+                                </div>
                                 <div class="row text-center">
                                     <button type="submit" class="btn btn-primary btn-lg g-recaptcha"
                                             data-sitekey="6Lf_PxgUAAAAAL_QLZkIHAmFZl80ebXK8b57Un6l"

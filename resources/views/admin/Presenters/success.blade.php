@@ -53,9 +53,8 @@
                                 <div class="row spaced" >
 
                                     <div class="col-sm-4">
-                                        <label>افزودن عکس پروفایل</label>
-                                        <input disabled type="file"  class="form-control col-sm-12" value="{{$data['presenter_avatar']}}">
 
+                                        <img class="col-sm-offs et-10" width=150 height=150 src={{asset('storage/presenter/'. $data->_id. '/'."presenter_avatar")}}>
                                     </div>
                                 </div>
                                 <div class="row spaced">

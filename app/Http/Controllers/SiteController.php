@@ -123,7 +123,7 @@ class SiteController extends Controller{
         //Validating Request
         $g_response = $this->validateRECAPTCHA($request);
         if (!$g_response["status"])
-            return redirect()->back()->withErrors($g_response["res"]);
+       return redirect()->back()->withErrors($g_response["res"]);
         $validator = \Validator::make($request->all(), \App\Http\Requests\Submission::getRules());
         if ($validator->fails())
             return redirect()->back()->withErrors($validator->errors());

@@ -44,7 +44,7 @@
                                 </div>
                                 <div class="col-sm-9">
                                     <label>توضیحات</label>
-                                    <textarea disabled class="form-control col-sm-12" name="description">{!! $data['description'] !!}</textarea><br>
+                                    <div >{!! $data['description'] !!}</div><br>
                                 </div>
                             </div>
 

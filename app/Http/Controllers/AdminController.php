@@ -100,9 +100,9 @@ if($request->hasFile('presenter_avatar'))
     }
     public function storeAddingPresenterRequest(Request $request){
 
-//     $g_response = $this->validateRECAPTCHA($request);
-  //    if (!$g_response["status"])
-    //   return redirect()->back()->withErrors($g_response["res"]);
+     $g_response = $this->validateRECAPTCHA($request);
+         if (!$g_response["status"])
+       return redirect()->back()->withErrors($g_response["res"]);
         $validator = \Validator::make($request->all(), \App\Http\Requests\Presentering::getRules());
         if ($validator->fails()){
             dd($validator->errors()->all());

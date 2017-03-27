@@ -30,6 +30,11 @@
                         بخش مدیریت درخواست‌های حمایت مالی
                     </button>
                 </a>
+                <a href="{{route('admin::presenters')}}" >
+                <button>
+                    بخش مدیریت ارائه دهندگان
+                </button>
+                </a>
             </div>
 
         </section>

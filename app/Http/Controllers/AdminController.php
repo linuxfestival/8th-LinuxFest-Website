@@ -4,14 +4,17 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\LiveMessage;
-
+use ReCaptcha\ReCaptcha;
 use App\Sponsor;
 use App\Submission;
+use App\Presenter;
 use App\User;
 use Carbon\Carbon;
 use Illuminate\Mail\Message;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Input;
+
+
 
 class AdminController extends Controller
 {
@@ -27,17 +30,19 @@ class AdminController extends Controller
             Route::get('/submissions/sponsors/{sponsor}', 'AdminController@editSponsorRequest')->name('admin::submissions.sponsor.edit');
             Route::post('/submissions/sponsors/{sponsor}', 'AdminController@updateSponsorRequest')->name('admin::submissions.sponsor.save');
             Route::get('/submissions/{submission}', 'AdminController@editSubmission')->name('admin::submissions.edit');
-            Route::post('/submissions/{submission}', 'AdminController@updateSubmission')->name('admin::submission.save');
-
+            Route::post('/submissions/{submission}', 'AdminController@updateSubmission')->name('admin::submission.save') ;
+            //Presenter
+            Route::get('/presenters', 'AdminController@displayPresenter')->name('admin::presenters');
+            Route::get('/presenters/add', 'AdminController@addPresenter')->name('admin::presenter.add');
+            Route::post('/presenters/add', 'AdminController@storeAddingPresenterRequest')->name('admin::presenter.submit');
+            Route::get('/presenters/{presenter}', 'AdminController@editPresenter')->name('admin::presenter.edit');
+            Route::post('/presenters/{presenter}', 'AdminController@updatePresenter')->name('admin::presenter.save');
             //Users section
             Route::get('/users', 'AdminController@listUsers')->name('admin::users');
-
             // Live Blog Admin Panel
             Route::get('/live','AdminController@liveIndex')->name('admin::live.index');
-
             //POST on live
             Route::post('message', ['as' => 'message.store', 'uses' => 'AdminController@store']);
-
             //Sending mail
             Route::post('/email', 'AdminController@viewMailForm')->name('admin::mail.compose');
             Route::post('/email/submit', 'AdminController@sendMail')->name('admin::mail.send');
@@ -53,6 +58,80 @@ class AdminController extends Controller
         //TODO ADMIN DASHBOARD
         return view('admin.home');
     }
+
+    /**
+     * display all presenters in admin Dashboard
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public function displayPresenter(){
+        $presenters = Presenter::all();
+        return view('admin.Presenters.display', ['presenters' => $presenters]) ;
+    }
+
+    /**
+     * @param Presenter $presenter
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public function editPresenter(Presenter $presenter){
+        return view('admin.Presenters.edit', ['data' => $presenter]);
+    }
+
+    /**
+     * @param Presenter $presenter
+     * @param Request $request
+     * @return \Illuminate\Http\RedirectResponse
+     */
+    public function updatePresenter(Presenter $presenter, Request $request){
+        $presenter->update($request->all());
+        $presenter->save();
+        if($request->hasFile('presenter_avatar'))
+            if ($request->file('presenter_avatar')->isValid()){
+                $directory = 'storage/presenter/' . $presenter->_id . '/';
+                $file_name = 'presenter_avatar' ;
+                $presenter->presenter_avatar = $file_name;
+                $presenter->save();
+                $request->file('presenter_avatar')->move($directory, $file_name);
+            }
+        return redirect()->route('admin::presenters');
+    }
+
+    /**
+     * Add new presenter
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public function addPresenter(){
+        return view('admin.Presenters.add');
+    }
+
+    /**
+     * @param Request $request
+     * @return $this|\Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public function storeAddingPresenterRequest(Request $request){
+        $g_response = $this->validateRECAPTCHA($request);
+        if (!$g_response["status"])
+            return redirect()->back()->withErrors($g_response["res"]);
+        $validator = \Validator::make($request->all(), \App\Http\Requests\Presentering::getRules());
+        if ($validator->fails()){
+            dd($validator->errors()->all());
+            return redirect()->back()->withErrors($validator->errors());
+        }
+
+        // Storing the data
+        $s = new Presenter($request->all());
+        $s->save();
+        if ($request->hasFile('presenter_avatar'))
+            if ($request->file('presenter_avatar')->isValid()){
+                $directory = 'storage/presenter/' . $s->_id . '/';
+                $file_name = 'presenter_avatar' ;
+                $s->presenter_avatar = $file_name;
+                $s->save();
+                $request->file('presenter_avatar')->move($directory, $file_name);
+            }
+        return view('admin.Presenters.success', ['data' => $s]);
+    }
+
+    /**
 
     /**
      * Live-blog feed administration
@@ -101,6 +180,11 @@ class AdminController extends Controller
 //            $_to = [$_to];
         return view('admin.outgoing.compose', ['to' => $_to]);
     }
+
+    /**
+     * @param Request $request
+     * @return \Illuminate\Http\RedirectResponse
+     */
 
     public function sendMail(Request $request){
         $to = $request->get('to');
@@ -282,5 +366,21 @@ class AdminController extends Controller
 //
 //        return Redirect::route('admin');
 //    }
-
+    /**
+     * @param Request $request
+     * @return array
+     */
+    private function validateRECAPTCHA(Request $request) {
+        if (!$request->has('g-recaptcha-response'))
+            return ["status" => false, "res" => "Empty response"];
+        $response = $request->get('g-recaptcha-response');
+        $g_recaptcha = new ReCaptcha('6Lf_PxgUAAAAAANlAnqDiPGvvmotEk0DtgtJICIZ');
+        $resp = $g_recaptcha->verify($response);
+        if ($resp->isSuccess()) {
+            return ["status" => true, "res" => "OK"];
+        } else {
+            $errors = $resp->getErrorCodes();
+            return ["status" => false, "res" => $errors];
+        }
+    }
 }

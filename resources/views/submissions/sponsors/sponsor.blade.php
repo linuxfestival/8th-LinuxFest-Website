@@ -8,8 +8,14 @@
                 <h1>
                     حمایت مالی و معنوی جشنواره
                 </h1>
+            </div> <br>
+            <div class="col-sm-12 text-center">
+                <p>
+                    برای کسب اطلاع بیشتر از طرح حمایتی جشنواره لطفا پروپوزال جشنواره را مطالعه نمایید:
+                    <a class="btn btn-default btn-lg" style="color: orange;" href={{ asset('proposal.pdf') }}><strong>پروپوزال جشنواره</strong></a>
+                </p>
             </div>
-            <h3><a class="FontBig"  href={{ asset('proposal.pdf') }}><strong><big>پروپوزال جشنواره</big> </strong></a></h3> <br>
+            {{--<h3><a class="FontBig"  href={{ asset('proposal.pdf') }}><strong><big>پروپوزال جشنواره</big> </strong></a></h3> <br>--}}
 
             <hr>
             <div class="row">

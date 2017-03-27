@@ -6,60 +6,66 @@
         <section class="session-container">
             <div style="text-align: center">
                 <h1>
-                    حمایت مالی و معنوی جشنواره
+                    ارائه دهندگان
                 </h1>
             </div>
-            <h3><a class="FontBig"  href={{ asset('LinuxFest9_Proposal.pdf') }}><strong><big>پروپوزال جشنواره</big> </strong></a></h3> <br>
-
             <hr>
+        @if(count($errors->all()) > 0)
+            <!-- Form Error List -->
+                <div class="alert alert-danger">
+                    <strong>Whoops! Something went wrong!</strong>
+
+                    <br><br>
+
+                    <ul>
+                        @foreach ($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+            @endif
             <div class="row">
                 <div class="col-md-12">
                     <div class="panel panel-default">
-                        <div class="panel-heading">فرم حمایت از نهمین دوره جشنواره ملی لینوکس و نرم‌افزارهای متن‌باز امیرکبیر</div>
+                        <div class="panel-heading">فرم ویرایش ارائه دهنده در نهمین دوره جشنواره ملی لینوکس و نرم‌افزارهای متن‌باز امیرکبیر</div>
                         <div class="panel-body">
-                            <form action="{{route('app::sponsors.submit')}}" id="sponsoring-form" enctype="multipart/form-data" method="POST">
+                            <form action="{{route('admin::presenter.save', ['presenter' => $data])}}" id="addingPreseter-form" enctype="multipart/form-data" method="POST">
                                 {{csrf_field()}}
                                 <div class="row spaced">
                                     <div class="col-sm-3">
-                                        <label>نام سازمان یا شرکت‌(*)</label>
-                                        <input type="text" class="form-control col-sm-12" name="sponsor_name">
+                                        <label>نام و نام خانوادگی ارائه دهنده (*)</label>
+                                        <input type="text" class="form-control col-sm-12" name="presenter_name" value="{{$data->presenter_name}}" >
                                     </div>
                                     <div class="col-sm-3">
-                                        <label>نام و نام خانوادگی مدیرعامل یا رابط (*)</label>
-                                        <input type="text" class="form-control col-sm-12" name="sponsor_person">
+                                        <label>آدرس سایت شخصی</label>
+                                        <input type="text" class="form-control col-sm-12" name="presenter_url" value="{{$data->presenter_url}}" >
                                     </div>
                                     <div class="col-sm-3">
                                         <label>ایمیل (*)</label>
-                                        <input type="text" class="form-control col-sm-12" name="sponsor_email">
+                                        <input type="text" class="form-control col-sm-12" name="presenter_email" value="{{$data->presenter_email}}">
                                     </div>
                                     <div class="col-sm-3">
-                                        <label>شماره تلفن(*)</label>
-                                        <input type="text" class="form-control col-sm-12" name="sponsor_phone">
+                                        <label>شماره تلفن (*)</label>
+                                        <input type="text" class="form-control col-sm-12" name="presenter_phone" value="{{$data->presenter_phone}}">
+                                        <br>
                                     </div>
                                 </div>
                                 <div class="row spaced" >
-                                    <div class="col-sm-12">
-                                        <label>نوع حمایت</label>
-                                        <select class="form-control col-sm-12" name="sponsoring_method">
-                                            <option value="financial">حمایت مالی از جشنواره</option>
-                                            <option value="supplier">تامین ملزومات جشنواره</option>
-                                            <option value="other">سایر (نیاز به ذکر توضیح)</option>
-                                        </select>
+                                    <img class="col-sm-offs et-10" width=150 height=150 src={{asset('storage/presenter/' . $data->_id . '/'."presenter_avatar")}}>
+                                    <div class="col-sm-4">
+                                        <label>تغییر عکس پروفایل</label>
+                                        <input type="file" accept="image/gif,image/png,image/jpeg" class="form-control col-sm-12" name="presenter_avatar">
+
+
                                     </div>
-                                    {{--<div class="col-sm-4">--}}
-                                        {{--<label>فایل لوگو</label>--}}
-                                        {{--<input type="file" accept="image/gif,image/png,image/jpeg" class="form-control col-sm-12" name="logo">--}}
-                                    {{--</div>--}}
                                 </div>
                                 <div class="row spaced">
-                                    <label>توضیحات</label>
-                                    {{--<textarea class="form-control col-sm-12" name="description" placeholder="لطفا جزییات حمایت و خلاصه‌ای از فعالیت‌های سازمان یا شرکت خود را شرح دهید."></textarea><br>--}}
-                                    <textarea class="form-control col-sm-12 ckeditor" name="description" placeholder="لطفا جزییات حمایت و خلاصه‌ای از فعالیت‌های سازمان یا شرکت خود را شرح دهید."></textarea><br>
+                                    <label>مشخصات (*)</label>
+                                    <textarea class="form-control col-sm-12" name="presenter_bio"  >{{$data->presenter_bio}}</textarea><br>
                                 </div>
                                 <div class="row spaced">
                                     <label>*: الزاما باید وارد شود.</label>
                                 </div>
-
                                 <div class="row text-center">
                                     <button type="submit" class="btn btn-primary btn-lg g-recaptcha"
                                             data-sitekey="6Lf_PxgUAAAAAL_QLZkIHAmFZl80ebXK8b57Un6l"
@@ -94,15 +100,7 @@
     <script src='https://www.google.com/recaptcha/api.js?hl=fa'></script>
     <script type="text/javascript">
         function submitting() {
-            document.getElementById("sponsoring-form").submit();
+            document.getElementById("addingPreseter-form").submit();
         }
     </script>
-    <script type="text/javascript">
-        CKEDITOR.replace( 'messageArea',
-            {
-                customConfig : 'config.js',
-                toolbar : 'simple'
-            })
-    </script>
-    <script src="js/ckeditor/ckeditor.js"></script>
 @endsection

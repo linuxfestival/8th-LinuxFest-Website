@@ -3,14 +3,27 @@
 namespace App;
 
 /**
- * @property mixed id
- * @property mixed name
- * @property mixed avatar
- * @property mixed url
- * @property mixed bio
+ * @property string id
+ * @property string presenter_name
+ * @property string presenter_avatar
+ * @property string presenter_url
+ * @property string presenter_bio
+ * @property string presenter_phone
  */
-class Presenter extends StaticModel
+class Presenter extends \Moloquent
 {
+    protected $fillable = [
+
+        'presenter_name',
+        'presenter_avatar',
+        'presenter_email',
+        'presenter_url',
+        'presenter_bio',
+        'presenter_phone'
+    ];
+
+
+    /**
     public static $data = [
         [
             'id' => 'bakhshis',
@@ -288,7 +301,7 @@ class Presenter extends StaticModel
 //        ],
 
     ];
-
+*/
     protected $guarded = [];
 
 }

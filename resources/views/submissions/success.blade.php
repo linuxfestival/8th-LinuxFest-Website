@@ -55,7 +55,7 @@
                             </div>
                             <div class="row spaced">
                                 <label>توضیحات</label>
-                                <textarea disabled class="form-control col-sm-12" name="description" placeholder="لطفا نوع ارائه خود را مشخص کنید.">{{$data['description']}}</textarea><br>
+                                <div class="col-sm-12">{!! $data['description'] !!}</div><br>
                             </div>
 
                             <div class="row text-center">
